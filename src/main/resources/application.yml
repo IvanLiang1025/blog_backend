@@ -1,0 +1,31 @@
+
+
+server:
+  port: 8081
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/sunnyblog
+    username: db_user
+    password: db_user_ivan
+  messages:
+    basename: i18n/messages
+    encoding: utf-8
+  redis:
+    host: localhost
+    port: 6379
+
+
+#custom aws related config properties
+aws:
+  credentials:
+    access-key: AKIATP4TEDJW32XORCJ4
+    secret-key: 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
+  region:
+    static: ca-central-1
+s3:
+  bucket:
+    name: res-blog-public
+    path: /res-dev
+
+

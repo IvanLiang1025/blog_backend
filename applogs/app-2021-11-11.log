@@ -1,0 +1,708 @@
+2021-11-11 00:02:05:335 [main] INFO  org.springframework.boot.test.context.SpringBootTestContextBootstrapper Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.ivan.sunnyblog.base.RedisUtilTest], using SpringBootContextLoader
+2021-11-11 00:02:05:339 [main] INFO  org.springframework.test.context.support.AbstractContextLoader Could not detect default resource locations for test class [com.ivan.sunnyblog.base.RedisUtilTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2021-11-11 00:02:05:340 [main] INFO  org.springframework.test.context.support.AnnotationConfigContextLoaderUtils Could not detect default configuration classes for test class [com.ivan.sunnyblog.base.RedisUtilTest]: RedisUtilTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2021-11-11 00:02:05:430 [main] INFO  org.springframework.boot.test.context.SpringBootTestContextBootstrapper Found @SpringBootConfiguration com.ivan.sunnyblog.SunnyBlogApplication for test class com.ivan.sunnyblog.base.RedisUtilTest
+2021-11-11 00:02:05:497 [main] INFO  org.springframework.boot.test.context.SpringBootTestContextBootstrapper Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2021-11-11 00:02:05:506 [main] INFO  org.springframework.boot.test.context.SpringBootTestContextBootstrapper Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@20d525, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@6200f9cb, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@2002fc1d, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@69453e37, org.springframework.test.context.support.DirtiesContextTestExecutionListener@6f4a47c7, org.springframework.test.context.transaction.TransactionalTestExecutionListener@ae13544, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@3d34d211, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@7dc0f706, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@4009e306, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@43c1b556, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@587e5365, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@22fcf7ab]
+2021-11-11 00:02:05:696 [main] INFO  com.ivan.sunnyblog.base.RedisUtilTest Starting RedisUtilTest on Jinghaos-MacBook-Air.local with PID 8411 (started by jinghaoliang in /Users/jinghaoliang/Documents/tech/Project/blogProject/SunnyBlog)
+2021-11-11 00:02:05:696 [main] INFO  com.ivan.sunnyblog.base.RedisUtilTest No active profile set, falling back to default profiles: default
+2021-11-11 00:02:06:179 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-11-11 00:02:06:181 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data repositories in DEFAULT mode.
+2021-11-11 00:02:06:213 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 24ms. Found 0 repository interfaces.
+2021-11-11 00:02:06:478 [main] INFO  o.s.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$bf5ea8d4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-11-11 00:02:06:975 [main] INFO  com.zaxxer.hikari.HikariDataSource HikariPool-1 - Starting...
+2021-11-11 00:02:07:031 [main] INFO  com.zaxxer.hikari.HikariDataSource HikariPool-1 - Start completed.
+2021-11-11 00:02:29:960 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Initializing ExecutorService 'applicationTaskExecutor'
+2021-11-11 00:02:30:369 [main] INFO  com.ivan.sunnyblog.base.RedisUtilTest Started RedisUtilTest in 24.835 seconds (JVM running for 25.427)
+2021-11-11 00:02:30:575 [main] INFO  io.lettuce.core.EpollProvider Starting without optional epoll library
+2021-11-11 00:02:30:583 [main] INFO  io.lettuce.core.KqueueProvider Starting without optional kqueue library
+2021-11-11 00:03:25:839 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m11s745ms).
+2021-11-11 00:04:53:028 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m34s147ms).
+2021-11-11 00:06:24:929 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=47s152ms).
+2021-11-11 00:07:13:280 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=48s349ms).
+2021-11-11 00:09:22:242 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=45s706ms).
+2021-11-11 00:11:04:853 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m42s612ms).
+2021-11-11 00:11:35:240 [Thread-4] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Shutting down ExecutorService 'applicationTaskExecutor'
+2021-11-11 00:11:35:243 [Thread-4] INFO  com.zaxxer.hikari.HikariDataSource HikariPool-1 - Shutdown initiated...
+2021-11-11 00:11:35:245 [Thread-4] INFO  com.zaxxer.hikari.HikariDataSource HikariPool-1 - Shutdown completed.
+2021-11-11 00:11:53:177 [main] INFO  org.springframework.boot.test.context.SpringBootTestContextBootstrapper Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.ivan.sunnyblog.base.RedisUtilTest], using SpringBootContextLoader
+2021-11-11 00:11:53:180 [main] INFO  org.springframework.test.context.support.AbstractContextLoader Could not detect default resource locations for test class [com.ivan.sunnyblog.base.RedisUtilTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2021-11-11 00:11:53:180 [main] INFO  org.springframework.test.context.support.AnnotationConfigContextLoaderUtils Could not detect default configuration classes for test class [com.ivan.sunnyblog.base.RedisUtilTest]: RedisUtilTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2021-11-11 00:11:53:268 [main] INFO  org.springframework.boot.test.context.SpringBootTestContextBootstrapper Found @SpringBootConfiguration com.ivan.sunnyblog.SunnyBlogApplication for test class com.ivan.sunnyblog.base.RedisUtilTest
+2021-11-11 00:11:53:329 [main] INFO  org.springframework.boot.test.context.SpringBootTestContextBootstrapper Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2021-11-11 00:11:53:337 [main] INFO  org.springframework.boot.test.context.SpringBootTestContextBootstrapper Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@20d525, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@6200f9cb, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@2002fc1d, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@69453e37, org.springframework.test.context.support.DirtiesContextTestExecutionListener@6f4a47c7, org.springframework.test.context.transaction.TransactionalTestExecutionListener@ae13544, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@3d34d211, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@7dc0f706, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@4009e306, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@43c1b556, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@587e5365, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@22fcf7ab]
+2021-11-11 00:11:53:519 [main] INFO  com.ivan.sunnyblog.base.RedisUtilTest Starting RedisUtilTest on Jinghaos-MacBook-Air.local with PID 8500 (started by jinghaoliang in /Users/jinghaoliang/Documents/tech/Project/blogProject/SunnyBlog)
+2021-11-11 00:11:53:520 [main] INFO  com.ivan.sunnyblog.base.RedisUtilTest No active profile set, falling back to default profiles: default
+2021-11-11 00:11:53:948 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-11-11 00:11:53:950 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data repositories in DEFAULT mode.
+2021-11-11 00:11:53:978 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 20ms. Found 0 repository interfaces.
+2021-11-11 00:11:54:237 [main] INFO  o.s.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$bf5ea8d4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-11-11 00:11:54:700 [main] INFO  com.zaxxer.hikari.HikariDataSource HikariPool-1 - Starting...
+2021-11-11 00:11:54:751 [main] INFO  com.zaxxer.hikari.HikariDataSource HikariPool-1 - Start completed.
+2021-11-11 00:12:19:203 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Initializing ExecutorService 'applicationTaskExecutor'
+2021-11-11 00:12:19:672 [main] INFO  com.ivan.sunnyblog.base.RedisUtilTest Started RedisUtilTest in 26.309 seconds (JVM running for 26.854)
+2021-11-11 00:12:19:905 [main] INFO  io.lettuce.core.EpollProvider Starting without optional epoll library
+2021-11-11 00:12:19:905 [main] INFO  io.lettuce.core.KqueueProvider Starting without optional kqueue library
+2021-11-11 00:13:35:266 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=50s755ms).
+2021-11-11 01:05:27:495 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m54s415ms).
+2021-11-11 01:05:27:515 [Thread-4] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Shutting down ExecutorService 'applicationTaskExecutor'
+2021-11-11 01:05:27:518 [Thread-4] INFO  com.zaxxer.hikari.HikariDataSource HikariPool-1 - Shutdown initiated...
+2021-11-11 01:05:27:520 [Thread-4] INFO  com.zaxxer.hikari.HikariDataSource HikariPool-1 - Shutdown completed.
+2021-11-11 01:05:30:575 [main] INFO  org.springframework.boot.test.context.SpringBootTestContextBootstrapper Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.ivan.sunnyblog.base.RedisUtilTest], using SpringBootContextLoader
+2021-11-11 01:05:30:578 [main] INFO  org.springframework.test.context.support.AbstractContextLoader Could not detect default resource locations for test class [com.ivan.sunnyblog.base.RedisUtilTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2021-11-11 01:05:30:579 [main] INFO  org.springframework.test.context.support.AnnotationConfigContextLoaderUtils Could not detect default configuration classes for test class [com.ivan.sunnyblog.base.RedisUtilTest]: RedisUtilTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2021-11-11 01:05:30:653 [main] INFO  org.springframework.boot.test.context.SpringBootTestContextBootstrapper Found @SpringBootConfiguration com.ivan.sunnyblog.SunnyBlogApplication for test class com.ivan.sunnyblog.base.RedisUtilTest
+2021-11-11 01:05:30:700 [main] INFO  org.springframework.boot.test.context.SpringBootTestContextBootstrapper Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2021-11-11 01:05:30:708 [main] INFO  org.springframework.boot.test.context.SpringBootTestContextBootstrapper Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@2362f559, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@b2c9a9c, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@4c178a76, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@fa4c865, org.springframework.test.context.support.DirtiesContextTestExecutionListener@3bd82cf5, org.springframework.test.context.transaction.TransactionalTestExecutionListener@544fa968, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@247bddad, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@d35dea7, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@7770f470, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@5e5d171f, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@24313fcc, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@7d20d0b]
+2021-11-11 01:05:31:088 [main] INFO  com.ivan.sunnyblog.base.RedisUtilTest Starting RedisUtilTest on Jinghaos-MacBook-Air.local with PID 9032 (started by jinghaoliang in /Users/jinghaoliang/Documents/tech/Project/blogProject/SunnyBlog)
+2021-11-11 01:05:31:088 [main] INFO  com.ivan.sunnyblog.base.RedisUtilTest No active profile set, falling back to default profiles: default
+2021-11-11 01:05:31:472 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-11-11 01:05:31:474 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data repositories in DEFAULT mode.
+2021-11-11 01:05:31:504 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 20ms. Found 0 repository interfaces.
+2021-11-11 01:05:31:743 [main] INFO  o.s.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$97c277ec] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-11-11 01:05:32:166 [main] INFO  com.zaxxer.hikari.HikariDataSource HikariPool-1 - Starting...
+2021-11-11 01:05:32:209 [main] INFO  com.zaxxer.hikari.HikariDataSource HikariPool-1 - Start completed.
+2021-11-11 01:05:53:927 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Initializing ExecutorService 'applicationTaskExecutor'
+2021-11-11 01:05:54:298 [main] INFO  com.ivan.sunnyblog.base.RedisUtilTest Started RedisUtilTest in 23.56 seconds (JVM running for 24.049)
+2021-11-11 01:05:54:404 [Thread-4] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Shutting down ExecutorService 'applicationTaskExecutor'
+2021-11-11 01:05:54:408 [Thread-4] INFO  com.zaxxer.hikari.HikariDataSource HikariPool-1 - Shutdown initiated...
+2021-11-11 01:05:54:411 [Thread-4] INFO  com.zaxxer.hikari.HikariDataSource HikariPool-1 - Shutdown completed.
+2021-11-11 01:08:08:366 [restartedMain] INFO  com.ivan.sunnyblog.SunnyBlogApplication Starting SunnyBlogApplication on Jinghaos-MacBook-Air.local with PID 9064 (/Users/jinghaoliang/Documents/tech/Project/blogProject/SunnyBlog/target/classes started by jinghaoliang in /Users/jinghaoliang/Documents/tech/Project/blogProject/SunnyBlog)
+2021-11-11 01:08:08:367 [restartedMain] INFO  com.ivan.sunnyblog.SunnyBlogApplication No active profile set, falling back to default profiles: default
+2021-11-11 01:08:08:385 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-11-11 01:08:08:385 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-11-11 01:08:08:685 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-11-11 01:08:08:686 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data repositories in DEFAULT mode.
+2021-11-11 01:08:08:710 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 15ms. Found 0 repository interfaces.
+2021-11-11 01:08:08:876 [restartedMain] INFO  o.s.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$98a37b9a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-11-11 01:08:09:074 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat initialized with port(s): 8081 (http)
+2021-11-11 01:08:09:080 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol Initializing ProtocolHandler ["http-nio-8081"]
+2021-11-11 01:08:09:085 [restartedMain] INFO  org.apache.catalina.core.StandardService Starting service [Tomcat]
+2021-11-11 01:08:09:085 [restartedMain] INFO  org.apache.catalina.core.StandardEngine Starting Servlet engine: [Apache Tomcat/9.0.21]
+2021-11-11 01:08:09:115 [restartedMain] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring embedded WebApplicationContext
+2021-11-11 01:08:09:115 [restartedMain] INFO  org.springframework.web.context.ContextLoader Root WebApplicationContext: initialization completed in 730 ms
+2021-11-11 01:08:09:294 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource HikariPool-1 - Starting...
+2021-11-11 01:08:09:324 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource HikariPool-1 - Start completed.
+2021-11-11 01:08:18:857 [restartedMain] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Initializing ExecutorService 'applicationTaskExecutor'
+2021-11-11 01:08:19:021 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer LiveReload server is running on port 35729
+2021-11-11 01:08:19:057 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol Starting ProtocolHandler ["http-nio-8081"]
+2021-11-11 01:08:19:071 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat started on port(s): 8081 (http) with context path ''
+2021-11-11 01:08:19:073 [restartedMain] INFO  com.ivan.sunnyblog.SunnyBlogApplication Started SunnyBlogApplication in 10.875 seconds (JVM running for 11.409)
+2021-11-11 01:28:58:261 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4m48s740ms).
+2021-11-11 01:30:07:368 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m9s107ms).
+2021-11-11 01:39:57:532 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=9m50s164ms).
+2021-11-11 01:54:28:434 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=14m30s902ms).
+2021-11-11 01:58:37:873 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4m9s439ms).
+2021-11-11 02:03:02:978 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4m25s105ms).
+2021-11-11 03:25:09:829 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h22m6s851ms).
+2021-11-11 04:50:50:883 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h25m41s53ms).
+2021-11-11 06:48:15:154 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h57m24s271ms).
+2021-11-11 08:08:32:877 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h20m17s724ms).
+2021-11-11 08:39:33:023 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=31m146ms).
+2021-11-11 10:07:17:134 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h27m44s111ms).
+2021-11-11 10:10:00:970 [Thread-31] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Shutting down ExecutorService 'applicationTaskExecutor'
+2021-11-11 10:10:00:973 [Thread-31] INFO  com.zaxxer.hikari.HikariDataSource HikariPool-1 - Shutdown initiated...
+2021-11-11 10:10:00:974 [Thread-31] INFO  com.zaxxer.hikari.HikariDataSource HikariPool-1 - Shutdown completed.
+2021-11-11 15:39:26:953 [restartedMain] INFO  com.ivan.sunnyblog.SunnyBlogApplication Starting SunnyBlogApplication on Jinghaos-MacBook-Air.local with PID 9772 (/Users/jinghaoliang/Documents/tech/Project/blogProject/SunnyBlog/target/classes started by jinghaoliang in /Users/jinghaoliang/Documents/tech/Project/blogProject/SunnyBlog)
+2021-11-11 15:39:26:955 [restartedMain] INFO  com.ivan.sunnyblog.SunnyBlogApplication No active profile set, falling back to default profiles: default
+2021-11-11 15:39:26:973 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-11-11 15:39:26:973 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-11-11 15:39:27:363 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-11-11 15:39:27:365 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data repositories in DEFAULT mode.
+2021-11-11 15:39:27:392 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 20ms. Found 0 repository interfaces.
+2021-11-11 15:39:27:540 [restartedMain] INFO  o.s.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$8a701362] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-11-11 15:39:27:718 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat initialized with port(s): 8081 (http)
+2021-11-11 15:39:27:725 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol Initializing ProtocolHandler ["http-nio-8081"]
+2021-11-11 15:39:27:729 [restartedMain] INFO  org.apache.catalina.core.StandardService Starting service [Tomcat]
+2021-11-11 15:39:27:730 [restartedMain] INFO  org.apache.catalina.core.StandardEngine Starting Servlet engine: [Apache Tomcat/9.0.21]
+2021-11-11 15:39:27:767 [restartedMain] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring embedded WebApplicationContext
+2021-11-11 15:39:27:767 [restartedMain] INFO  org.springframework.web.context.ContextLoader Root WebApplicationContext: initialization completed in 794 ms
+2021-11-11 15:39:27:953 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource HikariPool-1 - Starting...
+2021-11-11 15:39:27:984 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource HikariPool-1 - Start completed.
+2021-11-11 15:40:03:599 [restartedMain] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Initializing ExecutorService 'applicationTaskExecutor'
+2021-11-11 15:40:03:765 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer LiveReload server is running on port 35729
+2021-11-11 15:40:03:801 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol Starting ProtocolHandler ["http-nio-8081"]
+2021-11-11 15:40:03:816 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat started on port(s): 8081 (http) with context path ''
+2021-11-11 15:40:03:817 [restartedMain] INFO  com.ivan.sunnyblog.SunnyBlogApplication Started SunnyBlogApplication in 37.018 seconds (JVM running for 37.334)
+2021-11-11 15:40:15:616 [http-nio-8081-exec-2] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-11-11 15:40:15:617 [http-nio-8081-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet Initializing Servlet 'dispatcherServlet'
+2021-11-11 15:40:15:622 [http-nio-8081-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet Completed initialization in 5 ms
+2021-11-11 15:40:15:757 [http-nio-8081-exec-3] INFO  org.jooq.Constants 
+                                      
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@  @@        @@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@        @@@@@@@@@@
+@@@@@@@@@@@@@@@@  @@  @@    @@@@@@@@@@
+@@@@@@@@@@  @@@@  @@  @@    @@@@@@@@@@
+@@@@@@@@@@        @@        @@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@        @@        @@@@@@@@@@
+@@@@@@@@@@    @@  @@  @@@@  @@@@@@@@@@
+@@@@@@@@@@    @@  @@  @@@@  @@@@@@@@@@
+@@@@@@@@@@        @@  @  @  @@@@@@@@@@
+@@@@@@@@@@        @@        @@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@  @@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  Thank you for using jOOQ 3.11.11
+                                      
+2021-11-11 15:40:15:789 [http-nio-8081-exec-4] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect *** Request Success ***: 137ms GET URI=/api/categories, methodName=com.ivan.sunnyblog.web.controller.CategoryContoller.getCategories, args=[], result=ResultInfo{info='null', status=0, data=[CategoryVo{categoryId=2, name='liddffd', articleCount=1}, CategoryVo{categoryId=1, name='Life ', articleCount=1}], total=null}
+2021-11-11 15:40:15:797 [http-nio-8081-exec-3] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect *** Request Success ***: 135ms GET URI=/api/articles, methodName=com.ivan.sunnyblog.web.controller.ArticleController.getPublicArticles, args=[SearchVo{page=1, limit=10, categoryId=null, total=null}], result=ResultInfo{info='null', status=0, data=[ArticleVo{userInfo=UserInfoVo{userId=100001, nickName='ivan', userName='ivan'}, category=CategoryVo{categoryId=1, name='Life ', articleCount=null}, BaseArticleVo{articleId=10005, status=1, title='dd', description='This is the doc of React markdown editor lite.
+Enjoy!!', content='null', firstPicture='', viewCount=0, createDate='Sun Nov 07 14:09:29 EST 2021', updateDate='Mon Nov 08 09:15:09 EST 2021'}}, ArticleVo{userInfo=UserInfoVo{userId=100001, nickName='ivan', userName='ivan'}, category=CategoryVo{categoryId=2, name='liddffd', articleCount=null}, BaseArticleVo{articleId=10004, status=1, title='Spring boot', description='rerwerwer', content='null', firstPicture='null', viewCount=0, createDate='Tue Oct 12 15:58:26 EDT 2021', updateDate='Tue Oct 12 15:58:26 EDT 2021'}}], total=2}
+2021-11-11 15:40:15:845 [http-nio-8081-exec-6] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect *** Request Success ***: 5ms GET URI=/api/articles, methodName=com.ivan.sunnyblog.web.controller.ArticleController.getPublicArticles, args=[SearchVo{page=1, limit=10, categoryId=2, total=null}], result=ResultInfo{info='null', status=0, data=[ArticleVo{userInfo=UserInfoVo{userId=100001, nickName='ivan', userName='ivan'}, category=CategoryVo{categoryId=2, name='liddffd', articleCount=null}, BaseArticleVo{articleId=10004, status=1, title='Spring boot', description='rerwerwer', content='null', firstPicture='null', viewCount=0, createDate='Tue Oct 12 15:58:26 EDT 2021', updateDate='Tue Oct 12 15:58:26 EDT 2021'}}], total=1}
+2021-11-11 15:40:19:664 [http-nio-8081-exec-8] INFO  io.lettuce.core.EpollProvider Starting without optional epoll library
+2021-11-11 15:40:19:664 [http-nio-8081-exec-8] INFO  io.lettuce.core.KqueueProvider Starting without optional kqueue library
+2021-11-11 15:40:19:778 [http-nio-8081-exec-8] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect *** Request Success ***: 203ms GET URI=/api/article/10004, methodName=com.ivan.sunnyblog.web.controller.ArticleController.getPublicArticleDetail, args=[10004], result=ResultInfo{info='null', status=0, data=ArticleDetailVo{categoryId=2, BaseArticleVo{articleId=10004, status=1, title='Spring boot', description='rerwerwer', content='rererer', firstPicture='null', viewCount=0, createDate='Tue Oct 12 15:58:26 EDT 2021', updateDate='Tue Oct 12 15:58:26 EDT 2021'}}, total=null}
+2021-11-11 15:40:31:583 [http-nio-8081-exec-10] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect *** Request Success ***: 2ms GET URI=/api/categories, methodName=com.ivan.sunnyblog.web.controller.CategoryContoller.getCategories, args=[], result=ResultInfo{info='null', status=0, data=[CategoryVo{categoryId=2, name='liddffd', articleCount=1}, CategoryVo{categoryId=1, name='Life ', articleCount=1}], total=null}
+2021-11-11 15:40:31:589 [http-nio-8081-exec-9] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect *** Request Success ***: 8ms GET URI=/api/articles, methodName=com.ivan.sunnyblog.web.controller.ArticleController.getPublicArticles, args=[SearchVo{page=1, limit=10, categoryId=null, total=null}], result=ResultInfo{info='null', status=0, data=[ArticleVo{userInfo=UserInfoVo{userId=100001, nickName='ivan', userName='ivan'}, category=CategoryVo{categoryId=1, name='Life ', articleCount=null}, BaseArticleVo{articleId=10005, status=1, title='dd', description='This is the doc of React markdown editor lite.
+Enjoy!!', content='null', firstPicture='', viewCount=0, createDate='Sun Nov 07 14:09:29 EST 2021', updateDate='Mon Nov 08 09:15:09 EST 2021'}}, ArticleVo{userInfo=UserInfoVo{userId=100001, nickName='ivan', userName='ivan'}, category=CategoryVo{categoryId=2, name='liddffd', articleCount=null}, BaseArticleVo{articleId=10004, status=1, title='Spring boot', description='rerwerwer', content='null', firstPicture='null', viewCount=0, createDate='Tue Oct 12 15:58:26 EDT 2021', updateDate='Tue Oct 12 15:58:26 EDT 2021'}}], total=2}
+2021-11-11 15:40:31:604 [http-nio-8081-exec-1] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect *** Request Success ***: 4ms GET URI=/api/articles, methodName=com.ivan.sunnyblog.web.controller.ArticleController.getPublicArticles, args=[SearchVo{page=1, limit=10, categoryId=2, total=null}], result=ResultInfo{info='null', status=0, data=[ArticleVo{userInfo=UserInfoVo{userId=100001, nickName='ivan', userName='ivan'}, category=CategoryVo{categoryId=2, name='liddffd', articleCount=null}, BaseArticleVo{articleId=10004, status=1, title='Spring boot', description='rerwerwer', content='null', firstPicture='null', viewCount=0, createDate='Tue Oct 12 15:58:26 EDT 2021', updateDate='Tue Oct 12 15:58:26 EDT 2021'}}], total=1}
+2021-11-11 15:40:33:059 [http-nio-8081-exec-2] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect *** Request Success ***: 39ms GET URI=/api/article/10004, methodName=com.ivan.sunnyblog.web.controller.ArticleController.getPublicArticleDetail, args=[10004], result=ResultInfo{info='null', status=0, data=ArticleDetailVo{categoryId=2, BaseArticleVo{articleId=10004, status=1, title='Spring boot', description='rerwerwer', content='rererer', firstPicture='null', viewCount=0, createDate='Tue Oct 12 15:58:26 EDT 2021', updateDate='Tue Oct 12 15:58:26 EDT 2021'}}, total=null}
+2021-11-11 15:41:32:271 [Thread-82] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Shutting down ExecutorService 'applicationTaskExecutor'
+2021-11-11 15:41:32:272 [Thread-82] INFO  com.zaxxer.hikari.HikariDataSource HikariPool-1 - Shutdown initiated...
+2021-11-11 15:41:32:273 [Thread-82] INFO  com.zaxxer.hikari.HikariDataSource HikariPool-1 - Shutdown completed.
+2021-11-11 16:03:34:790 [restartedMain] INFO  com.ivan.sunnyblog.SunnyBlogApplication Starting SunnyBlogApplication on Jinghaos-MacBook-Air.local with PID 10003 (/Users/jinghaoliang/Documents/tech/Project/blogProject/SunnyBlog/target/classes started by jinghaoliang in /Users/jinghaoliang/Documents/tech/Project/blogProject/SunnyBlog)
+2021-11-11 16:03:34:792 [restartedMain] INFO  com.ivan.sunnyblog.SunnyBlogApplication No active profile set, falling back to default profiles: default
+2021-11-11 16:03:34:810 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-11-11 16:03:34:810 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-11-11 16:03:35:111 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-11-11 16:03:35:112 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data repositories in DEFAULT mode.
+2021-11-11 16:03:35:135 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 16ms. Found 0 repository interfaces.
+2021-11-11 16:03:35:275 [restartedMain] INFO  o.s.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$9f08da39] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-11-11 16:03:35:454 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat initialized with port(s): 8081 (http)
+2021-11-11 16:03:35:461 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol Initializing ProtocolHandler ["http-nio-8081"]
+2021-11-11 16:03:35:465 [restartedMain] INFO  org.apache.catalina.core.StandardService Starting service [Tomcat]
+2021-11-11 16:03:35:466 [restartedMain] INFO  org.apache.catalina.core.StandardEngine Starting Servlet engine: [Apache Tomcat/9.0.21]
+2021-11-11 16:03:35:522 [restartedMain] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring embedded WebApplicationContext
+2021-11-11 16:03:35:522 [restartedMain] INFO  org.springframework.web.context.ContextLoader Root WebApplicationContext: initialization completed in 712 ms
+2021-11-11 16:03:35:665 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource HikariPool-1 - Starting...
+2021-11-11 16:03:35:697 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource HikariPool-1 - Start completed.
+2021-11-11 16:03:47:457 [restartedMain] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Initializing ExecutorService 'applicationTaskExecutor'
+2021-11-11 16:03:47:629 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer LiveReload server is running on port 35729
+2021-11-11 16:03:47:666 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol Starting ProtocolHandler ["http-nio-8081"]
+2021-11-11 16:03:47:679 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat started on port(s): 8081 (http) with context path ''
+2021-11-11 16:03:47:681 [restartedMain] INFO  com.ivan.sunnyblog.SunnyBlogApplication Started SunnyBlogApplication in 13.051 seconds (JVM running for 13.353)
+2021-11-11 16:04:24:844 [Thread-35] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Shutting down ExecutorService 'applicationTaskExecutor'
+2021-11-11 16:04:24:846 [Thread-35] INFO  com.zaxxer.hikari.HikariDataSource HikariPool-1 - Shutdown initiated...
+2021-11-11 16:04:24:847 [Thread-35] INFO  com.zaxxer.hikari.HikariDataSource HikariPool-1 - Shutdown completed.
+2021-11-11 16:04:26:958 [restartedMain] INFO  com.ivan.sunnyblog.SunnyBlogApplication Starting SunnyBlogApplication on Jinghaos-MacBook-Air.local with PID 10023 (/Users/jinghaoliang/Documents/tech/Project/blogProject/SunnyBlog/target/classes started by jinghaoliang in /Users/jinghaoliang/Documents/tech/Project/blogProject/SunnyBlog)
+2021-11-11 16:04:26:959 [restartedMain] INFO  com.ivan.sunnyblog.SunnyBlogApplication No active profile set, falling back to default profiles: default
+2021-11-11 16:04:26:979 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-11-11 16:04:26:979 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-11-11 16:04:27:304 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-11-11 16:04:27:305 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data repositories in DEFAULT mode.
+2021-11-11 16:04:27:329 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 17ms. Found 0 repository interfaces.
+2021-11-11 16:04:27:473 [restartedMain] INFO  o.s.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$588888e3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-11-11 16:04:27:640 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat initialized with port(s): 8081 (http)
+2021-11-11 16:04:27:646 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol Initializing ProtocolHandler ["http-nio-8081"]
+2021-11-11 16:04:27:650 [restartedMain] INFO  org.apache.catalina.core.StandardService Starting service [Tomcat]
+2021-11-11 16:04:27:651 [restartedMain] INFO  org.apache.catalina.core.StandardEngine Starting Servlet engine: [Apache Tomcat/9.0.21]
+2021-11-11 16:04:27:708 [restartedMain] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring embedded WebApplicationContext
+2021-11-11 16:04:27:708 [restartedMain] INFO  org.springframework.web.context.ContextLoader Root WebApplicationContext: initialization completed in 729 ms
+2021-11-11 16:04:27:841 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource HikariPool-1 - Starting...
+2021-11-11 16:04:27:874 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource HikariPool-1 - Start completed.
+2021-11-11 16:04:41:415 [restartedMain] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Initializing ExecutorService 'applicationTaskExecutor'
+2021-11-11 16:04:41:585 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer LiveReload server is running on port 35729
+2021-11-11 16:04:41:622 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol Starting ProtocolHandler ["http-nio-8081"]
+2021-11-11 16:04:41:636 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat started on port(s): 8081 (http) with context path ''
+2021-11-11 16:04:41:637 [restartedMain] INFO  com.ivan.sunnyblog.SunnyBlogApplication Started SunnyBlogApplication in 14.885 seconds (JVM running for 15.279)
+2021-11-11 16:06:15:814 [Thread-39] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Shutting down ExecutorService 'applicationTaskExecutor'
+2021-11-11 16:06:15:816 [Thread-39] INFO  com.zaxxer.hikari.HikariDataSource HikariPool-1 - Shutdown initiated...
+2021-11-11 16:06:15:816 [Thread-39] INFO  com.zaxxer.hikari.HikariDataSource HikariPool-1 - Shutdown completed.
+2021-11-11 16:06:18:056 [restartedMain] INFO  com.ivan.sunnyblog.SunnyBlogApplication Starting SunnyBlogApplication on Jinghaos-MacBook-Air.local with PID 10054 (/Users/jinghaoliang/Documents/tech/Project/blogProject/SunnyBlog/target/classes started by jinghaoliang in /Users/jinghaoliang/Documents/tech/Project/blogProject/SunnyBlog)
+2021-11-11 16:06:18:057 [restartedMain] INFO  com.ivan.sunnyblog.SunnyBlogApplication No active profile set, falling back to default profiles: default
+2021-11-11 16:06:18:074 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-11-11 16:06:18:074 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-11-11 16:06:18:368 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-11-11 16:06:18:369 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data repositories in DEFAULT mode.
+2021-11-11 16:06:18:392 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 16ms. Found 0 repository interfaces.
+2021-11-11 16:06:18:532 [restartedMain] INFO  o.s.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$57bea3ac] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-11-11 16:06:18:692 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat initialized with port(s): 8081 (http)
+2021-11-11 16:06:18:698 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol Initializing ProtocolHandler ["http-nio-8081"]
+2021-11-11 16:06:18:702 [restartedMain] INFO  org.apache.catalina.core.StandardService Starting service [Tomcat]
+2021-11-11 16:06:18:703 [restartedMain] INFO  org.apache.catalina.core.StandardEngine Starting Servlet engine: [Apache Tomcat/9.0.21]
+2021-11-11 16:06:18:763 [restartedMain] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring embedded WebApplicationContext
+2021-11-11 16:06:18:763 [restartedMain] INFO  org.springframework.web.context.ContextLoader Root WebApplicationContext: initialization completed in 689 ms
+2021-11-11 16:06:18:910 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource HikariPool-1 - Starting...
+2021-11-11 16:06:18:942 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource HikariPool-1 - Start completed.
+2021-11-11 16:06:29:189 [restartedMain] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Initializing ExecutorService 'applicationTaskExecutor'
+2021-11-11 16:06:29:344 [restartedMain] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler Initializing ExecutorService 'taskScheduler'
+2021-11-11 16:06:29:363 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer LiveReload server is running on port 35729
+2021-11-11 16:06:29:400 [scheduling-1] INFO  com.ivan.sunnyblog.base.utils.BaseLogger ===***=== Start to do scheduled task
+2021-11-11 16:06:29:402 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol Starting ProtocolHandler ["http-nio-8081"]
+2021-11-11 16:06:29:415 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat started on port(s): 8081 (http) with context path ''
+2021-11-11 16:06:29:417 [restartedMain] INFO  com.ivan.sunnyblog.SunnyBlogApplication Started SunnyBlogApplication in 11.529 seconds (JVM running for 12.132)
+2021-11-11 16:06:29:453 [scheduling-1] INFO  io.lettuce.core.EpollProvider Starting without optional epoll library
+2021-11-11 16:06:29:453 [scheduling-1] INFO  io.lettuce.core.KqueueProvider Starting without optional kqueue library
+2021-11-11 16:06:29:521 [scheduling-1] INFO  com.ivan.sunnyblog.base.utils.BaseLogger key: article_10004, value: {]
+2021-11-11 16:06:32:526 [scheduling-1] INFO  com.ivan.sunnyblog.base.utils.BaseLogger ===***=== Start to do scheduled task
+2021-11-11 16:06:32:530 [scheduling-1] INFO  com.ivan.sunnyblog.base.utils.BaseLogger key: article_10004, value: {]
+2021-11-11 16:06:35:535 [scheduling-1] INFO  com.ivan.sunnyblog.base.utils.BaseLogger ===***=== Start to do scheduled task
+2021-11-11 16:06:35:537 [scheduling-1] INFO  com.ivan.sunnyblog.base.utils.BaseLogger key: article_10004, value: {]
+2021-11-11 16:06:38:543 [scheduling-1] INFO  com.ivan.sunnyblog.base.utils.BaseLogger ===***=== Start to do scheduled task
+2021-11-11 16:06:38:546 [scheduling-1] INFO  com.ivan.sunnyblog.base.utils.BaseLogger key: article_10004, value: {]
+2021-11-11 16:06:41:552 [scheduling-1] INFO  com.ivan.sunnyblog.base.utils.BaseLogger ===***=== Start to do scheduled task
+2021-11-11 16:06:41:556 [scheduling-1] INFO  com.ivan.sunnyblog.base.utils.BaseLogger key: article_10004, value: {]
+2021-11-11 16:06:44:561 [scheduling-1] INFO  com.ivan.sunnyblog.base.utils.BaseLogger ===***=== Start to do scheduled task
+2021-11-11 16:06:44:564 [scheduling-1] INFO  com.ivan.sunnyblog.base.utils.BaseLogger key: article_10004, value: {]
+2021-11-11 16:06:47:565 [scheduling-1] INFO  com.ivan.sunnyblog.base.utils.BaseLogger ===***=== Start to do scheduled task
+2021-11-11 16:06:47:569 [scheduling-1] INFO  com.ivan.sunnyblog.base.utils.BaseLogger key: article_10004, value: {]
+2021-11-11 16:06:50:575 [scheduling-1] INFO  com.ivan.sunnyblog.base.utils.BaseLogger ===***=== Start to do scheduled task
+2021-11-11 16:06:50:578 [scheduling-1] INFO  com.ivan.sunnyblog.base.utils.BaseLogger key: article_10004, value: {]
+2021-11-11 16:06:53:583 [scheduling-1] INFO  com.ivan.sunnyblog.base.utils.BaseLogger ===***=== Start to do scheduled task
+2021-11-11 16:06:53:587 [scheduling-1] INFO  com.ivan.sunnyblog.base.utils.BaseLogger key: article_10004, value: {]
+2021-11-11 16:06:56:589 [scheduling-1] INFO  com.ivan.sunnyblog.base.utils.BaseLogger ===***=== Start to do scheduled task
+2021-11-11 16:06:56:591 [scheduling-1] INFO  com.ivan.sunnyblog.base.utils.BaseLogger key: article_10004, value: {]
+2021-11-11 16:06:59:597 [scheduling-1] INFO  com.ivan.sunnyblog.base.utils.BaseLogger ===***=== Start to do scheduled task
+2021-11-11 16:06:59:600 [scheduling-1] INFO  com.ivan.sunnyblog.base.utils.BaseLogger key: article_10004, value: {]
+2021-11-11 16:07:02:605 [scheduling-1] INFO  com.ivan.sunnyblog.base.utils.BaseLogger ===***=== Start to do scheduled task
+2021-11-11 16:07:02:608 [scheduling-1] INFO  com.ivan.sunnyblog.base.utils.BaseLogger key: article_10004, value: {]
+2021-11-11 16:07:05:611 [scheduling-1] INFO  com.ivan.sunnyblog.base.utils.BaseLogger ===***=== Start to do scheduled task
+2021-11-11 16:07:05:614 [scheduling-1] INFO  com.ivan.sunnyblog.base.utils.BaseLogger key: article_10004, value: {]
+2021-11-11 16:07:08:619 [scheduling-1] INFO  com.ivan.sunnyblog.base.utils.BaseLogger ===***=== Start to do scheduled task
+2021-11-11 16:07:08:622 [scheduling-1] INFO  com.ivan.sunnyblog.base.utils.BaseLogger key: article_10004, value: {]
+2021-11-11 16:07:11:627 [scheduling-1] INFO  com.ivan.sunnyblog.base.utils.BaseLogger ===***=== Start to do scheduled task
+2021-11-11 16:07:11:630 [scheduling-1] INFO  com.ivan.sunnyblog.base.utils.BaseLogger key: article_10004, value: {]
+2021-11-11 16:07:14:637 [scheduling-1] INFO  com.ivan.sunnyblog.base.utils.BaseLogger ===***=== Start to do scheduled task
+2021-11-11 16:07:14:641 [scheduling-1] INFO  com.ivan.sunnyblog.base.utils.BaseLogger key: article_10004, value: {]
+2021-11-11 16:07:17:644 [scheduling-1] INFO  com.ivan.sunnyblog.base.utils.BaseLogger ===***=== Start to do scheduled task
+2021-11-11 16:07:17:648 [scheduling-1] INFO  com.ivan.sunnyblog.base.utils.BaseLogger key: article_10004, value: {]
+2021-11-11 16:07:20:649 [scheduling-1] INFO  com.ivan.sunnyblog.base.utils.BaseLogger ===***=== Start to do scheduled task
+2021-11-11 16:07:20:651 [scheduling-1] INFO  com.ivan.sunnyblog.base.utils.BaseLogger key: article_10004, value: {]
+2021-11-11 16:07:23:652 [scheduling-1] INFO  com.ivan.sunnyblog.base.utils.BaseLogger ===***=== Start to do scheduled task
+2021-11-11 16:07:23:654 [scheduling-1] INFO  com.ivan.sunnyblog.base.utils.BaseLogger key: article_10004, value: {]
+2021-11-11 16:07:25:298 [Thread-32] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler Shutting down ExecutorService 'taskScheduler'
+2021-11-11 16:07:25:299 [Thread-32] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Shutting down ExecutorService 'applicationTaskExecutor'
+2021-11-11 16:07:25:300 [Thread-32] INFO  com.zaxxer.hikari.HikariDataSource HikariPool-1 - Shutdown initiated...
+2021-11-11 16:07:25:301 [Thread-32] INFO  com.zaxxer.hikari.HikariDataSource HikariPool-1 - Shutdown completed.
+2021-11-11 16:07:28:295 [restartedMain] INFO  com.ivan.sunnyblog.SunnyBlogApplication Starting SunnyBlogApplication on Jinghaos-MacBook-Air.local with PID 10072 (/Users/jinghaoliang/Documents/tech/Project/blogProject/SunnyBlog/target/classes started by jinghaoliang in /Users/jinghaoliang/Documents/tech/Project/blogProject/SunnyBlog)
+2021-11-11 16:07:28:296 [restartedMain] INFO  com.ivan.sunnyblog.SunnyBlogApplication No active profile set, falling back to default profiles: default
+2021-11-11 16:07:28:316 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-11-11 16:07:28:316 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-11-11 16:07:28:637 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-11-11 16:07:28:639 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data repositories in DEFAULT mode.
+2021-11-11 16:07:28:664 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 18ms. Found 0 repository interfaces.
+2021-11-11 16:07:28:811 [restartedMain] INFO  o.s.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c5a6698b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-11-11 16:07:28:983 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat initialized with port(s): 8081 (http)
+2021-11-11 16:07:28:989 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol Initializing ProtocolHandler ["http-nio-8081"]
+2021-11-11 16:07:28:993 [restartedMain] INFO  org.apache.catalina.core.StandardService Starting service [Tomcat]
+2021-11-11 16:07:28:993 [restartedMain] INFO  org.apache.catalina.core.StandardEngine Starting Servlet engine: [Apache Tomcat/9.0.21]
+2021-11-11 16:07:29:051 [restartedMain] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring embedded WebApplicationContext
+2021-11-11 16:07:29:051 [restartedMain] INFO  org.springframework.web.context.ContextLoader Root WebApplicationContext: initialization completed in 735 ms
+2021-11-11 16:07:29:186 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource HikariPool-1 - Starting...
+2021-11-11 16:07:29:217 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource HikariPool-1 - Start completed.
+2021-11-11 16:07:51:005 [restartedMain] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Initializing ExecutorService 'applicationTaskExecutor'
+2021-11-11 16:07:51:158 [restartedMain] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler Initializing ExecutorService 'taskScheduler'
+2021-11-11 16:07:51:176 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer LiveReload server is running on port 35729
+2021-11-11 16:07:51:214 [scheduling-1] INFO  com.ivan.sunnyblog.base.utils.BaseLogger ===***=== Start to do scheduled task
+2021-11-11 16:07:51:215 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol Starting ProtocolHandler ["http-nio-8081"]
+2021-11-11 16:07:51:231 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat started on port(s): 8081 (http) with context path ''
+2021-11-11 16:07:51:233 [restartedMain] INFO  com.ivan.sunnyblog.SunnyBlogApplication Started SunnyBlogApplication in 23.093 seconds (JVM running for 23.398)
+2021-11-11 16:07:51:263 [scheduling-1] INFO  io.lettuce.core.EpollProvider Starting without optional epoll library
+2021-11-11 16:07:51:264 [scheduling-1] INFO  io.lettuce.core.KqueueProvider Starting without optional kqueue library
+2021-11-11 16:07:51:328 [scheduling-1] INFO  com.ivan.sunnyblog.base.utils.BaseLogger key: article_10004, value: {]
+2021-11-11 16:07:54:219 [scheduling-1] INFO  com.ivan.sunnyblog.base.utils.BaseLogger ===***=== Start to do scheduled task
+2021-11-11 16:07:54:223 [scheduling-1] INFO  com.ivan.sunnyblog.base.utils.BaseLogger key: article_10004, value: {]
+2021-11-11 16:07:57:218 [scheduling-1] INFO  com.ivan.sunnyblog.base.utils.BaseLogger ===***=== Start to do scheduled task
+2021-11-11 16:07:57:220 [scheduling-1] INFO  com.ivan.sunnyblog.base.utils.BaseLogger key: article_10004, value: {]
+2021-11-11 16:08:00:218 [scheduling-1] INFO  com.ivan.sunnyblog.base.utils.BaseLogger ===***=== Start to do scheduled task
+2021-11-11 16:08:00:222 [scheduling-1] INFO  com.ivan.sunnyblog.base.utils.BaseLogger key: article_10004, value: {]
+2021-11-11 16:08:03:218 [scheduling-1] INFO  com.ivan.sunnyblog.base.utils.BaseLogger ===***=== Start to do scheduled task
+2021-11-11 16:08:03:221 [scheduling-1] INFO  com.ivan.sunnyblog.base.utils.BaseLogger key: article_10004, value: {]
+2021-11-11 16:08:06:218 [scheduling-1] INFO  com.ivan.sunnyblog.base.utils.BaseLogger ===***=== Start to do scheduled task
+2021-11-11 16:08:06:222 [scheduling-1] INFO  com.ivan.sunnyblog.base.utils.BaseLogger key: article_10004, value: {]
+2021-11-11 16:08:09:214 [scheduling-1] INFO  com.ivan.sunnyblog.base.utils.BaseLogger ===***=== Start to do scheduled task
+2021-11-11 16:08:09:217 [scheduling-1] INFO  com.ivan.sunnyblog.base.utils.BaseLogger key: article_10004, value: {]
+2021-11-11 16:08:12:215 [scheduling-1] INFO  com.ivan.sunnyblog.base.utils.BaseLogger ===***=== Start to do scheduled task
+2021-11-11 16:08:12:216 [scheduling-1] INFO  com.ivan.sunnyblog.base.utils.BaseLogger key: article_10004, value: {]
+2021-11-11 16:08:15:159 [Thread-55] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler Shutting down ExecutorService 'taskScheduler'
+2021-11-11 16:08:15:160 [Thread-55] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Shutting down ExecutorService 'applicationTaskExecutor'
+2021-11-11 16:08:15:161 [Thread-55] INFO  com.zaxxer.hikari.HikariDataSource HikariPool-1 - Shutdown initiated...
+2021-11-11 16:08:15:163 [Thread-55] INFO  com.zaxxer.hikari.HikariDataSource HikariPool-1 - Shutdown completed.
+2021-11-11 16:08:18:649 [restartedMain] INFO  com.ivan.sunnyblog.SunnyBlogApplication Starting SunnyBlogApplication on Jinghaos-MacBook-Air.local with PID 10094 (/Users/jinghaoliang/Documents/tech/Project/blogProject/SunnyBlog/target/classes started by jinghaoliang in /Users/jinghaoliang/Documents/tech/Project/blogProject/SunnyBlog)
+2021-11-11 16:08:18:650 [restartedMain] INFO  com.ivan.sunnyblog.SunnyBlogApplication No active profile set, falling back to default profiles: default
+2021-11-11 16:08:18:668 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-11-11 16:08:18:668 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-11-11 16:08:18:954 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-11-11 16:08:18:956 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data repositories in DEFAULT mode.
+2021-11-11 16:08:18:978 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 16ms. Found 0 repository interfaces.
+2021-11-11 16:08:19:128 [restartedMain] INFO  o.s.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$cc6f5f5d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-11-11 16:08:19:290 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat initialized with port(s): 8081 (http)
+2021-11-11 16:08:19:295 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol Initializing ProtocolHandler ["http-nio-8081"]
+2021-11-11 16:08:19:300 [restartedMain] INFO  org.apache.catalina.core.StandardService Starting service [Tomcat]
+2021-11-11 16:08:19:300 [restartedMain] INFO  org.apache.catalina.core.StandardEngine Starting Servlet engine: [Apache Tomcat/9.0.21]
+2021-11-11 16:08:19:329 [restartedMain] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring embedded WebApplicationContext
+2021-11-11 16:08:19:329 [restartedMain] INFO  org.springframework.web.context.ContextLoader Root WebApplicationContext: initialization completed in 661 ms
+2021-11-11 16:08:19:565 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource HikariPool-1 - Starting...
+2021-11-11 16:08:19:598 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource HikariPool-1 - Start completed.
+2021-11-11 16:08:37:431 [restartedMain] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Initializing ExecutorService 'applicationTaskExecutor'
+2021-11-11 16:08:37:585 [restartedMain] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler Initializing ExecutorService 'taskScheduler'
+2021-11-11 16:08:37:606 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer LiveReload server is running on port 35729
+2021-11-11 16:08:37:645 [scheduling-1] INFO  com.ivan.sunnyblog.base.utils.BaseLogger ===***=== Start to do scheduled task
+2021-11-11 16:08:37:646 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol Starting ProtocolHandler ["http-nio-8081"]
+2021-11-11 16:08:37:660 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat started on port(s): 8081 (http) with context path ''
+2021-11-11 16:08:37:662 [restartedMain] INFO  com.ivan.sunnyblog.SunnyBlogApplication Started SunnyBlogApplication in 19.204 seconds (JVM running for 19.664)
+2021-11-11 16:08:37:693 [scheduling-1] INFO  io.lettuce.core.EpollProvider Starting without optional epoll library
+2021-11-11 16:08:37:694 [scheduling-1] INFO  io.lettuce.core.KqueueProvider Starting without optional kqueue library
+2021-11-11 16:08:37:987 [scheduling-1] INFO  com.ivan.sunnyblog.base.utils.BaseLogger key: article_10004, value: 2
+2021-11-11 16:08:40:993 [scheduling-1] INFO  com.ivan.sunnyblog.base.utils.BaseLogger ===***=== Start to do scheduled task
+2021-11-11 16:08:40:996 [scheduling-1] INFO  com.ivan.sunnyblog.base.utils.BaseLogger key: article_10004, value: 2
+2021-11-11 16:08:44:002 [scheduling-1] INFO  com.ivan.sunnyblog.base.utils.BaseLogger ===***=== Start to do scheduled task
+2021-11-11 16:08:44:006 [scheduling-1] INFO  com.ivan.sunnyblog.base.utils.BaseLogger key: article_10004, value: 2
+2021-11-11 16:08:47:011 [scheduling-1] INFO  com.ivan.sunnyblog.base.utils.BaseLogger ===***=== Start to do scheduled task
+2021-11-11 16:08:47:014 [scheduling-1] INFO  com.ivan.sunnyblog.base.utils.BaseLogger key: article_10004, value: 2
+2021-11-11 16:08:50:014 [scheduling-1] INFO  com.ivan.sunnyblog.base.utils.BaseLogger ===***=== Start to do scheduled task
+2021-11-11 16:08:50:017 [scheduling-1] INFO  com.ivan.sunnyblog.base.utils.BaseLogger key: article_10004, value: 2
+2021-11-11 16:08:53:019 [scheduling-1] INFO  com.ivan.sunnyblog.base.utils.BaseLogger ===***=== Start to do scheduled task
+2021-11-11 16:08:53:023 [scheduling-1] INFO  com.ivan.sunnyblog.base.utils.BaseLogger key: article_10004, value: 2
+2021-11-11 16:08:56:027 [scheduling-1] INFO  com.ivan.sunnyblog.base.utils.BaseLogger ===***=== Start to do scheduled task
+2021-11-11 16:08:56:030 [scheduling-1] INFO  com.ivan.sunnyblog.base.utils.BaseLogger key: article_10004, value: 2
+2021-11-11 16:08:59:031 [scheduling-1] INFO  com.ivan.sunnyblog.base.utils.BaseLogger ===***=== Start to do scheduled task
+2021-11-11 16:08:59:034 [scheduling-1] INFO  com.ivan.sunnyblog.base.utils.BaseLogger key: article_10004, value: 2
+2021-11-11 16:09:02:035 [scheduling-1] INFO  com.ivan.sunnyblog.base.utils.BaseLogger ===***=== Start to do scheduled task
+2021-11-11 16:09:02:039 [scheduling-1] INFO  com.ivan.sunnyblog.base.utils.BaseLogger key: article_10004, value: 2
+2021-11-11 16:09:05:044 [scheduling-1] INFO  com.ivan.sunnyblog.base.utils.BaseLogger ===***=== Start to do scheduled task
+2021-11-11 16:09:05:047 [scheduling-1] INFO  com.ivan.sunnyblog.base.utils.BaseLogger key: article_10004, value: 2
+2021-11-11 16:09:08:049 [scheduling-1] INFO  com.ivan.sunnyblog.base.utils.BaseLogger ===***=== Start to do scheduled task
+2021-11-11 16:09:08:052 [scheduling-1] INFO  com.ivan.sunnyblog.base.utils.BaseLogger key: article_10004, value: 2
+2021-11-11 16:09:11:053 [scheduling-1] INFO  com.ivan.sunnyblog.base.utils.BaseLogger ===***=== Start to do scheduled task
+2021-11-11 16:09:11:056 [scheduling-1] INFO  com.ivan.sunnyblog.base.utils.BaseLogger key: article_10004, value: 2
+2021-11-11 16:09:14:061 [scheduling-1] INFO  com.ivan.sunnyblog.base.utils.BaseLogger ===***=== Start to do scheduled task
+2021-11-11 16:09:14:064 [scheduling-1] INFO  com.ivan.sunnyblog.base.utils.BaseLogger key: article_10004, value: 2
+2021-11-11 16:09:17:068 [scheduling-1] INFO  com.ivan.sunnyblog.base.utils.BaseLogger ===***=== Start to do scheduled task
+2021-11-11 16:09:17:071 [scheduling-1] INFO  com.ivan.sunnyblog.base.utils.BaseLogger key: article_10004, value: 2
+2021-11-11 16:09:20:076 [scheduling-1] INFO  com.ivan.sunnyblog.base.utils.BaseLogger ===***=== Start to do scheduled task
+2021-11-11 16:09:20:079 [scheduling-1] INFO  com.ivan.sunnyblog.base.utils.BaseLogger key: article_10004, value: 2
+2021-11-11 16:09:23:085 [scheduling-1] INFO  com.ivan.sunnyblog.base.utils.BaseLogger ===***=== Start to do scheduled task
+2021-11-11 16:09:23:088 [scheduling-1] INFO  com.ivan.sunnyblog.base.utils.BaseLogger key: article_10004, value: 2
+2021-11-11 16:09:26:092 [scheduling-1] INFO  com.ivan.sunnyblog.base.utils.BaseLogger ===***=== Start to do scheduled task
+2021-11-11 16:09:26:095 [scheduling-1] INFO  com.ivan.sunnyblog.base.utils.BaseLogger key: article_10004, value: 2
+2021-11-11 16:09:29:101 [scheduling-1] INFO  com.ivan.sunnyblog.base.utils.BaseLogger ===***=== Start to do scheduled task
+2021-11-11 16:09:29:104 [scheduling-1] INFO  com.ivan.sunnyblog.base.utils.BaseLogger key: article_10004, value: 2
+2021-11-11 16:09:32:105 [scheduling-1] INFO  com.ivan.sunnyblog.base.utils.BaseLogger ===***=== Start to do scheduled task
+2021-11-11 16:09:32:107 [scheduling-1] INFO  com.ivan.sunnyblog.base.utils.BaseLogger key: article_10004, value: 2
+2021-11-11 16:09:35:113 [scheduling-1] INFO  com.ivan.sunnyblog.base.utils.BaseLogger ===***=== Start to do scheduled task
+2021-11-11 16:09:35:116 [scheduling-1] INFO  com.ivan.sunnyblog.base.utils.BaseLogger key: article_10004, value: 2
+2021-11-11 16:09:38:119 [scheduling-1] INFO  com.ivan.sunnyblog.base.utils.BaseLogger ===***=== Start to do scheduled task
+2021-11-11 16:09:38:122 [scheduling-1] INFO  com.ivan.sunnyblog.base.utils.BaseLogger key: article_10004, value: 2
+2021-11-11 16:09:41:124 [scheduling-1] INFO  com.ivan.sunnyblog.base.utils.BaseLogger ===***=== Start to do scheduled task
+2021-11-11 16:09:41:126 [scheduling-1] INFO  com.ivan.sunnyblog.base.utils.BaseLogger key: article_10004, value: 2
+2021-11-11 16:09:44:132 [scheduling-1] INFO  com.ivan.sunnyblog.base.utils.BaseLogger ===***=== Start to do scheduled task
+2021-11-11 16:09:44:134 [scheduling-1] INFO  com.ivan.sunnyblog.base.utils.BaseLogger key: article_10004, value: 2
+2021-11-11 16:09:47:138 [scheduling-1] INFO  com.ivan.sunnyblog.base.utils.BaseLogger ===***=== Start to do scheduled task
+2021-11-11 16:09:47:140 [scheduling-1] INFO  com.ivan.sunnyblog.base.utils.BaseLogger key: article_10004, value: 2
+2021-11-11 16:09:50:145 [scheduling-1] INFO  com.ivan.sunnyblog.base.utils.BaseLogger ===***=== Start to do scheduled task
+2021-11-11 16:09:50:148 [scheduling-1] INFO  com.ivan.sunnyblog.base.utils.BaseLogger key: article_10004, value: 2
+2021-11-11 16:09:53:150 [scheduling-1] INFO  com.ivan.sunnyblog.base.utils.BaseLogger ===***=== Start to do scheduled task
+2021-11-11 16:09:53:152 [scheduling-1] INFO  com.ivan.sunnyblog.base.utils.BaseLogger key: article_10004, value: 2
+2021-11-11 16:09:56:157 [scheduling-1] INFO  com.ivan.sunnyblog.base.utils.BaseLogger ===***=== Start to do scheduled task
+2021-11-11 16:09:56:160 [scheduling-1] INFO  com.ivan.sunnyblog.base.utils.BaseLogger key: article_10004, value: 2
+2021-11-11 16:09:59:165 [scheduling-1] INFO  com.ivan.sunnyblog.base.utils.BaseLogger ===***=== Start to do scheduled task
+2021-11-11 16:09:59:168 [scheduling-1] INFO  com.ivan.sunnyblog.base.utils.BaseLogger key: article_10004, value: 2
+2021-11-11 16:10:02:173 [scheduling-1] INFO  com.ivan.sunnyblog.base.utils.BaseLogger ===***=== Start to do scheduled task
+2021-11-11 16:10:02:177 [scheduling-1] INFO  com.ivan.sunnyblog.base.utils.BaseLogger key: article_10004, value: 2
+2021-11-11 16:10:05:182 [scheduling-1] INFO  com.ivan.sunnyblog.base.utils.BaseLogger ===***=== Start to do scheduled task
+2021-11-11 16:10:05:185 [scheduling-1] INFO  com.ivan.sunnyblog.base.utils.BaseLogger key: article_10004, value: 2
+2021-11-11 16:10:08:190 [scheduling-1] INFO  com.ivan.sunnyblog.base.utils.BaseLogger ===***=== Start to do scheduled task
+2021-11-11 16:10:08:193 [scheduling-1] INFO  com.ivan.sunnyblog.base.utils.BaseLogger key: article_10004, value: 2
+2021-11-11 16:10:11:194 [scheduling-1] INFO  com.ivan.sunnyblog.base.utils.BaseLogger ===***=== Start to do scheduled task
+2021-11-11 16:10:11:197 [scheduling-1] INFO  com.ivan.sunnyblog.base.utils.BaseLogger key: article_10004, value: 2
+2021-11-11 16:10:14:202 [scheduling-1] INFO  com.ivan.sunnyblog.base.utils.BaseLogger ===***=== Start to do scheduled task
+2021-11-11 16:10:14:205 [scheduling-1] INFO  com.ivan.sunnyblog.base.utils.BaseLogger key: article_10004, value: 2
+2021-11-11 16:10:17:210 [scheduling-1] INFO  com.ivan.sunnyblog.base.utils.BaseLogger ===***=== Start to do scheduled task
+2021-11-11 16:10:17:211 [scheduling-1] INFO  com.ivan.sunnyblog.base.utils.BaseLogger key: article_10004, value: 2
+2021-11-11 16:10:20:217 [scheduling-1] INFO  com.ivan.sunnyblog.base.utils.BaseLogger ===***=== Start to do scheduled task
+2021-11-11 16:10:20:220 [scheduling-1] INFO  com.ivan.sunnyblog.base.utils.BaseLogger key: article_10004, value: 2
+2021-11-11 16:10:23:223 [scheduling-1] INFO  com.ivan.sunnyblog.base.utils.BaseLogger ===***=== Start to do scheduled task
+2021-11-11 16:10:23:226 [scheduling-1] INFO  com.ivan.sunnyblog.base.utils.BaseLogger key: article_10004, value: 2
+2021-11-11 16:10:26:232 [scheduling-1] INFO  com.ivan.sunnyblog.base.utils.BaseLogger ===***=== Start to do scheduled task
+2021-11-11 16:10:26:235 [scheduling-1] INFO  com.ivan.sunnyblog.base.utils.BaseLogger key: article_10004, value: 2
+2021-11-11 16:10:29:240 [scheduling-1] INFO  com.ivan.sunnyblog.base.utils.BaseLogger ===***=== Start to do scheduled task
+2021-11-11 16:10:29:243 [scheduling-1] INFO  com.ivan.sunnyblog.base.utils.BaseLogger key: article_10004, value: 2
+2021-11-11 16:10:32:248 [scheduling-1] INFO  com.ivan.sunnyblog.base.utils.BaseLogger ===***=== Start to do scheduled task
+2021-11-11 16:10:32:251 [scheduling-1] INFO  com.ivan.sunnyblog.base.utils.BaseLogger key: article_10004, value: 2
+2021-11-11 16:10:35:256 [scheduling-1] INFO  com.ivan.sunnyblog.base.utils.BaseLogger ===***=== Start to do scheduled task
+2021-11-11 16:10:35:258 [scheduling-1] INFO  com.ivan.sunnyblog.base.utils.BaseLogger key: article_10004, value: 2
+2021-11-11 16:10:38:263 [scheduling-1] INFO  com.ivan.sunnyblog.base.utils.BaseLogger ===***=== Start to do scheduled task
+2021-11-11 16:10:38:266 [scheduling-1] INFO  com.ivan.sunnyblog.base.utils.BaseLogger key: article_10004, value: 2
+2021-11-11 16:10:41:267 [scheduling-1] INFO  com.ivan.sunnyblog.base.utils.BaseLogger ===***=== Start to do scheduled task
+2021-11-11 16:10:41:270 [scheduling-1] INFO  com.ivan.sunnyblog.base.utils.BaseLogger key: article_10004, value: 2
+2021-11-11 16:10:44:275 [scheduling-1] INFO  com.ivan.sunnyblog.base.utils.BaseLogger ===***=== Start to do scheduled task
+2021-11-11 16:10:44:279 [scheduling-1] INFO  com.ivan.sunnyblog.base.utils.BaseLogger key: article_10004, value: 2
+2021-11-11 16:10:47:281 [scheduling-1] INFO  com.ivan.sunnyblog.base.utils.BaseLogger ===***=== Start to do scheduled task
+2021-11-11 16:10:47:282 [scheduling-1] INFO  com.ivan.sunnyblog.base.utils.BaseLogger key: article_10004, value: 2
+2021-11-11 16:10:50:287 [scheduling-1] INFO  com.ivan.sunnyblog.base.utils.BaseLogger ===***=== Start to do scheduled task
+2021-11-11 16:10:50:289 [scheduling-1] INFO  com.ivan.sunnyblog.base.utils.BaseLogger key: article_10004, value: 2
+2021-11-11 16:10:51:481 [Thread-47] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler Shutting down ExecutorService 'taskScheduler'
+2021-11-11 16:10:51:481 [Thread-47] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Shutting down ExecutorService 'applicationTaskExecutor'
+2021-11-11 16:10:51:483 [Thread-47] INFO  com.zaxxer.hikari.HikariDataSource HikariPool-1 - Shutdown initiated...
+2021-11-11 16:10:51:484 [Thread-47] INFO  com.zaxxer.hikari.HikariDataSource HikariPool-1 - Shutdown completed.
+2021-11-11 16:10:54:296 [restartedMain] INFO  com.ivan.sunnyblog.SunnyBlogApplication Starting SunnyBlogApplication on Jinghaos-MacBook-Air.local with PID 10137 (/Users/jinghaoliang/Documents/tech/Project/blogProject/SunnyBlog/target/classes started by jinghaoliang in /Users/jinghaoliang/Documents/tech/Project/blogProject/SunnyBlog)
+2021-11-11 16:10:54:297 [restartedMain] INFO  com.ivan.sunnyblog.SunnyBlogApplication No active profile set, falling back to default profiles: default
+2021-11-11 16:10:54:319 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-11-11 16:10:54:319 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-11-11 16:10:54:605 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-11-11 16:10:54:607 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data repositories in DEFAULT mode.
+2021-11-11 16:10:54:629 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 16ms. Found 0 repository interfaces.
+2021-11-11 16:10:54:784 [restartedMain] INFO  o.s.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$3ccc7667] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-11-11 16:10:54:948 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat initialized with port(s): 8081 (http)
+2021-11-11 16:10:54:954 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol Initializing ProtocolHandler ["http-nio-8081"]
+2021-11-11 16:10:54:959 [restartedMain] INFO  org.apache.catalina.core.StandardService Starting service [Tomcat]
+2021-11-11 16:10:54:959 [restartedMain] INFO  org.apache.catalina.core.StandardEngine Starting Servlet engine: [Apache Tomcat/9.0.21]
+2021-11-11 16:10:55:019 [restartedMain] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring embedded WebApplicationContext
+2021-11-11 16:10:55:019 [restartedMain] INFO  org.springframework.web.context.ContextLoader Root WebApplicationContext: initialization completed in 700 ms
+2021-11-11 16:10:55:155 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource HikariPool-1 - Starting...
+2021-11-11 16:10:55:184 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource HikariPool-1 - Start completed.
+2021-11-11 23:16:33:329 [restartedMain] INFO  com.ivan.sunnyblog.SunnyBlogApplication Starting SunnyBlogApplication on Jinghaos-MacBook-Air.local with PID 10561 (/Users/jinghaoliang/Documents/tech/Project/blogProject/SunnyBlog/target/classes started by jinghaoliang in /Users/jinghaoliang/Documents/tech/Project/blogProject/SunnyBlog)
+2021-11-11 23:16:33:331 [restartedMain] INFO  com.ivan.sunnyblog.SunnyBlogApplication No active profile set, falling back to default profiles: default
+2021-11-11 23:16:33:349 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-11-11 23:16:33:349 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-11-11 23:16:33:650 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-11-11 23:16:33:651 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data repositories in DEFAULT mode.
+2021-11-11 23:16:33:679 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 18ms. Found 0 repository interfaces.
+2021-11-11 23:16:33:834 [restartedMain] INFO  o.s.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$dd8ad325] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-11-11 23:16:34:034 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat initialized with port(s): 8081 (http)
+2021-11-11 23:16:34:040 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol Initializing ProtocolHandler ["http-nio-8081"]
+2021-11-11 23:16:34:044 [restartedMain] INFO  org.apache.catalina.core.StandardService Starting service [Tomcat]
+2021-11-11 23:16:34:044 [restartedMain] INFO  org.apache.catalina.core.StandardEngine Starting Servlet engine: [Apache Tomcat/9.0.21]
+2021-11-11 23:16:34:075 [restartedMain] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring embedded WebApplicationContext
+2021-11-11 23:16:34:075 [restartedMain] INFO  org.springframework.web.context.ContextLoader Root WebApplicationContext: initialization completed in 726 ms
+2021-11-11 23:16:34:250 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource HikariPool-1 - Starting...
+2021-11-11 23:16:34:287 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource HikariPool-1 - Start completed.
+2021-11-11 23:16:51:521 [restartedMain] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Initializing ExecutorService 'applicationTaskExecutor'
+2021-11-11 23:16:51:681 [restartedMain] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler Initializing ExecutorService 'taskScheduler'
+2021-11-11 23:16:51:700 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer LiveReload server is running on port 35729
+2021-11-11 23:16:51:737 [scheduling-1] INFO  com.ivan.sunnyblog.base.utils.BaseLogger ===***=== Start to do scheduled task
+2021-11-11 23:16:51:738 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol Starting ProtocolHandler ["http-nio-8081"]
+2021-11-11 23:16:51:753 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat started on port(s): 8081 (http) with context path ''
+2021-11-11 23:16:51:755 [restartedMain] INFO  com.ivan.sunnyblog.SunnyBlogApplication Started SunnyBlogApplication in 18.578 seconds (JVM running for 19.086)
+2021-11-11 23:16:51:787 [scheduling-1] INFO  io.lettuce.core.EpollProvider Starting without optional epoll library
+2021-11-11 23:16:51:788 [scheduling-1] INFO  io.lettuce.core.KqueueProvider Starting without optional kqueue library
+2021-11-11 23:16:51:854 [scheduling-1] INFO  com.ivan.sunnyblog.base.utils.BaseLogger key: article_10004, value: 2
+2021-11-11 23:16:51:855 [scheduling-1] ERROR org.springframework.scheduling.support.TaskUtils$LoggingErrorHandler Unexpected error occurred in scheduled task.
+java.lang.StringIndexOutOfBoundsException: String index out of range: -5
+	at java.lang.String.substring(String.java:1931)
+	at com.ivan.sunnyblog.web.cache.RedisKeyGenerator.parseBlogViewMapKey(RedisKeyGenerator.java:21)
+	at com.ivan.sunnyblog.web.task.ScheduleTaskService.lambda$scheduledTask$0(ScheduleTaskService.java:35)
+	at java.util.LinkedHashMap.forEach(LinkedHashMap.java:684)
+	at com.ivan.sunnyblog.web.task.ScheduleTaskService.scheduledTask(ScheduleTaskService.java:32)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2021-11-11 23:16:56:860 [scheduling-1] INFO  com.ivan.sunnyblog.base.utils.BaseLogger ===***=== Start to do scheduled task
+2021-11-11 23:16:56:864 [scheduling-1] INFO  com.ivan.sunnyblog.base.utils.BaseLogger key: article_10004, value: 2
+2021-11-11 23:16:56:865 [scheduling-1] ERROR org.springframework.scheduling.support.TaskUtils$LoggingErrorHandler Unexpected error occurred in scheduled task.
+java.lang.StringIndexOutOfBoundsException: String index out of range: -5
+	at java.lang.String.substring(String.java:1931)
+	at com.ivan.sunnyblog.web.cache.RedisKeyGenerator.parseBlogViewMapKey(RedisKeyGenerator.java:21)
+	at com.ivan.sunnyblog.web.task.ScheduleTaskService.lambda$scheduledTask$0(ScheduleTaskService.java:35)
+	at java.util.LinkedHashMap.forEach(LinkedHashMap.java:684)
+	at com.ivan.sunnyblog.web.task.ScheduleTaskService.scheduledTask(ScheduleTaskService.java:32)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2021-11-11 23:17:01:866 [scheduling-1] INFO  com.ivan.sunnyblog.base.utils.BaseLogger ===***=== Start to do scheduled task
+2021-11-11 23:17:01:869 [scheduling-1] INFO  com.ivan.sunnyblog.base.utils.BaseLogger key: article_10004, value: 2
+2021-11-11 23:17:01:870 [scheduling-1] ERROR org.springframework.scheduling.support.TaskUtils$LoggingErrorHandler Unexpected error occurred in scheduled task.
+java.lang.StringIndexOutOfBoundsException: String index out of range: -5
+	at java.lang.String.substring(String.java:1931)
+	at com.ivan.sunnyblog.web.cache.RedisKeyGenerator.parseBlogViewMapKey(RedisKeyGenerator.java:21)
+	at com.ivan.sunnyblog.web.task.ScheduleTaskService.lambda$scheduledTask$0(ScheduleTaskService.java:35)
+	at java.util.LinkedHashMap.forEach(LinkedHashMap.java:684)
+	at com.ivan.sunnyblog.web.task.ScheduleTaskService.scheduledTask(ScheduleTaskService.java:32)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2021-11-11 23:17:06:872 [scheduling-1] INFO  com.ivan.sunnyblog.base.utils.BaseLogger ===***=== Start to do scheduled task
+2021-11-11 23:17:06:876 [scheduling-1] INFO  com.ivan.sunnyblog.base.utils.BaseLogger key: article_10004, value: 2
+2021-11-11 23:17:06:876 [scheduling-1] ERROR org.springframework.scheduling.support.TaskUtils$LoggingErrorHandler Unexpected error occurred in scheduled task.
+java.lang.StringIndexOutOfBoundsException: String index out of range: -5
+	at java.lang.String.substring(String.java:1931)
+	at com.ivan.sunnyblog.web.cache.RedisKeyGenerator.parseBlogViewMapKey(RedisKeyGenerator.java:21)
+	at com.ivan.sunnyblog.web.task.ScheduleTaskService.lambda$scheduledTask$0(ScheduleTaskService.java:35)
+	at java.util.LinkedHashMap.forEach(LinkedHashMap.java:684)
+	at com.ivan.sunnyblog.web.task.ScheduleTaskService.scheduledTask(ScheduleTaskService.java:32)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2021-11-11 23:17:11:882 [scheduling-1] INFO  com.ivan.sunnyblog.base.utils.BaseLogger ===***=== Start to do scheduled task
+2021-11-11 23:17:11:891 [scheduling-1] INFO  com.ivan.sunnyblog.base.utils.BaseLogger key: article_10004, value: 2
+2021-11-11 23:17:11:891 [scheduling-1] ERROR org.springframework.scheduling.support.TaskUtils$LoggingErrorHandler Unexpected error occurred in scheduled task.
+java.lang.StringIndexOutOfBoundsException: String index out of range: -5
+	at java.lang.String.substring(String.java:1931)
+	at com.ivan.sunnyblog.web.cache.RedisKeyGenerator.parseBlogViewMapKey(RedisKeyGenerator.java:21)
+	at com.ivan.sunnyblog.web.task.ScheduleTaskService.lambda$scheduledTask$0(ScheduleTaskService.java:35)
+	at java.util.LinkedHashMap.forEach(LinkedHashMap.java:684)
+	at com.ivan.sunnyblog.web.task.ScheduleTaskService.scheduledTask(ScheduleTaskService.java:32)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2021-11-11 23:17:16:896 [scheduling-1] INFO  com.ivan.sunnyblog.base.utils.BaseLogger ===***=== Start to do scheduled task
+2021-11-11 23:17:16:900 [scheduling-1] INFO  com.ivan.sunnyblog.base.utils.BaseLogger key: article_10004, value: 2
+2021-11-11 23:17:16:900 [scheduling-1] ERROR org.springframework.scheduling.support.TaskUtils$LoggingErrorHandler Unexpected error occurred in scheduled task.
+java.lang.StringIndexOutOfBoundsException: String index out of range: -5
+	at java.lang.String.substring(String.java:1931)
+	at com.ivan.sunnyblog.web.cache.RedisKeyGenerator.parseBlogViewMapKey(RedisKeyGenerator.java:21)
+	at com.ivan.sunnyblog.web.task.ScheduleTaskService.lambda$scheduledTask$0(ScheduleTaskService.java:35)
+	at java.util.LinkedHashMap.forEach(LinkedHashMap.java:684)
+	at com.ivan.sunnyblog.web.task.ScheduleTaskService.scheduledTask(ScheduleTaskService.java:32)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2021-11-11 23:17:21:905 [scheduling-1] INFO  com.ivan.sunnyblog.base.utils.BaseLogger ===***=== Start to do scheduled task
+2021-11-11 23:17:21:907 [scheduling-1] INFO  com.ivan.sunnyblog.base.utils.BaseLogger key: article_10004, value: 2
+2021-11-11 23:17:21:908 [scheduling-1] ERROR org.springframework.scheduling.support.TaskUtils$LoggingErrorHandler Unexpected error occurred in scheduled task.
+java.lang.StringIndexOutOfBoundsException: String index out of range: -5
+	at java.lang.String.substring(String.java:1931)
+	at com.ivan.sunnyblog.web.cache.RedisKeyGenerator.parseBlogViewMapKey(RedisKeyGenerator.java:21)
+	at com.ivan.sunnyblog.web.task.ScheduleTaskService.lambda$scheduledTask$0(ScheduleTaskService.java:35)
+	at java.util.LinkedHashMap.forEach(LinkedHashMap.java:684)
+	at com.ivan.sunnyblog.web.task.ScheduleTaskService.scheduledTask(ScheduleTaskService.java:32)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2021-11-11 23:17:23:397 [Thread-46] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler Shutting down ExecutorService 'taskScheduler'
+2021-11-11 23:17:23:398 [Thread-46] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Shutting down ExecutorService 'applicationTaskExecutor'
+2021-11-11 23:17:23:399 [Thread-46] INFO  com.zaxxer.hikari.HikariDataSource HikariPool-1 - Shutdown initiated...
+2021-11-11 23:17:23:400 [Thread-46] INFO  com.zaxxer.hikari.HikariDataSource HikariPool-1 - Shutdown completed.
+2021-11-11 23:19:26:442 [restartedMain] INFO  com.ivan.sunnyblog.SunnyBlogApplication Starting SunnyBlogApplication on Jinghaos-MacBook-Air.local with PID 10592 (/Users/jinghaoliang/Documents/tech/Project/blogProject/SunnyBlog/target/classes started by jinghaoliang in /Users/jinghaoliang/Documents/tech/Project/blogProject/SunnyBlog)
+2021-11-11 23:19:26:443 [restartedMain] INFO  com.ivan.sunnyblog.SunnyBlogApplication No active profile set, falling back to default profiles: default
+2021-11-11 23:19:26:462 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-11-11 23:19:26:462 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-11-11 23:19:26:743 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-11-11 23:19:26:744 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data repositories in DEFAULT mode.
+2021-11-11 23:19:26:765 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 15ms. Found 0 repository interfaces.
+2021-11-11 23:19:26:918 [restartedMain] INFO  o.s.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$6e89a816] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-11-11 23:19:27:080 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat initialized with port(s): 8081 (http)
+2021-11-11 23:19:27:086 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol Initializing ProtocolHandler ["http-nio-8081"]
+2021-11-11 23:19:27:090 [restartedMain] INFO  org.apache.catalina.core.StandardService Starting service [Tomcat]
+2021-11-11 23:19:27:090 [restartedMain] INFO  org.apache.catalina.core.StandardEngine Starting Servlet engine: [Apache Tomcat/9.0.21]
+2021-11-11 23:19:27:120 [restartedMain] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring embedded WebApplicationContext
+2021-11-11 23:19:27:120 [restartedMain] INFO  org.springframework.web.context.ContextLoader Root WebApplicationContext: initialization completed in 658 ms
+2021-11-11 23:19:27:286 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource HikariPool-1 - Starting...
+2021-11-11 23:19:27:319 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource HikariPool-1 - Start completed.
+2021-11-11 23:20:17:303 [restartedMain] INFO  com.ivan.sunnyblog.SunnyBlogApplication Starting SunnyBlogApplication on Jinghaos-MacBook-Air.local with PID 10610 (/Users/jinghaoliang/Documents/tech/Project/blogProject/SunnyBlog/target/classes started by jinghaoliang in /Users/jinghaoliang/Documents/tech/Project/blogProject/SunnyBlog)
+2021-11-11 23:20:17:305 [restartedMain] INFO  com.ivan.sunnyblog.SunnyBlogApplication No active profile set, falling back to default profiles: default
+2021-11-11 23:20:17:324 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-11-11 23:20:17:324 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-11-11 23:20:17:642 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-11-11 23:20:17:644 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data repositories in DEFAULT mode.
+2021-11-11 23:20:17:671 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 18ms. Found 0 repository interfaces.
+2021-11-11 23:20:17:817 [restartedMain] INFO  o.s.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$9847e775] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-11-11 23:20:17:991 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat initialized with port(s): 8081 (http)
+2021-11-11 23:20:17:997 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol Initializing ProtocolHandler ["http-nio-8081"]
+2021-11-11 23:20:18:001 [restartedMain] INFO  org.apache.catalina.core.StandardService Starting service [Tomcat]
+2021-11-11 23:20:18:001 [restartedMain] INFO  org.apache.catalina.core.StandardEngine Starting Servlet engine: [Apache Tomcat/9.0.21]
+2021-11-11 23:20:18:031 [restartedMain] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring embedded WebApplicationContext
+2021-11-11 23:20:18:031 [restartedMain] INFO  org.springframework.web.context.ContextLoader Root WebApplicationContext: initialization completed in 707 ms
+2021-11-11 23:20:18:197 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource HikariPool-1 - Starting...
+2021-11-11 23:20:18:228 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource HikariPool-1 - Start completed.
+2021-11-11 23:20:30:008 [restartedMain] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Initializing ExecutorService 'applicationTaskExecutor'
+2021-11-11 23:20:30:165 [restartedMain] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler Initializing ExecutorService 'taskScheduler'
+2021-11-11 23:20:30:184 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer LiveReload server is running on port 35729
+2021-11-11 23:20:30:222 [scheduling-1] INFO  com.ivan.sunnyblog.base.utils.BaseLogger ===***=== Start to do scheduled task
+2021-11-11 23:20:30:223 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol Starting ProtocolHandler ["http-nio-8081"]
+2021-11-11 23:20:30:237 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat started on port(s): 8081 (http) with context path ''
+2021-11-11 23:20:30:239 [restartedMain] INFO  com.ivan.sunnyblog.SunnyBlogApplication Started SunnyBlogApplication in 13.092 seconds (JVM running for 13.399)
+2021-11-11 23:20:30:270 [scheduling-1] INFO  io.lettuce.core.EpollProvider Starting without optional epoll library
+2021-11-11 23:20:30:271 [scheduling-1] INFO  io.lettuce.core.KqueueProvider Starting without optional kqueue library
+2021-11-11 23:20:30:336 [scheduling-1] INFO  com.ivan.sunnyblog.base.utils.BaseLogger key: article_10004, value: 2
+2021-11-11 23:20:30:361 [scheduling-1] INFO  org.jooq.Constants 
+                                      
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@  @@        @@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@        @@@@@@@@@@
+@@@@@@@@@@@@@@@@  @@  @@    @@@@@@@@@@
+@@@@@@@@@@  @@@@  @@  @@    @@@@@@@@@@
+@@@@@@@@@@        @@        @@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@        @@        @@@@@@@@@@
+@@@@@@@@@@    @@  @@  @@@@  @@@@@@@@@@
+@@@@@@@@@@    @@  @@  @@@@  @@@@@@@@@@
+@@@@@@@@@@        @@  @  @  @@@@@@@@@@
+@@@@@@@@@@        @@        @@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@  @@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  Thank you for using jOOQ 3.11.11
+                                      
+2021-11-11 23:20:30:376 [scheduling-1] INFO  com.ivan.sunnyblog.base.utils.BaseLogger ===***=== 
+2021-11-11 23:20:35:381 [scheduling-1] INFO  com.ivan.sunnyblog.base.utils.BaseLogger ===***=== Start to do scheduled task
+2021-11-11 23:20:35:385 [scheduling-1] INFO  com.ivan.sunnyblog.base.utils.BaseLogger key: article_10004, value: 2
+2021-11-11 23:20:35:392 [scheduling-1] INFO  com.ivan.sunnyblog.base.utils.BaseLogger ===***=== 
+2021-11-11 23:20:37:185 [Thread-34] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler Shutting down ExecutorService 'taskScheduler'
+2021-11-11 23:20:37:186 [Thread-34] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Shutting down ExecutorService 'applicationTaskExecutor'
+2021-11-11 23:20:37:187 [Thread-34] INFO  com.zaxxer.hikari.HikariDataSource HikariPool-1 - Shutdown initiated...
+2021-11-11 23:20:37:188 [Thread-34] INFO  com.zaxxer.hikari.HikariDataSource HikariPool-1 - Shutdown completed.

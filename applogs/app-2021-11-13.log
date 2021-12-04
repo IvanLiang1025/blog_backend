@@ -1,0 +1,15 @@
+2021-11-13 02:21:36:989 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2h33m21s607ms).
+2021-11-13 04:13:12:924 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h51m35s936ms).
+2021-11-13 06:40:41:532 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2h27m28s607ms).
+2021-11-13 08:49:08:075 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2h8m26s544ms).
+2021-11-13 09:09:45:886 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=20m37s811ms).
+2021-11-13 09:23:39:520 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5m53s578ms).
+2021-11-13 10:06:00:391 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=18m20s727ms).
+2021-11-13 10:53:10:339 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=16m39s824ms).
+2021-11-13 12:10:42:082 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h17m31s743ms).
+2021-11-13 13:22:32:886 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h11m50s804ms).
+2021-11-13 14:41:48:979 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h19m16s93ms).
+2021-11-13 14:43:38:994 [Thread-29] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler Shutting down ExecutorService 'taskScheduler'
+2021-11-13 14:43:38:994 [Thread-29] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Shutting down ExecutorService 'applicationTaskExecutor'
+2021-11-13 14:43:38:996 [Thread-29] INFO  com.zaxxer.hikari.HikariDataSource HikariPool-1 - Shutdown initiated...
+2021-11-13 14:43:38:998 [Thread-29] INFO  com.zaxxer.hikari.HikariDataSource HikariPool-1 - Shutdown completed.

@@ -1,0 +1,1187 @@
+2021-11-29 01:20:26:739 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2h14m45s479ms).
+2021-11-29 03:27:37:311 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2h7m10s572ms).
+2021-11-29 06:01:56:063 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2h34m18s752ms).
+2021-11-29 07:30:29:299 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h28m33s236ms).
+2021-11-29 09:03:01:591 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h32m32s292ms).
+2021-11-29 09:03:58:211 [http-nio-8081-exec-4] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log starts =====
+2021-11-29 09:03:58:212 [http-nio-8081-exec-4] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request succeed
+2021-11-29 09:03:58:212 [http-nio-8081-exec-4] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request Method: GET
+2021-11-29 09:03:58:212 [http-nio-8081-exec-4] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request URI: /api/comment/10005
+2021-11-29 09:03:58:212 [http-nio-8081-exec-4] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Method Name: com.ivan.sunnyblog.web.controller.CommentController.getComments
+2021-11-29 09:03:58:212 [http-nio-8081-exec-4] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Params: 10005
+2021-11-29 09:03:58:212 [http-nio-8081-exec-4] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Result: ResultInfo{info='null', status=0, data=[CommentListVo{commentId=4createDate=null, replyComments=[], CommentVo=CommentVo{parentCommentId=0, articleId=10005, email='test@gg.com', nickname='test', parentCommentNickname='null', content='test', status='0'}}], total=null}
+2021-11-29 09:03:58:212 [http-nio-8081-exec-4] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Process Time: 9ms
+2021-11-29 09:03:58:212 [http-nio-8081-exec-4] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log ends =====
+2021-11-29 09:03:58:214 [http-nio-8081-exec-7] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log starts =====
+2021-11-29 09:03:58:215 [http-nio-8081-exec-7] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request succeed
+2021-11-29 09:03:58:215 [http-nio-8081-exec-7] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request Method: GET
+2021-11-29 09:03:58:215 [http-nio-8081-exec-7] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request URI: /api/article/10005
+2021-11-29 09:03:58:215 [http-nio-8081-exec-7] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Method Name: com.ivan.sunnyblog.web.controller.ArticleController.getPublicArticleDetail
+2021-11-29 09:03:58:215 [http-nio-8081-exec-7] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Params: 10005
+2021-11-29 09:03:58:215 [http-nio-8081-exec-7] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Result: ResultInfo{info='null', status=0, data=ArticleDetailVo{categoryId=1, BaseArticleVo{articleId=10005, status=1, title='dd', description='This is the doc of React markdown editor lite.
+Enjoy!!', content='| Head | Head | Head | Head |
+| --- | --- | --- | --- |
+| Data | Data | Data | Data |
+| Data | Data | Data | Data |
+
+## 手把手教你写一个markdown编辑器
+
+> 笔者在18年年末的时候接到一个开发任务——搭建一个AI项目的开放平台，其中的产品文档为转化为HTML格式的markdown文档。考虑到文档的即时更新，将文档信息做成了Ajax接口的形式。因此管理后台只需将textarea表单的内容通过markdown解析器进行HTML格式转化，然后将markdown内容和经转化的HTML文档都保存到数据库即可。
+> 基本需求完成后，为了更好的用户体验，考虑将常用的编辑功能添加进来。改进版不仅支持了常用的文本编辑功能，还实现的UI界面的配置化，自定义语法解析器。本着造福伸手党的目的，以及积累些开源经验，笔者将该react 组件 [react-markdown-editor-lite](https://github.com/HarryChen0506/react-markdown-editor-lite) 进行了封装改造，并且发布到了开源社区。
+
+### 预览
+在线体验 [https://harrychen0506.github.io/react-markdown-editor-lite/](https://harrychen0506.github.io/react-markdown-editor-lite/)
+
+![image](https://github.com//HarryChen0506/react-markdown-editor-lite/blob/master/image/react-markdown-editor-lite-v1.0.0.PNG?raw=true)
+
+### 特点
+* 轻量、基于React
+* UI可配置, 如只显示编辑区或预览区
+* 支持自定义markdown语法解析器,语法高亮等
+* 支持常用的markdown编辑功能，如加粗，斜体等等...
+* 支持功能按钮插拔化，用户可以自定义扩展组件
+* 支持编辑区和预览区同步滚动
+
+### 开发心得
+
+- 文本编辑
+
+  大多数常见的编辑器，包括富文本编辑器，利用了某些元素如div的contenteditable属性，配合selection、range、execCommand等API，实现了富文本编辑功能。这里面的实现比较复杂，所以有了"[为什么都说富文本编辑器是天坑？](https://www.zhihu.com/question/38699645)"这个说法。
+
+  而markdown编辑器，核心的处理内容为简单语法的纯文本，复杂度相对来说比较低，并且input标签自带onSelect事件，可以很方便的获取选择信息（选择起始位置和选择文本值），因此要想实现编辑功能，只需将要改动的内容进行文本转换，然后进行重新拼接首尾，大功告成。
+  
+- markdown解析
+
+  考察了几个社区流行的markdown解析器，比较流行的有[markdown](https://www.npmjs.com/package/markdown), [markdown-it](https://www.npmjs.com/package/markdown-it), [marked](https://www.npmjs.com/package/marked) 等等。综合考虑扩展性以及稳定性，笔者推荐使用markdown-it作为markdown的词法解析器，因为该解析器有比较多的插件，并且支持语法高亮。
+
+- 同步滚动
+
+  当选择分栏编辑的时候，滚动左侧的编辑区，右侧的预览区能自动滚动到对应的区域。方案参考了《[手把手教你用 100行代码实现基于 react的 markdown 输入 + 即时预览在线编辑器（一）](https://github.com/accforgit/blog-data/blob/master/%E5%9C%A8%E7%BA%BF%E7%BC%96%E8%BE%91%E5%99%A8/README/README1.md)》。只需先计算出输入框容器元素与预览框容器元素之间最大scroll范围的比例值，然后根据主动滚动元素自身的scrollTop做相应的比例换算，即可知道对方区域的scrollTop值。
+
+- 关于UI
+ 
+  - 项目的字体库选择了Font Awesome风格，并且只选取了项目所需要的一些图标。
+  - 编辑器的整体css均可通过全局覆盖的形式进行自定义。目前暂时只支持灰色主题。
+  - 编辑器的显示区域包括菜单栏，编辑器，预览区，工具栏，通过配置组件的config属性，可以选择默认的展示区域。
+  
+### Install
+
+```js
+npm install react-markdown-editor-lite --save
+```
+
+### Props
+
+| Property | Description | Type | default | Remarks |
+| --- | --- | --- | --- | --- |
+| value | markdown content | String | '' | required |
+| style | component container style | Object | {height: '100%'} | not required |
+| config | component config | Object | {view: {...}, logger: {...}} | not required |
+| onChange | emitting when editor has changed | Function | ({html, md}) => {} | not required |
+| onImageUpload | when image uploaded, callback emitting will get image markdown text | (file: File, callback: (url: string) => void) => void; | ({file, callback}) => {} | not required |
+| renderHTML | Render markdown text to HTML. You can return either string, function or Promise | (text: string) => string|function|Promise | none | **required** |
+
+### Example
+
+``` js
+'use strict';
+import React from 'react'
+import ReactDOM from 'react-dom'
+import MdEditor from 'react-markdown-editor-lite'
+import MarkdownIt from 'markdown-it'
+import emoji from 'markdown-it-emoji'
+import subscript from 'markdown-it-sub'
+import superscript from 'markdown-it-sup'
+import footnote from 'markdown-it-footnote'
+import deflist from 'markdown-it-deflist'
+import abbreviation from 'markdown-it-abbr'
+import insert from 'markdown-it-ins'
+import mark from 'markdown-it-mark'
+import tasklists from 'markdown-it-task-lists'
+import hljs from 'highlight.js'
+import 'highlight.js/styles/atom-one-light.css'
+// import 'highlight.js/styles/github.css'
+import './index.less';
+
+const MOCK_DATA = "I Love React."
+export default class Demo extends React.Component {
+  mdEditor = null
+  mdParser = null
+  constructor(props) {
+    super(props)
+    // initial a parsera
+    this.mdParser = new MarkdownIt({
+      html: true,
+      linkify: true,
+      typographer: true,
+      highlight: function (str, lang) {
+        if (lang && hljs.getLanguage(lang)) {
+          try {
+            return hljs.highlight(lang, str).value
+          } catch (__) {}
+        }    
+        return '' // use external default escaping
+      }
+    })
+    .use(emoji)
+    .use(subscript)
+    .use(superscript)
+    .use(footnote)
+    .use(deflist)
+    .use(abbreviation)
+    .use(insert)
+    .use(mark)
+    .use(tasklists, { enabled: this.taskLists })
+    this.renderHTML = this.renderHTML.bind(this)
+  }
+  handleEditorChange({html, md}) {
+    console.log('handleEditorChange', html, md)
+  }
+  handleImageUpload(file, callback) {
+    const reader = new FileReader()
+    reader.onload = () => {      
+      const convertBase64UrlToBlob = (urlData) => {  
+        let arr = urlData.split(','), mime = arr[0].match(/:(.*?);/)[1]
+        let bstr = atob(arr[1])
+        let n = bstr.length
+        let u8arr = new Uint8Array(n)
+        while (n--) {
+          u8arr[n] = bstr.charCodeAt(n)
+        }
+        return new Blob([u8arr], {type:mime})
+      }
+      const blob = convertBase64UrlToBlob(reader.result)
+      setTimeout(() => {
+        // setTimeout 模拟异步上传图片
+        // 当异步上传获取图片地址后，执行calback回调（参数为imageUrl字符串），即可将图片地址写入markdown
+        callback('https://avatars0.githubusercontent.com/u/21263805?s=40&v=4')
+      }, 1000)
+    }
+    reader.readAsDataURL(file)
+  }
+  renderHTML(text) {
+    // 模拟异步渲染Markdown
+    return new Promise((resolve) => {
+      setTimeout(() => {
+        resolve(this.mdParser.render(text))
+      }, 1000)
+    })
+  }
+  handleGetMdValue = () => {   
+    this.mdEditor && alert(this.mdEditor.getMdValue())      
+  }
+  handleGetHtmlValue = () => {    
+    this.mdEditor && alert(this.mdEditor.getHtmlValue())
+  }
+  render() {
+    return (      
+      <div>
+        <nav>
+          <button onClick={this.handleGetMdValue} >getMdValue</button>  
+          <button onClick={this.handleGetHtmlValue} >getHtmlValue</button>  
+        </nav>
+        <section style="height: 500px">
+          <MdEditor 
+            ref={node => this.mdEditor = node}
+            value={MOCK_DATA}
+            style={{height: '400px'}}
+            renderHTML={this.renderHTML}
+            config={{
+              view: {
+                menu: true,
+                md: true,
+                html: true
+              },
+              imageUrl: 'https://octodex.github.com/images/minion.png'
+            }}
+            onChange={this.handleEditorChange} 
+            onImageUpload={this.handleImageUpload}
+          />
+        </section>                        
+      </div>      
+    )
+  }
+}
+```
+
+### 最后
+
+   欢迎大家使用和反馈，[项目地址](https://github.com/HarryChen0506/react-markdown-editor-lite) (https://github.com/HarryChen0506/react-markdown-editor-lite)， 你的点赞将是我莫大的动力😊
+
+![1.png](https://s3.ca-central-1.amazonaws.com/res-blog-public/res-dev/blog_1636946743939_1.png)', firstPicture='', viewCount=0, createDate='Sun Nov 07 14:09:29 EST 2021', updateDate='Sun Nov 14 22:31:50 EST 2021'}}, total=null}
+2021-11-29 09:03:58:215 [http-nio-8081-exec-7] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Process Time: 12ms
+2021-11-29 09:03:58:215 [http-nio-8081-exec-7] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log ends =====
+2021-11-29 09:03:58:219 [http-nio-8081-exec-5] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log starts =====
+2021-11-29 09:03:58:220 [http-nio-8081-exec-5] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request succeed
+2021-11-29 09:03:58:220 [http-nio-8081-exec-5] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request Method: GET
+2021-11-29 09:03:58:220 [http-nio-8081-exec-5] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request URI: /api/comment/10005
+2021-11-29 09:03:58:220 [http-nio-8081-exec-5] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Method Name: com.ivan.sunnyblog.web.controller.CommentController.getComments
+2021-11-29 09:03:58:220 [http-nio-8081-exec-5] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Params: 10005
+2021-11-29 09:03:58:220 [http-nio-8081-exec-5] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Result: ResultInfo{info='null', status=0, data=[CommentListVo{commentId=4createDate=null, replyComments=[], CommentVo=CommentVo{parentCommentId=0, articleId=10005, email='test@gg.com', nickname='test', parentCommentNickname='null', content='test', status='0'}}], total=null}
+2021-11-29 09:03:58:220 [http-nio-8081-exec-5] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Process Time: 3ms
+2021-11-29 09:03:58:220 [http-nio-8081-exec-5] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log ends =====
+2021-11-29 09:03:58:262 [http-nio-8081-exec-10] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log starts =====
+2021-11-29 09:03:58:262 [http-nio-8081-exec-10] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request succeed
+2021-11-29 09:03:58:262 [http-nio-8081-exec-10] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request Method: GET
+2021-11-29 09:03:58:262 [http-nio-8081-exec-10] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request URI: /api/comment/10005
+2021-11-29 09:03:58:262 [http-nio-8081-exec-10] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Method Name: com.ivan.sunnyblog.web.controller.CommentController.getComments
+2021-11-29 09:03:58:262 [http-nio-8081-exec-10] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Params: 10005
+2021-11-29 09:03:58:262 [http-nio-8081-exec-10] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Result: ResultInfo{info='null', status=0, data=[CommentListVo{commentId=4createDate=null, replyComments=[], CommentVo=CommentVo{parentCommentId=0, articleId=10005, email='test@gg.com', nickname='test', parentCommentNickname='null', content='test', status='0'}}], total=null}
+2021-11-29 09:03:58:262 [http-nio-8081-exec-10] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Process Time: 2ms
+2021-11-29 09:03:58:262 [http-nio-8081-exec-10] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log ends =====
+2021-11-29 09:04:48:944 [http-nio-8081-exec-9] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log starts =====
+2021-11-29 09:04:48:944 [http-nio-8081-exec-9] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request succeed
+2021-11-29 09:04:48:944 [http-nio-8081-exec-9] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request Method: POST
+2021-11-29 09:04:48:944 [http-nio-8081-exec-9] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request URI: /api/comment
+2021-11-29 09:04:48:944 [http-nio-8081-exec-9] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Method Name: com.ivan.sunnyblog.web.controller.CommentController.postComment
+2021-11-29 09:04:48:945 [http-nio-8081-exec-9] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Params: CommentVo{parentCommentId=4, articleId=10005, email='ee@gmail.com', nickname='ee', parentCommentNickname='null', content='heel', status='null'}
+2021-11-29 09:04:48:945 [http-nio-8081-exec-9] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Result: ResultInfo{info='null', status=0, data=null, total=null}
+2021-11-29 09:04:48:945 [http-nio-8081-exec-9] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Process Time: 4ms
+2021-11-29 09:04:48:945 [http-nio-8081-exec-9] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log ends =====
+2021-11-29 09:04:48:948 [http-nio-8081-exec-8] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log starts =====
+2021-11-29 09:04:48:948 [http-nio-8081-exec-8] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request succeed
+2021-11-29 09:04:48:948 [http-nio-8081-exec-8] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request Method: GET
+2021-11-29 09:04:48:948 [http-nio-8081-exec-8] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request URI: /api/comment/10005
+2021-11-29 09:04:48:948 [http-nio-8081-exec-8] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Method Name: com.ivan.sunnyblog.web.controller.CommentController.getComments
+2021-11-29 09:04:48:948 [http-nio-8081-exec-8] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Params: 10005
+2021-11-29 09:04:48:948 [http-nio-8081-exec-8] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Result: ResultInfo{info='null', status=0, data=[CommentListVo{commentId=4createDate=null, replyComments=[CommentListVo{commentId=5createDate=null, replyComments=[], CommentVo=CommentVo{parentCommentId=4, articleId=10005, email='ee@gmail.com', nickname='ee', parentCommentNickname='null', content='heel', status='0'}}], CommentVo=CommentVo{parentCommentId=0, articleId=10005, email='test@gg.com', nickname='test', parentCommentNickname='null', content='test', status='0'}}], total=null}
+2021-11-29 09:04:48:948 [http-nio-8081-exec-8] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Process Time: 8ms
+2021-11-29 09:04:48:948 [http-nio-8081-exec-8] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log ends =====
+2021-11-29 09:05:21:850 [http-nio-8081-exec-3] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log starts =====
+2021-11-29 09:05:21:850 [http-nio-8081-exec-3] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request succeed
+2021-11-29 09:05:21:850 [http-nio-8081-exec-3] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request Method: POST
+2021-11-29 09:05:21:850 [http-nio-8081-exec-3] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request URI: /api/comment
+2021-11-29 09:05:21:850 [http-nio-8081-exec-3] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Method Name: com.ivan.sunnyblog.web.controller.CommentController.postComment
+2021-11-29 09:05:21:850 [http-nio-8081-exec-3] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Params: CommentVo{parentCommentId=null, articleId=10005, email='eee@gmail.com', nickname='eee', parentCommentNickname='null', content='eeee', status='null'}
+2021-11-29 09:05:21:850 [http-nio-8081-exec-3] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Result: ResultInfo{info='null', status=0, data=null, total=null}
+2021-11-29 09:05:21:850 [http-nio-8081-exec-3] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Process Time: 2ms
+2021-11-29 09:05:21:850 [http-nio-8081-exec-3] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log ends =====
+2021-11-29 09:05:21:851 [http-nio-8081-exec-2] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log starts =====
+2021-11-29 09:05:21:851 [http-nio-8081-exec-2] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request succeed
+2021-11-29 09:05:21:851 [http-nio-8081-exec-2] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request Method: GET
+2021-11-29 09:05:21:851 [http-nio-8081-exec-2] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request URI: /api/comment/10005
+2021-11-29 09:05:21:851 [http-nio-8081-exec-2] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Method Name: com.ivan.sunnyblog.web.controller.CommentController.getComments
+2021-11-29 09:05:21:851 [http-nio-8081-exec-2] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Params: 10005
+2021-11-29 09:05:21:851 [http-nio-8081-exec-2] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Result: ResultInfo{info='null', status=0, data=[CommentListVo{commentId=4createDate=null, replyComments=[CommentListVo{commentId=5createDate=null, replyComments=[], CommentVo=CommentVo{parentCommentId=4, articleId=10005, email='ee@gmail.com', nickname='ee', parentCommentNickname='null', content='heel', status='0'}}], CommentVo=CommentVo{parentCommentId=0, articleId=10005, email='test@gg.com', nickname='test', parentCommentNickname='null', content='test', status='0'}}], total=null}
+2021-11-29 09:05:21:851 [http-nio-8081-exec-2] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Process Time: 4ms
+2021-11-29 09:05:21:851 [http-nio-8081-exec-2] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log ends =====
+2021-11-29 09:06:50:198 [http-nio-8081-exec-7] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log starts =====
+2021-11-29 09:06:50:199 [http-nio-8081-exec-7] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request succeed
+2021-11-29 09:06:50:199 [http-nio-8081-exec-7] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request Method: GET
+2021-11-29 09:06:50:199 [http-nio-8081-exec-7] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request URI: /api/article/10005
+2021-11-29 09:06:50:199 [http-nio-8081-exec-7] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Method Name: com.ivan.sunnyblog.web.controller.ArticleController.getPublicArticleDetail
+2021-11-29 09:06:50:199 [http-nio-8081-exec-7] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Params: 10005
+2021-11-29 09:06:50:199 [http-nio-8081-exec-7] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Result: ResultInfo{info='null', status=0, data=ArticleDetailVo{categoryId=1, BaseArticleVo{articleId=10005, status=1, title='dd', description='This is the doc of React markdown editor lite.
+Enjoy!!', content='| Head | Head | Head | Head |
+| --- | --- | --- | --- |
+| Data | Data | Data | Data |
+| Data | Data | Data | Data |
+
+## 手把手教你写一个markdown编辑器
+
+> 笔者在18年年末的时候接到一个开发任务——搭建一个AI项目的开放平台，其中的产品文档为转化为HTML格式的markdown文档。考虑到文档的即时更新，将文档信息做成了Ajax接口的形式。因此管理后台只需将textarea表单的内容通过markdown解析器进行HTML格式转化，然后将markdown内容和经转化的HTML文档都保存到数据库即可。
+> 基本需求完成后，为了更好的用户体验，考虑将常用的编辑功能添加进来。改进版不仅支持了常用的文本编辑功能，还实现的UI界面的配置化，自定义语法解析器。本着造福伸手党的目的，以及积累些开源经验，笔者将该react 组件 [react-markdown-editor-lite](https://github.com/HarryChen0506/react-markdown-editor-lite) 进行了封装改造，并且发布到了开源社区。
+
+### 预览
+在线体验 [https://harrychen0506.github.io/react-markdown-editor-lite/](https://harrychen0506.github.io/react-markdown-editor-lite/)
+
+![image](https://github.com//HarryChen0506/react-markdown-editor-lite/blob/master/image/react-markdown-editor-lite-v1.0.0.PNG?raw=true)
+
+### 特点
+* 轻量、基于React
+* UI可配置, 如只显示编辑区或预览区
+* 支持自定义markdown语法解析器,语法高亮等
+* 支持常用的markdown编辑功能，如加粗，斜体等等...
+* 支持功能按钮插拔化，用户可以自定义扩展组件
+* 支持编辑区和预览区同步滚动
+
+### 开发心得
+
+- 文本编辑
+
+  大多数常见的编辑器，包括富文本编辑器，利用了某些元素如div的contenteditable属性，配合selection、range、execCommand等API，实现了富文本编辑功能。这里面的实现比较复杂，所以有了"[为什么都说富文本编辑器是天坑？](https://www.zhihu.com/question/38699645)"这个说法。
+
+  而markdown编辑器，核心的处理内容为简单语法的纯文本，复杂度相对来说比较低，并且input标签自带onSelect事件，可以很方便的获取选择信息（选择起始位置和选择文本值），因此要想实现编辑功能，只需将要改动的内容进行文本转换，然后进行重新拼接首尾，大功告成。
+  
+- markdown解析
+
+  考察了几个社区流行的markdown解析器，比较流行的有[markdown](https://www.npmjs.com/package/markdown), [markdown-it](https://www.npmjs.com/package/markdown-it), [marked](https://www.npmjs.com/package/marked) 等等。综合考虑扩展性以及稳定性，笔者推荐使用markdown-it作为markdown的词法解析器，因为该解析器有比较多的插件，并且支持语法高亮。
+
+- 同步滚动
+
+  当选择分栏编辑的时候，滚动左侧的编辑区，右侧的预览区能自动滚动到对应的区域。方案参考了《[手把手教你用 100行代码实现基于 react的 markdown 输入 + 即时预览在线编辑器（一）](https://github.com/accforgit/blog-data/blob/master/%E5%9C%A8%E7%BA%BF%E7%BC%96%E8%BE%91%E5%99%A8/README/README1.md)》。只需先计算出输入框容器元素与预览框容器元素之间最大scroll范围的比例值，然后根据主动滚动元素自身的scrollTop做相应的比例换算，即可知道对方区域的scrollTop值。
+
+- 关于UI
+ 
+  - 项目的字体库选择了Font Awesome风格，并且只选取了项目所需要的一些图标。
+  - 编辑器的整体css均可通过全局覆盖的形式进行自定义。目前暂时只支持灰色主题。
+  - 编辑器的显示区域包括菜单栏，编辑器，预览区，工具栏，通过配置组件的config属性，可以选择默认的展示区域。
+  
+### Install
+
+```js
+npm install react-markdown-editor-lite --save
+```
+
+### Props
+
+| Property | Description | Type | default | Remarks |
+| --- | --- | --- | --- | --- |
+| value | markdown content | String | '' | required |
+| style | component container style | Object | {height: '100%'} | not required |
+| config | component config | Object | {view: {...}, logger: {...}} | not required |
+| onChange | emitting when editor has changed | Function | ({html, md}) => {} | not required |
+| onImageUpload | when image uploaded, callback emitting will get image markdown text | (file: File, callback: (url: string) => void) => void; | ({file, callback}) => {} | not required |
+| renderHTML | Render markdown text to HTML. You can return either string, function or Promise | (text: string) => string|function|Promise | none | **required** |
+
+### Example
+
+``` js
+'use strict';
+import React from 'react'
+import ReactDOM from 'react-dom'
+import MdEditor from 'react-markdown-editor-lite'
+import MarkdownIt from 'markdown-it'
+import emoji from 'markdown-it-emoji'
+import subscript from 'markdown-it-sub'
+import superscript from 'markdown-it-sup'
+import footnote from 'markdown-it-footnote'
+import deflist from 'markdown-it-deflist'
+import abbreviation from 'markdown-it-abbr'
+import insert from 'markdown-it-ins'
+import mark from 'markdown-it-mark'
+import tasklists from 'markdown-it-task-lists'
+import hljs from 'highlight.js'
+import 'highlight.js/styles/atom-one-light.css'
+// import 'highlight.js/styles/github.css'
+import './index.less';
+
+const MOCK_DATA = "I Love React."
+export default class Demo extends React.Component {
+  mdEditor = null
+  mdParser = null
+  constructor(props) {
+    super(props)
+    // initial a parsera
+    this.mdParser = new MarkdownIt({
+      html: true,
+      linkify: true,
+      typographer: true,
+      highlight: function (str, lang) {
+        if (lang && hljs.getLanguage(lang)) {
+          try {
+            return hljs.highlight(lang, str).value
+          } catch (__) {}
+        }    
+        return '' // use external default escaping
+      }
+    })
+    .use(emoji)
+    .use(subscript)
+    .use(superscript)
+    .use(footnote)
+    .use(deflist)
+    .use(abbreviation)
+    .use(insert)
+    .use(mark)
+    .use(tasklists, { enabled: this.taskLists })
+    this.renderHTML = this.renderHTML.bind(this)
+  }
+  handleEditorChange({html, md}) {
+    console.log('handleEditorChange', html, md)
+  }
+  handleImageUpload(file, callback) {
+    const reader = new FileReader()
+    reader.onload = () => {      
+      const convertBase64UrlToBlob = (urlData) => {  
+        let arr = urlData.split(','), mime = arr[0].match(/:(.*?);/)[1]
+        let bstr = atob(arr[1])
+        let n = bstr.length
+        let u8arr = new Uint8Array(n)
+        while (n--) {
+          u8arr[n] = bstr.charCodeAt(n)
+        }
+        return new Blob([u8arr], {type:mime})
+      }
+      const blob = convertBase64UrlToBlob(reader.result)
+      setTimeout(() => {
+        // setTimeout 模拟异步上传图片
+        // 当异步上传获取图片地址后，执行calback回调（参数为imageUrl字符串），即可将图片地址写入markdown
+        callback('https://avatars0.githubusercontent.com/u/21263805?s=40&v=4')
+      }, 1000)
+    }
+    reader.readAsDataURL(file)
+  }
+  renderHTML(text) {
+    // 模拟异步渲染Markdown
+    return new Promise((resolve) => {
+      setTimeout(() => {
+        resolve(this.mdParser.render(text))
+      }, 1000)
+    })
+  }
+  handleGetMdValue = () => {   
+    this.mdEditor && alert(this.mdEditor.getMdValue())      
+  }
+  handleGetHtmlValue = () => {    
+    this.mdEditor && alert(this.mdEditor.getHtmlValue())
+  }
+  render() {
+    return (      
+      <div>
+        <nav>
+          <button onClick={this.handleGetMdValue} >getMdValue</button>  
+          <button onClick={this.handleGetHtmlValue} >getHtmlValue</button>  
+        </nav>
+        <section style="height: 500px">
+          <MdEditor 
+            ref={node => this.mdEditor = node}
+            value={MOCK_DATA}
+            style={{height: '400px'}}
+            renderHTML={this.renderHTML}
+            config={{
+              view: {
+                menu: true,
+                md: true,
+                html: true
+              },
+              imageUrl: 'https://octodex.github.com/images/minion.png'
+            }}
+            onChange={this.handleEditorChange} 
+            onImageUpload={this.handleImageUpload}
+          />
+        </section>                        
+      </div>      
+    )
+  }
+}
+```
+
+### 最后
+
+   欢迎大家使用和反馈，[项目地址](https://github.com/HarryChen0506/react-markdown-editor-lite) (https://github.com/HarryChen0506/react-markdown-editor-lite)， 你的点赞将是我莫大的动力😊
+
+![1.png](https://s3.ca-central-1.amazonaws.com/res-blog-public/res-dev/blog_1636946743939_1.png)', firstPicture='', viewCount=0, createDate='Sun Nov 07 14:09:29 EST 2021', updateDate='Sun Nov 14 22:31:50 EST 2021'}}, total=null}
+2021-11-29 09:06:50:199 [http-nio-8081-exec-7] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Process Time: 9ms
+2021-11-29 09:06:50:199 [http-nio-8081-exec-7] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log ends =====
+2021-11-29 09:06:50:200 [http-nio-8081-exec-4] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log starts =====
+2021-11-29 09:06:50:200 [http-nio-8081-exec-4] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request succeed
+2021-11-29 09:06:50:200 [http-nio-8081-exec-4] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request Method: GET
+2021-11-29 09:06:50:200 [http-nio-8081-exec-4] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request URI: /api/comment/10005
+2021-11-29 09:06:50:200 [http-nio-8081-exec-4] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Method Name: com.ivan.sunnyblog.web.controller.CommentController.getComments
+2021-11-29 09:06:50:200 [http-nio-8081-exec-4] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Params: 10005
+2021-11-29 09:06:50:200 [http-nio-8081-exec-4] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Result: ResultInfo{info='null', status=0, data=[CommentListVo{commentId=6createDate=null, replyComments=[], CommentVo=CommentVo{parentCommentId=0, articleId=10005, email='eee@gmail.com', nickname='eee', parentCommentNickname='null', content='eeee', status='0'}}, CommentListVo{commentId=4createDate=null, replyComments=[CommentListVo{commentId=5createDate=null, replyComments=[], CommentVo=CommentVo{parentCommentId=4, articleId=10005, email='ee@gmail.com', nickname='ee', parentCommentNickname='null', content='heel', status='0'}}], CommentVo=CommentVo{parentCommentId=0, articleId=10005, email='test@gg.com', nickname='test', parentCommentNickname='null', content='test', status='0'}}], total=null}
+2021-11-29 09:06:50:200 [http-nio-8081-exec-4] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Process Time: 14ms
+2021-11-29 09:06:50:200 [http-nio-8081-exec-4] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log ends =====
+2021-11-29 09:06:50:213 [http-nio-8081-exec-5] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log starts =====
+2021-11-29 09:06:50:213 [http-nio-8081-exec-5] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request succeed
+2021-11-29 09:06:50:213 [http-nio-8081-exec-5] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request Method: GET
+2021-11-29 09:06:50:213 [http-nio-8081-exec-5] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request URI: /api/comment/10005
+2021-11-29 09:06:50:213 [http-nio-8081-exec-5] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Method Name: com.ivan.sunnyblog.web.controller.CommentController.getComments
+2021-11-29 09:06:50:213 [http-nio-8081-exec-5] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Params: 10005
+2021-11-29 09:06:50:213 [http-nio-8081-exec-5] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Result: ResultInfo{info='null', status=0, data=[CommentListVo{commentId=6createDate=null, replyComments=[], CommentVo=CommentVo{parentCommentId=0, articleId=10005, email='eee@gmail.com', nickname='eee', parentCommentNickname='null', content='eeee', status='0'}}, CommentListVo{commentId=4createDate=null, replyComments=[CommentListVo{commentId=5createDate=null, replyComments=[], CommentVo=CommentVo{parentCommentId=4, articleId=10005, email='ee@gmail.com', nickname='ee', parentCommentNickname='null', content='heel', status='0'}}], CommentVo=CommentVo{parentCommentId=0, articleId=10005, email='test@gg.com', nickname='test', parentCommentNickname='null', content='test', status='0'}}], total=null}
+2021-11-29 09:06:50:213 [http-nio-8081-exec-5] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Process Time: 9ms
+2021-11-29 09:06:50:213 [http-nio-8081-exec-5] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log ends =====
+2021-11-29 09:06:50:266 [http-nio-8081-exec-10] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log starts =====
+2021-11-29 09:06:50:266 [http-nio-8081-exec-10] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request succeed
+2021-11-29 09:06:50:266 [http-nio-8081-exec-10] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request Method: GET
+2021-11-29 09:06:50:266 [http-nio-8081-exec-10] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request URI: /api/comment/10005
+2021-11-29 09:06:50:266 [http-nio-8081-exec-10] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Method Name: com.ivan.sunnyblog.web.controller.CommentController.getComments
+2021-11-29 09:06:50:266 [http-nio-8081-exec-10] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Params: 10005
+2021-11-29 09:06:50:266 [http-nio-8081-exec-10] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Result: ResultInfo{info='null', status=0, data=[CommentListVo{commentId=6createDate=null, replyComments=[], CommentVo=CommentVo{parentCommentId=0, articleId=10005, email='eee@gmail.com', nickname='eee', parentCommentNickname='null', content='eeee', status='0'}}, CommentListVo{commentId=4createDate=null, replyComments=[CommentListVo{commentId=5createDate=null, replyComments=[], CommentVo=CommentVo{parentCommentId=4, articleId=10005, email='ee@gmail.com', nickname='ee', parentCommentNickname='null', content='heel', status='0'}}], CommentVo=CommentVo{parentCommentId=0, articleId=10005, email='test@gg.com', nickname='test', parentCommentNickname='null', content='test', status='0'}}], total=null}
+2021-11-29 09:06:50:266 [http-nio-8081-exec-10] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Process Time: 2ms
+2021-11-29 09:06:50:266 [http-nio-8081-exec-10] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log ends =====
+2021-11-29 09:07:30:824 [http-nio-8081-exec-8] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log starts =====
+2021-11-29 09:07:30:824 [http-nio-8081-exec-8] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request succeed
+2021-11-29 09:07:30:824 [http-nio-8081-exec-8] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request Method: GET
+2021-11-29 09:07:30:824 [http-nio-8081-exec-8] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request URI: /api/article/10005
+2021-11-29 09:07:30:824 [http-nio-8081-exec-8] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Method Name: com.ivan.sunnyblog.web.controller.ArticleController.getPublicArticleDetail
+2021-11-29 09:07:30:824 [http-nio-8081-exec-8] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Params: 10005
+2021-11-29 09:07:30:824 [http-nio-8081-exec-8] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Result: ResultInfo{info='null', status=0, data=ArticleDetailVo{categoryId=1, BaseArticleVo{articleId=10005, status=1, title='dd', description='This is the doc of React markdown editor lite.
+Enjoy!!', content='| Head | Head | Head | Head |
+| --- | --- | --- | --- |
+| Data | Data | Data | Data |
+| Data | Data | Data | Data |
+
+## 手把手教你写一个markdown编辑器
+
+> 笔者在18年年末的时候接到一个开发任务——搭建一个AI项目的开放平台，其中的产品文档为转化为HTML格式的markdown文档。考虑到文档的即时更新，将文档信息做成了Ajax接口的形式。因此管理后台只需将textarea表单的内容通过markdown解析器进行HTML格式转化，然后将markdown内容和经转化的HTML文档都保存到数据库即可。
+> 基本需求完成后，为了更好的用户体验，考虑将常用的编辑功能添加进来。改进版不仅支持了常用的文本编辑功能，还实现的UI界面的配置化，自定义语法解析器。本着造福伸手党的目的，以及积累些开源经验，笔者将该react 组件 [react-markdown-editor-lite](https://github.com/HarryChen0506/react-markdown-editor-lite) 进行了封装改造，并且发布到了开源社区。
+
+### 预览
+在线体验 [https://harrychen0506.github.io/react-markdown-editor-lite/](https://harrychen0506.github.io/react-markdown-editor-lite/)
+
+![image](https://github.com//HarryChen0506/react-markdown-editor-lite/blob/master/image/react-markdown-editor-lite-v1.0.0.PNG?raw=true)
+
+### 特点
+* 轻量、基于React
+* UI可配置, 如只显示编辑区或预览区
+* 支持自定义markdown语法解析器,语法高亮等
+* 支持常用的markdown编辑功能，如加粗，斜体等等...
+* 支持功能按钮插拔化，用户可以自定义扩展组件
+* 支持编辑区和预览区同步滚动
+
+### 开发心得
+
+- 文本编辑
+
+  大多数常见的编辑器，包括富文本编辑器，利用了某些元素如div的contenteditable属性，配合selection、range、execCommand等API，实现了富文本编辑功能。这里面的实现比较复杂，所以有了"[为什么都说富文本编辑器是天坑？](https://www.zhihu.com/question/38699645)"这个说法。
+
+  而markdown编辑器，核心的处理内容为简单语法的纯文本，复杂度相对来说比较低，并且input标签自带onSelect事件，可以很方便的获取选择信息（选择起始位置和选择文本值），因此要想实现编辑功能，只需将要改动的内容进行文本转换，然后进行重新拼接首尾，大功告成。
+  
+- markdown解析
+
+  考察了几个社区流行的markdown解析器，比较流行的有[markdown](https://www.npmjs.com/package/markdown), [markdown-it](https://www.npmjs.com/package/markdown-it), [marked](https://www.npmjs.com/package/marked) 等等。综合考虑扩展性以及稳定性，笔者推荐使用markdown-it作为markdown的词法解析器，因为该解析器有比较多的插件，并且支持语法高亮。
+
+- 同步滚动
+
+  当选择分栏编辑的时候，滚动左侧的编辑区，右侧的预览区能自动滚动到对应的区域。方案参考了《[手把手教你用 100行代码实现基于 react的 markdown 输入 + 即时预览在线编辑器（一）](https://github.com/accforgit/blog-data/blob/master/%E5%9C%A8%E7%BA%BF%E7%BC%96%E8%BE%91%E5%99%A8/README/README1.md)》。只需先计算出输入框容器元素与预览框容器元素之间最大scroll范围的比例值，然后根据主动滚动元素自身的scrollTop做相应的比例换算，即可知道对方区域的scrollTop值。
+
+- 关于UI
+ 
+  - 项目的字体库选择了Font Awesome风格，并且只选取了项目所需要的一些图标。
+  - 编辑器的整体css均可通过全局覆盖的形式进行自定义。目前暂时只支持灰色主题。
+  - 编辑器的显示区域包括菜单栏，编辑器，预览区，工具栏，通过配置组件的config属性，可以选择默认的展示区域。
+  
+### Install
+
+```js
+npm install react-markdown-editor-lite --save
+```
+
+### Props
+
+| Property | Description | Type | default | Remarks |
+| --- | --- | --- | --- | --- |
+| value | markdown content | String | '' | required |
+| style | component container style | Object | {height: '100%'} | not required |
+| config | component config | Object | {view: {...}, logger: {...}} | not required |
+| onChange | emitting when editor has changed | Function | ({html, md}) => {} | not required |
+| onImageUpload | when image uploaded, callback emitting will get image markdown text | (file: File, callback: (url: string) => void) => void; | ({file, callback}) => {} | not required |
+| renderHTML | Render markdown text to HTML. You can return either string, function or Promise | (text: string) => string|function|Promise | none | **required** |
+
+### Example
+
+``` js
+'use strict';
+import React from 'react'
+import ReactDOM from 'react-dom'
+import MdEditor from 'react-markdown-editor-lite'
+import MarkdownIt from 'markdown-it'
+import emoji from 'markdown-it-emoji'
+import subscript from 'markdown-it-sub'
+import superscript from 'markdown-it-sup'
+import footnote from 'markdown-it-footnote'
+import deflist from 'markdown-it-deflist'
+import abbreviation from 'markdown-it-abbr'
+import insert from 'markdown-it-ins'
+import mark from 'markdown-it-mark'
+import tasklists from 'markdown-it-task-lists'
+import hljs from 'highlight.js'
+import 'highlight.js/styles/atom-one-light.css'
+// import 'highlight.js/styles/github.css'
+import './index.less';
+
+const MOCK_DATA = "I Love React."
+export default class Demo extends React.Component {
+  mdEditor = null
+  mdParser = null
+  constructor(props) {
+    super(props)
+    // initial a parsera
+    this.mdParser = new MarkdownIt({
+      html: true,
+      linkify: true,
+      typographer: true,
+      highlight: function (str, lang) {
+        if (lang && hljs.getLanguage(lang)) {
+          try {
+            return hljs.highlight(lang, str).value
+          } catch (__) {}
+        }    
+        return '' // use external default escaping
+      }
+    })
+    .use(emoji)
+    .use(subscript)
+    .use(superscript)
+    .use(footnote)
+    .use(deflist)
+    .use(abbreviation)
+    .use(insert)
+    .use(mark)
+    .use(tasklists, { enabled: this.taskLists })
+    this.renderHTML = this.renderHTML.bind(this)
+  }
+  handleEditorChange({html, md}) {
+    console.log('handleEditorChange', html, md)
+  }
+  handleImageUpload(file, callback) {
+    const reader = new FileReader()
+    reader.onload = () => {      
+      const convertBase64UrlToBlob = (urlData) => {  
+        let arr = urlData.split(','), mime = arr[0].match(/:(.*?);/)[1]
+        let bstr = atob(arr[1])
+        let n = bstr.length
+        let u8arr = new Uint8Array(n)
+        while (n--) {
+          u8arr[n] = bstr.charCodeAt(n)
+        }
+        return new Blob([u8arr], {type:mime})
+      }
+      const blob = convertBase64UrlToBlob(reader.result)
+      setTimeout(() => {
+        // setTimeout 模拟异步上传图片
+        // 当异步上传获取图片地址后，执行calback回调（参数为imageUrl字符串），即可将图片地址写入markdown
+        callback('https://avatars0.githubusercontent.com/u/21263805?s=40&v=4')
+      }, 1000)
+    }
+    reader.readAsDataURL(file)
+  }
+  renderHTML(text) {
+    // 模拟异步渲染Markdown
+    return new Promise((resolve) => {
+      setTimeout(() => {
+        resolve(this.mdParser.render(text))
+      }, 1000)
+    })
+  }
+  handleGetMdValue = () => {   
+    this.mdEditor && alert(this.mdEditor.getMdValue())      
+  }
+  handleGetHtmlValue = () => {    
+    this.mdEditor && alert(this.mdEditor.getHtmlValue())
+  }
+  render() {
+    return (      
+      <div>
+        <nav>
+          <button onClick={this.handleGetMdValue} >getMdValue</button>  
+          <button onClick={this.handleGetHtmlValue} >getHtmlValue</button>  
+        </nav>
+        <section style="height: 500px">
+          <MdEditor 
+            ref={node => this.mdEditor = node}
+            value={MOCK_DATA}
+            style={{height: '400px'}}
+            renderHTML={this.renderHTML}
+            config={{
+              view: {
+                menu: true,
+                md: true,
+                html: true
+              },
+              imageUrl: 'https://octodex.github.com/images/minion.png'
+            }}
+            onChange={this.handleEditorChange} 
+            onImageUpload={this.handleImageUpload}
+          />
+        </section>                        
+      </div>      
+    )
+  }
+}
+```
+
+### 最后
+
+   欢迎大家使用和反馈，[项目地址](https://github.com/HarryChen0506/react-markdown-editor-lite) (https://github.com/HarryChen0506/react-markdown-editor-lite)， 你的点赞将是我莫大的动力😊
+
+![1.png](https://s3.ca-central-1.amazonaws.com/res-blog-public/res-dev/blog_1636946743939_1.png)', firstPicture='', viewCount=0, createDate='Sun Nov 07 14:09:29 EST 2021', updateDate='Sun Nov 14 22:31:50 EST 2021'}}, total=null}
+2021-11-29 09:07:30:825 [http-nio-8081-exec-8] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Process Time: 8ms
+2021-11-29 09:07:30:825 [http-nio-8081-exec-8] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log ends =====
+2021-11-29 09:07:30:833 [http-nio-8081-exec-9] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log starts =====
+2021-11-29 09:07:30:834 [http-nio-8081-exec-9] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request succeed
+2021-11-29 09:07:30:834 [http-nio-8081-exec-9] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request Method: GET
+2021-11-29 09:07:30:834 [http-nio-8081-exec-9] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request URI: /api/comment/10005
+2021-11-29 09:07:30:834 [http-nio-8081-exec-9] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Method Name: com.ivan.sunnyblog.web.controller.CommentController.getComments
+2021-11-29 09:07:30:834 [http-nio-8081-exec-9] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Params: 10005
+2021-11-29 09:07:30:834 [http-nio-8081-exec-9] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Result: ResultInfo{info='null', status=0, data=[CommentListVo{commentId=6createDate=null, replyComments=[], CommentVo=CommentVo{parentCommentId=0, articleId=10005, email='eee@gmail.com', nickname='eee', parentCommentNickname='null', content='eeee', status='0'}}, CommentListVo{commentId=4createDate=null, replyComments=[CommentListVo{commentId=5createDate=null, replyComments=[], CommentVo=CommentVo{parentCommentId=4, articleId=10005, email='ee@gmail.com', nickname='ee', parentCommentNickname='null', content='heel', status='0'}}], CommentVo=CommentVo{parentCommentId=0, articleId=10005, email='test@gg.com', nickname='test', parentCommentNickname='null', content='test', status='0'}}], total=null}
+2021-11-29 09:07:30:834 [http-nio-8081-exec-9] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Process Time: 17ms
+2021-11-29 09:07:30:834 [http-nio-8081-exec-9] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log ends =====
+2021-11-29 09:07:30:842 [http-nio-8081-exec-3] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log starts =====
+2021-11-29 09:07:30:843 [http-nio-8081-exec-3] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request succeed
+2021-11-29 09:07:30:843 [http-nio-8081-exec-3] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request Method: GET
+2021-11-29 09:07:30:843 [http-nio-8081-exec-3] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request URI: /api/comment/10005
+2021-11-29 09:07:30:843 [http-nio-8081-exec-3] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Method Name: com.ivan.sunnyblog.web.controller.CommentController.getComments
+2021-11-29 09:07:30:843 [http-nio-8081-exec-3] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Params: 10005
+2021-11-29 09:07:30:843 [http-nio-8081-exec-3] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Result: ResultInfo{info='null', status=0, data=[CommentListVo{commentId=6createDate=null, replyComments=[], CommentVo=CommentVo{parentCommentId=0, articleId=10005, email='eee@gmail.com', nickname='eee', parentCommentNickname='null', content='eeee', status='0'}}, CommentListVo{commentId=4createDate=null, replyComments=[CommentListVo{commentId=5createDate=null, replyComments=[], CommentVo=CommentVo{parentCommentId=4, articleId=10005, email='ee@gmail.com', nickname='ee', parentCommentNickname='null', content='heel', status='0'}}], CommentVo=CommentVo{parentCommentId=0, articleId=10005, email='test@gg.com', nickname='test', parentCommentNickname='null', content='test', status='0'}}], total=null}
+2021-11-29 09:07:30:843 [http-nio-8081-exec-3] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Process Time: 5ms
+2021-11-29 09:07:30:843 [http-nio-8081-exec-3] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log ends =====
+2021-11-29 09:07:30:886 [http-nio-8081-exec-2] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log starts =====
+2021-11-29 09:07:30:886 [http-nio-8081-exec-2] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request succeed
+2021-11-29 09:07:30:886 [http-nio-8081-exec-2] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request Method: GET
+2021-11-29 09:07:30:886 [http-nio-8081-exec-2] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request URI: /api/comment/10005
+2021-11-29 09:07:30:886 [http-nio-8081-exec-2] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Method Name: com.ivan.sunnyblog.web.controller.CommentController.getComments
+2021-11-29 09:07:30:886 [http-nio-8081-exec-2] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Params: 10005
+2021-11-29 09:07:30:886 [http-nio-8081-exec-2] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Result: ResultInfo{info='null', status=0, data=[CommentListVo{commentId=6createDate=null, replyComments=[], CommentVo=CommentVo{parentCommentId=0, articleId=10005, email='eee@gmail.com', nickname='eee', parentCommentNickname='null', content='eeee', status='0'}}, CommentListVo{commentId=4createDate=null, replyComments=[CommentListVo{commentId=5createDate=null, replyComments=[], CommentVo=CommentVo{parentCommentId=4, articleId=10005, email='ee@gmail.com', nickname='ee', parentCommentNickname='null', content='heel', status='0'}}], CommentVo=CommentVo{parentCommentId=0, articleId=10005, email='test@gg.com', nickname='test', parentCommentNickname='null', content='test', status='0'}}], total=null}
+2021-11-29 09:07:30:887 [http-nio-8081-exec-2] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Process Time: 2ms
+2021-11-29 09:07:30:887 [http-nio-8081-exec-2] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log ends =====
+2021-11-29 09:07:57:237 [http-nio-8081-exec-1] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log starts =====
+2021-11-29 09:07:57:238 [http-nio-8081-exec-1] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request succeed
+2021-11-29 09:07:57:238 [http-nio-8081-exec-1] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request Method: POST
+2021-11-29 09:07:57:238 [http-nio-8081-exec-1] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request URI: /api/comment
+2021-11-29 09:07:57:238 [http-nio-8081-exec-1] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Method Name: com.ivan.sunnyblog.web.controller.CommentController.postComment
+2021-11-29 09:07:57:238 [http-nio-8081-exec-1] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Params: CommentVo{parentCommentId=null, articleId=10005, email='ivan@gmail.com', nickname='ivan', parentCommentNickname='null', content='iii', status='null'}
+2021-11-29 09:07:57:238 [http-nio-8081-exec-1] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Result: ResultInfo{info='null', status=0, data=null, total=null}
+2021-11-29 09:07:57:238 [http-nio-8081-exec-1] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Process Time: 3ms
+2021-11-29 09:07:57:238 [http-nio-8081-exec-1] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log ends =====
+2021-11-29 09:07:57:260 [http-nio-8081-exec-6] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log starts =====
+2021-11-29 09:07:57:260 [http-nio-8081-exec-6] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request succeed
+2021-11-29 09:07:57:260 [http-nio-8081-exec-6] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request Method: GET
+2021-11-29 09:07:57:260 [http-nio-8081-exec-6] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request URI: /api/comment/10005
+2021-11-29 09:07:57:260 [http-nio-8081-exec-6] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Method Name: com.ivan.sunnyblog.web.controller.CommentController.getComments
+2021-11-29 09:07:57:260 [http-nio-8081-exec-6] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Params: 10005
+2021-11-29 09:07:57:260 [http-nio-8081-exec-6] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Result: ResultInfo{info='null', status=0, data=[CommentListVo{commentId=7createDate=null, replyComments=[], CommentVo=CommentVo{parentCommentId=0, articleId=10005, email='ivan@gmail.com', nickname='ivan', parentCommentNickname='null', content='iii', status='0'}}, CommentListVo{commentId=6createDate=null, replyComments=[], CommentVo=CommentVo{parentCommentId=0, articleId=10005, email='eee@gmail.com', nickname='eee', parentCommentNickname='null', content='eeee', status='0'}}, CommentListVo{commentId=4createDate=null, replyComments=[CommentListVo{commentId=5createDate=null, replyComments=[], CommentVo=CommentVo{parentCommentId=4, articleId=10005, email='ee@gmail.com', nickname='ee', parentCommentNickname='null', content='heel', status='0'}}], CommentVo=CommentVo{parentCommentId=0, articleId=10005, email='test@gg.com', nickname='test', parentCommentNickname='null', content='test', status='0'}}], total=null}
+2021-11-29 09:07:57:260 [http-nio-8081-exec-6] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Process Time: 3ms
+2021-11-29 09:07:57:260 [http-nio-8081-exec-6] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log ends =====
+2021-11-29 09:08:24:753 [http-nio-8081-exec-9] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log starts =====
+2021-11-29 09:08:24:753 [http-nio-8081-exec-9] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request succeed
+2021-11-29 09:08:24:753 [http-nio-8081-exec-9] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request Method: GET
+2021-11-29 09:08:24:753 [http-nio-8081-exec-9] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request URI: /api/articles/hot
+2021-11-29 09:08:24:753 [http-nio-8081-exec-9] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Method Name: com.ivan.sunnyblog.web.controller.ArticleController.getHotArticles
+2021-11-29 09:08:24:753 [http-nio-8081-exec-9] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Params: {}
+2021-11-29 09:08:24:753 [http-nio-8081-exec-8] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log starts =====
+2021-11-29 09:08:24:753 [http-nio-8081-exec-9] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Result: ResultInfo{info='null', status=0, data=[ArticleVo{userInfo=null, category=null, BaseArticleVo{articleId=10004, status=null, title='Spring boot', description='null', content='null', firstPicture='null', viewCount=4, createDate='Tue Oct 12 15:58:26 EDT 2021', updateDate='null'}}, ArticleVo{userInfo=null, category=null, BaseArticleVo{articleId=10005, status=null, title='dd', description='null', content='null', firstPicture='null', viewCount=0, createDate='Sun Nov 07 14:09:29 EST 2021', updateDate='null'}}], total=null}
+2021-11-29 09:08:24:753 [http-nio-8081-exec-8] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request succeed
+2021-11-29 09:08:24:753 [http-nio-8081-exec-9] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Process Time: 3ms
+2021-11-29 09:08:24:753 [http-nio-8081-exec-8] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request Method: GET
+2021-11-29 09:08:24:753 [http-nio-8081-exec-9] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log ends =====
+2021-11-29 09:08:24:753 [http-nio-8081-exec-8] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request URI: /api/categories
+2021-11-29 09:08:24:753 [http-nio-8081-exec-8] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Method Name: com.ivan.sunnyblog.web.controller.CategoryContoller.getCategories
+2021-11-29 09:08:24:754 [http-nio-8081-exec-8] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Params: {}
+2021-11-29 09:08:24:754 [http-nio-8081-exec-8] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Result: ResultInfo{info='null', status=0, data=[CategoryVo{categoryId=2, name='liddffd', articleCount=1}, CategoryVo{categoryId=1, name='Life ', articleCount=1}], total=null}
+2021-11-29 09:08:24:754 [http-nio-8081-exec-8] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Process Time: 3ms
+2021-11-29 09:08:24:754 [http-nio-8081-exec-8] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log ends =====
+2021-11-29 09:08:24:764 [http-nio-8081-exec-10] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log starts =====
+2021-11-29 09:08:24:764 [http-nio-8081-exec-10] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request succeed
+2021-11-29 09:08:24:764 [http-nio-8081-exec-10] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request Method: GET
+2021-11-29 09:08:24:764 [http-nio-8081-exec-10] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request URI: /api/articles
+2021-11-29 09:08:24:764 [http-nio-8081-exec-10] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Method Name: com.ivan.sunnyblog.web.controller.ArticleController.getPublicArticles
+2021-11-29 09:08:24:764 [http-nio-8081-exec-10] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Params: SearchVo{page=1, limit=10, categoryId=null, total=null}
+2021-11-29 09:08:24:764 [http-nio-8081-exec-10] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Result: ResultInfo{info='null', status=0, data=[ArticleVo{userInfo=UserInfoVo{userId=100001, nickName='ivan', userName='ivan', avatar='https://res-blog-public.s3.ca-central-1.amazonaws.com/default_avatar.jpg'}, category=CategoryVo{categoryId=1, name='Life ', articleCount=null}, BaseArticleVo{articleId=10005, status=1, title='dd', description='This is the doc of React markdown editor lite.
+Enjoy!!', content='null', firstPicture='', viewCount=0, createDate='Sun Nov 07 14:09:29 EST 2021', updateDate='Sun Nov 14 22:31:50 EST 2021'}}, ArticleVo{userInfo=UserInfoVo{userId=100001, nickName='ivan', userName='ivan', avatar='https://res-blog-public.s3.ca-central-1.amazonaws.com/default_avatar.jpg'}, category=CategoryVo{categoryId=2, name='liddffd', articleCount=null}, BaseArticleVo{articleId=10004, status=1, title='Spring boot', description='rerwerwer', content='null', firstPicture='', viewCount=4, createDate='Tue Oct 12 15:58:26 EDT 2021', updateDate='Sun Nov 14 22:34:56 EST 2021'}}], total=2}
+2021-11-29 09:08:24:764 [http-nio-8081-exec-10] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Process Time: 13ms
+2021-11-29 09:08:24:764 [http-nio-8081-exec-10] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log ends =====
+2021-11-29 09:08:26:611 [http-nio-8081-exec-6] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log starts =====
+2021-11-29 09:08:26:612 [http-nio-8081-exec-6] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request succeed
+2021-11-29 09:08:26:612 [http-nio-8081-exec-6] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request Method: GET
+2021-11-29 09:08:26:612 [http-nio-8081-exec-6] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request URI: /api/comment/10004
+2021-11-29 09:08:26:612 [http-nio-8081-exec-6] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Method Name: com.ivan.sunnyblog.web.controller.CommentController.getComments
+2021-11-29 09:08:26:612 [http-nio-8081-exec-6] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Params: 10004
+2021-11-29 09:08:26:612 [http-nio-8081-exec-6] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Result: ResultInfo{info='null', status=0, data=[CommentListVo{commentId=2createDate=null, replyComments=[], CommentVo=CommentVo{parentCommentId=0, articleId=10004, email='efe@dfdf.com', nickname='efe', parentCommentNickname='null', content='efe', status='0'}}, CommentListVo{commentId=1createDate=null, replyComments=[CommentListVo{commentId=3createDate=null, replyComments=[], CommentVo=CommentVo{parentCommentId=1, articleId=10004, email='sdfsd@Ck.com', nickname='fsdf', parentCommentNickname='null', content='fdfdf', status='0'}}], CommentVo=CommentVo{parentCommentId=0, articleId=10004, email='ivanliang0818@gmail.com', nickname='test', parentCommentNickname='null', content='test', status='0'}}], total=null}
+2021-11-29 09:08:26:612 [http-nio-8081-exec-6] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Process Time: 2ms
+2021-11-29 09:08:26:612 [http-nio-8081-exec-6] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log ends =====
+2021-11-29 09:08:26:612 [http-nio-8081-exec-7] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log starts =====
+2021-11-29 09:08:26:612 [http-nio-8081-exec-7] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request succeed
+2021-11-29 09:08:26:612 [http-nio-8081-exec-7] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request Method: GET
+2021-11-29 09:08:26:612 [http-nio-8081-exec-7] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request URI: /api/article/10004
+2021-11-29 09:08:26:612 [http-nio-8081-exec-7] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Method Name: com.ivan.sunnyblog.web.controller.ArticleController.getPublicArticleDetail
+2021-11-29 09:08:26:612 [http-nio-8081-exec-7] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Params: 10004
+2021-11-29 09:08:26:612 [http-nio-8081-exec-7] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Result: ResultInfo{info='null', status=0, data=ArticleDetailVo{categoryId=2, BaseArticleVo{articleId=10004, status=1, title='Spring boot', description='rerwerwer', content='rererer![test.png](https://s3.ca-central-1.amazonaws.com/res-blog-public/res-dev/blog_1636947281578_test.png)', firstPicture='', viewCount=4, createDate='Tue Oct 12 15:58:26 EDT 2021', updateDate='Sun Nov 14 22:34:56 EST 2021'}}, total=null}
+2021-11-29 09:08:26:612 [http-nio-8081-exec-7] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Process Time: 3ms
+2021-11-29 09:08:26:612 [http-nio-8081-exec-7] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log ends =====
+2021-11-29 09:08:26:616 [http-nio-8081-exec-4] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log starts =====
+2021-11-29 09:08:26:616 [http-nio-8081-exec-4] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request succeed
+2021-11-29 09:08:26:616 [http-nio-8081-exec-4] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request Method: GET
+2021-11-29 09:08:26:616 [http-nio-8081-exec-4] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request URI: /api/comment/10004
+2021-11-29 09:08:26:616 [http-nio-8081-exec-4] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Method Name: com.ivan.sunnyblog.web.controller.CommentController.getComments
+2021-11-29 09:08:26:616 [http-nio-8081-exec-4] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Params: 10004
+2021-11-29 09:08:26:616 [http-nio-8081-exec-4] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Result: ResultInfo{info='null', status=0, data=[CommentListVo{commentId=2createDate=null, replyComments=[], CommentVo=CommentVo{parentCommentId=0, articleId=10004, email='efe@dfdf.com', nickname='efe', parentCommentNickname='null', content='efe', status='0'}}, CommentListVo{commentId=1createDate=null, replyComments=[CommentListVo{commentId=3createDate=null, replyComments=[], CommentVo=CommentVo{parentCommentId=1, articleId=10004, email='sdfsd@Ck.com', nickname='fsdf', parentCommentNickname='null', content='fdfdf', status='0'}}], CommentVo=CommentVo{parentCommentId=0, articleId=10004, email='ivanliang0818@gmail.com', nickname='test', parentCommentNickname='null', content='test', status='0'}}], total=null}
+2021-11-29 09:08:26:616 [http-nio-8081-exec-4] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Process Time: 2ms
+2021-11-29 09:08:26:616 [http-nio-8081-exec-4] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log ends =====
+2021-11-29 09:08:26:635 [http-nio-8081-exec-5] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log starts =====
+2021-11-29 09:08:26:635 [http-nio-8081-exec-5] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request succeed
+2021-11-29 09:08:26:635 [http-nio-8081-exec-5] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request Method: GET
+2021-11-29 09:08:26:635 [http-nio-8081-exec-5] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request URI: /api/comment/10004
+2021-11-29 09:08:26:635 [http-nio-8081-exec-5] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Method Name: com.ivan.sunnyblog.web.controller.CommentController.getComments
+2021-11-29 09:08:26:635 [http-nio-8081-exec-5] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Params: 10004
+2021-11-29 09:08:26:635 [http-nio-8081-exec-5] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Result: ResultInfo{info='null', status=0, data=[CommentListVo{commentId=2createDate=null, replyComments=[], CommentVo=CommentVo{parentCommentId=0, articleId=10004, email='efe@dfdf.com', nickname='efe', parentCommentNickname='null', content='efe', status='0'}}, CommentListVo{commentId=1createDate=null, replyComments=[CommentListVo{commentId=3createDate=null, replyComments=[], CommentVo=CommentVo{parentCommentId=1, articleId=10004, email='sdfsd@Ck.com', nickname='fsdf', parentCommentNickname='null', content='fdfdf', status='0'}}], CommentVo=CommentVo{parentCommentId=0, articleId=10004, email='ivanliang0818@gmail.com', nickname='test', parentCommentNickname='null', content='test', status='0'}}], total=null}
+2021-11-29 09:08:26:635 [http-nio-8081-exec-5] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Process Time: 2ms
+2021-11-29 09:08:26:635 [http-nio-8081-exec-5] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log ends =====
+2021-11-29 09:16:39:238 [http-nio-8081-exec-1] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log starts =====
+2021-11-29 09:16:39:239 [http-nio-8081-exec-1] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request succeed
+2021-11-29 09:16:39:239 [http-nio-8081-exec-1] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request Method: GET
+2021-11-29 09:16:39:239 [http-nio-8081-exec-1] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request URI: /api/comment/10004
+2021-11-29 09:16:39:239 [http-nio-8081-exec-1] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Method Name: com.ivan.sunnyblog.web.controller.CommentController.getComments
+2021-11-29 09:16:39:239 [http-nio-8081-exec-1] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Params: 10004
+2021-11-29 09:16:39:239 [http-nio-8081-exec-1] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Result: ResultInfo{info='null', status=0, data=[CommentListVo{commentId=2createDate=null, replyComments=[], CommentVo=CommentVo{parentCommentId=0, articleId=10004, email='efe@dfdf.com', nickname='efe', parentCommentNickname='null', content='efe', status='0'}}, CommentListVo{commentId=1createDate=null, replyComments=[CommentListVo{commentId=3createDate=null, replyComments=[], CommentVo=CommentVo{parentCommentId=1, articleId=10004, email='sdfsd@Ck.com', nickname='fsdf', parentCommentNickname='null', content='fdfdf', status='0'}}], CommentVo=CommentVo{parentCommentId=0, articleId=10004, email='ivanliang0818@gmail.com', nickname='test', parentCommentNickname='null', content='test', status='0'}}], total=null}
+2021-11-29 09:16:39:239 [http-nio-8081-exec-1] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Process Time: 2ms
+2021-11-29 09:16:39:239 [http-nio-8081-exec-1] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log ends =====
+2021-11-29 09:16:39:239 [http-nio-8081-exec-3] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log starts =====
+2021-11-29 09:16:39:239 [http-nio-8081-exec-3] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request succeed
+2021-11-29 09:16:39:239 [http-nio-8081-exec-3] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request Method: GET
+2021-11-29 09:16:39:239 [http-nio-8081-exec-3] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request URI: /api/article/10004
+2021-11-29 09:16:39:240 [http-nio-8081-exec-3] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Method Name: com.ivan.sunnyblog.web.controller.ArticleController.getPublicArticleDetail
+2021-11-29 09:16:39:240 [http-nio-8081-exec-3] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Params: 10004
+2021-11-29 09:16:39:240 [http-nio-8081-exec-3] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Result: ResultInfo{info='null', status=0, data=ArticleDetailVo{categoryId=2, BaseArticleVo{articleId=10004, status=1, title='Spring boot', description='rerwerwer', content='rererer![test.png](https://s3.ca-central-1.amazonaws.com/res-blog-public/res-dev/blog_1636947281578_test.png)', firstPicture='', viewCount=4, createDate='Tue Oct 12 15:58:26 EDT 2021', updateDate='Sun Nov 14 22:34:56 EST 2021'}}, total=null}
+2021-11-29 09:16:39:240 [http-nio-8081-exec-3] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Process Time: 3ms
+2021-11-29 09:16:39:240 [http-nio-8081-exec-3] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log ends =====
+2021-11-29 09:16:39:245 [http-nio-8081-exec-2] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log starts =====
+2021-11-29 09:16:39:245 [http-nio-8081-exec-2] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request succeed
+2021-11-29 09:16:39:245 [http-nio-8081-exec-2] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request Method: GET
+2021-11-29 09:16:39:245 [http-nio-8081-exec-2] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request URI: /api/comment/10004
+2021-11-29 09:16:39:245 [http-nio-8081-exec-2] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Method Name: com.ivan.sunnyblog.web.controller.CommentController.getComments
+2021-11-29 09:16:39:245 [http-nio-8081-exec-2] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Params: 10004
+2021-11-29 09:16:39:245 [http-nio-8081-exec-2] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Result: ResultInfo{info='null', status=0, data=[CommentListVo{commentId=2createDate=null, replyComments=[], CommentVo=CommentVo{parentCommentId=0, articleId=10004, email='efe@dfdf.com', nickname='efe', parentCommentNickname='null', content='efe', status='0'}}, CommentListVo{commentId=1createDate=null, replyComments=[CommentListVo{commentId=3createDate=null, replyComments=[], CommentVo=CommentVo{parentCommentId=1, articleId=10004, email='sdfsd@Ck.com', nickname='fsdf', parentCommentNickname='null', content='fdfdf', status='0'}}], CommentVo=CommentVo{parentCommentId=0, articleId=10004, email='ivanliang0818@gmail.com', nickname='test', parentCommentNickname='null', content='test', status='0'}}], total=null}
+2021-11-29 09:16:39:245 [http-nio-8081-exec-2] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Process Time: 1ms
+2021-11-29 09:16:39:245 [http-nio-8081-exec-2] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log ends =====
+2021-11-29 09:16:39:274 [http-nio-8081-exec-6] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log starts =====
+2021-11-29 09:16:39:274 [http-nio-8081-exec-6] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request succeed
+2021-11-29 09:16:39:274 [http-nio-8081-exec-6] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request Method: GET
+2021-11-29 09:16:39:274 [http-nio-8081-exec-6] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request URI: /api/comment/10004
+2021-11-29 09:16:39:274 [http-nio-8081-exec-6] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Method Name: com.ivan.sunnyblog.web.controller.CommentController.getComments
+2021-11-29 09:16:39:274 [http-nio-8081-exec-6] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Params: 10004
+2021-11-29 09:16:39:274 [http-nio-8081-exec-6] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Result: ResultInfo{info='null', status=0, data=[CommentListVo{commentId=2createDate=null, replyComments=[], CommentVo=CommentVo{parentCommentId=0, articleId=10004, email='efe@dfdf.com', nickname='efe', parentCommentNickname='null', content='efe', status='0'}}, CommentListVo{commentId=1createDate=null, replyComments=[CommentListVo{commentId=3createDate=null, replyComments=[], CommentVo=CommentVo{parentCommentId=1, articleId=10004, email='sdfsd@Ck.com', nickname='fsdf', parentCommentNickname='null', content='fdfdf', status='0'}}], CommentVo=CommentVo{parentCommentId=0, articleId=10004, email='ivanliang0818@gmail.com', nickname='test', parentCommentNickname='null', content='test', status='0'}}], total=null}
+2021-11-29 09:16:39:275 [http-nio-8081-exec-6] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Process Time: 5ms
+2021-11-29 09:16:39:275 [http-nio-8081-exec-6] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log ends =====
+2021-11-29 09:17:23:550 [http-nio-8081-exec-4] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log starts =====
+2021-11-29 09:17:23:551 [http-nio-8081-exec-4] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request succeed
+2021-11-29 09:17:23:551 [http-nio-8081-exec-4] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request Method: GET
+2021-11-29 09:17:23:551 [http-nio-8081-exec-4] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request URI: /api/article/10004
+2021-11-29 09:17:23:551 [http-nio-8081-exec-7] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log starts =====
+2021-11-29 09:17:23:551 [http-nio-8081-exec-7] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request succeed
+2021-11-29 09:17:23:551 [http-nio-8081-exec-4] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Method Name: com.ivan.sunnyblog.web.controller.ArticleController.getPublicArticleDetail
+2021-11-29 09:17:23:551 [http-nio-8081-exec-7] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request Method: GET
+2021-11-29 09:17:23:551 [http-nio-8081-exec-4] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Params: 10004
+2021-11-29 09:17:23:551 [http-nio-8081-exec-7] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request URI: /api/comment/10004
+2021-11-29 09:17:23:551 [http-nio-8081-exec-7] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Method Name: com.ivan.sunnyblog.web.controller.CommentController.getComments
+2021-11-29 09:17:23:551 [http-nio-8081-exec-4] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Result: ResultInfo{info='null', status=0, data=ArticleDetailVo{categoryId=2, BaseArticleVo{articleId=10004, status=1, title='Spring boot', description='rerwerwer', content='rererer![test.png](https://s3.ca-central-1.amazonaws.com/res-blog-public/res-dev/blog_1636947281578_test.png)', firstPicture='', viewCount=4, createDate='Tue Oct 12 15:58:26 EDT 2021', updateDate='Sun Nov 14 22:34:56 EST 2021'}}, total=null}
+2021-11-29 09:17:23:551 [http-nio-8081-exec-7] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Params: 10004
+2021-11-29 09:17:23:551 [http-nio-8081-exec-4] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Process Time: 3ms
+2021-11-29 09:17:23:551 [http-nio-8081-exec-4] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log ends =====
+2021-11-29 09:17:23:551 [http-nio-8081-exec-7] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Result: ResultInfo{info='null', status=0, data=[CommentListVo{commentId=2createDate=null, replyComments=[], CommentVo=CommentVo{parentCommentId=0, articleId=10004, email='efe@dfdf.com', nickname='efe', parentCommentNickname='null', content='efe', status='0'}}, CommentListVo{commentId=1createDate=null, replyComments=[CommentListVo{commentId=3createDate=null, replyComments=[], CommentVo=CommentVo{parentCommentId=1, articleId=10004, email='sdfsd@Ck.com', nickname='fsdf', parentCommentNickname='null', content='fdfdf', status='0'}}], CommentVo=CommentVo{parentCommentId=0, articleId=10004, email='ivanliang0818@gmail.com', nickname='test', parentCommentNickname='null', content='test', status='0'}}], total=null}
+2021-11-29 09:17:23:551 [http-nio-8081-exec-7] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Process Time: 4ms
+2021-11-29 09:17:23:551 [http-nio-8081-exec-7] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log ends =====
+2021-11-29 09:17:23:560 [http-nio-8081-exec-5] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log starts =====
+2021-11-29 09:17:23:560 [http-nio-8081-exec-5] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request succeed
+2021-11-29 09:17:23:560 [http-nio-8081-exec-5] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request Method: GET
+2021-11-29 09:17:23:560 [http-nio-8081-exec-5] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request URI: /api/comment/10004
+2021-11-29 09:17:23:560 [http-nio-8081-exec-5] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Method Name: com.ivan.sunnyblog.web.controller.CommentController.getComments
+2021-11-29 09:17:23:561 [http-nio-8081-exec-5] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Params: 10004
+2021-11-29 09:17:23:561 [http-nio-8081-exec-5] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Result: ResultInfo{info='null', status=0, data=[CommentListVo{commentId=2createDate=null, replyComments=[], CommentVo=CommentVo{parentCommentId=0, articleId=10004, email='efe@dfdf.com', nickname='efe', parentCommentNickname='null', content='efe', status='0'}}, CommentListVo{commentId=1createDate=null, replyComments=[CommentListVo{commentId=3createDate=null, replyComments=[], CommentVo=CommentVo{parentCommentId=1, articleId=10004, email='sdfsd@Ck.com', nickname='fsdf', parentCommentNickname='null', content='fdfdf', status='0'}}], CommentVo=CommentVo{parentCommentId=0, articleId=10004, email='ivanliang0818@gmail.com', nickname='test', parentCommentNickname='null', content='test', status='0'}}], total=null}
+2021-11-29 09:17:23:561 [http-nio-8081-exec-5] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Process Time: 6ms
+2021-11-29 09:17:23:561 [http-nio-8081-exec-5] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log ends =====
+2021-11-29 09:17:23:596 [http-nio-8081-exec-10] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log starts =====
+2021-11-29 09:17:23:597 [http-nio-8081-exec-10] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request succeed
+2021-11-29 09:17:23:597 [http-nio-8081-exec-10] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request Method: GET
+2021-11-29 09:17:23:597 [http-nio-8081-exec-10] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request URI: /api/comment/10004
+2021-11-29 09:17:23:597 [http-nio-8081-exec-10] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Method Name: com.ivan.sunnyblog.web.controller.CommentController.getComments
+2021-11-29 09:17:23:597 [http-nio-8081-exec-10] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Params: 10004
+2021-11-29 09:17:23:597 [http-nio-8081-exec-10] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Result: ResultInfo{info='null', status=0, data=[CommentListVo{commentId=2createDate=null, replyComments=[], CommentVo=CommentVo{parentCommentId=0, articleId=10004, email='efe@dfdf.com', nickname='efe', parentCommentNickname='null', content='efe', status='0'}}, CommentListVo{commentId=1createDate=null, replyComments=[CommentListVo{commentId=3createDate=null, replyComments=[], CommentVo=CommentVo{parentCommentId=1, articleId=10004, email='sdfsd@Ck.com', nickname='fsdf', parentCommentNickname='null', content='fdfdf', status='0'}}], CommentVo=CommentVo{parentCommentId=0, articleId=10004, email='ivanliang0818@gmail.com', nickname='test', parentCommentNickname='null', content='test', status='0'}}], total=null}
+2021-11-29 09:17:23:597 [http-nio-8081-exec-10] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Process Time: 9ms
+2021-11-29 09:17:23:597 [http-nio-8081-exec-10] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log ends =====
+2021-11-29 09:17:31:993 [http-nio-8081-exec-9] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log starts =====
+2021-11-29 09:17:31:993 [http-nio-8081-exec-9] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request succeed
+2021-11-29 09:17:31:993 [http-nio-8081-exec-9] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request Method: GET
+2021-11-29 09:17:31:993 [http-nio-8081-exec-9] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request URI: /api/comment/10004
+2021-11-29 09:17:31:993 [http-nio-8081-exec-9] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Method Name: com.ivan.sunnyblog.web.controller.CommentController.getComments
+2021-11-29 09:17:31:993 [http-nio-8081-exec-9] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Params: 10004
+2021-11-29 09:17:31:993 [http-nio-8081-exec-9] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Result: ResultInfo{info='null', status=0, data=[CommentListVo{commentId=2createDate=null, replyComments=[], CommentVo=CommentVo{parentCommentId=0, articleId=10004, email='efe@dfdf.com', nickname='efe', parentCommentNickname='null', content='efe', status='0'}}, CommentListVo{commentId=1createDate=null, replyComments=[CommentListVo{commentId=3createDate=null, replyComments=[], CommentVo=CommentVo{parentCommentId=1, articleId=10004, email='sdfsd@Ck.com', nickname='fsdf', parentCommentNickname='null', content='fdfdf', status='0'}}], CommentVo=CommentVo{parentCommentId=0, articleId=10004, email='ivanliang0818@gmail.com', nickname='test', parentCommentNickname='null', content='test', status='0'}}], total=null}
+2021-11-29 09:17:31:993 [http-nio-8081-exec-9] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Process Time: 2ms
+2021-11-29 09:17:31:993 [http-nio-8081-exec-9] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log ends =====
+2021-11-29 09:17:31:994 [http-nio-8081-exec-8] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log starts =====
+2021-11-29 09:17:31:995 [http-nio-8081-exec-8] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request succeed
+2021-11-29 09:17:31:995 [http-nio-8081-exec-8] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request Method: GET
+2021-11-29 09:17:31:995 [http-nio-8081-exec-8] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request URI: /api/article/10004
+2021-11-29 09:17:31:995 [http-nio-8081-exec-8] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Method Name: com.ivan.sunnyblog.web.controller.ArticleController.getPublicArticleDetail
+2021-11-29 09:17:31:995 [http-nio-8081-exec-8] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Params: 10004
+2021-11-29 09:17:31:995 [http-nio-8081-exec-8] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Result: ResultInfo{info='null', status=0, data=ArticleDetailVo{categoryId=2, BaseArticleVo{articleId=10004, status=1, title='Spring boot', description='rerwerwer', content='rererer![test.png](https://s3.ca-central-1.amazonaws.com/res-blog-public/res-dev/blog_1636947281578_test.png)', firstPicture='', viewCount=4, createDate='Tue Oct 12 15:58:26 EDT 2021', updateDate='Sun Nov 14 22:34:56 EST 2021'}}, total=null}
+2021-11-29 09:17:31:995 [http-nio-8081-exec-8] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Process Time: 3ms
+2021-11-29 09:17:31:995 [http-nio-8081-exec-8] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log ends =====
+2021-11-29 09:17:31:998 [http-nio-8081-exec-3] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log starts =====
+2021-11-29 09:17:31:998 [http-nio-8081-exec-3] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request succeed
+2021-11-29 09:17:31:998 [http-nio-8081-exec-3] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request Method: GET
+2021-11-29 09:17:31:998 [http-nio-8081-exec-3] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request URI: /api/comment/10004
+2021-11-29 09:17:31:998 [http-nio-8081-exec-3] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Method Name: com.ivan.sunnyblog.web.controller.CommentController.getComments
+2021-11-29 09:17:31:998 [http-nio-8081-exec-3] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Params: 10004
+2021-11-29 09:17:31:998 [http-nio-8081-exec-3] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Result: ResultInfo{info='null', status=0, data=[CommentListVo{commentId=2createDate=null, replyComments=[], CommentVo=CommentVo{parentCommentId=0, articleId=10004, email='efe@dfdf.com', nickname='efe', parentCommentNickname='null', content='efe', status='0'}}, CommentListVo{commentId=1createDate=null, replyComments=[CommentListVo{commentId=3createDate=null, replyComments=[], CommentVo=CommentVo{parentCommentId=1, articleId=10004, email='sdfsd@Ck.com', nickname='fsdf', parentCommentNickname='null', content='fdfdf', status='0'}}], CommentVo=CommentVo{parentCommentId=0, articleId=10004, email='ivanliang0818@gmail.com', nickname='test', parentCommentNickname='null', content='test', status='0'}}], total=null}
+2021-11-29 09:17:31:998 [http-nio-8081-exec-3] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Process Time: 2ms
+2021-11-29 09:17:31:998 [http-nio-8081-exec-3] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log ends =====
+2021-11-29 09:17:32:036 [http-nio-8081-exec-1] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log starts =====
+2021-11-29 09:17:32:036 [http-nio-8081-exec-1] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request succeed
+2021-11-29 09:17:32:036 [http-nio-8081-exec-1] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request Method: GET
+2021-11-29 09:17:32:036 [http-nio-8081-exec-1] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request URI: /api/comment/10004
+2021-11-29 09:17:32:036 [http-nio-8081-exec-1] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Method Name: com.ivan.sunnyblog.web.controller.CommentController.getComments
+2021-11-29 09:17:32:036 [http-nio-8081-exec-1] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Params: 10004
+2021-11-29 09:17:32:036 [http-nio-8081-exec-1] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Result: ResultInfo{info='null', status=0, data=[CommentListVo{commentId=2createDate=null, replyComments=[], CommentVo=CommentVo{parentCommentId=0, articleId=10004, email='efe@dfdf.com', nickname='efe', parentCommentNickname='null', content='efe', status='0'}}, CommentListVo{commentId=1createDate=null, replyComments=[CommentListVo{commentId=3createDate=null, replyComments=[], CommentVo=CommentVo{parentCommentId=1, articleId=10004, email='sdfsd@Ck.com', nickname='fsdf', parentCommentNickname='null', content='fdfdf', status='0'}}], CommentVo=CommentVo{parentCommentId=0, articleId=10004, email='ivanliang0818@gmail.com', nickname='test', parentCommentNickname='null', content='test', status='0'}}], total=null}
+2021-11-29 09:17:32:036 [http-nio-8081-exec-1] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Process Time: 3ms
+2021-11-29 09:17:32:036 [http-nio-8081-exec-1] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log ends =====
+2021-11-29 09:18:51:626 [http-nio-8081-exec-4] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log starts =====
+2021-11-29 09:18:51:626 [http-nio-8081-exec-4] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request succeed
+2021-11-29 09:18:51:626 [http-nio-8081-exec-4] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request Method: GET
+2021-11-29 09:18:51:626 [http-nio-8081-exec-4] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request URI: /api/comment/10004
+2021-11-29 09:18:51:626 [http-nio-8081-exec-4] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Method Name: com.ivan.sunnyblog.web.controller.CommentController.getComments
+2021-11-29 09:18:51:626 [http-nio-8081-exec-4] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Params: 10004
+2021-11-29 09:18:51:626 [http-nio-8081-exec-4] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Result: ResultInfo{info='null', status=0, data=[CommentListVo{commentId=2createDate=null, replyComments=[], CommentVo=CommentVo{parentCommentId=0, articleId=10004, email='efe@dfdf.com', nickname='efe', parentCommentNickname='null', content='efe', status='0'}}, CommentListVo{commentId=1createDate=null, replyComments=[CommentListVo{commentId=3createDate=null, replyComments=[], CommentVo=CommentVo{parentCommentId=1, articleId=10004, email='sdfsd@Ck.com', nickname='fsdf', parentCommentNickname='null', content='fdfdf', status='0'}}], CommentVo=CommentVo{parentCommentId=0, articleId=10004, email='ivanliang0818@gmail.com', nickname='test', parentCommentNickname='null', content='test', status='0'}}], total=null}
+2021-11-29 09:18:51:626 [http-nio-8081-exec-4] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Process Time: 5ms
+2021-11-29 09:18:51:626 [http-nio-8081-exec-4] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log ends =====
+2021-11-29 09:18:51:627 [http-nio-8081-exec-7] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log starts =====
+2021-11-29 09:18:51:627 [http-nio-8081-exec-7] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request succeed
+2021-11-29 09:18:51:627 [http-nio-8081-exec-7] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request Method: GET
+2021-11-29 09:18:51:627 [http-nio-8081-exec-7] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request URI: /api/article/10004
+2021-11-29 09:18:51:627 [http-nio-8081-exec-7] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Method Name: com.ivan.sunnyblog.web.controller.ArticleController.getPublicArticleDetail
+2021-11-29 09:18:51:627 [http-nio-8081-exec-7] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Params: 10004
+2021-11-29 09:18:51:627 [http-nio-8081-exec-7] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Result: ResultInfo{info='null', status=0, data=ArticleDetailVo{categoryId=2, BaseArticleVo{articleId=10004, status=1, title='Spring boot', description='rerwerwer', content='rererer![test.png](https://s3.ca-central-1.amazonaws.com/res-blog-public/res-dev/blog_1636947281578_test.png)', firstPicture='', viewCount=4, createDate='Tue Oct 12 15:58:26 EDT 2021', updateDate='Sun Nov 14 22:34:56 EST 2021'}}, total=null}
+2021-11-29 09:18:51:627 [http-nio-8081-exec-7] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Process Time: 6ms
+2021-11-29 09:18:51:627 [http-nio-8081-exec-7] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log ends =====
+2021-11-29 09:18:51:634 [http-nio-8081-exec-5] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log starts =====
+2021-11-29 09:18:51:634 [http-nio-8081-exec-5] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request succeed
+2021-11-29 09:18:51:634 [http-nio-8081-exec-5] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request Method: GET
+2021-11-29 09:18:51:634 [http-nio-8081-exec-5] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request URI: /api/comment/10004
+2021-11-29 09:18:51:634 [http-nio-8081-exec-5] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Method Name: com.ivan.sunnyblog.web.controller.CommentController.getComments
+2021-11-29 09:18:51:634 [http-nio-8081-exec-5] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Params: 10004
+2021-11-29 09:18:51:634 [http-nio-8081-exec-5] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Result: ResultInfo{info='null', status=0, data=[CommentListVo{commentId=2createDate=null, replyComments=[], CommentVo=CommentVo{parentCommentId=0, articleId=10004, email='efe@dfdf.com', nickname='efe', parentCommentNickname='null', content='efe', status='0'}}, CommentListVo{commentId=1createDate=null, replyComments=[CommentListVo{commentId=3createDate=null, replyComments=[], CommentVo=CommentVo{parentCommentId=1, articleId=10004, email='sdfsd@Ck.com', nickname='fsdf', parentCommentNickname='null', content='fdfdf', status='0'}}], CommentVo=CommentVo{parentCommentId=0, articleId=10004, email='ivanliang0818@gmail.com', nickname='test', parentCommentNickname='null', content='test', status='0'}}], total=null}
+2021-11-29 09:18:51:634 [http-nio-8081-exec-5] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Process Time: 2ms
+2021-11-29 09:18:51:634 [http-nio-8081-exec-5] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log ends =====
+2021-11-29 09:18:51:656 [http-nio-8081-exec-10] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log starts =====
+2021-11-29 09:18:51:656 [http-nio-8081-exec-10] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request succeed
+2021-11-29 09:18:51:656 [http-nio-8081-exec-10] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request Method: GET
+2021-11-29 09:18:51:656 [http-nio-8081-exec-10] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request URI: /api/comment/10004
+2021-11-29 09:18:51:656 [http-nio-8081-exec-10] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Method Name: com.ivan.sunnyblog.web.controller.CommentController.getComments
+2021-11-29 09:18:51:656 [http-nio-8081-exec-10] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Params: 10004
+2021-11-29 09:18:51:656 [http-nio-8081-exec-10] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Result: ResultInfo{info='null', status=0, data=[CommentListVo{commentId=2createDate=null, replyComments=[], CommentVo=CommentVo{parentCommentId=0, articleId=10004, email='efe@dfdf.com', nickname='efe', parentCommentNickname='null', content='efe', status='0'}}, CommentListVo{commentId=1createDate=null, replyComments=[CommentListVo{commentId=3createDate=null, replyComments=[], CommentVo=CommentVo{parentCommentId=1, articleId=10004, email='sdfsd@Ck.com', nickname='fsdf', parentCommentNickname='null', content='fdfdf', status='0'}}], CommentVo=CommentVo{parentCommentId=0, articleId=10004, email='ivanliang0818@gmail.com', nickname='test', parentCommentNickname='null', content='test', status='0'}}], total=null}
+2021-11-29 09:18:51:656 [http-nio-8081-exec-10] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Process Time: 4ms
+2021-11-29 09:18:51:656 [http-nio-8081-exec-10] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log ends =====
+2021-11-29 10:47:03:454 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m31s56ms).
+2021-11-29 11:13:08:161 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=26m4s707ms).
+2021-11-29 12:01:11:903 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=48m3s741ms).
+2021-11-29 12:37:39:023 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=36m27s121ms).
+2021-11-29 14:14:43:810 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h37m4s787ms).
+2021-11-29 14:43:29:892 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=28m46s82ms).
+2021-11-29 14:45:56:199 [http-nio-8081-exec-2] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log starts =====
+2021-11-29 14:45:56:199 [http-nio-8081-exec-2] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request succeed
+2021-11-29 14:45:56:199 [http-nio-8081-exec-2] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request Method: GET
+2021-11-29 14:45:56:199 [http-nio-8081-exec-2] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request URI: /api/article/10004
+2021-11-29 14:45:56:199 [http-nio-8081-exec-2] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Method Name: com.ivan.sunnyblog.web.controller.ArticleController.getPublicArticleDetail
+2021-11-29 14:45:56:199 [http-nio-8081-exec-2] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Params: 10004
+2021-11-29 14:45:56:199 [http-nio-8081-exec-2] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Result: ResultInfo{info='null', status=0, data=ArticleDetailVo{categoryId=2, BaseArticleVo{articleId=10004, status=1, title='Spring boot', description='rerwerwer', content='rererer![test.png](https://s3.ca-central-1.amazonaws.com/res-blog-public/res-dev/blog_1636947281578_test.png)', firstPicture='', viewCount=4, createDate='Tue Oct 12 15:58:26 EDT 2021', updateDate='Sun Nov 14 22:34:56 EST 2021'}}, total=null}
+2021-11-29 14:45:56:199 [http-nio-8081-exec-2] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Process Time: 18ms
+2021-11-29 14:45:56:199 [http-nio-8081-exec-2] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log ends =====
+2021-11-29 14:45:56:200 [http-nio-8081-exec-7] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log starts =====
+2021-11-29 14:45:56:200 [http-nio-8081-exec-7] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request succeed
+2021-11-29 14:45:56:200 [http-nio-8081-exec-7] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request Method: GET
+2021-11-29 14:45:56:200 [http-nio-8081-exec-7] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request URI: /api/comment/10004
+2021-11-29 14:45:56:200 [http-nio-8081-exec-7] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Method Name: com.ivan.sunnyblog.web.controller.CommentController.getComments
+2021-11-29 14:45:56:200 [http-nio-8081-exec-7] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Params: 10004
+2021-11-29 14:45:56:200 [http-nio-8081-exec-7] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Result: ResultInfo{info='null', status=0, data=[CommentListVo{commentId=2createDate=null, replyComments=[], CommentVo=CommentVo{parentCommentId=0, articleId=10004, email='efe@dfdf.com', nickname='efe', parentCommentNickname='null', content='efe', status='0'}}, CommentListVo{commentId=1createDate=null, replyComments=[CommentListVo{commentId=3createDate=null, replyComments=[], CommentVo=CommentVo{parentCommentId=1, articleId=10004, email='sdfsd@Ck.com', nickname='fsdf', parentCommentNickname='null', content='fdfdf', status='0'}}], CommentVo=CommentVo{parentCommentId=0, articleId=10004, email='ivanliang0818@gmail.com', nickname='test', parentCommentNickname='null', content='test', status='0'}}], total=null}
+2021-11-29 14:45:56:200 [http-nio-8081-exec-7] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Process Time: 19ms
+2021-11-29 14:45:56:200 [http-nio-8081-exec-7] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log ends =====
+2021-11-29 14:45:56:204 [http-nio-8081-exec-4] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log starts =====
+2021-11-29 14:45:56:204 [http-nio-8081-exec-4] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request succeed
+2021-11-29 14:45:56:204 [http-nio-8081-exec-4] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request Method: GET
+2021-11-29 14:45:56:204 [http-nio-8081-exec-4] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request URI: /api/comment/10004
+2021-11-29 14:45:56:204 [http-nio-8081-exec-4] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Method Name: com.ivan.sunnyblog.web.controller.CommentController.getComments
+2021-11-29 14:45:56:204 [http-nio-8081-exec-4] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Params: 10004
+2021-11-29 14:45:56:205 [http-nio-8081-exec-4] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Result: ResultInfo{info='null', status=0, data=[CommentListVo{commentId=2createDate=null, replyComments=[], CommentVo=CommentVo{parentCommentId=0, articleId=10004, email='efe@dfdf.com', nickname='efe', parentCommentNickname='null', content='efe', status='0'}}, CommentListVo{commentId=1createDate=null, replyComments=[CommentListVo{commentId=3createDate=null, replyComments=[], CommentVo=CommentVo{parentCommentId=1, articleId=10004, email='sdfsd@Ck.com', nickname='fsdf', parentCommentNickname='null', content='fdfdf', status='0'}}], CommentVo=CommentVo{parentCommentId=0, articleId=10004, email='ivanliang0818@gmail.com', nickname='test', parentCommentNickname='null', content='test', status='0'}}], total=null}
+2021-11-29 14:45:56:205 [http-nio-8081-exec-4] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Process Time: 2ms
+2021-11-29 14:45:56:205 [http-nio-8081-exec-4] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log ends =====
+2021-11-29 14:45:56:671 [http-nio-8081-exec-5] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log starts =====
+2021-11-29 14:45:56:671 [http-nio-8081-exec-5] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request succeed
+2021-11-29 14:45:56:671 [http-nio-8081-exec-5] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request Method: GET
+2021-11-29 14:45:56:672 [http-nio-8081-exec-5] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request URI: /api/comment/10004
+2021-11-29 14:45:56:672 [http-nio-8081-exec-5] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Method Name: com.ivan.sunnyblog.web.controller.CommentController.getComments
+2021-11-29 14:45:56:672 [http-nio-8081-exec-5] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Params: 10004
+2021-11-29 14:45:56:672 [http-nio-8081-exec-5] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Result: ResultInfo{info='null', status=0, data=[CommentListVo{commentId=2createDate=null, replyComments=[], CommentVo=CommentVo{parentCommentId=0, articleId=10004, email='efe@dfdf.com', nickname='efe', parentCommentNickname='null', content='efe', status='0'}}, CommentListVo{commentId=1createDate=null, replyComments=[CommentListVo{commentId=3createDate=null, replyComments=[], CommentVo=CommentVo{parentCommentId=1, articleId=10004, email='sdfsd@Ck.com', nickname='fsdf', parentCommentNickname='null', content='fdfdf', status='0'}}], CommentVo=CommentVo{parentCommentId=0, articleId=10004, email='ivanliang0818@gmail.com', nickname='test', parentCommentNickname='null', content='test', status='0'}}], total=null}
+2021-11-29 14:45:56:672 [http-nio-8081-exec-5] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Process Time: 2ms
+2021-11-29 14:45:56:672 [http-nio-8081-exec-5] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log ends =====
+2021-11-29 14:46:09:032 [Thread-38] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler Shutting down ExecutorService 'taskScheduler'
+2021-11-29 14:46:09:033 [Thread-38] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Shutting down ExecutorService 'applicationTaskExecutor'
+2021-11-29 14:46:09:034 [Thread-38] INFO  com.zaxxer.hikari.HikariDataSource HikariPool-1 - Shutdown initiated...
+2021-11-29 14:46:09:037 [Thread-38] INFO  com.zaxxer.hikari.HikariDataSource HikariPool-1 - Shutdown completed.
+2021-11-29 14:48:42:012 [restartedMain] INFO  com.ivan.sunnyblog.SunnyBlogApplication Starting SunnyBlogApplication on Jinghaos-MacBook-Air.local with PID 19926 (/Users/jinghaoliang/Documents/tech/Project/blogProject/SunnyBlog/target/classes started by jinghaoliang in /Users/jinghaoliang/Documents/tech/Project/blogProject/SunnyBlog)
+2021-11-29 14:48:42:013 [restartedMain] INFO  com.ivan.sunnyblog.SunnyBlogApplication No active profile set, falling back to default profiles: default
+2021-11-29 14:48:42:033 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-11-29 14:48:42:033 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-11-29 14:48:42:329 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-11-29 14:48:42:330 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data repositories in DEFAULT mode.
+2021-11-29 14:48:42:352 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 16ms. Found 0 repository interfaces.
+2021-11-29 14:48:42:499 [restartedMain] INFO  o.s.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$b72a04b4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-11-29 14:48:42:670 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat initialized with port(s): 8081 (http)
+2021-11-29 14:48:42:676 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol Initializing ProtocolHandler ["http-nio-8081"]
+2021-11-29 14:48:42:682 [restartedMain] INFO  org.apache.catalina.core.StandardService Starting service [Tomcat]
+2021-11-29 14:48:42:682 [restartedMain] INFO  org.apache.catalina.core.StandardEngine Starting Servlet engine: [Apache Tomcat/9.0.21]
+2021-11-29 14:48:42:743 [restartedMain] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring embedded WebApplicationContext
+2021-11-29 14:48:42:743 [restartedMain] INFO  org.springframework.web.context.ContextLoader Root WebApplicationContext: initialization completed in 710 ms
+2021-11-29 14:48:42:885 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource HikariPool-1 - Starting...
+2021-11-29 14:48:42:917 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource HikariPool-1 - Start completed.
+2021-11-29 14:48:58:059 [restartedMain] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Initializing ExecutorService 'applicationTaskExecutor'
+2021-11-29 14:48:58:217 [restartedMain] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler Initializing ExecutorService 'taskScheduler'
+2021-11-29 14:48:58:235 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer LiveReload server is running on port 35729
+2021-11-29 14:48:58:277 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol Starting ProtocolHandler ["http-nio-8081"]
+2021-11-29 14:48:58:291 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat started on port(s): 8081 (http) with context path ''
+2021-11-29 14:48:58:293 [restartedMain] INFO  com.ivan.sunnyblog.SunnyBlogApplication Started SunnyBlogApplication in 16.44 seconds (JVM running for 16.939)
+2021-11-29 14:50:03:293 [http-nio-8081-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-11-29 14:50:03:294 [http-nio-8081-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet Initializing Servlet 'dispatcherServlet'
+2021-11-29 14:50:03:302 [http-nio-8081-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet Completed initialization in 8 ms
+2021-11-29 14:50:03:526 [http-nio-8081-exec-3] INFO  org.jooq.Constants 
+                                      
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@  @@        @@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@        @@@@@@@@@@
+@@@@@@@@@@@@@@@@  @@  @@    @@@@@@@@@@
+@@@@@@@@@@  @@@@  @@  @@    @@@@@@@@@@
+@@@@@@@@@@        @@        @@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@        @@        @@@@@@@@@@
+@@@@@@@@@@    @@  @@  @@@@  @@@@@@@@@@
+@@@@@@@@@@    @@  @@  @@@@  @@@@@@@@@@
+@@@@@@@@@@        @@  @  @  @@@@@@@@@@
+@@@@@@@@@@        @@        @@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@  @@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  Thank you for using jOOQ 3.11.11
+                                      
+2021-11-29 14:50:03:599 [http-nio-8081-exec-2] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log starts =====
+2021-11-29 14:50:03:599 [http-nio-8081-exec-4] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log starts =====
+2021-11-29 14:50:03:599 [http-nio-8081-exec-2] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request succeed
+2021-11-29 14:50:03:599 [http-nio-8081-exec-4] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request succeed
+2021-11-29 14:50:03:599 [http-nio-8081-exec-2] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request Method: GET
+2021-11-29 14:50:03:599 [http-nio-8081-exec-4] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request Method: GET
+2021-11-29 14:50:03:599 [http-nio-8081-exec-2] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request URI: /api/comment/10004
+2021-11-29 14:50:03:599 [http-nio-8081-exec-4] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request URI: /api/comment/10004
+2021-11-29 14:50:03:599 [http-nio-8081-exec-2] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Method Name: com.ivan.sunnyblog.web.controller.CommentController.getComments
+2021-11-29 14:50:03:599 [http-nio-8081-exec-4] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Method Name: com.ivan.sunnyblog.web.controller.CommentController.getComments
+2021-11-29 14:50:03:600 [http-nio-8081-exec-2] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Params: 10004
+2021-11-29 14:50:03:600 [http-nio-8081-exec-4] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Params: 10004
+2021-11-29 14:50:03:600 [http-nio-8081-exec-2] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Result: ResultInfo{info='null', status=0, data=[CommentListVo{commentId=2createDate=null, replyComments=[], CommentVo=CommentVo{parentCommentId=0, articleId=10004, email='efe@dfdf.com', nickname='efe', parentCommentNickname='null', content='efe', status='0'}}, CommentListVo{commentId=1createDate=null, replyComments=[CommentListVo{commentId=3createDate=null, replyComments=[], CommentVo=CommentVo{parentCommentId=1, articleId=10004, email='sdfsd@Ck.com', nickname='fsdf', parentCommentNickname='null', content='fdfdf', status='0'}}], CommentVo=CommentVo{parentCommentId=0, articleId=10004, email='ivanliang0818@gmail.com', nickname='test', parentCommentNickname='null', content='test', status='0'}}], total=null}
+2021-11-29 14:50:03:600 [http-nio-8081-exec-4] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Result: ResultInfo{info='null', status=0, data=[CommentListVo{commentId=2createDate=null, replyComments=[], CommentVo=CommentVo{parentCommentId=0, articleId=10004, email='efe@dfdf.com', nickname='efe', parentCommentNickname='null', content='efe', status='0'}}, CommentListVo{commentId=1createDate=null, replyComments=[CommentListVo{commentId=3createDate=null, replyComments=[], CommentVo=CommentVo{parentCommentId=1, articleId=10004, email='sdfsd@Ck.com', nickname='fsdf', parentCommentNickname='null', content='fdfdf', status='0'}}], CommentVo=CommentVo{parentCommentId=0, articleId=10004, email='ivanliang0818@gmail.com', nickname='test', parentCommentNickname='null', content='test', status='0'}}], total=null}
+2021-11-29 14:50:03:600 [http-nio-8081-exec-2] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Process Time: 251ms
+2021-11-29 14:50:03:600 [http-nio-8081-exec-4] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Process Time: 251ms
+2021-11-29 14:50:03:600 [http-nio-8081-exec-2] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log ends =====
+2021-11-29 14:50:03:600 [http-nio-8081-exec-4] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log ends =====
+2021-11-29 14:50:03:661 [http-nio-8081-exec-3] INFO  io.lettuce.core.EpollProvider Starting without optional epoll library
+2021-11-29 14:50:03:661 [http-nio-8081-exec-3] INFO  io.lettuce.core.KqueueProvider Starting without optional kqueue library
+2021-11-29 14:50:03:723 [http-nio-8081-exec-3] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log starts =====
+2021-11-29 14:50:03:723 [http-nio-8081-exec-3] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request succeed
+2021-11-29 14:50:03:723 [http-nio-8081-exec-3] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request Method: GET
+2021-11-29 14:50:03:723 [http-nio-8081-exec-3] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request URI: /api/article/10004
+2021-11-29 14:50:03:723 [http-nio-8081-exec-3] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Method Name: com.ivan.sunnyblog.web.controller.ArticleController.getPublicArticleDetail
+2021-11-29 14:50:03:723 [http-nio-8081-exec-3] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Params: 10004
+2021-11-29 14:50:03:723 [http-nio-8081-exec-3] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Result: ResultInfo{info='null', status=0, data=ArticleDetailVo{categoryId=2, BaseArticleVo{articleId=10004, status=1, title='Spring boot', description='rerwerwer', content='rererer![test.png](https://s3.ca-central-1.amazonaws.com/res-blog-public/res-dev/blog_1636947281578_test.png)', firstPicture='', viewCount=4, createDate='Tue Oct 12 15:58:26 EDT 2021', updateDate='Sun Nov 14 22:34:56 EST 2021'}}, total=null}
+2021-11-29 14:50:03:723 [http-nio-8081-exec-3] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Process Time: 386ms
+2021-11-29 14:50:03:723 [http-nio-8081-exec-3] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log ends =====
+2021-11-29 14:50:03:858 [http-nio-8081-exec-5] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log starts =====
+2021-11-29 14:50:03:858 [http-nio-8081-exec-5] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request succeed
+2021-11-29 14:50:03:858 [http-nio-8081-exec-5] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request Method: GET
+2021-11-29 14:50:03:858 [http-nio-8081-exec-5] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request URI: /api/comment/10004
+2021-11-29 14:50:03:858 [http-nio-8081-exec-5] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Method Name: com.ivan.sunnyblog.web.controller.CommentController.getComments
+2021-11-29 14:50:03:858 [http-nio-8081-exec-5] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Params: 10004
+2021-11-29 14:50:03:858 [http-nio-8081-exec-5] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Result: ResultInfo{info='null', status=0, data=[CommentListVo{commentId=2createDate=null, replyComments=[], CommentVo=CommentVo{parentCommentId=0, articleId=10004, email='efe@dfdf.com', nickname='efe', parentCommentNickname='null', content='efe', status='0'}}, CommentListVo{commentId=1createDate=null, replyComments=[CommentListVo{commentId=3createDate=null, replyComments=[], CommentVo=CommentVo{parentCommentId=1, articleId=10004, email='sdfsd@Ck.com', nickname='fsdf', parentCommentNickname='null', content='fdfdf', status='0'}}], CommentVo=CommentVo{parentCommentId=0, articleId=10004, email='ivanliang0818@gmail.com', nickname='test', parentCommentNickname='null', content='test', status='0'}}], total=null}
+2021-11-29 14:50:03:858 [http-nio-8081-exec-5] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Process Time: 40ms
+2021-11-29 14:50:03:858 [http-nio-8081-exec-5] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log ends =====
+2021-11-29 14:50:54:196 [http-nio-8081-exec-7] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log starts =====
+2021-11-29 14:50:54:197 [http-nio-8081-exec-7] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request succeed
+2021-11-29 14:50:54:197 [http-nio-8081-exec-7] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request Method: GET
+2021-11-29 14:50:54:197 [http-nio-8081-exec-7] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request URI: /api/article/10004
+2021-11-29 14:50:54:197 [http-nio-8081-exec-7] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Method Name: com.ivan.sunnyblog.web.controller.ArticleController.getPublicArticleDetail
+2021-11-29 14:50:54:197 [http-nio-8081-exec-7] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Params: 10004
+2021-11-29 14:50:54:197 [http-nio-8081-exec-7] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Result: ResultInfo{info='null', status=0, data=ArticleDetailVo{categoryId=2, BaseArticleVo{articleId=10004, status=1, title='Spring boot', description='rerwerwer', content='rererer![test.png](https://s3.ca-central-1.amazonaws.com/res-blog-public/res-dev/blog_1636947281578_test.png)', firstPicture='', viewCount=4, createDate='Tue Oct 12 15:58:26 EDT 2021', updateDate='Sun Nov 14 22:34:56 EST 2021'}}, total=null}
+2021-11-29 14:50:54:197 [http-nio-8081-exec-7] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Process Time: 14ms
+2021-11-29 14:50:54:197 [http-nio-8081-exec-7] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log ends =====
+2021-11-29 14:50:54:207 [http-nio-8081-exec-10] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log starts =====
+2021-11-29 14:50:54:207 [http-nio-8081-exec-10] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request succeed
+2021-11-29 14:50:54:207 [http-nio-8081-exec-10] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request Method: GET
+2021-11-29 14:50:54:207 [http-nio-8081-exec-10] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request URI: /api/comment/10004
+2021-11-29 14:50:54:207 [http-nio-8081-exec-10] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Method Name: com.ivan.sunnyblog.web.controller.CommentController.getComments
+2021-11-29 14:50:54:207 [http-nio-8081-exec-10] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Params: 10004
+2021-11-29 14:50:54:207 [http-nio-8081-exec-10] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Result: ResultInfo{info='null', status=0, data=[CommentListVo{commentId=2createDate=null, replyComments=[], CommentVo=CommentVo{parentCommentId=0, articleId=10004, email='efe@dfdf.com', nickname='efe', parentCommentNickname='null', content='efe', status='0'}}, CommentListVo{commentId=1createDate=null, replyComments=[CommentListVo{commentId=3createDate=null, replyComments=[], CommentVo=CommentVo{parentCommentId=1, articleId=10004, email='sdfsd@Ck.com', nickname='fsdf', parentCommentNickname='null', content='fdfdf', status='0'}}], CommentVo=CommentVo{parentCommentId=0, articleId=10004, email='ivanliang0818@gmail.com', nickname='test', parentCommentNickname='null', content='test', status='0'}}], total=null}
+2021-11-29 14:50:54:207 [http-nio-8081-exec-10] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Process Time: 20ms
+2021-11-29 14:50:54:207 [http-nio-8081-exec-10] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log ends =====
+2021-11-29 14:50:54:208 [http-nio-8081-exec-9] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log starts =====
+2021-11-29 14:50:54:208 [http-nio-8081-exec-9] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request succeed
+2021-11-29 14:50:54:208 [http-nio-8081-exec-9] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request Method: GET
+2021-11-29 14:50:54:208 [http-nio-8081-exec-9] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request URI: /api/comment/10004
+2021-11-29 14:50:54:208 [http-nio-8081-exec-9] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Method Name: com.ivan.sunnyblog.web.controller.CommentController.getComments
+2021-11-29 14:50:54:208 [http-nio-8081-exec-9] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Params: 10004
+2021-11-29 14:50:54:208 [http-nio-8081-exec-9] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Result: ResultInfo{info='null', status=0, data=[CommentListVo{commentId=2createDate=null, replyComments=[], CommentVo=CommentVo{parentCommentId=0, articleId=10004, email='efe@dfdf.com', nickname='efe', parentCommentNickname='null', content='efe', status='0'}}, CommentListVo{commentId=1createDate=null, replyComments=[CommentListVo{commentId=3createDate=null, replyComments=[], CommentVo=CommentVo{parentCommentId=1, articleId=10004, email='sdfsd@Ck.com', nickname='fsdf', parentCommentNickname='null', content='fdfdf', status='0'}}], CommentVo=CommentVo{parentCommentId=0, articleId=10004, email='ivanliang0818@gmail.com', nickname='test', parentCommentNickname='null', content='test', status='0'}}], total=null}
+2021-11-29 14:50:54:208 [http-nio-8081-exec-9] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Process Time: 20ms
+2021-11-29 14:50:54:208 [http-nio-8081-exec-9] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log ends =====
+2021-11-29 14:50:54:680 [http-nio-8081-exec-1] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log starts =====
+2021-11-29 14:50:54:680 [http-nio-8081-exec-1] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request succeed
+2021-11-29 14:50:54:680 [http-nio-8081-exec-1] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request Method: GET
+2021-11-29 14:50:54:680 [http-nio-8081-exec-1] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request URI: /api/comment/10004
+2021-11-29 14:50:54:680 [http-nio-8081-exec-1] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Method Name: com.ivan.sunnyblog.web.controller.CommentController.getComments
+2021-11-29 14:50:54:680 [http-nio-8081-exec-1] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Params: 10004
+2021-11-29 14:50:54:680 [http-nio-8081-exec-1] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Result: ResultInfo{info='null', status=0, data=[CommentListVo{commentId=2createDate=null, replyComments=[], CommentVo=CommentVo{parentCommentId=0, articleId=10004, email='efe@dfdf.com', nickname='efe', parentCommentNickname='null', content='efe', status='0'}}, CommentListVo{commentId=1createDate=null, replyComments=[CommentListVo{commentId=3createDate=null, replyComments=[], CommentVo=CommentVo{parentCommentId=1, articleId=10004, email='sdfsd@Ck.com', nickname='fsdf', parentCommentNickname='null', content='fdfdf', status='0'}}], CommentVo=CommentVo{parentCommentId=0, articleId=10004, email='ivanliang0818@gmail.com', nickname='test', parentCommentNickname='null', content='test', status='0'}}], total=null}
+2021-11-29 14:50:54:681 [http-nio-8081-exec-1] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Process Time: 8ms
+2021-11-29 14:50:54:681 [http-nio-8081-exec-1] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log ends =====
+2021-11-29 14:51:00:005 [http-nio-8081-exec-4] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log starts =====
+2021-11-29 14:51:00:005 [http-nio-8081-exec-4] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request succeed
+2021-11-29 14:51:00:005 [http-nio-8081-exec-4] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request Method: GET
+2021-11-29 14:51:00:005 [http-nio-8081-exec-4] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request URI: /api/article/10004
+2021-11-29 14:51:00:005 [http-nio-8081-exec-4] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Method Name: com.ivan.sunnyblog.web.controller.ArticleController.getPublicArticleDetail
+2021-11-29 14:51:00:005 [http-nio-8081-exec-4] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Params: 10004
+2021-11-29 14:51:00:005 [http-nio-8081-exec-4] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Result: ResultInfo{info='null', status=0, data=ArticleDetailVo{categoryId=2, BaseArticleVo{articleId=10004, status=1, title='Spring boot', description='rerwerwer', content='rererer![test.png](https://s3.ca-central-1.amazonaws.com/res-blog-public/res-dev/blog_1636947281578_test.png)', firstPicture='', viewCount=4, createDate='Tue Oct 12 15:58:26 EDT 2021', updateDate='Sun Nov 14 22:34:56 EST 2021'}}, total=null}
+2021-11-29 14:51:00:005 [http-nio-8081-exec-4] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Process Time: 27ms
+2021-11-29 14:51:00:006 [http-nio-8081-exec-4] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log ends =====
+2021-11-29 14:51:00:006 [http-nio-8081-exec-5] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log starts =====
+2021-11-29 14:51:00:006 [http-nio-8081-exec-5] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request succeed
+2021-11-29 14:51:00:006 [http-nio-8081-exec-5] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request Method: GET
+2021-11-29 14:51:00:006 [http-nio-8081-exec-5] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request URI: /api/comment/10004
+2021-11-29 14:51:00:006 [http-nio-8081-exec-5] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Method Name: com.ivan.sunnyblog.web.controller.CommentController.getComments
+2021-11-29 14:51:00:006 [http-nio-8081-exec-5] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Params: 10004
+2021-11-29 14:51:00:006 [http-nio-8081-exec-5] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Result: ResultInfo{info='null', status=0, data=[CommentListVo{commentId=2createDate=null, replyComments=[], CommentVo=CommentVo{parentCommentId=0, articleId=10004, email='efe@dfdf.com', nickname='efe', parentCommentNickname='null', content='efe', status='0'}}, CommentListVo{commentId=1createDate=null, replyComments=[CommentListVo{commentId=3createDate=null, replyComments=[], CommentVo=CommentVo{parentCommentId=1, articleId=10004, email='sdfsd@Ck.com', nickname='fsdf', parentCommentNickname='null', content='fdfdf', status='0'}}], CommentVo=CommentVo{parentCommentId=0, articleId=10004, email='ivanliang0818@gmail.com', nickname='test', parentCommentNickname='null', content='test', status='0'}}], total=null}
+2021-11-29 14:51:00:006 [http-nio-8081-exec-5] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Process Time: 24ms
+2021-11-29 14:51:00:006 [http-nio-8081-exec-5] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log ends =====
+2021-11-29 14:51:00:014 [http-nio-8081-exec-8] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log starts =====
+2021-11-29 14:51:00:015 [http-nio-8081-exec-8] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request succeed
+2021-11-29 14:51:00:015 [http-nio-8081-exec-8] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request Method: GET
+2021-11-29 14:51:00:015 [http-nio-8081-exec-8] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request URI: /api/comment/10004
+2021-11-29 14:51:00:015 [http-nio-8081-exec-8] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Method Name: com.ivan.sunnyblog.web.controller.CommentController.getComments
+2021-11-29 14:51:00:015 [http-nio-8081-exec-8] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Params: 10004
+2021-11-29 14:51:00:015 [http-nio-8081-exec-8] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Result: ResultInfo{info='null', status=0, data=[CommentListVo{commentId=2createDate=null, replyComments=[], CommentVo=CommentVo{parentCommentId=0, articleId=10004, email='efe@dfdf.com', nickname='efe', parentCommentNickname='null', content='efe', status='0'}}, CommentListVo{commentId=1createDate=null, replyComments=[CommentListVo{commentId=3createDate=null, replyComments=[], CommentVo=CommentVo{parentCommentId=1, articleId=10004, email='sdfsd@Ck.com', nickname='fsdf', parentCommentNickname='null', content='fdfdf', status='0'}}], CommentVo=CommentVo{parentCommentId=0, articleId=10004, email='ivanliang0818@gmail.com', nickname='test', parentCommentNickname='null', content='test', status='0'}}], total=null}
+2021-11-29 14:51:00:015 [http-nio-8081-exec-8] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Process Time: 5ms
+2021-11-29 14:51:00:015 [http-nio-8081-exec-8] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log ends =====
+2021-11-29 14:51:00:489 [http-nio-8081-exec-6] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log starts =====
+2021-11-29 14:51:00:490 [http-nio-8081-exec-6] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request succeed
+2021-11-29 14:51:00:490 [http-nio-8081-exec-6] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request Method: GET
+2021-11-29 14:51:00:490 [http-nio-8081-exec-6] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request URI: /api/comment/10004
+2021-11-29 14:51:00:490 [http-nio-8081-exec-6] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Method Name: com.ivan.sunnyblog.web.controller.CommentController.getComments
+2021-11-29 14:51:00:490 [http-nio-8081-exec-6] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Params: 10004
+2021-11-29 14:51:00:490 [http-nio-8081-exec-6] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Result: ResultInfo{info='null', status=0, data=[CommentListVo{commentId=2createDate=null, replyComments=[], CommentVo=CommentVo{parentCommentId=0, articleId=10004, email='efe@dfdf.com', nickname='efe', parentCommentNickname='null', content='efe', status='0'}}, CommentListVo{commentId=1createDate=null, replyComments=[CommentListVo{commentId=3createDate=null, replyComments=[], CommentVo=CommentVo{parentCommentId=1, articleId=10004, email='sdfsd@Ck.com', nickname='fsdf', parentCommentNickname='null', content='fdfdf', status='0'}}], CommentVo=CommentVo{parentCommentId=0, articleId=10004, email='ivanliang0818@gmail.com', nickname='test', parentCommentNickname='null', content='test', status='0'}}], total=null}
+2021-11-29 14:51:00:490 [http-nio-8081-exec-6] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Process Time: 8ms
+2021-11-29 14:51:00:490 [http-nio-8081-exec-6] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log ends =====
+2021-11-29 14:51:04:999 [http-nio-8081-exec-10] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log starts =====
+2021-11-29 14:51:04:999 [http-nio-8081-exec-10] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request succeed
+2021-11-29 14:51:04:999 [http-nio-8081-exec-10] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request Method: GET
+2021-11-29 14:51:04:999 [http-nio-8081-exec-10] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request URI: /api/article/10004
+2021-11-29 14:51:04:999 [http-nio-8081-exec-10] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Method Name: com.ivan.sunnyblog.web.controller.ArticleController.getPublicArticleDetail
+2021-11-29 14:51:04:999 [http-nio-8081-exec-10] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Params: 10004
+2021-11-29 14:51:04:999 [http-nio-8081-exec-10] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Result: ResultInfo{info='null', status=0, data=ArticleDetailVo{categoryId=2, BaseArticleVo{articleId=10004, status=1, title='Spring boot', description='rerwerwer', content='rererer![test.png](https://s3.ca-central-1.amazonaws.com/res-blog-public/res-dev/blog_1636947281578_test.png)', firstPicture='', viewCount=4, createDate='Tue Oct 12 15:58:26 EDT 2021', updateDate='Sun Nov 14 22:34:56 EST 2021'}}, total=null}
+2021-11-29 14:51:04:999 [http-nio-8081-exec-10] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Process Time: 7ms
+2021-11-29 14:51:04:999 [http-nio-8081-exec-10] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log ends =====
+2021-11-29 14:51:05:003 [http-nio-8081-exec-7] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log starts =====
+2021-11-29 14:51:05:003 [http-nio-8081-exec-7] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request succeed
+2021-11-29 14:51:05:003 [http-nio-8081-exec-7] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request Method: GET
+2021-11-29 14:51:05:003 [http-nio-8081-exec-7] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request URI: /api/comment/10004
+2021-11-29 14:51:05:003 [http-nio-8081-exec-7] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Method Name: com.ivan.sunnyblog.web.controller.CommentController.getComments
+2021-11-29 14:51:05:003 [http-nio-8081-exec-7] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Params: 10004
+2021-11-29 14:51:05:003 [http-nio-8081-exec-7] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Result: ResultInfo{info='null', status=0, data=[CommentListVo{commentId=2createDate=null, replyComments=[], CommentVo=CommentVo{parentCommentId=0, articleId=10004, email='efe@dfdf.com', nickname='efe', parentCommentNickname='null', content='efe', status='0'}}, CommentListVo{commentId=1createDate=null, replyComments=[CommentListVo{commentId=3createDate=null, replyComments=[], CommentVo=CommentVo{parentCommentId=1, articleId=10004, email='sdfsd@Ck.com', nickname='fsdf', parentCommentNickname='null', content='fdfdf', status='0'}}], CommentVo=CommentVo{parentCommentId=0, articleId=10004, email='ivanliang0818@gmail.com', nickname='test', parentCommentNickname='null', content='test', status='0'}}], total=null}
+2021-11-29 14:51:05:003 [http-nio-8081-exec-7] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Process Time: 9ms
+2021-11-29 14:51:05:003 [http-nio-8081-exec-7] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log ends =====
+2021-11-29 14:51:05:024 [http-nio-8081-exec-9] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log starts =====
+2021-11-29 14:51:05:024 [http-nio-8081-exec-9] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request succeed
+2021-11-29 14:51:05:024 [http-nio-8081-exec-9] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request Method: GET
+2021-11-29 14:51:05:024 [http-nio-8081-exec-9] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request URI: /api/comment/10004
+2021-11-29 14:51:05:024 [http-nio-8081-exec-9] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Method Name: com.ivan.sunnyblog.web.controller.CommentController.getComments
+2021-11-29 14:51:05:024 [http-nio-8081-exec-9] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Params: 10004
+2021-11-29 14:51:05:024 [http-nio-8081-exec-9] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Result: ResultInfo{info='null', status=0, data=[CommentListVo{commentId=2createDate=null, replyComments=[], CommentVo=CommentVo{parentCommentId=0, articleId=10004, email='efe@dfdf.com', nickname='efe', parentCommentNickname='null', content='efe', status='0'}}, CommentListVo{commentId=1createDate=null, replyComments=[CommentListVo{commentId=3createDate=null, replyComments=[], CommentVo=CommentVo{parentCommentId=1, articleId=10004, email='sdfsd@Ck.com', nickname='fsdf', parentCommentNickname='null', content='fdfdf', status='0'}}], CommentVo=CommentVo{parentCommentId=0, articleId=10004, email='ivanliang0818@gmail.com', nickname='test', parentCommentNickname='null', content='test', status='0'}}], total=null}
+2021-11-29 14:51:05:024 [http-nio-8081-exec-9] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Process Time: 15ms
+2021-11-29 14:51:05:024 [http-nio-8081-exec-9] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log ends =====
+2021-11-29 14:51:05:032 [http-nio-8081-exec-1] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log starts =====
+2021-11-29 14:51:05:033 [http-nio-8081-exec-1] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request succeed
+2021-11-29 14:51:05:033 [http-nio-8081-exec-1] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request Method: GET
+2021-11-29 14:51:05:033 [http-nio-8081-exec-1] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request URI: /api/comment/10004
+2021-11-29 14:51:05:033 [http-nio-8081-exec-1] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Method Name: com.ivan.sunnyblog.web.controller.CommentController.getComments
+2021-11-29 14:51:05:033 [http-nio-8081-exec-1] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Params: 10004
+2021-11-29 14:51:05:033 [http-nio-8081-exec-1] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Result: ResultInfo{info='null', status=0, data=[CommentListVo{commentId=2createDate=null, replyComments=[], CommentVo=CommentVo{parentCommentId=0, articleId=10004, email='efe@dfdf.com', nickname='efe', parentCommentNickname='null', content='efe', status='0'}}, CommentListVo{commentId=1createDate=null, replyComments=[CommentListVo{commentId=3createDate=null, replyComments=[], CommentVo=CommentVo{parentCommentId=1, articleId=10004, email='sdfsd@Ck.com', nickname='fsdf', parentCommentNickname='null', content='fdfdf', status='0'}}], CommentVo=CommentVo{parentCommentId=0, articleId=10004, email='ivanliang0818@gmail.com', nickname='test', parentCommentNickname='null', content='test', status='0'}}], total=null}
+2021-11-29 14:51:05:033 [http-nio-8081-exec-1] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Process Time: 4ms
+2021-11-29 14:51:05:033 [http-nio-8081-exec-1] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log ends =====
+2021-11-29 15:18:47:999 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=19m34s911ms).
+2021-11-29 15:43:11:159 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=24m23s161ms).
+2021-11-29 18:15:03:988 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2h31m52s828ms).
+2021-11-29 20:50:38:240 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2h35m34s252ms).
+2021-11-29 22:30:11:943 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h39m33s704ms).

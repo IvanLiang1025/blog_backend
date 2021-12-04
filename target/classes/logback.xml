@@ -1,0 +1,100 @@
+
+<configuration scan="true">
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%yellow(%date{HH:mm:ss:SSS}) [%thread] %highlight(%-5level) %cyan(%logger{90}) %msg%n</pattern>
+        </encoder>
+
+    </appender>
+
+    <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <encoder>
+            <pattern>%date{yyyy-MM-dd HH:mm:ss:SSS} [%thread] %-5level %logger{90} %msg%n</pattern>
+        </encoder>
+
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>applogs/app-%d{yyyy-MM-dd}.log</fileNamePattern>
+            <maxHistory>30</maxHistory>
+            <totalSizeCap>1GB</totalSizeCap>
+        </rollingPolicy>
+    </appender>
+
+<!--    root level: info will log level info and above-->
+    <root level="INFO">
+        <appender-ref ref="STDOUT"></appender-ref>
+        <appender-ref ref="FILE"></appender-ref>
+    </root>
+    <logger name="com.ivan"></logger>
+
+<!--    <logger name="com.ivan">-->
+<!--        <appender-ref ref="STDOUT"></appender-ref>-->
+<!--        <appender-ref ref="FILE"></appender-ref>-->
+<!--    </logger>-->
+<!--    <logger name="org.jooq">-->
+<!--        -->
+<!--    </logger>-->
+</configuration>
+<!--&lt;!&ndash; Logback configuration. See http://logback.qos.ch/manual/index.html &ndash;&gt;-->
+
+<!--<configuration debug="false" scan="true">-->
+
+<!--    &lt;!&ndash; Simple file output &ndash;&gt;-->
+<!--    <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">-->
+<!--        &lt;!&ndash; encoder defaults to ch.qos.logback.classic.encoder.PatternLayoutEncoder &ndash;&gt;-->
+<!--        <encoder>-->
+<!--            <pattern>-->
+<!--                [%date{HH:mm:ss}] [%thread] %-5level %logger{96} - %msg%n-->
+<!--            </pattern>-->
+<!--            <charset>UTF-8</charset>-->
+<!--        </encoder>-->
+
+<!--        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">-->
+<!--            <fileNamePattern>${app.log.dir}/app-%d{yyyy-MM-dd}.log</fileNamePattern>-->
+<!--            &lt;!&ndash;timeBasedFileNamingAndTriggeringPolicy-->
+<!--                class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">-->
+<!--              <maxFileSize>64MB</maxFileSize>-->
+<!--            </timeBasedFileNamingAndTriggeringPolicy&ndash;&gt;-->
+<!--        </rollingPolicy>-->
+
+
+<!--        <filter class="ch.qos.logback.classic.filter.ThresholdFilter">-->
+<!--            <level>INFO</level>-->
+<!--        </filter>-->
+<!--        &lt;!&ndash; Safely log to the same file from multiple JVMs. Degrades performance! &ndash;&gt;-->
+<!--        <prudent>true</prudent>-->
+<!--    </appender>-->
+
+
+<!--    &lt;!&ndash; Console output &ndash;&gt;-->
+<!--    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">-->
+<!--        &lt;!&ndash; encoder defaults to ch.qos.logback.classic.encoder.PatternLayoutEncoder &ndash;&gt;-->
+<!--        <encoder>-->
+<!--            <pattern>-->
+<!--                [%date{yyyy-MM-dd HH:mm:ss}] [%thread] %-5level %logger{96} - %msg%n-->
+<!--            </pattern>-->
+<!--            <charset>UTF-8</charset>-->
+<!--        </encoder>-->
+<!--        &lt;!&ndash; Only log level WARN and above &ndash;&gt;-->
+<!--        <filter class="ch.qos.logback.classic.filter.ThresholdFilter">-->
+<!--            <level>INFO</level>-->
+<!--        </filter>-->
+<!--    </appender>-->
+
+
+
+<!--    &lt;!&ndash; Enable FILE and STDOUT appenders for all log messages.-->
+<!--         By default, only log at level INFO and above. &ndash;&gt;-->
+<!--    <root level="INFO">-->
+<!--        <appender-ref ref="STDOUT" />-->
+<!--        <appender-ref ref="FILE" />-->
+<!--    </root>-->
+<!--    <logger name="org.jooq" additivity="false">-->
+<!--        <level>warn</level>-->
+<!--    </logger>-->
+<!--    <logger name="com.ivan" additivity="false">-->
+<!--        <level>info</level>-->
+<!--&lt;!&ndash;        <appender-ref ref="FILE" />&ndash;&gt;-->
+<!--&lt;!&ndash;        <appender-ref ref="STDOUT" />&ndash;&gt;-->
+<!--    </logger>-->
+
+<!--</configuration>-->

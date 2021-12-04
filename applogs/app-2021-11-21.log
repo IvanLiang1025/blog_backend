@@ -1,0 +1,1392 @@
+2021-11-21 19:50:14:968 [restartedMain] INFO  com.ivan.sunnyblog.SunnyBlogApplication Starting SunnyBlogApplication on Jinghaos-MacBook-Air.local with PID 5954 (/Users/jinghaoliang/Documents/tech/Project/blogProject/SunnyBlog/target/classes started by jinghaoliang in /Users/jinghaoliang/Documents/tech/Project/blogProject/SunnyBlog)
+2021-11-21 19:50:14:972 [restartedMain] INFO  com.ivan.sunnyblog.SunnyBlogApplication No active profile set, falling back to default profiles: default
+2021-11-21 19:50:15:081 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-11-21 19:50:15:081 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-11-21 19:50:15:636 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-11-21 19:50:15:638 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data repositories in DEFAULT mode.
+2021-11-21 19:50:15:677 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 26ms. Found 0 repository interfaces.
+2021-11-21 19:50:15:885 [restartedMain] INFO  o.s.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$ceb07937] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-11-21 19:50:16:105 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat initialized with port(s): 8081 (http)
+2021-11-21 19:50:16:112 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol Initializing ProtocolHandler ["http-nio-8081"]
+2021-11-21 19:50:16:118 [restartedMain] INFO  org.apache.catalina.core.StandardService Starting service [Tomcat]
+2021-11-21 19:50:16:118 [restartedMain] INFO  org.apache.catalina.core.StandardEngine Starting Servlet engine: [Apache Tomcat/9.0.21]
+2021-11-21 19:50:16:208 [restartedMain] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring embedded WebApplicationContext
+2021-11-21 19:50:16:208 [restartedMain] INFO  org.springframework.web.context.ContextLoader Root WebApplicationContext: initialization completed in 1127 ms
+2021-11-21 19:50:16:400 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource HikariPool-1 - Starting...
+2021-11-21 19:50:16:444 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource HikariPool-1 - Start completed.
+2021-11-21 19:50:37:456 [restartedMain] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Initializing ExecutorService 'applicationTaskExecutor'
+2021-11-21 19:50:37:663 [restartedMain] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler Initializing ExecutorService 'taskScheduler'
+2021-11-21 19:50:37:690 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer LiveReload server is running on port 35729
+2021-11-21 19:50:37:737 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol Starting ProtocolHandler ["http-nio-8081"]
+2021-11-21 19:50:37:754 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat started on port(s): 8081 (http) with context path ''
+2021-11-21 19:50:37:757 [restartedMain] INFO  com.ivan.sunnyblog.SunnyBlogApplication Started SunnyBlogApplication in 23.283 seconds (JVM running for 23.912)
+2021-11-21 19:51:21:716 [http-nio-8081-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-11-21 19:51:21:716 [http-nio-8081-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet Initializing Servlet 'dispatcherServlet'
+2021-11-21 19:51:21:722 [http-nio-8081-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet Completed initialization in 6 ms
+2021-11-21 19:51:21:953 [http-nio-8081-exec-5] INFO  org.jooq.Constants 
+                                      
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@  @@        @@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@        @@@@@@@@@@
+@@@@@@@@@@@@@@@@  @@  @@    @@@@@@@@@@
+@@@@@@@@@@  @@@@  @@  @@    @@@@@@@@@@
+@@@@@@@@@@        @@        @@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@        @@        @@@@@@@@@@
+@@@@@@@@@@    @@  @@  @@@@  @@@@@@@@@@
+@@@@@@@@@@    @@  @@  @@@@  @@@@@@@@@@
+@@@@@@@@@@        @@  @  @  @@@@@@@@@@
+@@@@@@@@@@        @@        @@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@  @@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  Thank you for using jOOQ 3.11.11
+                                      
+2021-11-21 19:51:21:991 [http-nio-8081-exec-3] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log starts =====
+2021-11-21 19:51:21:991 [http-nio-8081-exec-3] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request succeed
+2021-11-21 19:51:21:991 [http-nio-8081-exec-3] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request Method: GET
+2021-11-21 19:51:21:991 [http-nio-8081-exec-3] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request URI: /api/categories
+2021-11-21 19:51:21:991 [http-nio-8081-exec-3] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Method Name: com.ivan.sunnyblog.web.controller.CategoryContoller.getCategories
+2021-11-21 19:51:21:991 [http-nio-8081-exec-5] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log starts =====
+2021-11-21 19:51:21:992 [http-nio-8081-exec-5] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request succeed
+2021-11-21 19:51:21:992 [http-nio-8081-exec-5] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request Method: GET
+2021-11-21 19:51:21:991 [http-nio-8081-exec-3] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Params: {}
+2021-11-21 19:51:21:992 [http-nio-8081-exec-5] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request URI: /api/articles/hot
+2021-11-21 19:51:21:992 [http-nio-8081-exec-5] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Method Name: com.ivan.sunnyblog.web.controller.ArticleController.getHotArticles
+2021-11-21 19:51:21:992 [http-nio-8081-exec-5] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Params: {}
+2021-11-21 19:51:21:992 [http-nio-8081-exec-5] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Result: ResultInfo{info='null', status=0, data=[ArticleVo{userInfo=null, category=null, BaseArticleVo{articleId=10004, status=null, title='Spring boot', description='null', content='null', firstPicture='null', viewCount=4, createDate='Tue Oct 12 15:58:26 EDT 2021', updateDate='null'}}, ArticleVo{userInfo=null, category=null, BaseArticleVo{articleId=10005, status=null, title='dd', description='null', content='null', firstPicture='null', viewCount=0, createDate='Sun Nov 07 14:09:29 EST 2021', updateDate='null'}}], total=null}
+2021-11-21 19:51:21:992 [http-nio-8081-exec-3] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Result: ResultInfo{info='null', status=0, data=[CategoryVo{categoryId=2, name='liddffd', articleCount=1}, CategoryVo{categoryId=1, name='Life ', articleCount=1}], total=null}
+2021-11-21 19:51:21:992 [http-nio-8081-exec-3] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Process Time: 237ms
+2021-11-21 19:51:21:992 [http-nio-8081-exec-5] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Process Time: 237ms
+2021-11-21 19:51:21:992 [http-nio-8081-exec-5] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log ends =====
+2021-11-21 19:51:21:992 [http-nio-8081-exec-3] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log ends =====
+2021-11-21 19:51:22:004 [http-nio-8081-exec-4] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log starts =====
+2021-11-21 19:51:22:004 [http-nio-8081-exec-4] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request succeed
+2021-11-21 19:51:22:004 [http-nio-8081-exec-4] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request Method: GET
+2021-11-21 19:51:22:004 [http-nio-8081-exec-4] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request URI: /api/articles
+2021-11-21 19:51:22:004 [http-nio-8081-exec-4] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Method Name: com.ivan.sunnyblog.web.controller.ArticleController.getPublicArticles
+2021-11-21 19:51:22:004 [http-nio-8081-exec-4] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Params: SearchVo{page=1, limit=10, categoryId=null, total=null}
+2021-11-21 19:51:22:004 [http-nio-8081-exec-4] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Result: ResultInfo{info='null', status=0, data=[ArticleVo{userInfo=UserInfoVo{userId=100001, nickName='ivan', userName='ivan', avatar='https://res-blog-public.s3.ca-central-1.amazonaws.com/default_avatar.jpg'}, category=CategoryVo{categoryId=1, name='Life ', articleCount=null}, BaseArticleVo{articleId=10005, status=1, title='dd', description='This is the doc of React markdown editor lite.
+Enjoy!!', content='null', firstPicture='', viewCount=0, createDate='Sun Nov 07 14:09:29 EST 2021', updateDate='Sun Nov 14 22:31:50 EST 2021'}}, ArticleVo{userInfo=UserInfoVo{userId=100001, nickName='ivan', userName='ivan', avatar='https://res-blog-public.s3.ca-central-1.amazonaws.com/default_avatar.jpg'}, category=CategoryVo{categoryId=2, name='liddffd', articleCount=null}, BaseArticleVo{articleId=10004, status=1, title='Spring boot', description='rerwerwer', content='null', firstPicture='', viewCount=4, createDate='Tue Oct 12 15:58:26 EDT 2021', updateDate='Sun Nov 14 22:34:56 EST 2021'}}], total=2}
+2021-11-21 19:51:22:004 [http-nio-8081-exec-4] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Process Time: 239ms
+2021-11-21 19:51:22:004 [http-nio-8081-exec-4] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log ends =====
+2021-11-21 19:52:23:360 [http-nio-8081-exec-10] INFO  io.lettuce.core.EpollProvider Starting without optional epoll library
+2021-11-21 19:52:23:361 [http-nio-8081-exec-10] INFO  io.lettuce.core.KqueueProvider Starting without optional kqueue library
+2021-11-21 19:52:23:604 [http-nio-8081-exec-10] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log starts =====
+2021-11-21 19:52:23:604 [http-nio-8081-exec-10] ERROR com.ivan.sunnyblog.web.aop.ControllerAspect Request failed
+2021-11-21 19:52:23:604 [http-nio-8081-exec-10] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request Method: GET
+2021-11-21 19:52:23:604 [http-nio-8081-exec-10] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request URI: /api/article/10004
+2021-11-21 19:52:23:604 [http-nio-8081-exec-10] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Method Name: com.ivan.sunnyblog.web.controller.ArticleController.getPublicArticleDetail
+2021-11-21 19:52:23:604 [http-nio-8081-exec-10] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Params: 10004
+2021-11-21 19:52:23:604 [http-nio-8081-exec-10] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Result: null
+2021-11-21 19:52:23:604 [http-nio-8081-exec-10] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Process Time: 322ms
+2021-11-21 19:52:23:604 [http-nio-8081-exec-10] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log ends =====
+2021-11-21 19:52:23:606 [http-nio-8081-exec-10] WARN  org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver Resolved [org.springframework.data.redis.RedisConnectionFailureException: Unable to connect to Redis; nested exception is io.lettuce.core.RedisConnectionException: Unable to connect to localhost:6379]
+2021-11-21 19:54:53:497 [Thread-55] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler Shutting down ExecutorService 'taskScheduler'
+2021-11-21 19:54:53:498 [Thread-55] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Shutting down ExecutorService 'applicationTaskExecutor'
+2021-11-21 19:54:53:499 [Thread-55] INFO  com.zaxxer.hikari.HikariDataSource HikariPool-1 - Shutdown initiated...
+2021-11-21 19:54:53:500 [Thread-55] INFO  com.zaxxer.hikari.HikariDataSource HikariPool-1 - Shutdown completed.
+2021-11-21 19:54:57:401 [restartedMain] INFO  com.ivan.sunnyblog.SunnyBlogApplication Starting SunnyBlogApplication on Jinghaos-MacBook-Air.local with PID 6400 (/Users/jinghaoliang/Documents/tech/Project/blogProject/SunnyBlog/target/classes started by jinghaoliang in /Users/jinghaoliang/Documents/tech/Project/blogProject/SunnyBlog)
+2021-11-21 19:54:57:402 [restartedMain] INFO  com.ivan.sunnyblog.SunnyBlogApplication No active profile set, falling back to default profiles: default
+2021-11-21 19:54:57:427 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-11-21 19:54:57:427 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-11-21 19:54:57:802 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-11-21 19:54:57:803 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data repositories in DEFAULT mode.
+2021-11-21 19:54:57:829 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 19ms. Found 0 repository interfaces.
+2021-11-21 19:54:58:008 [restartedMain] INFO  o.s.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$58ced209] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-11-21 19:54:58:207 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat initialized with port(s): 8081 (http)
+2021-11-21 19:54:58:215 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol Initializing ProtocolHandler ["http-nio-8081"]
+2021-11-21 19:54:58:221 [restartedMain] INFO  org.apache.catalina.core.StandardService Starting service [Tomcat]
+2021-11-21 19:54:58:221 [restartedMain] INFO  org.apache.catalina.core.StandardEngine Starting Servlet engine: [Apache Tomcat/9.0.21]
+2021-11-21 19:54:58:291 [restartedMain] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring embedded WebApplicationContext
+2021-11-21 19:54:58:292 [restartedMain] INFO  org.springframework.web.context.ContextLoader Root WebApplicationContext: initialization completed in 865 ms
+2021-11-21 19:54:58:462 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource HikariPool-1 - Starting...
+2021-11-21 19:54:58:496 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource HikariPool-1 - Start completed.
+2021-11-21 19:55:30:658 [restartedMain] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Initializing ExecutorService 'applicationTaskExecutor'
+2021-11-21 19:55:30:871 [restartedMain] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler Initializing ExecutorService 'taskScheduler'
+2021-11-21 19:55:30:898 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer LiveReload server is running on port 35729
+2021-11-21 19:55:30:947 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol Starting ProtocolHandler ["http-nio-8081"]
+2021-11-21 19:55:30:964 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat started on port(s): 8081 (http) with context path ''
+2021-11-21 19:55:30:966 [restartedMain] INFO  com.ivan.sunnyblog.SunnyBlogApplication Started SunnyBlogApplication in 33.764 seconds (JVM running for 34.38)
+2021-11-21 19:55:32:641 [http-nio-8081-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-11-21 19:55:32:641 [http-nio-8081-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet Initializing Servlet 'dispatcherServlet'
+2021-11-21 19:55:32:648 [http-nio-8081-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet Completed initialization in 7 ms
+2021-11-21 19:55:32:860 [http-nio-8081-exec-2] INFO  org.jooq.Constants 
+                                      
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@  @@        @@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@        @@@@@@@@@@
+@@@@@@@@@@@@@@@@  @@  @@    @@@@@@@@@@
+@@@@@@@@@@  @@@@  @@  @@    @@@@@@@@@@
+@@@@@@@@@@        @@        @@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@        @@        @@@@@@@@@@
+@@@@@@@@@@    @@  @@  @@@@  @@@@@@@@@@
+@@@@@@@@@@    @@  @@  @@@@  @@@@@@@@@@
+@@@@@@@@@@        @@  @  @  @@@@@@@@@@
+@@@@@@@@@@        @@        @@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@  @@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  Thank you for using jOOQ 3.11.11
+                                      
+2021-11-21 19:55:32:899 [http-nio-8081-exec-2] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log starts =====
+2021-11-21 19:55:32:899 [http-nio-8081-exec-1] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log starts =====
+2021-11-21 19:55:32:899 [http-nio-8081-exec-2] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request succeed
+2021-11-21 19:55:32:899 [http-nio-8081-exec-1] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request succeed
+2021-11-21 19:55:32:899 [http-nio-8081-exec-2] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request Method: GET
+2021-11-21 19:55:32:899 [http-nio-8081-exec-1] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request Method: GET
+2021-11-21 19:55:32:899 [http-nio-8081-exec-2] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request URI: /api/articles/hot
+2021-11-21 19:55:32:899 [http-nio-8081-exec-1] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request URI: /api/categories
+2021-11-21 19:55:32:899 [http-nio-8081-exec-2] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Method Name: com.ivan.sunnyblog.web.controller.ArticleController.getHotArticles
+2021-11-21 19:55:32:899 [http-nio-8081-exec-1] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Method Name: com.ivan.sunnyblog.web.controller.CategoryContoller.getCategories
+2021-11-21 19:55:32:899 [http-nio-8081-exec-2] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Params: {}
+2021-11-21 19:55:32:899 [http-nio-8081-exec-1] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Params: {}
+2021-11-21 19:55:32:899 [http-nio-8081-exec-1] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Result: ResultInfo{info='null', status=0, data=[CategoryVo{categoryId=2, name='liddffd', articleCount=1}, CategoryVo{categoryId=1, name='Life ', articleCount=1}], total=null}
+2021-11-21 19:55:32:899 [http-nio-8081-exec-1] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Process Time: 228ms
+2021-11-21 19:55:32:899 [http-nio-8081-exec-2] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Result: ResultInfo{info='null', status=0, data=[ArticleVo{userInfo=null, category=null, BaseArticleVo{articleId=10004, status=null, title='Spring boot', description='null', content='null', firstPicture='null', viewCount=4, createDate='Tue Oct 12 15:58:26 EDT 2021', updateDate='null'}}, ArticleVo{userInfo=null, category=null, BaseArticleVo{articleId=10005, status=null, title='dd', description='null', content='null', firstPicture='null', viewCount=0, createDate='Sun Nov 07 14:09:29 EST 2021', updateDate='null'}}], total=null}
+2021-11-21 19:55:32:899 [http-nio-8081-exec-1] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log ends =====
+2021-11-21 19:55:32:899 [http-nio-8081-exec-2] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Process Time: 228ms
+2021-11-21 19:55:32:899 [http-nio-8081-exec-2] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log ends =====
+2021-11-21 19:55:32:908 [http-nio-8081-exec-3] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log starts =====
+2021-11-21 19:55:32:908 [http-nio-8081-exec-3] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request succeed
+2021-11-21 19:55:32:908 [http-nio-8081-exec-3] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request Method: GET
+2021-11-21 19:55:32:908 [http-nio-8081-exec-3] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request URI: /api/articles
+2021-11-21 19:55:32:908 [http-nio-8081-exec-3] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Method Name: com.ivan.sunnyblog.web.controller.ArticleController.getPublicArticles
+2021-11-21 19:55:32:908 [http-nio-8081-exec-3] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Params: SearchVo{page=1, limit=10, categoryId=null, total=null}
+2021-11-21 19:55:32:908 [http-nio-8081-exec-3] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Result: ResultInfo{info='null', status=0, data=[ArticleVo{userInfo=UserInfoVo{userId=100001, nickName='ivan', userName='ivan', avatar='https://res-blog-public.s3.ca-central-1.amazonaws.com/default_avatar.jpg'}, category=CategoryVo{categoryId=1, name='Life ', articleCount=null}, BaseArticleVo{articleId=10005, status=1, title='dd', description='This is the doc of React markdown editor lite.
+Enjoy!!', content='null', firstPicture='', viewCount=0, createDate='Sun Nov 07 14:09:29 EST 2021', updateDate='Sun Nov 14 22:31:50 EST 2021'}}, ArticleVo{userInfo=UserInfoVo{userId=100001, nickName='ivan', userName='ivan', avatar='https://res-blog-public.s3.ca-central-1.amazonaws.com/default_avatar.jpg'}, category=CategoryVo{categoryId=2, name='liddffd', articleCount=null}, BaseArticleVo{articleId=10004, status=1, title='Spring boot', description='rerwerwer', content='null', firstPicture='', viewCount=4, createDate='Tue Oct 12 15:58:26 EDT 2021', updateDate='Sun Nov 14 22:34:56 EST 2021'}}], total=2}
+2021-11-21 19:55:32:908 [http-nio-8081-exec-3] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Process Time: 227ms
+2021-11-21 19:55:32:908 [http-nio-8081-exec-3] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log ends =====
+2021-11-21 19:55:34:735 [http-nio-8081-exec-5] INFO  io.lettuce.core.EpollProvider Starting without optional epoll library
+2021-11-21 19:55:34:736 [http-nio-8081-exec-5] INFO  io.lettuce.core.KqueueProvider Starting without optional kqueue library
+2021-11-21 19:55:34:801 [http-nio-8081-exec-5] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log starts =====
+2021-11-21 19:55:34:802 [http-nio-8081-exec-5] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request succeed
+2021-11-21 19:55:34:802 [http-nio-8081-exec-5] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request Method: GET
+2021-11-21 19:55:34:802 [http-nio-8081-exec-5] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request URI: /api/article/10005
+2021-11-21 19:55:34:802 [http-nio-8081-exec-5] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Method Name: com.ivan.sunnyblog.web.controller.ArticleController.getPublicArticleDetail
+2021-11-21 19:55:34:802 [http-nio-8081-exec-5] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Params: 10005
+2021-11-21 19:55:34:802 [http-nio-8081-exec-5] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Result: ResultInfo{info='null', status=0, data=ArticleDetailVo{categoryId=1, BaseArticleVo{articleId=10005, status=1, title='dd', description='This is the doc of React markdown editor lite.
+Enjoy!!', content='| Head | Head | Head | Head |
+| --- | --- | --- | --- |
+| Data | Data | Data | Data |
+| Data | Data | Data | Data |
+
+## 手把手教你写一个markdown编辑器
+
+> 笔者在18年年末的时候接到一个开发任务——搭建一个AI项目的开放平台，其中的产品文档为转化为HTML格式的markdown文档。考虑到文档的即时更新，将文档信息做成了Ajax接口的形式。因此管理后台只需将textarea表单的内容通过markdown解析器进行HTML格式转化，然后将markdown内容和经转化的HTML文档都保存到数据库即可。
+> 基本需求完成后，为了更好的用户体验，考虑将常用的编辑功能添加进来。改进版不仅支持了常用的文本编辑功能，还实现的UI界面的配置化，自定义语法解析器。本着造福伸手党的目的，以及积累些开源经验，笔者将该react 组件 [react-markdown-editor-lite](https://github.com/HarryChen0506/react-markdown-editor-lite) 进行了封装改造，并且发布到了开源社区。
+
+### 预览
+在线体验 [https://harrychen0506.github.io/react-markdown-editor-lite/](https://harrychen0506.github.io/react-markdown-editor-lite/)
+
+![image](https://github.com//HarryChen0506/react-markdown-editor-lite/blob/master/image/react-markdown-editor-lite-v1.0.0.PNG?raw=true)
+
+### 特点
+* 轻量、基于React
+* UI可配置, 如只显示编辑区或预览区
+* 支持自定义markdown语法解析器,语法高亮等
+* 支持常用的markdown编辑功能，如加粗，斜体等等...
+* 支持功能按钮插拔化，用户可以自定义扩展组件
+* 支持编辑区和预览区同步滚动
+
+### 开发心得
+
+- 文本编辑
+
+  大多数常见的编辑器，包括富文本编辑器，利用了某些元素如div的contenteditable属性，配合selection、range、execCommand等API，实现了富文本编辑功能。这里面的实现比较复杂，所以有了"[为什么都说富文本编辑器是天坑？](https://www.zhihu.com/question/38699645)"这个说法。
+
+  而markdown编辑器，核心的处理内容为简单语法的纯文本，复杂度相对来说比较低，并且input标签自带onSelect事件，可以很方便的获取选择信息（选择起始位置和选择文本值），因此要想实现编辑功能，只需将要改动的内容进行文本转换，然后进行重新拼接首尾，大功告成。
+  
+- markdown解析
+
+  考察了几个社区流行的markdown解析器，比较流行的有[markdown](https://www.npmjs.com/package/markdown), [markdown-it](https://www.npmjs.com/package/markdown-it), [marked](https://www.npmjs.com/package/marked) 等等。综合考虑扩展性以及稳定性，笔者推荐使用markdown-it作为markdown的词法解析器，因为该解析器有比较多的插件，并且支持语法高亮。
+
+- 同步滚动
+
+  当选择分栏编辑的时候，滚动左侧的编辑区，右侧的预览区能自动滚动到对应的区域。方案参考了《[手把手教你用 100行代码实现基于 react的 markdown 输入 + 即时预览在线编辑器（一）](https://github.com/accforgit/blog-data/blob/master/%E5%9C%A8%E7%BA%BF%E7%BC%96%E8%BE%91%E5%99%A8/README/README1.md)》。只需先计算出输入框容器元素与预览框容器元素之间最大scroll范围的比例值，然后根据主动滚动元素自身的scrollTop做相应的比例换算，即可知道对方区域的scrollTop值。
+
+- 关于UI
+ 
+  - 项目的字体库选择了Font Awesome风格，并且只选取了项目所需要的一些图标。
+  - 编辑器的整体css均可通过全局覆盖的形式进行自定义。目前暂时只支持灰色主题。
+  - 编辑器的显示区域包括菜单栏，编辑器，预览区，工具栏，通过配置组件的config属性，可以选择默认的展示区域。
+  
+### Install
+
+```js
+npm install react-markdown-editor-lite --save
+```
+
+### Props
+
+| Property | Description | Type | default | Remarks |
+| --- | --- | --- | --- | --- |
+| value | markdown content | String | '' | required |
+| style | component container style | Object | {height: '100%'} | not required |
+| config | component config | Object | {view: {...}, logger: {...}} | not required |
+| onChange | emitting when editor has changed | Function | ({html, md}) => {} | not required |
+| onImageUpload | when image uploaded, callback emitting will get image markdown text | (file: File, callback: (url: string) => void) => void; | ({file, callback}) => {} | not required |
+| renderHTML | Render markdown text to HTML. You can return either string, function or Promise | (text: string) => string|function|Promise | none | **required** |
+
+### Example
+
+``` js
+'use strict';
+import React from 'react'
+import ReactDOM from 'react-dom'
+import MdEditor from 'react-markdown-editor-lite'
+import MarkdownIt from 'markdown-it'
+import emoji from 'markdown-it-emoji'
+import subscript from 'markdown-it-sub'
+import superscript from 'markdown-it-sup'
+import footnote from 'markdown-it-footnote'
+import deflist from 'markdown-it-deflist'
+import abbreviation from 'markdown-it-abbr'
+import insert from 'markdown-it-ins'
+import mark from 'markdown-it-mark'
+import tasklists from 'markdown-it-task-lists'
+import hljs from 'highlight.js'
+import 'highlight.js/styles/atom-one-light.css'
+// import 'highlight.js/styles/github.css'
+import './index.less';
+
+const MOCK_DATA = "I Love React."
+export default class Demo extends React.Component {
+  mdEditor = null
+  mdParser = null
+  constructor(props) {
+    super(props)
+    // initial a parsera
+    this.mdParser = new MarkdownIt({
+      html: true,
+      linkify: true,
+      typographer: true,
+      highlight: function (str, lang) {
+        if (lang && hljs.getLanguage(lang)) {
+          try {
+            return hljs.highlight(lang, str).value
+          } catch (__) {}
+        }    
+        return '' // use external default escaping
+      }
+    })
+    .use(emoji)
+    .use(subscript)
+    .use(superscript)
+    .use(footnote)
+    .use(deflist)
+    .use(abbreviation)
+    .use(insert)
+    .use(mark)
+    .use(tasklists, { enabled: this.taskLists })
+    this.renderHTML = this.renderHTML.bind(this)
+  }
+  handleEditorChange({html, md}) {
+    console.log('handleEditorChange', html, md)
+  }
+  handleImageUpload(file, callback) {
+    const reader = new FileReader()
+    reader.onload = () => {      
+      const convertBase64UrlToBlob = (urlData) => {  
+        let arr = urlData.split(','), mime = arr[0].match(/:(.*?);/)[1]
+        let bstr = atob(arr[1])
+        let n = bstr.length
+        let u8arr = new Uint8Array(n)
+        while (n--) {
+          u8arr[n] = bstr.charCodeAt(n)
+        }
+        return new Blob([u8arr], {type:mime})
+      }
+      const blob = convertBase64UrlToBlob(reader.result)
+      setTimeout(() => {
+        // setTimeout 模拟异步上传图片
+        // 当异步上传获取图片地址后，执行calback回调（参数为imageUrl字符串），即可将图片地址写入markdown
+        callback('https://avatars0.githubusercontent.com/u/21263805?s=40&v=4')
+      }, 1000)
+    }
+    reader.readAsDataURL(file)
+  }
+  renderHTML(text) {
+    // 模拟异步渲染Markdown
+    return new Promise((resolve) => {
+      setTimeout(() => {
+        resolve(this.mdParser.render(text))
+      }, 1000)
+    })
+  }
+  handleGetMdValue = () => {   
+    this.mdEditor && alert(this.mdEditor.getMdValue())      
+  }
+  handleGetHtmlValue = () => {    
+    this.mdEditor && alert(this.mdEditor.getHtmlValue())
+  }
+  render() {
+    return (      
+      <div>
+        <nav>
+          <button onClick={this.handleGetMdValue} >getMdValue</button>  
+          <button onClick={this.handleGetHtmlValue} >getHtmlValue</button>  
+        </nav>
+        <section style="height: 500px">
+          <MdEditor 
+            ref={node => this.mdEditor = node}
+            value={MOCK_DATA}
+            style={{height: '400px'}}
+            renderHTML={this.renderHTML}
+            config={{
+              view: {
+                menu: true,
+                md: true,
+                html: true
+              },
+              imageUrl: 'https://octodex.github.com/images/minion.png'
+            }}
+            onChange={this.handleEditorChange} 
+            onImageUpload={this.handleImageUpload}
+          />
+        </section>                        
+      </div>      
+    )
+  }
+}
+```
+
+### 最后
+
+   欢迎大家使用和反馈，[项目地址](https://github.com/HarryChen0506/react-markdown-editor-lite) (https://github.com/HarryChen0506/react-markdown-editor-lite)， 你的点赞将是我莫大的动力😊
+
+![1.png](https://s3.ca-central-1.amazonaws.com/res-blog-public/res-dev/blog_1636946743939_1.png)', firstPicture='', viewCount=0, createDate='Sun Nov 07 14:09:29 EST 2021', updateDate='Sun Nov 14 22:31:50 EST 2021'}}, total=null}
+2021-11-21 19:55:34:802 [http-nio-8081-exec-5] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Process Time: 132ms
+2021-11-21 19:55:34:802 [http-nio-8081-exec-5] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log ends =====
+2021-11-21 19:57:18:349 [http-nio-8081-exec-1] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log starts =====
+2021-11-21 19:57:18:349 [http-nio-8081-exec-1] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request succeed
+2021-11-21 19:57:18:349 [http-nio-8081-exec-1] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request Method: GET
+2021-11-21 19:57:18:349 [http-nio-8081-exec-1] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request URI: /api/articles/hot
+2021-11-21 19:57:18:349 [http-nio-8081-exec-1] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Method Name: com.ivan.sunnyblog.web.controller.ArticleController.getHotArticles
+2021-11-21 19:57:18:349 [http-nio-8081-exec-1] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Params: {}
+2021-11-21 19:57:18:349 [http-nio-8081-exec-1] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Result: ResultInfo{info='null', status=0, data=[ArticleVo{userInfo=null, category=null, BaseArticleVo{articleId=10004, status=null, title='Spring boot', description='null', content='null', firstPicture='null', viewCount=4, createDate='Tue Oct 12 15:58:26 EDT 2021', updateDate='null'}}, ArticleVo{userInfo=null, category=null, BaseArticleVo{articleId=10005, status=null, title='dd', description='null', content='null', firstPicture='null', viewCount=0, createDate='Sun Nov 07 14:09:29 EST 2021', updateDate='null'}}], total=null}
+2021-11-21 19:57:18:350 [http-nio-8081-exec-1] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Process Time: 3ms
+2021-11-21 19:57:18:350 [http-nio-8081-exec-1] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log ends =====
+2021-11-21 19:57:18:351 [http-nio-8081-exec-9] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log starts =====
+2021-11-21 19:57:18:351 [http-nio-8081-exec-9] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request succeed
+2021-11-21 19:57:18:351 [http-nio-8081-exec-9] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request Method: GET
+2021-11-21 19:57:18:351 [http-nio-8081-exec-9] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request URI: /api/categories
+2021-11-21 19:57:18:351 [http-nio-8081-exec-9] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Method Name: com.ivan.sunnyblog.web.controller.CategoryContoller.getCategories
+2021-11-21 19:57:18:351 [http-nio-8081-exec-9] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Params: {}
+2021-11-21 19:57:18:351 [http-nio-8081-exec-9] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Result: ResultInfo{info='null', status=0, data=[CategoryVo{categoryId=2, name='liddffd', articleCount=1}, CategoryVo{categoryId=1, name='Life ', articleCount=1}], total=null}
+2021-11-21 19:57:18:351 [http-nio-8081-exec-9] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Process Time: 5ms
+2021-11-21 19:57:18:351 [http-nio-8081-exec-9] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log ends =====
+2021-11-21 19:57:18:359 [http-nio-8081-exec-10] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log starts =====
+2021-11-21 19:57:18:359 [http-nio-8081-exec-10] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request succeed
+2021-11-21 19:57:18:359 [http-nio-8081-exec-10] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request Method: GET
+2021-11-21 19:57:18:359 [http-nio-8081-exec-10] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request URI: /api/articles
+2021-11-21 19:57:18:359 [http-nio-8081-exec-10] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Method Name: com.ivan.sunnyblog.web.controller.ArticleController.getPublicArticles
+2021-11-21 19:57:18:359 [http-nio-8081-exec-10] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Params: SearchVo{page=1, limit=10, categoryId=null, total=null}
+2021-11-21 19:57:18:360 [http-nio-8081-exec-10] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Result: ResultInfo{info='null', status=0, data=[ArticleVo{userInfo=UserInfoVo{userId=100001, nickName='ivan', userName='ivan', avatar='https://res-blog-public.s3.ca-central-1.amazonaws.com/default_avatar.jpg'}, category=CategoryVo{categoryId=1, name='Life ', articleCount=null}, BaseArticleVo{articleId=10005, status=1, title='dd', description='This is the doc of React markdown editor lite.
+Enjoy!!', content='null', firstPicture='', viewCount=0, createDate='Sun Nov 07 14:09:29 EST 2021', updateDate='Sun Nov 14 22:31:50 EST 2021'}}, ArticleVo{userInfo=UserInfoVo{userId=100001, nickName='ivan', userName='ivan', avatar='https://res-blog-public.s3.ca-central-1.amazonaws.com/default_avatar.jpg'}, category=CategoryVo{categoryId=2, name='liddffd', articleCount=null}, BaseArticleVo{articleId=10004, status=1, title='Spring boot', description='rerwerwer', content='null', firstPicture='', viewCount=4, createDate='Tue Oct 12 15:58:26 EDT 2021', updateDate='Sun Nov 14 22:34:56 EST 2021'}}], total=2}
+2021-11-21 19:57:18:360 [http-nio-8081-exec-10] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Process Time: 13ms
+2021-11-21 19:57:18:360 [http-nio-8081-exec-10] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log ends =====
+2021-11-21 19:57:20:179 [http-nio-8081-exec-3] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log starts =====
+2021-11-21 19:57:20:179 [http-nio-8081-exec-3] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request succeed
+2021-11-21 19:57:20:179 [http-nio-8081-exec-3] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request Method: GET
+2021-11-21 19:57:20:179 [http-nio-8081-exec-3] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request URI: /api/article/10005
+2021-11-21 19:57:20:179 [http-nio-8081-exec-3] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Method Name: com.ivan.sunnyblog.web.controller.ArticleController.getPublicArticleDetail
+2021-11-21 19:57:20:179 [http-nio-8081-exec-3] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Params: 10005
+2021-11-21 19:57:20:179 [http-nio-8081-exec-3] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Result: ResultInfo{info='null', status=0, data=ArticleDetailVo{categoryId=1, BaseArticleVo{articleId=10005, status=1, title='dd', description='This is the doc of React markdown editor lite.
+Enjoy!!', content='| Head | Head | Head | Head |
+| --- | --- | --- | --- |
+| Data | Data | Data | Data |
+| Data | Data | Data | Data |
+
+## 手把手教你写一个markdown编辑器
+
+> 笔者在18年年末的时候接到一个开发任务——搭建一个AI项目的开放平台，其中的产品文档为转化为HTML格式的markdown文档。考虑到文档的即时更新，将文档信息做成了Ajax接口的形式。因此管理后台只需将textarea表单的内容通过markdown解析器进行HTML格式转化，然后将markdown内容和经转化的HTML文档都保存到数据库即可。
+> 基本需求完成后，为了更好的用户体验，考虑将常用的编辑功能添加进来。改进版不仅支持了常用的文本编辑功能，还实现的UI界面的配置化，自定义语法解析器。本着造福伸手党的目的，以及积累些开源经验，笔者将该react 组件 [react-markdown-editor-lite](https://github.com/HarryChen0506/react-markdown-editor-lite) 进行了封装改造，并且发布到了开源社区。
+
+### 预览
+在线体验 [https://harrychen0506.github.io/react-markdown-editor-lite/](https://harrychen0506.github.io/react-markdown-editor-lite/)
+
+![image](https://github.com//HarryChen0506/react-markdown-editor-lite/blob/master/image/react-markdown-editor-lite-v1.0.0.PNG?raw=true)
+
+### 特点
+* 轻量、基于React
+* UI可配置, 如只显示编辑区或预览区
+* 支持自定义markdown语法解析器,语法高亮等
+* 支持常用的markdown编辑功能，如加粗，斜体等等...
+* 支持功能按钮插拔化，用户可以自定义扩展组件
+* 支持编辑区和预览区同步滚动
+
+### 开发心得
+
+- 文本编辑
+
+  大多数常见的编辑器，包括富文本编辑器，利用了某些元素如div的contenteditable属性，配合selection、range、execCommand等API，实现了富文本编辑功能。这里面的实现比较复杂，所以有了"[为什么都说富文本编辑器是天坑？](https://www.zhihu.com/question/38699645)"这个说法。
+
+  而markdown编辑器，核心的处理内容为简单语法的纯文本，复杂度相对来说比较低，并且input标签自带onSelect事件，可以很方便的获取选择信息（选择起始位置和选择文本值），因此要想实现编辑功能，只需将要改动的内容进行文本转换，然后进行重新拼接首尾，大功告成。
+  
+- markdown解析
+
+  考察了几个社区流行的markdown解析器，比较流行的有[markdown](https://www.npmjs.com/package/markdown), [markdown-it](https://www.npmjs.com/package/markdown-it), [marked](https://www.npmjs.com/package/marked) 等等。综合考虑扩展性以及稳定性，笔者推荐使用markdown-it作为markdown的词法解析器，因为该解析器有比较多的插件，并且支持语法高亮。
+
+- 同步滚动
+
+  当选择分栏编辑的时候，滚动左侧的编辑区，右侧的预览区能自动滚动到对应的区域。方案参考了《[手把手教你用 100行代码实现基于 react的 markdown 输入 + 即时预览在线编辑器（一）](https://github.com/accforgit/blog-data/blob/master/%E5%9C%A8%E7%BA%BF%E7%BC%96%E8%BE%91%E5%99%A8/README/README1.md)》。只需先计算出输入框容器元素与预览框容器元素之间最大scroll范围的比例值，然后根据主动滚动元素自身的scrollTop做相应的比例换算，即可知道对方区域的scrollTop值。
+
+- 关于UI
+ 
+  - 项目的字体库选择了Font Awesome风格，并且只选取了项目所需要的一些图标。
+  - 编辑器的整体css均可通过全局覆盖的形式进行自定义。目前暂时只支持灰色主题。
+  - 编辑器的显示区域包括菜单栏，编辑器，预览区，工具栏，通过配置组件的config属性，可以选择默认的展示区域。
+  
+### Install
+
+```js
+npm install react-markdown-editor-lite --save
+```
+
+### Props
+
+| Property | Description | Type | default | Remarks |
+| --- | --- | --- | --- | --- |
+| value | markdown content | String | '' | required |
+| style | component container style | Object | {height: '100%'} | not required |
+| config | component config | Object | {view: {...}, logger: {...}} | not required |
+| onChange | emitting when editor has changed | Function | ({html, md}) => {} | not required |
+| onImageUpload | when image uploaded, callback emitting will get image markdown text | (file: File, callback: (url: string) => void) => void; | ({file, callback}) => {} | not required |
+| renderHTML | Render markdown text to HTML. You can return either string, function or Promise | (text: string) => string|function|Promise | none | **required** |
+
+### Example
+
+``` js
+'use strict';
+import React from 'react'
+import ReactDOM from 'react-dom'
+import MdEditor from 'react-markdown-editor-lite'
+import MarkdownIt from 'markdown-it'
+import emoji from 'markdown-it-emoji'
+import subscript from 'markdown-it-sub'
+import superscript from 'markdown-it-sup'
+import footnote from 'markdown-it-footnote'
+import deflist from 'markdown-it-deflist'
+import abbreviation from 'markdown-it-abbr'
+import insert from 'markdown-it-ins'
+import mark from 'markdown-it-mark'
+import tasklists from 'markdown-it-task-lists'
+import hljs from 'highlight.js'
+import 'highlight.js/styles/atom-one-light.css'
+// import 'highlight.js/styles/github.css'
+import './index.less';
+
+const MOCK_DATA = "I Love React."
+export default class Demo extends React.Component {
+  mdEditor = null
+  mdParser = null
+  constructor(props) {
+    super(props)
+    // initial a parsera
+    this.mdParser = new MarkdownIt({
+      html: true,
+      linkify: true,
+      typographer: true,
+      highlight: function (str, lang) {
+        if (lang && hljs.getLanguage(lang)) {
+          try {
+            return hljs.highlight(lang, str).value
+          } catch (__) {}
+        }    
+        return '' // use external default escaping
+      }
+    })
+    .use(emoji)
+    .use(subscript)
+    .use(superscript)
+    .use(footnote)
+    .use(deflist)
+    .use(abbreviation)
+    .use(insert)
+    .use(mark)
+    .use(tasklists, { enabled: this.taskLists })
+    this.renderHTML = this.renderHTML.bind(this)
+  }
+  handleEditorChange({html, md}) {
+    console.log('handleEditorChange', html, md)
+  }
+  handleImageUpload(file, callback) {
+    const reader = new FileReader()
+    reader.onload = () => {      
+      const convertBase64UrlToBlob = (urlData) => {  
+        let arr = urlData.split(','), mime = arr[0].match(/:(.*?);/)[1]
+        let bstr = atob(arr[1])
+        let n = bstr.length
+        let u8arr = new Uint8Array(n)
+        while (n--) {
+          u8arr[n] = bstr.charCodeAt(n)
+        }
+        return new Blob([u8arr], {type:mime})
+      }
+      const blob = convertBase64UrlToBlob(reader.result)
+      setTimeout(() => {
+        // setTimeout 模拟异步上传图片
+        // 当异步上传获取图片地址后，执行calback回调（参数为imageUrl字符串），即可将图片地址写入markdown
+        callback('https://avatars0.githubusercontent.com/u/21263805?s=40&v=4')
+      }, 1000)
+    }
+    reader.readAsDataURL(file)
+  }
+  renderHTML(text) {
+    // 模拟异步渲染Markdown
+    return new Promise((resolve) => {
+      setTimeout(() => {
+        resolve(this.mdParser.render(text))
+      }, 1000)
+    })
+  }
+  handleGetMdValue = () => {   
+    this.mdEditor && alert(this.mdEditor.getMdValue())      
+  }
+  handleGetHtmlValue = () => {    
+    this.mdEditor && alert(this.mdEditor.getHtmlValue())
+  }
+  render() {
+    return (      
+      <div>
+        <nav>
+          <button onClick={this.handleGetMdValue} >getMdValue</button>  
+          <button onClick={this.handleGetHtmlValue} >getHtmlValue</button>  
+        </nav>
+        <section style="height: 500px">
+          <MdEditor 
+            ref={node => this.mdEditor = node}
+            value={MOCK_DATA}
+            style={{height: '400px'}}
+            renderHTML={this.renderHTML}
+            config={{
+              view: {
+                menu: true,
+                md: true,
+                html: true
+              },
+              imageUrl: 'https://octodex.github.com/images/minion.png'
+            }}
+            onChange={this.handleEditorChange} 
+            onImageUpload={this.handleImageUpload}
+          />
+        </section>                        
+      </div>      
+    )
+  }
+}
+```
+
+### 最后
+
+   欢迎大家使用和反馈，[项目地址](https://github.com/HarryChen0506/react-markdown-editor-lite) (https://github.com/HarryChen0506/react-markdown-editor-lite)， 你的点赞将是我莫大的动力😊
+
+![1.png](https://s3.ca-central-1.amazonaws.com/res-blog-public/res-dev/blog_1636946743939_1.png)', firstPicture='', viewCount=0, createDate='Sun Nov 07 14:09:29 EST 2021', updateDate='Sun Nov 14 22:31:50 EST 2021'}}, total=null}
+2021-11-21 19:57:20:180 [http-nio-8081-exec-3] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Process Time: 4ms
+2021-11-21 19:57:20:180 [http-nio-8081-exec-3] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log ends =====
+2021-11-21 19:57:29:807 [http-nio-8081-exec-4] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log starts =====
+2021-11-21 19:57:29:807 [http-nio-8081-exec-4] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request succeed
+2021-11-21 19:57:29:807 [http-nio-8081-exec-4] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request Method: GET
+2021-11-21 19:57:29:807 [http-nio-8081-exec-5] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log starts =====
+2021-11-21 19:57:29:807 [http-nio-8081-exec-5] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request succeed
+2021-11-21 19:57:29:808 [http-nio-8081-exec-5] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request Method: GET
+2021-11-21 19:57:29:808 [http-nio-8081-exec-5] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request URI: /api/articles/hot
+2021-11-21 19:57:29:808 [http-nio-8081-exec-5] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Method Name: com.ivan.sunnyblog.web.controller.ArticleController.getHotArticles
+2021-11-21 19:57:29:808 [http-nio-8081-exec-5] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Params: {}
+2021-11-21 19:57:29:807 [http-nio-8081-exec-4] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request URI: /api/categories
+2021-11-21 19:57:29:808 [http-nio-8081-exec-5] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Result: ResultInfo{info='null', status=0, data=[ArticleVo{userInfo=null, category=null, BaseArticleVo{articleId=10004, status=null, title='Spring boot', description='null', content='null', firstPicture='null', viewCount=4, createDate='Tue Oct 12 15:58:26 EDT 2021', updateDate='null'}}, ArticleVo{userInfo=null, category=null, BaseArticleVo{articleId=10005, status=null, title='dd', description='null', content='null', firstPicture='null', viewCount=0, createDate='Sun Nov 07 14:09:29 EST 2021', updateDate='null'}}], total=null}
+2021-11-21 19:57:29:808 [http-nio-8081-exec-4] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Method Name: com.ivan.sunnyblog.web.controller.CategoryContoller.getCategories
+2021-11-21 19:57:29:808 [http-nio-8081-exec-5] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Process Time: 2ms
+2021-11-21 19:57:29:808 [http-nio-8081-exec-4] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Params: {}
+2021-11-21 19:57:29:808 [http-nio-8081-exec-5] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log ends =====
+2021-11-21 19:57:29:808 [http-nio-8081-exec-4] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Result: ResultInfo{info='null', status=0, data=[CategoryVo{categoryId=2, name='liddffd', articleCount=1}, CategoryVo{categoryId=1, name='Life ', articleCount=1}], total=null}
+2021-11-21 19:57:29:808 [http-nio-8081-exec-4] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Process Time: 2ms
+2021-11-21 19:57:29:808 [http-nio-8081-exec-4] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log ends =====
+2021-11-21 19:57:29:817 [http-nio-8081-exec-2] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log starts =====
+2021-11-21 19:57:29:817 [http-nio-8081-exec-2] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request succeed
+2021-11-21 19:57:29:817 [http-nio-8081-exec-2] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request Method: GET
+2021-11-21 19:57:29:817 [http-nio-8081-exec-2] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request URI: /api/articles
+2021-11-21 19:57:29:817 [http-nio-8081-exec-2] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Method Name: com.ivan.sunnyblog.web.controller.ArticleController.getPublicArticles
+2021-11-21 19:57:29:817 [http-nio-8081-exec-2] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Params: SearchVo{page=1, limit=10, categoryId=null, total=null}
+2021-11-21 19:57:29:817 [http-nio-8081-exec-2] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Result: ResultInfo{info='null', status=0, data=[ArticleVo{userInfo=UserInfoVo{userId=100001, nickName='ivan', userName='ivan', avatar='https://res-blog-public.s3.ca-central-1.amazonaws.com/default_avatar.jpg'}, category=CategoryVo{categoryId=1, name='Life ', articleCount=null}, BaseArticleVo{articleId=10005, status=1, title='dd', description='This is the doc of React markdown editor lite.
+Enjoy!!', content='null', firstPicture='', viewCount=0, createDate='Sun Nov 07 14:09:29 EST 2021', updateDate='Sun Nov 14 22:31:50 EST 2021'}}, ArticleVo{userInfo=UserInfoVo{userId=100001, nickName='ivan', userName='ivan', avatar='https://res-blog-public.s3.ca-central-1.amazonaws.com/default_avatar.jpg'}, category=CategoryVo{categoryId=2, name='liddffd', articleCount=null}, BaseArticleVo{articleId=10004, status=1, title='Spring boot', description='rerwerwer', content='null', firstPicture='', viewCount=4, createDate='Tue Oct 12 15:58:26 EDT 2021', updateDate='Sun Nov 14 22:34:56 EST 2021'}}], total=2}
+2021-11-21 19:57:29:817 [http-nio-8081-exec-2] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Process Time: 11ms
+2021-11-21 19:57:29:817 [http-nio-8081-exec-2] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log ends =====
+2021-11-21 19:57:35:110 [http-nio-8081-exec-6] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log starts =====
+2021-11-21 19:57:35:110 [http-nio-8081-exec-6] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request succeed
+2021-11-21 19:57:35:110 [http-nio-8081-exec-6] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request Method: GET
+2021-11-21 19:57:35:110 [http-nio-8081-exec-6] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request URI: /api/article/10005
+2021-11-21 19:57:35:110 [http-nio-8081-exec-6] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Method Name: com.ivan.sunnyblog.web.controller.ArticleController.getPublicArticleDetail
+2021-11-21 19:57:35:110 [http-nio-8081-exec-6] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Params: 10005
+2021-11-21 19:57:35:110 [http-nio-8081-exec-6] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Result: ResultInfo{info='null', status=0, data=ArticleDetailVo{categoryId=1, BaseArticleVo{articleId=10005, status=1, title='dd', description='This is the doc of React markdown editor lite.
+Enjoy!!', content='| Head | Head | Head | Head |
+| --- | --- | --- | --- |
+| Data | Data | Data | Data |
+| Data | Data | Data | Data |
+
+## 手把手教你写一个markdown编辑器
+
+> 笔者在18年年末的时候接到一个开发任务——搭建一个AI项目的开放平台，其中的产品文档为转化为HTML格式的markdown文档。考虑到文档的即时更新，将文档信息做成了Ajax接口的形式。因此管理后台只需将textarea表单的内容通过markdown解析器进行HTML格式转化，然后将markdown内容和经转化的HTML文档都保存到数据库即可。
+> 基本需求完成后，为了更好的用户体验，考虑将常用的编辑功能添加进来。改进版不仅支持了常用的文本编辑功能，还实现的UI界面的配置化，自定义语法解析器。本着造福伸手党的目的，以及积累些开源经验，笔者将该react 组件 [react-markdown-editor-lite](https://github.com/HarryChen0506/react-markdown-editor-lite) 进行了封装改造，并且发布到了开源社区。
+
+### 预览
+在线体验 [https://harrychen0506.github.io/react-markdown-editor-lite/](https://harrychen0506.github.io/react-markdown-editor-lite/)
+
+![image](https://github.com//HarryChen0506/react-markdown-editor-lite/blob/master/image/react-markdown-editor-lite-v1.0.0.PNG?raw=true)
+
+### 特点
+* 轻量、基于React
+* UI可配置, 如只显示编辑区或预览区
+* 支持自定义markdown语法解析器,语法高亮等
+* 支持常用的markdown编辑功能，如加粗，斜体等等...
+* 支持功能按钮插拔化，用户可以自定义扩展组件
+* 支持编辑区和预览区同步滚动
+
+### 开发心得
+
+- 文本编辑
+
+  大多数常见的编辑器，包括富文本编辑器，利用了某些元素如div的contenteditable属性，配合selection、range、execCommand等API，实现了富文本编辑功能。这里面的实现比较复杂，所以有了"[为什么都说富文本编辑器是天坑？](https://www.zhihu.com/question/38699645)"这个说法。
+
+  而markdown编辑器，核心的处理内容为简单语法的纯文本，复杂度相对来说比较低，并且input标签自带onSelect事件，可以很方便的获取选择信息（选择起始位置和选择文本值），因此要想实现编辑功能，只需将要改动的内容进行文本转换，然后进行重新拼接首尾，大功告成。
+  
+- markdown解析
+
+  考察了几个社区流行的markdown解析器，比较流行的有[markdown](https://www.npmjs.com/package/markdown), [markdown-it](https://www.npmjs.com/package/markdown-it), [marked](https://www.npmjs.com/package/marked) 等等。综合考虑扩展性以及稳定性，笔者推荐使用markdown-it作为markdown的词法解析器，因为该解析器有比较多的插件，并且支持语法高亮。
+
+- 同步滚动
+
+  当选择分栏编辑的时候，滚动左侧的编辑区，右侧的预览区能自动滚动到对应的区域。方案参考了《[手把手教你用 100行代码实现基于 react的 markdown 输入 + 即时预览在线编辑器（一）](https://github.com/accforgit/blog-data/blob/master/%E5%9C%A8%E7%BA%BF%E7%BC%96%E8%BE%91%E5%99%A8/README/README1.md)》。只需先计算出输入框容器元素与预览框容器元素之间最大scroll范围的比例值，然后根据主动滚动元素自身的scrollTop做相应的比例换算，即可知道对方区域的scrollTop值。
+
+- 关于UI
+ 
+  - 项目的字体库选择了Font Awesome风格，并且只选取了项目所需要的一些图标。
+  - 编辑器的整体css均可通过全局覆盖的形式进行自定义。目前暂时只支持灰色主题。
+  - 编辑器的显示区域包括菜单栏，编辑器，预览区，工具栏，通过配置组件的config属性，可以选择默认的展示区域。
+  
+### Install
+
+```js
+npm install react-markdown-editor-lite --save
+```
+
+### Props
+
+| Property | Description | Type | default | Remarks |
+| --- | --- | --- | --- | --- |
+| value | markdown content | String | '' | required |
+| style | component container style | Object | {height: '100%'} | not required |
+| config | component config | Object | {view: {...}, logger: {...}} | not required |
+| onChange | emitting when editor has changed | Function | ({html, md}) => {} | not required |
+| onImageUpload | when image uploaded, callback emitting will get image markdown text | (file: File, callback: (url: string) => void) => void; | ({file, callback}) => {} | not required |
+| renderHTML | Render markdown text to HTML. You can return either string, function or Promise | (text: string) => string|function|Promise | none | **required** |
+
+### Example
+
+``` js
+'use strict';
+import React from 'react'
+import ReactDOM from 'react-dom'
+import MdEditor from 'react-markdown-editor-lite'
+import MarkdownIt from 'markdown-it'
+import emoji from 'markdown-it-emoji'
+import subscript from 'markdown-it-sub'
+import superscript from 'markdown-it-sup'
+import footnote from 'markdown-it-footnote'
+import deflist from 'markdown-it-deflist'
+import abbreviation from 'markdown-it-abbr'
+import insert from 'markdown-it-ins'
+import mark from 'markdown-it-mark'
+import tasklists from 'markdown-it-task-lists'
+import hljs from 'highlight.js'
+import 'highlight.js/styles/atom-one-light.css'
+// import 'highlight.js/styles/github.css'
+import './index.less';
+
+const MOCK_DATA = "I Love React."
+export default class Demo extends React.Component {
+  mdEditor = null
+  mdParser = null
+  constructor(props) {
+    super(props)
+    // initial a parsera
+    this.mdParser = new MarkdownIt({
+      html: true,
+      linkify: true,
+      typographer: true,
+      highlight: function (str, lang) {
+        if (lang && hljs.getLanguage(lang)) {
+          try {
+            return hljs.highlight(lang, str).value
+          } catch (__) {}
+        }    
+        return '' // use external default escaping
+      }
+    })
+    .use(emoji)
+    .use(subscript)
+    .use(superscript)
+    .use(footnote)
+    .use(deflist)
+    .use(abbreviation)
+    .use(insert)
+    .use(mark)
+    .use(tasklists, { enabled: this.taskLists })
+    this.renderHTML = this.renderHTML.bind(this)
+  }
+  handleEditorChange({html, md}) {
+    console.log('handleEditorChange', html, md)
+  }
+  handleImageUpload(file, callback) {
+    const reader = new FileReader()
+    reader.onload = () => {      
+      const convertBase64UrlToBlob = (urlData) => {  
+        let arr = urlData.split(','), mime = arr[0].match(/:(.*?);/)[1]
+        let bstr = atob(arr[1])
+        let n = bstr.length
+        let u8arr = new Uint8Array(n)
+        while (n--) {
+          u8arr[n] = bstr.charCodeAt(n)
+        }
+        return new Blob([u8arr], {type:mime})
+      }
+      const blob = convertBase64UrlToBlob(reader.result)
+      setTimeout(() => {
+        // setTimeout 模拟异步上传图片
+        // 当异步上传获取图片地址后，执行calback回调（参数为imageUrl字符串），即可将图片地址写入markdown
+        callback('https://avatars0.githubusercontent.com/u/21263805?s=40&v=4')
+      }, 1000)
+    }
+    reader.readAsDataURL(file)
+  }
+  renderHTML(text) {
+    // 模拟异步渲染Markdown
+    return new Promise((resolve) => {
+      setTimeout(() => {
+        resolve(this.mdParser.render(text))
+      }, 1000)
+    })
+  }
+  handleGetMdValue = () => {   
+    this.mdEditor && alert(this.mdEditor.getMdValue())      
+  }
+  handleGetHtmlValue = () => {    
+    this.mdEditor && alert(this.mdEditor.getHtmlValue())
+  }
+  render() {
+    return (      
+      <div>
+        <nav>
+          <button onClick={this.handleGetMdValue} >getMdValue</button>  
+          <button onClick={this.handleGetHtmlValue} >getHtmlValue</button>  
+        </nav>
+        <section style="height: 500px">
+          <MdEditor 
+            ref={node => this.mdEditor = node}
+            value={MOCK_DATA}
+            style={{height: '400px'}}
+            renderHTML={this.renderHTML}
+            config={{
+              view: {
+                menu: true,
+                md: true,
+                html: true
+              },
+              imageUrl: 'https://octodex.github.com/images/minion.png'
+            }}
+            onChange={this.handleEditorChange} 
+            onImageUpload={this.handleImageUpload}
+          />
+        </section>                        
+      </div>      
+    )
+  }
+}
+```
+
+### 最后
+
+   欢迎大家使用和反馈，[项目地址](https://github.com/HarryChen0506/react-markdown-editor-lite) (https://github.com/HarryChen0506/react-markdown-editor-lite)， 你的点赞将是我莫大的动力😊
+
+![1.png](https://s3.ca-central-1.amazonaws.com/res-blog-public/res-dev/blog_1636946743939_1.png)', firstPicture='', viewCount=0, createDate='Sun Nov 07 14:09:29 EST 2021', updateDate='Sun Nov 14 22:31:50 EST 2021'}}, total=null}
+2021-11-21 19:57:35:110 [http-nio-8081-exec-6] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Process Time: 5ms
+2021-11-21 19:57:35:110 [http-nio-8081-exec-6] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log ends =====
+2021-11-21 20:41:31:271 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=16m2s320ms).
+2021-11-21 20:58:53:590 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=16m22s302ms).
+2021-11-21 21:18:09:828 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=17m16s241ms).
+2021-11-21 21:22:23:098 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m43s255ms).
+2021-11-21 21:24:51:246 [Thread-76] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler Shutting down ExecutorService 'taskScheduler'
+2021-11-21 21:24:51:247 [Thread-76] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Shutting down ExecutorService 'applicationTaskExecutor'
+2021-11-21 21:24:51:249 [Thread-76] INFO  com.zaxxer.hikari.HikariDataSource HikariPool-1 - Shutdown initiated...
+2021-11-21 21:24:51:252 [Thread-76] INFO  com.zaxxer.hikari.HikariDataSource HikariPool-1 - Shutdown completed.
+2021-11-21 21:24:54:540 [restartedMain] INFO  com.ivan.sunnyblog.SunnyBlogApplication Starting SunnyBlogApplication on Jinghaos-MacBook-Air.local with PID 7094 (/Users/jinghaoliang/Documents/tech/Project/blogProject/SunnyBlog/target/classes started by jinghaoliang in /Users/jinghaoliang/Documents/tech/Project/blogProject/SunnyBlog)
+2021-11-21 21:24:54:541 [restartedMain] INFO  com.ivan.sunnyblog.SunnyBlogApplication No active profile set, falling back to default profiles: default
+2021-11-21 21:24:54:563 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-11-21 21:24:54:563 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-11-21 21:24:54:952 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-11-21 21:24:54:953 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data repositories in DEFAULT mode.
+2021-11-21 21:24:54:981 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 20ms. Found 0 repository interfaces.
+2021-11-21 21:24:55:159 [restartedMain] INFO  o.s.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$73123811] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-11-21 21:24:55:369 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat initialized with port(s): 8081 (http)
+2021-11-21 21:24:55:378 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol Initializing ProtocolHandler ["http-nio-8081"]
+2021-11-21 21:24:55:383 [restartedMain] INFO  org.apache.catalina.core.StandardService Starting service [Tomcat]
+2021-11-21 21:24:55:383 [restartedMain] INFO  org.apache.catalina.core.StandardEngine Starting Servlet engine: [Apache Tomcat/9.0.21]
+2021-11-21 21:24:55:455 [restartedMain] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring embedded WebApplicationContext
+2021-11-21 21:24:55:455 [restartedMain] INFO  org.springframework.web.context.ContextLoader Root WebApplicationContext: initialization completed in 891 ms
+2021-11-21 21:24:55:638 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource HikariPool-1 - Starting...
+2021-11-21 21:24:55:673 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource HikariPool-1 - Start completed.
+2021-11-21 21:25:25:611 [restartedMain] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Initializing ExecutorService 'applicationTaskExecutor'
+2021-11-21 21:25:25:804 [restartedMain] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler Initializing ExecutorService 'taskScheduler'
+2021-11-21 21:25:25:829 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer LiveReload server is running on port 35729
+2021-11-21 21:25:25:876 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol Starting ProtocolHandler ["http-nio-8081"]
+2021-11-21 21:25:25:893 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat started on port(s): 8081 (http) with context path ''
+2021-11-21 21:25:25:895 [restartedMain] INFO  com.ivan.sunnyblog.SunnyBlogApplication Started SunnyBlogApplication in 31.571 seconds (JVM running for 32.185)
+2021-11-21 21:27:00:075 [http-nio-8081-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-11-21 21:27:00:075 [http-nio-8081-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet Initializing Servlet 'dispatcherServlet'
+2021-11-21 21:27:00:080 [http-nio-8081-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet Completed initialization in 4 ms
+2021-11-21 21:27:00:287 [http-nio-8081-exec-2] INFO  org.jooq.Constants 
+                                      
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@  @@        @@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@        @@@@@@@@@@
+@@@@@@@@@@@@@@@@  @@  @@    @@@@@@@@@@
+@@@@@@@@@@  @@@@  @@  @@    @@@@@@@@@@
+@@@@@@@@@@        @@        @@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@        @@        @@@@@@@@@@
+@@@@@@@@@@    @@  @@  @@@@  @@@@@@@@@@
+@@@@@@@@@@    @@  @@  @@@@  @@@@@@@@@@
+@@@@@@@@@@        @@  @  @  @@@@@@@@@@
+@@@@@@@@@@        @@        @@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@  @@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  Thank you for using jOOQ 3.11.11
+                                      
+2021-11-21 21:27:00:322 [http-nio-8081-exec-3] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log starts =====
+2021-11-21 21:27:00:322 [http-nio-8081-exec-1] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log starts =====
+2021-11-21 21:27:00:322 [http-nio-8081-exec-3] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request succeed
+2021-11-21 21:27:00:322 [http-nio-8081-exec-1] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request succeed
+2021-11-21 21:27:00:322 [http-nio-8081-exec-1] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request Method: GET
+2021-11-21 21:27:00:322 [http-nio-8081-exec-3] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request Method: GET
+2021-11-21 21:27:00:322 [http-nio-8081-exec-1] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request URI: /api/categories
+2021-11-21 21:27:00:322 [http-nio-8081-exec-3] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request URI: /api/articles/hot
+2021-11-21 21:27:00:322 [http-nio-8081-exec-1] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Method Name: com.ivan.sunnyblog.web.controller.CategoryContoller.getCategories
+2021-11-21 21:27:00:322 [http-nio-8081-exec-3] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Method Name: com.ivan.sunnyblog.web.controller.ArticleController.getHotArticles
+2021-11-21 21:27:00:322 [http-nio-8081-exec-1] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Params: {}
+2021-11-21 21:27:00:322 [http-nio-8081-exec-3] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Params: {}
+2021-11-21 21:27:00:322 [http-nio-8081-exec-1] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Result: ResultInfo{info='null', status=0, data=[CategoryVo{categoryId=2, name='liddffd', articleCount=1}, CategoryVo{categoryId=1, name='Life ', articleCount=1}], total=null}
+2021-11-21 21:27:00:322 [http-nio-8081-exec-1] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Process Time: 220ms
+2021-11-21 21:27:00:322 [http-nio-8081-exec-1] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log ends =====
+2021-11-21 21:27:00:322 [http-nio-8081-exec-3] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Result: ResultInfo{info='null', status=0, data=[ArticleVo{userInfo=null, category=null, BaseArticleVo{articleId=10004, status=null, title='Spring boot', description='null', content='null', firstPicture='null', viewCount=4, createDate='Tue Oct 12 15:58:26 EDT 2021', updateDate='null'}}, ArticleVo{userInfo=null, category=null, BaseArticleVo{articleId=10005, status=null, title='dd', description='null', content='null', firstPicture='null', viewCount=0, createDate='Sun Nov 07 14:09:29 EST 2021', updateDate='null'}}], total=null}
+2021-11-21 21:27:00:322 [http-nio-8081-exec-3] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Process Time: 220ms
+2021-11-21 21:27:00:323 [http-nio-8081-exec-3] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log ends =====
+2021-11-21 21:27:00:331 [http-nio-8081-exec-2] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log starts =====
+2021-11-21 21:27:00:331 [http-nio-8081-exec-2] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request succeed
+2021-11-21 21:27:00:331 [http-nio-8081-exec-2] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request Method: GET
+2021-11-21 21:27:00:331 [http-nio-8081-exec-2] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request URI: /api/articles
+2021-11-21 21:27:00:331 [http-nio-8081-exec-2] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Method Name: com.ivan.sunnyblog.web.controller.ArticleController.getPublicArticles
+2021-11-21 21:27:00:331 [http-nio-8081-exec-2] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Params: SearchVo{page=1, limit=10, categoryId=null, total=null}
+2021-11-21 21:27:00:331 [http-nio-8081-exec-2] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Result: ResultInfo{info='null', status=0, data=[ArticleVo{userInfo=UserInfoVo{userId=100001, nickName='ivan', userName='ivan', avatar='https://res-blog-public.s3.ca-central-1.amazonaws.com/default_avatar.jpg'}, category=CategoryVo{categoryId=1, name='Life ', articleCount=null}, BaseArticleVo{articleId=10005, status=1, title='dd', description='This is the doc of React markdown editor lite.
+Enjoy!!', content='null', firstPicture='', viewCount=0, createDate='Sun Nov 07 14:09:29 EST 2021', updateDate='Sun Nov 14 22:31:50 EST 2021'}}, ArticleVo{userInfo=UserInfoVo{userId=100001, nickName='ivan', userName='ivan', avatar='https://res-blog-public.s3.ca-central-1.amazonaws.com/default_avatar.jpg'}, category=CategoryVo{categoryId=2, name='liddffd', articleCount=null}, BaseArticleVo{articleId=10004, status=1, title='Spring boot', description='rerwerwer', content='null', firstPicture='', viewCount=4, createDate='Tue Oct 12 15:58:26 EDT 2021', updateDate='Sun Nov 14 22:34:56 EST 2021'}}], total=2}
+2021-11-21 21:27:00:331 [http-nio-8081-exec-2] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Process Time: 222ms
+2021-11-21 21:27:00:331 [http-nio-8081-exec-2] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log ends =====
+2021-11-21 21:27:01:349 [http-nio-8081-exec-4] INFO  io.lettuce.core.EpollProvider Starting without optional epoll library
+2021-11-21 21:27:01:349 [http-nio-8081-exec-4] INFO  io.lettuce.core.KqueueProvider Starting without optional kqueue library
+2021-11-21 21:27:01:560 [http-nio-8081-exec-4] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log starts =====
+2021-11-21 21:27:01:560 [http-nio-8081-exec-4] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request succeed
+2021-11-21 21:27:01:560 [http-nio-8081-exec-4] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request Method: GET
+2021-11-21 21:27:01:560 [http-nio-8081-exec-4] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request URI: /api/article/10005
+2021-11-21 21:27:01:560 [http-nio-8081-exec-4] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Method Name: com.ivan.sunnyblog.web.controller.ArticleController.getPublicArticleDetail
+2021-11-21 21:27:01:560 [http-nio-8081-exec-4] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Params: 10005
+2021-11-21 21:27:01:560 [http-nio-8081-exec-4] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Result: ResultInfo{info='null', status=0, data=ArticleDetailVo{categoryId=1, BaseArticleVo{articleId=10005, status=1, title='dd', description='This is the doc of React markdown editor lite.
+Enjoy!!', content='| Head | Head | Head | Head |
+| --- | --- | --- | --- |
+| Data | Data | Data | Data |
+| Data | Data | Data | Data |
+
+## 手把手教你写一个markdown编辑器
+
+> 笔者在18年年末的时候接到一个开发任务——搭建一个AI项目的开放平台，其中的产品文档为转化为HTML格式的markdown文档。考虑到文档的即时更新，将文档信息做成了Ajax接口的形式。因此管理后台只需将textarea表单的内容通过markdown解析器进行HTML格式转化，然后将markdown内容和经转化的HTML文档都保存到数据库即可。
+> 基本需求完成后，为了更好的用户体验，考虑将常用的编辑功能添加进来。改进版不仅支持了常用的文本编辑功能，还实现的UI界面的配置化，自定义语法解析器。本着造福伸手党的目的，以及积累些开源经验，笔者将该react 组件 [react-markdown-editor-lite](https://github.com/HarryChen0506/react-markdown-editor-lite) 进行了封装改造，并且发布到了开源社区。
+
+### 预览
+在线体验 [https://harrychen0506.github.io/react-markdown-editor-lite/](https://harrychen0506.github.io/react-markdown-editor-lite/)
+
+![image](https://github.com//HarryChen0506/react-markdown-editor-lite/blob/master/image/react-markdown-editor-lite-v1.0.0.PNG?raw=true)
+
+### 特点
+* 轻量、基于React
+* UI可配置, 如只显示编辑区或预览区
+* 支持自定义markdown语法解析器,语法高亮等
+* 支持常用的markdown编辑功能，如加粗，斜体等等...
+* 支持功能按钮插拔化，用户可以自定义扩展组件
+* 支持编辑区和预览区同步滚动
+
+### 开发心得
+
+- 文本编辑
+
+  大多数常见的编辑器，包括富文本编辑器，利用了某些元素如div的contenteditable属性，配合selection、range、execCommand等API，实现了富文本编辑功能。这里面的实现比较复杂，所以有了"[为什么都说富文本编辑器是天坑？](https://www.zhihu.com/question/38699645)"这个说法。
+
+  而markdown编辑器，核心的处理内容为简单语法的纯文本，复杂度相对来说比较低，并且input标签自带onSelect事件，可以很方便的获取选择信息（选择起始位置和选择文本值），因此要想实现编辑功能，只需将要改动的内容进行文本转换，然后进行重新拼接首尾，大功告成。
+  
+- markdown解析
+
+  考察了几个社区流行的markdown解析器，比较流行的有[markdown](https://www.npmjs.com/package/markdown), [markdown-it](https://www.npmjs.com/package/markdown-it), [marked](https://www.npmjs.com/package/marked) 等等。综合考虑扩展性以及稳定性，笔者推荐使用markdown-it作为markdown的词法解析器，因为该解析器有比较多的插件，并且支持语法高亮。
+
+- 同步滚动
+
+  当选择分栏编辑的时候，滚动左侧的编辑区，右侧的预览区能自动滚动到对应的区域。方案参考了《[手把手教你用 100行代码实现基于 react的 markdown 输入 + 即时预览在线编辑器（一）](https://github.com/accforgit/blog-data/blob/master/%E5%9C%A8%E7%BA%BF%E7%BC%96%E8%BE%91%E5%99%A8/README/README1.md)》。只需先计算出输入框容器元素与预览框容器元素之间最大scroll范围的比例值，然后根据主动滚动元素自身的scrollTop做相应的比例换算，即可知道对方区域的scrollTop值。
+
+- 关于UI
+ 
+  - 项目的字体库选择了Font Awesome风格，并且只选取了项目所需要的一些图标。
+  - 编辑器的整体css均可通过全局覆盖的形式进行自定义。目前暂时只支持灰色主题。
+  - 编辑器的显示区域包括菜单栏，编辑器，预览区，工具栏，通过配置组件的config属性，可以选择默认的展示区域。
+  
+### Install
+
+```js
+npm install react-markdown-editor-lite --save
+```
+
+### Props
+
+| Property | Description | Type | default | Remarks |
+| --- | --- | --- | --- | --- |
+| value | markdown content | String | '' | required |
+| style | component container style | Object | {height: '100%'} | not required |
+| config | component config | Object | {view: {...}, logger: {...}} | not required |
+| onChange | emitting when editor has changed | Function | ({html, md}) => {} | not required |
+| onImageUpload | when image uploaded, callback emitting will get image markdown text | (file: File, callback: (url: string) => void) => void; | ({file, callback}) => {} | not required |
+| renderHTML | Render markdown text to HTML. You can return either string, function or Promise | (text: string) => string|function|Promise | none | **required** |
+
+### Example
+
+``` js
+'use strict';
+import React from 'react'
+import ReactDOM from 'react-dom'
+import MdEditor from 'react-markdown-editor-lite'
+import MarkdownIt from 'markdown-it'
+import emoji from 'markdown-it-emoji'
+import subscript from 'markdown-it-sub'
+import superscript from 'markdown-it-sup'
+import footnote from 'markdown-it-footnote'
+import deflist from 'markdown-it-deflist'
+import abbreviation from 'markdown-it-abbr'
+import insert from 'markdown-it-ins'
+import mark from 'markdown-it-mark'
+import tasklists from 'markdown-it-task-lists'
+import hljs from 'highlight.js'
+import 'highlight.js/styles/atom-one-light.css'
+// import 'highlight.js/styles/github.css'
+import './index.less';
+
+const MOCK_DATA = "I Love React."
+export default class Demo extends React.Component {
+  mdEditor = null
+  mdParser = null
+  constructor(props) {
+    super(props)
+    // initial a parsera
+    this.mdParser = new MarkdownIt({
+      html: true,
+      linkify: true,
+      typographer: true,
+      highlight: function (str, lang) {
+        if (lang && hljs.getLanguage(lang)) {
+          try {
+            return hljs.highlight(lang, str).value
+          } catch (__) {}
+        }    
+        return '' // use external default escaping
+      }
+    })
+    .use(emoji)
+    .use(subscript)
+    .use(superscript)
+    .use(footnote)
+    .use(deflist)
+    .use(abbreviation)
+    .use(insert)
+    .use(mark)
+    .use(tasklists, { enabled: this.taskLists })
+    this.renderHTML = this.renderHTML.bind(this)
+  }
+  handleEditorChange({html, md}) {
+    console.log('handleEditorChange', html, md)
+  }
+  handleImageUpload(file, callback) {
+    const reader = new FileReader()
+    reader.onload = () => {      
+      const convertBase64UrlToBlob = (urlData) => {  
+        let arr = urlData.split(','), mime = arr[0].match(/:(.*?);/)[1]
+        let bstr = atob(arr[1])
+        let n = bstr.length
+        let u8arr = new Uint8Array(n)
+        while (n--) {
+          u8arr[n] = bstr.charCodeAt(n)
+        }
+        return new Blob([u8arr], {type:mime})
+      }
+      const blob = convertBase64UrlToBlob(reader.result)
+      setTimeout(() => {
+        // setTimeout 模拟异步上传图片
+        // 当异步上传获取图片地址后，执行calback回调（参数为imageUrl字符串），即可将图片地址写入markdown
+        callback('https://avatars0.githubusercontent.com/u/21263805?s=40&v=4')
+      }, 1000)
+    }
+    reader.readAsDataURL(file)
+  }
+  renderHTML(text) {
+    // 模拟异步渲染Markdown
+    return new Promise((resolve) => {
+      setTimeout(() => {
+        resolve(this.mdParser.render(text))
+      }, 1000)
+    })
+  }
+  handleGetMdValue = () => {   
+    this.mdEditor && alert(this.mdEditor.getMdValue())      
+  }
+  handleGetHtmlValue = () => {    
+    this.mdEditor && alert(this.mdEditor.getHtmlValue())
+  }
+  render() {
+    return (      
+      <div>
+        <nav>
+          <button onClick={this.handleGetMdValue} >getMdValue</button>  
+          <button onClick={this.handleGetHtmlValue} >getHtmlValue</button>  
+        </nav>
+        <section style="height: 500px">
+          <MdEditor 
+            ref={node => this.mdEditor = node}
+            value={MOCK_DATA}
+            style={{height: '400px'}}
+            renderHTML={this.renderHTML}
+            config={{
+              view: {
+                menu: true,
+                md: true,
+                html: true
+              },
+              imageUrl: 'https://octodex.github.com/images/minion.png'
+            }}
+            onChange={this.handleEditorChange} 
+            onImageUpload={this.handleImageUpload}
+          />
+        </section>                        
+      </div>      
+    )
+  }
+}
+```
+
+### 最后
+
+   欢迎大家使用和反馈，[项目地址](https://github.com/HarryChen0506/react-markdown-editor-lite) (https://github.com/HarryChen0506/react-markdown-editor-lite)， 你的点赞将是我莫大的动力😊
+
+![1.png](https://s3.ca-central-1.amazonaws.com/res-blog-public/res-dev/blog_1636946743939_1.png)', firstPicture='', viewCount=0, createDate='Sun Nov 07 14:09:29 EST 2021', updateDate='Sun Nov 14 22:31:50 EST 2021'}}, total=null}
+2021-11-21 21:27:01:560 [http-nio-8081-exec-4] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Process Time: 291ms
+2021-11-21 21:27:01:560 [http-nio-8081-exec-4] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log ends =====
+2021-11-21 21:52:34:293 [http-nio-8081-exec-1] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log starts =====
+2021-11-21 21:52:34:294 [http-nio-8081-exec-1] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request succeed
+2021-11-21 21:52:34:294 [http-nio-8081-exec-1] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request Method: GET
+2021-11-21 21:52:34:294 [http-nio-8081-exec-1] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request URI: /api/articles/hot
+2021-11-21 21:52:34:294 [http-nio-8081-exec-1] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Method Name: com.ivan.sunnyblog.web.controller.ArticleController.getHotArticles
+2021-11-21 21:52:34:294 [http-nio-8081-exec-1] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Params: {}
+2021-11-21 21:52:34:294 [http-nio-8081-exec-1] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Result: ResultInfo{info='null', status=0, data=[ArticleVo{userInfo=null, category=null, BaseArticleVo{articleId=10004, status=null, title='Spring boot', description='null', content='null', firstPicture='null', viewCount=4, createDate='Tue Oct 12 15:58:26 EDT 2021', updateDate='null'}}, ArticleVo{userInfo=null, category=null, BaseArticleVo{articleId=10005, status=null, title='dd', description='null', content='null', firstPicture='null', viewCount=0, createDate='Sun Nov 07 14:09:29 EST 2021', updateDate='null'}}], total=null}
+2021-11-21 21:52:34:294 [http-nio-8081-exec-1] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Process Time: 5ms
+2021-11-21 21:52:34:294 [http-nio-8081-exec-1] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log ends =====
+2021-11-21 21:52:34:296 [http-nio-8081-exec-3] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log starts =====
+2021-11-21 21:52:34:296 [http-nio-8081-exec-3] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request succeed
+2021-11-21 21:52:34:296 [http-nio-8081-exec-3] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request Method: GET
+2021-11-21 21:52:34:296 [http-nio-8081-exec-3] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request URI: /api/categories
+2021-11-21 21:52:34:296 [http-nio-8081-exec-3] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Method Name: com.ivan.sunnyblog.web.controller.CategoryContoller.getCategories
+2021-11-21 21:52:34:297 [http-nio-8081-exec-3] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Params: {}
+2021-11-21 21:52:34:297 [http-nio-8081-exec-3] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Result: ResultInfo{info='null', status=0, data=[CategoryVo{categoryId=2, name='liddffd', articleCount=1}, CategoryVo{categoryId=1, name='Life ', articleCount=1}], total=null}
+2021-11-21 21:52:34:297 [http-nio-8081-exec-3] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Process Time: 5ms
+2021-11-21 21:52:34:297 [http-nio-8081-exec-3] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log ends =====
+2021-11-21 21:52:34:303 [http-nio-8081-exec-2] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log starts =====
+2021-11-21 21:52:34:303 [http-nio-8081-exec-2] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request succeed
+2021-11-21 21:52:34:303 [http-nio-8081-exec-2] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request Method: GET
+2021-11-21 21:52:34:304 [http-nio-8081-exec-2] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request URI: /api/articles
+2021-11-21 21:52:34:304 [http-nio-8081-exec-2] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Method Name: com.ivan.sunnyblog.web.controller.ArticleController.getPublicArticles
+2021-11-21 21:52:34:304 [http-nio-8081-exec-2] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Params: SearchVo{page=1, limit=10, categoryId=null, total=null}
+2021-11-21 21:52:34:304 [http-nio-8081-exec-2] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Result: ResultInfo{info='null', status=0, data=[ArticleVo{userInfo=UserInfoVo{userId=100001, nickName='ivan', userName='ivan', avatar='https://res-blog-public.s3.ca-central-1.amazonaws.com/default_avatar.jpg'}, category=CategoryVo{categoryId=1, name='Life ', articleCount=null}, BaseArticleVo{articleId=10005, status=1, title='dd', description='This is the doc of React markdown editor lite.
+Enjoy!!', content='null', firstPicture='', viewCount=0, createDate='Sun Nov 07 14:09:29 EST 2021', updateDate='Sun Nov 14 22:31:50 EST 2021'}}, ArticleVo{userInfo=UserInfoVo{userId=100001, nickName='ivan', userName='ivan', avatar='https://res-blog-public.s3.ca-central-1.amazonaws.com/default_avatar.jpg'}, category=CategoryVo{categoryId=2, name='liddffd', articleCount=null}, BaseArticleVo{articleId=10004, status=1, title='Spring boot', description='rerwerwer', content='null', firstPicture='', viewCount=4, createDate='Tue Oct 12 15:58:26 EDT 2021', updateDate='Sun Nov 14 22:34:56 EST 2021'}}], total=2}
+2021-11-21 21:52:34:304 [http-nio-8081-exec-2] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Process Time: 15ms
+2021-11-21 21:52:34:304 [http-nio-8081-exec-2] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log ends =====
+2021-11-21 21:52:53:092 [http-nio-8081-exec-5] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log starts =====
+2021-11-21 21:52:53:092 [http-nio-8081-exec-5] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request succeed
+2021-11-21 21:52:53:092 [http-nio-8081-exec-5] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request Method: GET
+2021-11-21 21:52:53:092 [http-nio-8081-exec-5] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request URI: /api/categories
+2021-11-21 21:52:53:092 [http-nio-8081-exec-5] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Method Name: com.ivan.sunnyblog.web.controller.CategoryContoller.getCategories
+2021-11-21 21:52:53:092 [http-nio-8081-exec-5] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Params: {}
+2021-11-21 21:52:53:092 [http-nio-8081-exec-5] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Result: ResultInfo{info='null', status=0, data=[CategoryVo{categoryId=2, name='liddffd', articleCount=1}, CategoryVo{categoryId=1, name='Life ', articleCount=1}], total=null}
+2021-11-21 21:52:53:093 [http-nio-8081-exec-5] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Process Time: 3ms
+2021-11-21 21:52:53:093 [http-nio-8081-exec-5] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log ends =====
+2021-11-21 21:52:53:102 [http-nio-8081-exec-4] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log starts =====
+2021-11-21 21:52:53:102 [http-nio-8081-exec-4] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request succeed
+2021-11-21 21:52:53:102 [http-nio-8081-exec-4] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request Method: GET
+2021-11-21 21:52:53:103 [http-nio-8081-exec-4] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request URI: /api/articles
+2021-11-21 21:52:53:103 [http-nio-8081-exec-4] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Method Name: com.ivan.sunnyblog.web.controller.ArticleController.getPublicArticles
+2021-11-21 21:52:53:103 [http-nio-8081-exec-4] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Params: SearchVo{page=1, limit=10, categoryId=null, total=null}
+2021-11-21 21:52:53:103 [http-nio-8081-exec-4] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Result: ResultInfo{info='null', status=0, data=[ArticleVo{userInfo=UserInfoVo{userId=100001, nickName='ivan', userName='ivan', avatar='https://res-blog-public.s3.ca-central-1.amazonaws.com/default_avatar.jpg'}, category=CategoryVo{categoryId=1, name='Life ', articleCount=null}, BaseArticleVo{articleId=10005, status=1, title='dd', description='This is the doc of React markdown editor lite.
+Enjoy!!', content='null', firstPicture='', viewCount=0, createDate='Sun Nov 07 14:09:29 EST 2021', updateDate='Sun Nov 14 22:31:50 EST 2021'}}, ArticleVo{userInfo=UserInfoVo{userId=100001, nickName='ivan', userName='ivan', avatar='https://res-blog-public.s3.ca-central-1.amazonaws.com/default_avatar.jpg'}, category=CategoryVo{categoryId=2, name='liddffd', articleCount=null}, BaseArticleVo{articleId=10004, status=1, title='Spring boot', description='rerwerwer', content='null', firstPicture='', viewCount=4, createDate='Tue Oct 12 15:58:26 EDT 2021', updateDate='Sun Nov 14 22:34:56 EST 2021'}}], total=2}
+2021-11-21 21:52:53:103 [http-nio-8081-exec-4] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Process Time: 15ms
+2021-11-21 21:52:53:103 [http-nio-8081-exec-4] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log ends =====
+2021-11-21 21:52:54:115 [http-nio-8081-exec-7] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log starts =====
+2021-11-21 21:52:54:115 [http-nio-8081-exec-7] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request succeed
+2021-11-21 21:52:54:115 [http-nio-8081-exec-7] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request Method: GET
+2021-11-21 21:52:54:115 [http-nio-8081-exec-7] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request URI: /api/articles
+2021-11-21 21:52:54:115 [http-nio-8081-exec-7] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Method Name: com.ivan.sunnyblog.web.controller.ArticleController.getPublicArticles
+2021-11-21 21:52:54:115 [http-nio-8081-exec-7] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Params: SearchVo{page=1, limit=10, categoryId=2, total=null}
+2021-11-21 21:52:54:115 [http-nio-8081-exec-7] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Result: ResultInfo{info='null', status=0, data=[ArticleVo{userInfo=UserInfoVo{userId=100001, nickName='ivan', userName='ivan', avatar='https://res-blog-public.s3.ca-central-1.amazonaws.com/default_avatar.jpg'}, category=CategoryVo{categoryId=2, name='liddffd', articleCount=null}, BaseArticleVo{articleId=10004, status=1, title='Spring boot', description='rerwerwer', content='null', firstPicture='', viewCount=4, createDate='Tue Oct 12 15:58:26 EDT 2021', updateDate='Sun Nov 14 22:34:56 EST 2021'}}], total=1}
+2021-11-21 21:52:54:116 [http-nio-8081-exec-7] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Process Time: 6ms
+2021-11-21 21:52:54:116 [http-nio-8081-exec-7] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log ends =====
+2021-11-21 21:52:55:269 [http-nio-8081-exec-8] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log starts =====
+2021-11-21 21:52:55:270 [http-nio-8081-exec-8] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request succeed
+2021-11-21 21:52:55:270 [http-nio-8081-exec-8] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request Method: GET
+2021-11-21 21:52:55:270 [http-nio-8081-exec-8] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request URI: /api/articles
+2021-11-21 21:52:55:270 [http-nio-8081-exec-8] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Method Name: com.ivan.sunnyblog.web.controller.ArticleController.getPublicArticles
+2021-11-21 21:52:55:270 [http-nio-8081-exec-8] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Params: SearchVo{page=1, limit=10, categoryId=null, total=null}
+2021-11-21 21:52:55:270 [http-nio-8081-exec-8] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Result: ResultInfo{info='null', status=0, data=[ArticleVo{userInfo=UserInfoVo{userId=100001, nickName='ivan', userName='ivan', avatar='https://res-blog-public.s3.ca-central-1.amazonaws.com/default_avatar.jpg'}, category=CategoryVo{categoryId=1, name='Life ', articleCount=null}, BaseArticleVo{articleId=10005, status=1, title='dd', description='This is the doc of React markdown editor lite.
+Enjoy!!', content='null', firstPicture='', viewCount=0, createDate='Sun Nov 07 14:09:29 EST 2021', updateDate='Sun Nov 14 22:31:50 EST 2021'}}, ArticleVo{userInfo=UserInfoVo{userId=100001, nickName='ivan', userName='ivan', avatar='https://res-blog-public.s3.ca-central-1.amazonaws.com/default_avatar.jpg'}, category=CategoryVo{categoryId=2, name='liddffd', articleCount=null}, BaseArticleVo{articleId=10004, status=1, title='Spring boot', description='rerwerwer', content='null', firstPicture='', viewCount=4, createDate='Tue Oct 12 15:58:26 EDT 2021', updateDate='Sun Nov 14 22:34:56 EST 2021'}}], total=2}
+2021-11-21 21:52:55:270 [http-nio-8081-exec-8] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Process Time: 7ms
+2021-11-21 21:52:55:270 [http-nio-8081-exec-8] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log ends =====
+2021-11-21 21:53:01:427 [http-nio-8081-exec-1] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log starts =====
+2021-11-21 21:53:01:428 [http-nio-8081-exec-1] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request succeed
+2021-11-21 21:53:01:428 [http-nio-8081-exec-1] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request Method: GET
+2021-11-21 21:53:01:428 [http-nio-8081-exec-1] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request URI: /api/articles/hot
+2021-11-21 21:53:01:428 [http-nio-8081-exec-1] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Method Name: com.ivan.sunnyblog.web.controller.ArticleController.getHotArticles
+2021-11-21 21:53:01:428 [http-nio-8081-exec-1] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Params: {}
+2021-11-21 21:53:01:428 [http-nio-8081-exec-1] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Result: ResultInfo{info='null', status=0, data=[ArticleVo{userInfo=null, category=null, BaseArticleVo{articleId=10004, status=null, title='Spring boot', description='null', content='null', firstPicture='null', viewCount=4, createDate='Tue Oct 12 15:58:26 EDT 2021', updateDate='null'}}, ArticleVo{userInfo=null, category=null, BaseArticleVo{articleId=10005, status=null, title='dd', description='null', content='null', firstPicture='null', viewCount=0, createDate='Sun Nov 07 14:09:29 EST 2021', updateDate='null'}}], total=null}
+2021-11-21 21:53:01:428 [http-nio-8081-exec-1] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Process Time: 7ms
+2021-11-21 21:53:01:428 [http-nio-8081-exec-1] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log ends =====
+2021-11-21 21:53:01:430 [http-nio-8081-exec-9] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log starts =====
+2021-11-21 21:53:01:430 [http-nio-8081-exec-9] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request succeed
+2021-11-21 21:53:01:430 [http-nio-8081-exec-9] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request Method: GET
+2021-11-21 21:53:01:430 [http-nio-8081-exec-9] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request URI: /api/categories
+2021-11-21 21:53:01:430 [http-nio-8081-exec-9] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Method Name: com.ivan.sunnyblog.web.controller.CategoryContoller.getCategories
+2021-11-21 21:53:01:430 [http-nio-8081-exec-9] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Params: {}
+2021-11-21 21:53:01:430 [http-nio-8081-exec-9] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Result: ResultInfo{info='null', status=0, data=[CategoryVo{categoryId=2, name='liddffd', articleCount=1}, CategoryVo{categoryId=1, name='Life ', articleCount=1}], total=null}
+2021-11-21 21:53:01:430 [http-nio-8081-exec-9] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Process Time: 9ms
+2021-11-21 21:53:01:430 [http-nio-8081-exec-9] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log ends =====
+2021-11-21 21:53:01:438 [http-nio-8081-exec-10] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log starts =====
+2021-11-21 21:53:01:439 [http-nio-8081-exec-10] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request succeed
+2021-11-21 21:53:01:439 [http-nio-8081-exec-10] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request Method: GET
+2021-11-21 21:53:01:439 [http-nio-8081-exec-10] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request URI: /api/articles
+2021-11-21 21:53:01:439 [http-nio-8081-exec-10] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Method Name: com.ivan.sunnyblog.web.controller.ArticleController.getPublicArticles
+2021-11-21 21:53:01:439 [http-nio-8081-exec-10] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Params: SearchVo{page=1, limit=10, categoryId=null, total=null}
+2021-11-21 21:53:01:439 [http-nio-8081-exec-10] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Result: ResultInfo{info='null', status=0, data=[ArticleVo{userInfo=UserInfoVo{userId=100001, nickName='ivan', userName='ivan', avatar='https://res-blog-public.s3.ca-central-1.amazonaws.com/default_avatar.jpg'}, category=CategoryVo{categoryId=1, name='Life ', articleCount=null}, BaseArticleVo{articleId=10005, status=1, title='dd', description='This is the doc of React markdown editor lite.
+Enjoy!!', content='null', firstPicture='', viewCount=0, createDate='Sun Nov 07 14:09:29 EST 2021', updateDate='Sun Nov 14 22:31:50 EST 2021'}}, ArticleVo{userInfo=UserInfoVo{userId=100001, nickName='ivan', userName='ivan', avatar='https://res-blog-public.s3.ca-central-1.amazonaws.com/default_avatar.jpg'}, category=CategoryVo{categoryId=2, name='liddffd', articleCount=null}, BaseArticleVo{articleId=10004, status=1, title='Spring boot', description='rerwerwer', content='null', firstPicture='', viewCount=4, createDate='Tue Oct 12 15:58:26 EDT 2021', updateDate='Sun Nov 14 22:34:56 EST 2021'}}], total=2}
+2021-11-21 21:53:01:439 [http-nio-8081-exec-10] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Process Time: 19ms
+2021-11-21 21:53:01:439 [http-nio-8081-exec-10] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log ends =====
+2021-11-21 21:53:03:309 [http-nio-8081-exec-2] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log starts =====
+2021-11-21 21:53:03:309 [http-nio-8081-exec-2] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request succeed
+2021-11-21 21:53:03:309 [http-nio-8081-exec-2] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request Method: GET
+2021-11-21 21:53:03:309 [http-nio-8081-exec-2] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request URI: /api/article/10005
+2021-11-21 21:53:03:309 [http-nio-8081-exec-2] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Method Name: com.ivan.sunnyblog.web.controller.ArticleController.getPublicArticleDetail
+2021-11-21 21:53:03:309 [http-nio-8081-exec-2] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Params: 10005
+2021-11-21 21:53:03:309 [http-nio-8081-exec-2] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Result: ResultInfo{info='null', status=0, data=ArticleDetailVo{categoryId=1, BaseArticleVo{articleId=10005, status=1, title='dd', description='This is the doc of React markdown editor lite.
+Enjoy!!', content='| Head | Head | Head | Head |
+| --- | --- | --- | --- |
+| Data | Data | Data | Data |
+| Data | Data | Data | Data |
+
+## 手把手教你写一个markdown编辑器
+
+> 笔者在18年年末的时候接到一个开发任务——搭建一个AI项目的开放平台，其中的产品文档为转化为HTML格式的markdown文档。考虑到文档的即时更新，将文档信息做成了Ajax接口的形式。因此管理后台只需将textarea表单的内容通过markdown解析器进行HTML格式转化，然后将markdown内容和经转化的HTML文档都保存到数据库即可。
+> 基本需求完成后，为了更好的用户体验，考虑将常用的编辑功能添加进来。改进版不仅支持了常用的文本编辑功能，还实现的UI界面的配置化，自定义语法解析器。本着造福伸手党的目的，以及积累些开源经验，笔者将该react 组件 [react-markdown-editor-lite](https://github.com/HarryChen0506/react-markdown-editor-lite) 进行了封装改造，并且发布到了开源社区。
+
+### 预览
+在线体验 [https://harrychen0506.github.io/react-markdown-editor-lite/](https://harrychen0506.github.io/react-markdown-editor-lite/)
+
+![image](https://github.com//HarryChen0506/react-markdown-editor-lite/blob/master/image/react-markdown-editor-lite-v1.0.0.PNG?raw=true)
+
+### 特点
+* 轻量、基于React
+* UI可配置, 如只显示编辑区或预览区
+* 支持自定义markdown语法解析器,语法高亮等
+* 支持常用的markdown编辑功能，如加粗，斜体等等...
+* 支持功能按钮插拔化，用户可以自定义扩展组件
+* 支持编辑区和预览区同步滚动
+
+### 开发心得
+
+- 文本编辑
+
+  大多数常见的编辑器，包括富文本编辑器，利用了某些元素如div的contenteditable属性，配合selection、range、execCommand等API，实现了富文本编辑功能。这里面的实现比较复杂，所以有了"[为什么都说富文本编辑器是天坑？](https://www.zhihu.com/question/38699645)"这个说法。
+
+  而markdown编辑器，核心的处理内容为简单语法的纯文本，复杂度相对来说比较低，并且input标签自带onSelect事件，可以很方便的获取选择信息（选择起始位置和选择文本值），因此要想实现编辑功能，只需将要改动的内容进行文本转换，然后进行重新拼接首尾，大功告成。
+  
+- markdown解析
+
+  考察了几个社区流行的markdown解析器，比较流行的有[markdown](https://www.npmjs.com/package/markdown), [markdown-it](https://www.npmjs.com/package/markdown-it), [marked](https://www.npmjs.com/package/marked) 等等。综合考虑扩展性以及稳定性，笔者推荐使用markdown-it作为markdown的词法解析器，因为该解析器有比较多的插件，并且支持语法高亮。
+
+- 同步滚动
+
+  当选择分栏编辑的时候，滚动左侧的编辑区，右侧的预览区能自动滚动到对应的区域。方案参考了《[手把手教你用 100行代码实现基于 react的 markdown 输入 + 即时预览在线编辑器（一）](https://github.com/accforgit/blog-data/blob/master/%E5%9C%A8%E7%BA%BF%E7%BC%96%E8%BE%91%E5%99%A8/README/README1.md)》。只需先计算出输入框容器元素与预览框容器元素之间最大scroll范围的比例值，然后根据主动滚动元素自身的scrollTop做相应的比例换算，即可知道对方区域的scrollTop值。
+
+- 关于UI
+ 
+  - 项目的字体库选择了Font Awesome风格，并且只选取了项目所需要的一些图标。
+  - 编辑器的整体css均可通过全局覆盖的形式进行自定义。目前暂时只支持灰色主题。
+  - 编辑器的显示区域包括菜单栏，编辑器，预览区，工具栏，通过配置组件的config属性，可以选择默认的展示区域。
+  
+### Install
+
+```js
+npm install react-markdown-editor-lite --save
+```
+
+### Props
+
+| Property | Description | Type | default | Remarks |
+| --- | --- | --- | --- | --- |
+| value | markdown content | String | '' | required |
+| style | component container style | Object | {height: '100%'} | not required |
+| config | component config | Object | {view: {...}, logger: {...}} | not required |
+| onChange | emitting when editor has changed | Function | ({html, md}) => {} | not required |
+| onImageUpload | when image uploaded, callback emitting will get image markdown text | (file: File, callback: (url: string) => void) => void; | ({file, callback}) => {} | not required |
+| renderHTML | Render markdown text to HTML. You can return either string, function or Promise | (text: string) => string|function|Promise | none | **required** |
+
+### Example
+
+``` js
+'use strict';
+import React from 'react'
+import ReactDOM from 'react-dom'
+import MdEditor from 'react-markdown-editor-lite'
+import MarkdownIt from 'markdown-it'
+import emoji from 'markdown-it-emoji'
+import subscript from 'markdown-it-sub'
+import superscript from 'markdown-it-sup'
+import footnote from 'markdown-it-footnote'
+import deflist from 'markdown-it-deflist'
+import abbreviation from 'markdown-it-abbr'
+import insert from 'markdown-it-ins'
+import mark from 'markdown-it-mark'
+import tasklists from 'markdown-it-task-lists'
+import hljs from 'highlight.js'
+import 'highlight.js/styles/atom-one-light.css'
+// import 'highlight.js/styles/github.css'
+import './index.less';
+
+const MOCK_DATA = "I Love React."
+export default class Demo extends React.Component {
+  mdEditor = null
+  mdParser = null
+  constructor(props) {
+    super(props)
+    // initial a parsera
+    this.mdParser = new MarkdownIt({
+      html: true,
+      linkify: true,
+      typographer: true,
+      highlight: function (str, lang) {
+        if (lang && hljs.getLanguage(lang)) {
+          try {
+            return hljs.highlight(lang, str).value
+          } catch (__) {}
+        }    
+        return '' // use external default escaping
+      }
+    })
+    .use(emoji)
+    .use(subscript)
+    .use(superscript)
+    .use(footnote)
+    .use(deflist)
+    .use(abbreviation)
+    .use(insert)
+    .use(mark)
+    .use(tasklists, { enabled: this.taskLists })
+    this.renderHTML = this.renderHTML.bind(this)
+  }
+  handleEditorChange({html, md}) {
+    console.log('handleEditorChange', html, md)
+  }
+  handleImageUpload(file, callback) {
+    const reader = new FileReader()
+    reader.onload = () => {      
+      const convertBase64UrlToBlob = (urlData) => {  
+        let arr = urlData.split(','), mime = arr[0].match(/:(.*?);/)[1]
+        let bstr = atob(arr[1])
+        let n = bstr.length
+        let u8arr = new Uint8Array(n)
+        while (n--) {
+          u8arr[n] = bstr.charCodeAt(n)
+        }
+        return new Blob([u8arr], {type:mime})
+      }
+      const blob = convertBase64UrlToBlob(reader.result)
+      setTimeout(() => {
+        // setTimeout 模拟异步上传图片
+        // 当异步上传获取图片地址后，执行calback回调（参数为imageUrl字符串），即可将图片地址写入markdown
+        callback('https://avatars0.githubusercontent.com/u/21263805?s=40&v=4')
+      }, 1000)
+    }
+    reader.readAsDataURL(file)
+  }
+  renderHTML(text) {
+    // 模拟异步渲染Markdown
+    return new Promise((resolve) => {
+      setTimeout(() => {
+        resolve(this.mdParser.render(text))
+      }, 1000)
+    })
+  }
+  handleGetMdValue = () => {   
+    this.mdEditor && alert(this.mdEditor.getMdValue())      
+  }
+  handleGetHtmlValue = () => {    
+    this.mdEditor && alert(this.mdEditor.getHtmlValue())
+  }
+  render() {
+    return (      
+      <div>
+        <nav>
+          <button onClick={this.handleGetMdValue} >getMdValue</button>  
+          <button onClick={this.handleGetHtmlValue} >getHtmlValue</button>  
+        </nav>
+        <section style="height: 500px">
+          <MdEditor 
+            ref={node => this.mdEditor = node}
+            value={MOCK_DATA}
+            style={{height: '400px'}}
+            renderHTML={this.renderHTML}
+            config={{
+              view: {
+                menu: true,
+                md: true,
+                html: true
+              },
+              imageUrl: 'https://octodex.github.com/images/minion.png'
+            }}
+            onChange={this.handleEditorChange} 
+            onImageUpload={this.handleImageUpload}
+          />
+        </section>                        
+      </div>      
+    )
+  }
+}
+```
+
+### 最后
+
+   欢迎大家使用和反馈，[项目地址](https://github.com/HarryChen0506/react-markdown-editor-lite) (https://github.com/HarryChen0506/react-markdown-editor-lite)， 你的点赞将是我莫大的动力😊
+
+![1.png](https://s3.ca-central-1.amazonaws.com/res-blog-public/res-dev/blog_1636946743939_1.png)', firstPicture='', viewCount=0, createDate='Sun Nov 07 14:09:29 EST 2021', updateDate='Sun Nov 14 22:31:50 EST 2021'}}, total=null}
+2021-11-21 21:53:03:310 [http-nio-8081-exec-2] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Process Time: 5ms
+2021-11-21 21:53:03:310 [http-nio-8081-exec-2] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log ends =====
