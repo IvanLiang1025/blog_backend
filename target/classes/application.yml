@@ -18,11 +18,14 @@ spring:
 
 #custom aws related config properties
 aws:
-  credentials:
-    access-key: AKIATP4TEDJW32XORCJ4
-    secret-key: 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
+#  credentials:
+#    access-key: AKIATP4TEDJW2535TZHX
+#    secret-key: 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
   region:
     static: ca-central-1
+
+
+
 s3:
   bucket:
     name: res-blog-public

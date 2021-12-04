@@ -1,6 +1,10 @@
 package com.ivan.sunnyblog.web.res;
 
+import com.amazonaws.auth.AWSCredentialsProviderChain;
+import com.amazonaws.auth.AWSStaticCredentialsProvider;
+import com.amazonaws.auth.BasicAWSCredentials;
 import com.amazonaws.services.s3.AmazonS3;
+import com.amazonaws.services.s3.AmazonS3ClientBuilder;
 import com.amazonaws.services.s3.model.ObjectMetadata;
 import com.amazonaws.services.s3.model.PutObjectResult;
 import org.apache.commons.lang3.StringUtils;
@@ -24,13 +28,21 @@ public class S3ResourceManager {
     private static Logger logger = LoggerFactory.getLogger(S3ResourceManager.class);
 
     @Autowired
-    private AmazonS3 s3Client;
+    static AmazonS3 s3Client;
 
     @Value("${s3.bucket.name}")
     private String bucketName;
 
     @Value("${s3.bucket.path}")
     private String path;
+
+//    static {
+////        BasicAWSCredentials awsCredentials = new BasicAWSCredentials(AWS_ACCESS_KEY, AWS_SECRET_KEY);
+//        s3Client = AmazonS3ClientBuilder.standard()
+////                .withCredentials(new AWSStaticCredentialsProvider(awsCredentials))
+//                .withCredentials(new AWSCredentialsProviderChain())
+//                .withRegion("ca-central-1").build();
+//    }
 
     public String uploadToS3(MultipartFile multipartFile) throws Exception{
         String fileName = multipartFile.getOriginalFilename();
