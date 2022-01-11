@@ -24,8 +24,8 @@ import java.net.URL;
 public class S3Test {
 
     final static AmazonS3 s3;
-    final static String AWS_ACCESS_KEY = "AKIATP4TEDJWWR3VCD6V"; // 【你的 access_key】
-    final static String AWS_SECRET_KEY = "z8+YDju1RmfiNJID53O1pfJI3PoamPN1JeH8qviF"; // 【你的 aws_secret_key】
+    final static String AWS_ACCESS_KEY = ""; // 【你的 access_key】
+    final static String AWS_SECRET_KEY = ""; // 【你的 aws_secret_key】
 
     static String bucketName = "res-blog-public"; // 【你 bucket 的名字】 # 首先需要保证 s3 上已经存在该存储桶
     static String pathName = "/res-dev"; // 【你 bucket 的名字】 # 首先需要保证 s3 上已经存在该存储桶
