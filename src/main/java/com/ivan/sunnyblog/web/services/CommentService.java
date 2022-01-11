@@ -9,6 +9,7 @@ import static com.ivan.sunnyblog.web.contant.GlobalContant.COMMENT_STATUS_PUBLIS
 import com.ivan.sunnyblog.web.ResultInfo;
 import com.ivan.sunnyblog.web.dao.BaseDao;
 import com.ivan.sunnyblog.web.dao.CommentDaoExt;
+import com.ivan.sunnyblog.web.res.S3ResourceManager;
 import com.ivan.sunnyblog.web.services.iservice.ICommentService;
 import com.ivan.sunnyblog.web.vo.CommentListVo;
 import com.ivan.sunnyblog.web.vo.CommentVo;
@@ -34,6 +35,9 @@ public class CommentService extends BaseService implements ICommentService {
     @Autowired
     BaseDao dao;
 
+    @Autowired
+    S3ResourceManager s3ResourceManager;
+
     @Override
     public ResultInfo postComment(CommentVo commentVo) {
 
@@ -49,6 +53,8 @@ public class CommentService extends BaseService implements ICommentService {
         commentRecord.setEmail(commentVo.getEmail());
         commentRecord.setNickname(commentVo.getNickname());
         commentRecord.setCreatedate(new Date());
+
+        commentRecord.setAvatar(s3ResourceManager.getAvatarUrl());
 
         if(commentVo.getStatus() != null) {
             commentRecord.setStatus(commentVo.getStatus());
@@ -70,6 +76,8 @@ public class CommentService extends BaseService implements ICommentService {
 
         return ResultInfo.getSucResult(null);
     }
+
+
 
 
     @Override

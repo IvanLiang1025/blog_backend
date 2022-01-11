@@ -4,7 +4,10 @@ import com.amazonaws.auth.AWSStaticCredentialsProvider;
 import com.amazonaws.auth.BasicAWSCredentials;
 import com.amazonaws.services.s3.AmazonS3;
 import com.amazonaws.services.s3.AmazonS3ClientBuilder;
+import com.amazonaws.services.s3.model.ListObjectsV2Request;
+import com.amazonaws.services.s3.model.ListObjectsV2Result;
 import com.amazonaws.services.s3.model.PutObjectResult;
+import com.amazonaws.services.s3.model.S3ObjectSummary;
 import jdk.internal.util.xml.impl.Input;
 import org.apache.commons.lang3.StringUtils;
 import org.junit.Test;
@@ -21,8 +24,8 @@ import java.net.URL;
 public class S3Test {
 
     final static AmazonS3 s3;
-    final static String AWS_ACCESS_KEY = "AKIATP4TEDJW32XORCJ4"; // 【你的 access_key】
-    final static String AWS_SECRET_KEY = "dhzaV/SeMar6qcN5ubZJerTKZ0z6m/KIBt2N9RSm"; // 【你的 aws_secret_key】
+    final static String AWS_ACCESS_KEY = "AKIATP4TEDJWWR3VCD6V"; // 【你的 access_key】
+    final static String AWS_SECRET_KEY = "z8+YDju1RmfiNJID53O1pfJI3PoamPN1JeH8qviF"; // 【你的 aws_secret_key】
 
     static String bucketName = "res-blog-public"; // 【你 bucket 的名字】 # 首先需要保证 s3 上已经存在该存储桶
     static String pathName = "/res-dev"; // 【你 bucket 的名字】 # 首先需要保证 s3 上已经存在该存储桶
@@ -36,7 +39,7 @@ public class S3Test {
     }
 
     @Test
-    public void test() {
+    public void upload() {
         String path = "/Users/jinghaoliang/Desktop/test.png";
         File file = new File(path);
 //        String = StringUtils.substringAfterLast(path, ".");
@@ -56,6 +59,24 @@ public class S3Test {
             e.printStackTrace();
         }
 
+    }
 
+    @Test
+    public void getObjectUrl() {
+        ListObjectsV2Request listObjectsV2Request = new ListObjectsV2Request().withBucketName(bucketName).withMaxKeys(10);
+        ListObjectsV2Result result;
+//        result = s3.listObjectsV2(listObjectsV2Request);
+//        System.out.println(result.toString());
+
+        do {
+            result = s3.listObjectsV2(listObjectsV2Request);
+            for (S3ObjectSummary objectSummary : result.getObjectSummaries()) {
+                System.out.printf(" - %s (size: %d)\n", objectSummary.getKey(), objectSummary.getSize());
+//                URL url = s3.getUrl(bucketName, objectSummary.getKey());
+//                System.out.println(url.toString());
+            }
+        }while (result.isTruncated());
+
+//        return null;
     }
 }

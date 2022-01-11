@@ -1,0 +1,447 @@
+2021-12-23 15:34:52:087 [restartedMain] INFO  com.ivan.sunnyblog.SunnyBlogApplication Starting SunnyBlogApplication on Jinghaos-MacBook-Air.local with PID 23038 (/Users/jinghaoliang/Documents/tech/Project/gitproject/blog/blog_backend/target/classes started by jinghaoliang in /Users/jinghaoliang/Documents/tech/Project/gitproject/blog/blog_backend)
+2021-12-23 15:34:52:089 [restartedMain] INFO  com.ivan.sunnyblog.SunnyBlogApplication No active profile set, falling back to default profiles: default
+2021-12-23 15:34:52:111 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-12-23 15:34:52:111 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-12-23 15:34:52:520 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-12-23 15:34:52:522 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data repositories in DEFAULT mode.
+2021-12-23 15:34:52:553 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 21ms. Found 0 repository interfaces.
+2021-12-23 15:34:52:710 [restartedMain] INFO  o.s.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$cedc2d3f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-23 15:34:52:890 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat initialized with port(s): 8081 (http)
+2021-12-23 15:34:52:897 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol Initializing ProtocolHandler ["http-nio-8081"]
+2021-12-23 15:34:52:902 [restartedMain] INFO  org.apache.catalina.core.StandardService Starting service [Tomcat]
+2021-12-23 15:34:52:902 [restartedMain] INFO  org.apache.catalina.core.StandardEngine Starting Servlet engine: [Apache Tomcat/9.0.21]
+2021-12-23 15:34:52:966 [restartedMain] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring embedded WebApplicationContext
+2021-12-23 15:34:52:966 [restartedMain] INFO  org.springframework.web.context.ContextLoader Root WebApplicationContext: initialization completed in 855 ms
+2021-12-23 15:34:53:125 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource HikariPool-1 - Starting...
+2021-12-23 15:34:53:162 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource HikariPool-1 - Start completed.
+2021-12-23 15:35:09:708 [restartedMain] INFO  org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor Autowired annotation is not supported on static fields: static com.amazonaws.services.s3.AmazonS3 com.ivan.sunnyblog.web.res.S3ResourceManager.s3Client
+2021-12-23 15:35:10:066 [restartedMain] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Initializing ExecutorService 'applicationTaskExecutor'
+2021-12-23 15:35:10:258 [restartedMain] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler Initializing ExecutorService 'taskScheduler'
+2021-12-23 15:35:10:278 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer LiveReload server is running on port 35729
+2021-12-23 15:35:10:319 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol Starting ProtocolHandler ["http-nio-8081"]
+2021-12-23 15:35:10:333 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat started on port(s): 8081 (http) with context path ''
+2021-12-23 15:35:10:335 [restartedMain] INFO  com.ivan.sunnyblog.SunnyBlogApplication Started SunnyBlogApplication in 18.428 seconds (JVM running for 18.886)
+2021-12-23 15:38:08:312 [http-nio-8081-exec-2] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-12-23 15:38:08:312 [http-nio-8081-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet Initializing Servlet 'dispatcherServlet'
+2021-12-23 15:38:08:316 [http-nio-8081-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet Completed initialization in 4 ms
+2021-12-23 15:38:08:522 [http-nio-8081-exec-4] INFO  org.jooq.Constants 
+                                      
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@  @@        @@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@        @@@@@@@@@@
+@@@@@@@@@@@@@@@@  @@  @@    @@@@@@@@@@
+@@@@@@@@@@  @@@@  @@  @@    @@@@@@@@@@
+@@@@@@@@@@        @@        @@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@        @@        @@@@@@@@@@
+@@@@@@@@@@    @@  @@  @@@@  @@@@@@@@@@
+@@@@@@@@@@    @@  @@  @@@@  @@@@@@@@@@
+@@@@@@@@@@        @@  @  @  @@@@@@@@@@
+@@@@@@@@@@        @@        @@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@  @@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  Thank you for using jOOQ 3.11.11
+                                      
+2021-12-23 15:38:08:554 [http-nio-8081-exec-4] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log starts =====
+2021-12-23 15:38:08:554 [http-nio-8081-exec-4] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request succeed
+2021-12-23 15:38:08:554 [http-nio-8081-exec-5] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log starts =====
+2021-12-23 15:38:08:554 [http-nio-8081-exec-4] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request Method: GET
+2021-12-23 15:38:08:554 [http-nio-8081-exec-5] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request succeed
+2021-12-23 15:38:08:554 [http-nio-8081-exec-4] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request URI: /api/articles/hot
+2021-12-23 15:38:08:554 [http-nio-8081-exec-5] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request Method: GET
+2021-12-23 15:38:08:554 [http-nio-8081-exec-4] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Method Name: com.ivan.sunnyblog.web.controller.ArticleController.getHotArticles
+2021-12-23 15:38:08:554 [http-nio-8081-exec-5] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request URI: /api/categories
+2021-12-23 15:38:08:554 [http-nio-8081-exec-4] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Params: {}
+2021-12-23 15:38:08:554 [http-nio-8081-exec-5] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Method Name: com.ivan.sunnyblog.web.controller.CategoryContoller.getCategories
+2021-12-23 15:38:08:554 [http-nio-8081-exec-4] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Result: ResultInfo{info='null', status=0, data=[ArticleVo{userInfo=null, category=null, BaseArticleVo{articleId=10004, status=null, title='Spring boot', description='null', content='null', firstPicture='null', viewCount=139, createDate='Tue Oct 12 15:58:26 EDT 2021', updateDate='null'}}, ArticleVo{userInfo=null, category=null, BaseArticleVo{articleId=10005, status=null, title='dd', description='null', content='null', firstPicture='null', viewCount=69, createDate='Sun Nov 07 14:09:29 EST 2021', updateDate='null'}}], total=null}
+2021-12-23 15:38:08:555 [http-nio-8081-exec-4] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Process Time: 211ms
+2021-12-23 15:38:08:555 [http-nio-8081-exec-5] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Params: {}
+2021-12-23 15:38:08:555 [http-nio-8081-exec-4] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log ends =====
+2021-12-23 15:38:08:555 [http-nio-8081-exec-5] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Result: ResultInfo{info='null', status=0, data=[CategoryVo{categoryId=2, name='liddffd', articleCount=1}, CategoryVo{categoryId=1, name='Life ', articleCount=1}], total=null}
+2021-12-23 15:38:08:555 [http-nio-8081-exec-5] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Process Time: 211ms
+2021-12-23 15:38:08:555 [http-nio-8081-exec-5] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log ends =====
+2021-12-23 15:38:08:565 [http-nio-8081-exec-6] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log starts =====
+2021-12-23 15:38:08:565 [http-nio-8081-exec-6] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request succeed
+2021-12-23 15:38:08:565 [http-nio-8081-exec-6] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request Method: GET
+2021-12-23 15:38:08:566 [http-nio-8081-exec-6] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request URI: /api/articles
+2021-12-23 15:38:08:566 [http-nio-8081-exec-6] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Method Name: com.ivan.sunnyblog.web.controller.ArticleController.getPublicArticles
+2021-12-23 15:38:08:566 [http-nio-8081-exec-6] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Params: SearchVo{page=1, limit=10, categoryId=null, total=null}
+2021-12-23 15:38:08:566 [http-nio-8081-exec-6] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Result: ResultInfo{info='null', status=0, data=[ArticleVo{userInfo=UserInfoVo{userId=100001, nickName='ivan', userName='ivan', avatar='https://res-blog-public.s3.ca-central-1.amazonaws.com/default_avatar.jpg'}, category=CategoryVo{categoryId=1, name='Life ', articleCount=null}, BaseArticleVo{articleId=10005, status=1, title='dd', description='This is the doc of React markdown editor lite.
+Enjoy!!', content='null', firstPicture='', viewCount=69, createDate='Sun Nov 07 14:09:29 EST 2021', updateDate='Tue Dec 14 15:05:00 EST 2021'}}, ArticleVo{userInfo=UserInfoVo{userId=100001, nickName='ivan', userName='ivan', avatar='https://res-blog-public.s3.ca-central-1.amazonaws.com/default_avatar.jpg'}, category=CategoryVo{categoryId=2, name='liddffd', articleCount=null}, BaseArticleVo{articleId=10004, status=1, title='Spring boot', description='rerwerwer', content='null', firstPicture='', viewCount=139, createDate='Tue Oct 12 15:58:26 EDT 2021', updateDate='Tue Dec 14 15:05:00 EST 2021'}}], total=2}
+2021-12-23 15:38:08:566 [http-nio-8081-exec-6] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Process Time: 215ms
+2021-12-23 15:38:08:566 [http-nio-8081-exec-6] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log ends =====
+2021-12-23 15:38:13:200 [http-nio-8081-exec-9] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log starts =====
+2021-12-23 15:38:13:200 [http-nio-8081-exec-8] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log starts =====
+2021-12-23 15:38:13:200 [http-nio-8081-exec-8] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request succeed
+2021-12-23 15:38:13:200 [http-nio-8081-exec-8] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request Method: GET
+2021-12-23 15:38:13:200 [http-nio-8081-exec-8] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request URI: /api/categories
+2021-12-23 15:38:13:200 [http-nio-8081-exec-9] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request succeed
+2021-12-23 15:38:13:200 [http-nio-8081-exec-8] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Method Name: com.ivan.sunnyblog.web.controller.CategoryContoller.getCategories
+2021-12-23 15:38:13:200 [http-nio-8081-exec-9] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request Method: GET
+2021-12-23 15:38:13:200 [http-nio-8081-exec-8] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Params: {}
+2021-12-23 15:38:13:200 [http-nio-8081-exec-9] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request URI: /api/articles/hot
+2021-12-23 15:38:13:200 [http-nio-8081-exec-8] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Result: ResultInfo{info='null', status=0, data=[CategoryVo{categoryId=2, name='liddffd', articleCount=1}, CategoryVo{categoryId=1, name='Life ', articleCount=1}], total=null}
+2021-12-23 15:38:13:200 [http-nio-8081-exec-9] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Method Name: com.ivan.sunnyblog.web.controller.ArticleController.getHotArticles
+2021-12-23 15:38:13:200 [http-nio-8081-exec-8] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Process Time: 7ms
+2021-12-23 15:38:13:200 [http-nio-8081-exec-9] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Params: {}
+2021-12-23 15:38:13:200 [http-nio-8081-exec-8] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log ends =====
+2021-12-23 15:38:13:200 [http-nio-8081-exec-9] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Result: ResultInfo{info='null', status=0, data=[ArticleVo{userInfo=null, category=null, BaseArticleVo{articleId=10004, status=null, title='Spring boot', description='null', content='null', firstPicture='null', viewCount=139, createDate='Tue Oct 12 15:58:26 EDT 2021', updateDate='null'}}, ArticleVo{userInfo=null, category=null, BaseArticleVo{articleId=10005, status=null, title='dd', description='null', content='null', firstPicture='null', viewCount=69, createDate='Sun Nov 07 14:09:29 EST 2021', updateDate='null'}}], total=null}
+2021-12-23 15:38:13:201 [http-nio-8081-exec-9] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Process Time: 7ms
+2021-12-23 15:38:13:201 [http-nio-8081-exec-9] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log ends =====
+2021-12-23 15:38:13:210 [http-nio-8081-exec-7] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log starts =====
+2021-12-23 15:38:13:211 [http-nio-8081-exec-7] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request succeed
+2021-12-23 15:38:13:211 [http-nio-8081-exec-7] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request Method: GET
+2021-12-23 15:38:13:211 [http-nio-8081-exec-7] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request URI: /api/articles
+2021-12-23 15:38:13:211 [http-nio-8081-exec-7] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Method Name: com.ivan.sunnyblog.web.controller.ArticleController.getPublicArticles
+2021-12-23 15:38:13:211 [http-nio-8081-exec-7] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Params: SearchVo{page=1, limit=10, categoryId=null, total=null}
+2021-12-23 15:38:13:211 [http-nio-8081-exec-7] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Result: ResultInfo{info='null', status=0, data=[ArticleVo{userInfo=UserInfoVo{userId=100001, nickName='ivan', userName='ivan', avatar='https://res-blog-public.s3.ca-central-1.amazonaws.com/default_avatar.jpg'}, category=CategoryVo{categoryId=1, name='Life ', articleCount=null}, BaseArticleVo{articleId=10005, status=1, title='dd', description='This is the doc of React markdown editor lite.
+Enjoy!!', content='null', firstPicture='', viewCount=69, createDate='Sun Nov 07 14:09:29 EST 2021', updateDate='Tue Dec 14 15:05:00 EST 2021'}}, ArticleVo{userInfo=UserInfoVo{userId=100001, nickName='ivan', userName='ivan', avatar='https://res-blog-public.s3.ca-central-1.amazonaws.com/default_avatar.jpg'}, category=CategoryVo{categoryId=2, name='liddffd', articleCount=null}, BaseArticleVo{articleId=10004, status=1, title='Spring boot', description='rerwerwer', content='null', firstPicture='', viewCount=139, createDate='Tue Oct 12 15:58:26 EDT 2021', updateDate='Tue Dec 14 15:05:00 EST 2021'}}], total=2}
+2021-12-23 15:38:13:211 [http-nio-8081-exec-7] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Process Time: 16ms
+2021-12-23 15:38:13:211 [http-nio-8081-exec-7] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log ends =====
+2021-12-23 15:38:39:650 [http-nio-8081-exec-1] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log starts =====
+2021-12-23 15:38:39:650 [http-nio-8081-exec-1] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request succeed
+2021-12-23 15:38:39:650 [http-nio-8081-exec-1] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request Method: GET
+2021-12-23 15:38:39:650 [http-nio-8081-exec-1] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request URI: /api/articles/hot
+2021-12-23 15:38:39:651 [http-nio-8081-exec-1] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Method Name: com.ivan.sunnyblog.web.controller.ArticleController.getHotArticles
+2021-12-23 15:38:39:651 [http-nio-8081-exec-1] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Params: {}
+2021-12-23 15:38:39:651 [http-nio-8081-exec-1] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Result: ResultInfo{info='null', status=0, data=[ArticleVo{userInfo=null, category=null, BaseArticleVo{articleId=10004, status=null, title='Spring boot', description='null', content='null', firstPicture='null', viewCount=139, createDate='Tue Oct 12 15:58:26 EDT 2021', updateDate='null'}}, ArticleVo{userInfo=null, category=null, BaseArticleVo{articleId=10005, status=null, title='dd', description='null', content='null', firstPicture='null', viewCount=69, createDate='Sun Nov 07 14:09:29 EST 2021', updateDate='null'}}], total=null}
+2021-12-23 15:38:39:651 [http-nio-8081-exec-1] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Process Time: 2ms
+2021-12-23 15:38:39:651 [http-nio-8081-exec-1] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log ends =====
+2021-12-23 15:38:39:654 [http-nio-8081-exec-3] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log starts =====
+2021-12-23 15:38:39:654 [http-nio-8081-exec-3] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request succeed
+2021-12-23 15:38:39:654 [http-nio-8081-exec-3] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request Method: GET
+2021-12-23 15:38:39:654 [http-nio-8081-exec-3] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request URI: /api/categories
+2021-12-23 15:38:39:654 [http-nio-8081-exec-3] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Method Name: com.ivan.sunnyblog.web.controller.CategoryContoller.getCategories
+2021-12-23 15:38:39:654 [http-nio-8081-exec-3] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Params: {}
+2021-12-23 15:38:39:654 [http-nio-8081-exec-3] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Result: ResultInfo{info='null', status=0, data=[CategoryVo{categoryId=2, name='liddffd', articleCount=1}, CategoryVo{categoryId=1, name='Life ', articleCount=1}], total=null}
+2021-12-23 15:38:39:654 [http-nio-8081-exec-3] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Process Time: 6ms
+2021-12-23 15:38:39:654 [http-nio-8081-exec-3] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log ends =====
+2021-12-23 15:38:39:668 [http-nio-8081-exec-10] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log starts =====
+2021-12-23 15:38:39:669 [http-nio-8081-exec-10] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request succeed
+2021-12-23 15:38:39:669 [http-nio-8081-exec-10] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request Method: GET
+2021-12-23 15:38:39:669 [http-nio-8081-exec-10] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request URI: /api/articles
+2021-12-23 15:38:39:669 [http-nio-8081-exec-10] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Method Name: com.ivan.sunnyblog.web.controller.ArticleController.getPublicArticles
+2021-12-23 15:38:39:669 [http-nio-8081-exec-10] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Params: SearchVo{page=1, limit=10, categoryId=null, total=null}
+2021-12-23 15:38:39:669 [http-nio-8081-exec-10] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Result: ResultInfo{info='null', status=0, data=[ArticleVo{userInfo=UserInfoVo{userId=100001, nickName='ivan', userName='ivan', avatar='https://res-blog-public.s3.ca-central-1.amazonaws.com/default_avatar.jpg'}, category=CategoryVo{categoryId=1, name='Life ', articleCount=null}, BaseArticleVo{articleId=10005, status=1, title='dd', description='This is the doc of React markdown editor lite.
+Enjoy!!', content='null', firstPicture='', viewCount=69, createDate='Sun Nov 07 14:09:29 EST 2021', updateDate='Tue Dec 14 15:05:00 EST 2021'}}, ArticleVo{userInfo=UserInfoVo{userId=100001, nickName='ivan', userName='ivan', avatar='https://res-blog-public.s3.ca-central-1.amazonaws.com/default_avatar.jpg'}, category=CategoryVo{categoryId=2, name='liddffd', articleCount=null}, BaseArticleVo{articleId=10004, status=1, title='Spring boot', description='rerwerwer', content='null', firstPicture='', viewCount=139, createDate='Tue Oct 12 15:58:26 EDT 2021', updateDate='Tue Dec 14 15:05:00 EST 2021'}}], total=2}
+2021-12-23 15:38:39:669 [http-nio-8081-exec-10] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Process Time: 20ms
+2021-12-23 15:38:39:669 [http-nio-8081-exec-10] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log ends =====
+2021-12-23 15:46:02:022 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3m38s714ms).
+2021-12-23 15:49:23:808 [http-nio-8081-exec-8] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log starts =====
+2021-12-23 15:49:23:808 [http-nio-8081-exec-8] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request succeed
+2021-12-23 15:49:23:808 [http-nio-8081-exec-8] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request Method: GET
+2021-12-23 15:49:23:808 [http-nio-8081-exec-8] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request URI: /api/categories
+2021-12-23 15:49:23:808 [http-nio-8081-exec-8] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Method Name: com.ivan.sunnyblog.web.controller.CategoryContoller.getCategories
+2021-12-23 15:49:23:808 [http-nio-8081-exec-8] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Params: {}
+2021-12-23 15:49:23:808 [http-nio-8081-exec-8] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Result: ResultInfo{info='null', status=0, data=[CategoryVo{categoryId=2, name='liddffd', articleCount=1}, CategoryVo{categoryId=1, name='Life ', articleCount=1}], total=null}
+2021-12-23 15:49:23:808 [http-nio-8081-exec-8] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Process Time: 9ms
+2021-12-23 15:49:23:808 [http-nio-8081-exec-8] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log ends =====
+2021-12-23 15:49:23:816 [http-nio-8081-exec-9] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log starts =====
+2021-12-23 15:49:23:816 [http-nio-8081-exec-9] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request succeed
+2021-12-23 15:49:23:816 [http-nio-8081-exec-9] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request Method: GET
+2021-12-23 15:49:23:816 [http-nio-8081-exec-9] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request URI: /api/articles/hot
+2021-12-23 15:49:23:816 [http-nio-8081-exec-9] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Method Name: com.ivan.sunnyblog.web.controller.ArticleController.getHotArticles
+2021-12-23 15:49:23:816 [http-nio-8081-exec-9] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Params: {}
+2021-12-23 15:49:23:817 [http-nio-8081-exec-9] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Result: ResultInfo{info='null', status=0, data=[ArticleVo{userInfo=null, category=null, BaseArticleVo{articleId=10004, status=null, title='Spring boot', description='null', content='null', firstPicture='null', viewCount=139, createDate='Tue Oct 12 15:58:26 EDT 2021', updateDate='null'}}, ArticleVo{userInfo=null, category=null, BaseArticleVo{articleId=10005, status=null, title='dd', description='null', content='null', firstPicture='null', viewCount=69, createDate='Sun Nov 07 14:09:29 EST 2021', updateDate='null'}}], total=null}
+2021-12-23 15:49:23:817 [http-nio-8081-exec-9] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Process Time: 14ms
+2021-12-23 15:49:23:817 [http-nio-8081-exec-9] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log ends =====
+2021-12-23 15:49:23:825 [http-nio-8081-exec-6] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log starts =====
+2021-12-23 15:49:23:825 [http-nio-8081-exec-6] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request succeed
+2021-12-23 15:49:23:825 [http-nio-8081-exec-6] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request Method: GET
+2021-12-23 15:49:23:825 [http-nio-8081-exec-6] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request URI: /api/articles
+2021-12-23 15:49:23:825 [http-nio-8081-exec-6] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Method Name: com.ivan.sunnyblog.web.controller.ArticleController.getPublicArticles
+2021-12-23 15:49:23:825 [http-nio-8081-exec-6] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Params: SearchVo{page=1, limit=10, categoryId=null, total=null}
+2021-12-23 15:49:23:826 [http-nio-8081-exec-6] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Result: ResultInfo{info='null', status=0, data=[ArticleVo{userInfo=UserInfoVo{userId=100001, nickName='ivan', userName='ivan', avatar='https://res-blog-public.s3.ca-central-1.amazonaws.com/default_avatar.jpg'}, category=CategoryVo{categoryId=1, name='Life ', articleCount=null}, BaseArticleVo{articleId=10005, status=1, title='dd', description='This is the doc of React markdown editor lite.
+Enjoy!!', content='null', firstPicture='', viewCount=69, createDate='Sun Nov 07 14:09:29 EST 2021', updateDate='Tue Dec 14 15:05:00 EST 2021'}}, ArticleVo{userInfo=UserInfoVo{userId=100001, nickName='ivan', userName='ivan', avatar='https://res-blog-public.s3.ca-central-1.amazonaws.com/default_avatar.jpg'}, category=CategoryVo{categoryId=2, name='liddffd', articleCount=null}, BaseArticleVo{articleId=10004, status=1, title='Spring boot', description='rerwerwer', content='null', firstPicture='', viewCount=139, createDate='Tue Oct 12 15:58:26 EDT 2021', updateDate='Tue Dec 14 15:05:00 EST 2021'}}], total=2}
+2021-12-23 15:49:23:826 [http-nio-8081-exec-6] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Process Time: 24ms
+2021-12-23 15:49:23:826 [http-nio-8081-exec-6] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log ends =====
+2021-12-23 15:49:39:966 [http-nio-8081-exec-3] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log starts =====
+2021-12-23 15:49:39:967 [http-nio-8081-exec-3] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request succeed
+2021-12-23 15:49:39:967 [http-nio-8081-exec-3] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request Method: GET
+2021-12-23 15:49:39:967 [http-nio-8081-exec-3] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request URI: /api/articles/hot
+2021-12-23 15:49:39:967 [http-nio-8081-exec-3] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Method Name: com.ivan.sunnyblog.web.controller.ArticleController.getHotArticles
+2021-12-23 15:49:39:967 [http-nio-8081-exec-3] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Params: {}
+2021-12-23 15:49:39:967 [http-nio-8081-exec-3] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Result: ResultInfo{info='null', status=0, data=[ArticleVo{userInfo=null, category=null, BaseArticleVo{articleId=10004, status=null, title='Spring boot', description='null', content='null', firstPicture='null', viewCount=139, createDate='Tue Oct 12 15:58:26 EDT 2021', updateDate='null'}}, ArticleVo{userInfo=null, category=null, BaseArticleVo{articleId=10005, status=null, title='dd', description='null', content='null', firstPicture='null', viewCount=69, createDate='Sun Nov 07 14:09:29 EST 2021', updateDate='null'}}], total=null}
+2021-12-23 15:49:39:967 [http-nio-8081-exec-3] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Process Time: 3ms
+2021-12-23 15:49:39:967 [http-nio-8081-exec-3] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log ends =====
+2021-12-23 15:49:39:968 [http-nio-8081-exec-1] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log starts =====
+2021-12-23 15:49:39:969 [http-nio-8081-exec-1] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request succeed
+2021-12-23 15:49:39:969 [http-nio-8081-exec-1] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request Method: GET
+2021-12-23 15:49:39:969 [http-nio-8081-exec-1] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request URI: /api/categories
+2021-12-23 15:49:39:969 [http-nio-8081-exec-1] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Method Name: com.ivan.sunnyblog.web.controller.CategoryContoller.getCategories
+2021-12-23 15:49:39:969 [http-nio-8081-exec-1] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Params: {}
+2021-12-23 15:49:39:969 [http-nio-8081-exec-1] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Result: ResultInfo{info='null', status=0, data=[CategoryVo{categoryId=2, name='liddffd', articleCount=1}, CategoryVo{categoryId=1, name='Life ', articleCount=1}], total=null}
+2021-12-23 15:49:39:969 [http-nio-8081-exec-1] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Process Time: 5ms
+2021-12-23 15:49:39:969 [http-nio-8081-exec-1] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log ends =====
+2021-12-23 15:49:39:980 [http-nio-8081-exec-7] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log starts =====
+2021-12-23 15:49:39:980 [http-nio-8081-exec-7] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request succeed
+2021-12-23 15:49:39:980 [http-nio-8081-exec-7] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request Method: GET
+2021-12-23 15:49:39:981 [http-nio-8081-exec-7] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request URI: /api/articles
+2021-12-23 15:49:39:981 [http-nio-8081-exec-7] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Method Name: com.ivan.sunnyblog.web.controller.ArticleController.getPublicArticles
+2021-12-23 15:49:39:981 [http-nio-8081-exec-7] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Params: SearchVo{page=1, limit=10, categoryId=null, total=null}
+2021-12-23 15:49:39:981 [http-nio-8081-exec-7] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Result: ResultInfo{info='null', status=0, data=[ArticleVo{userInfo=UserInfoVo{userId=100001, nickName='ivan', userName='ivan', avatar='https://res-blog-public.s3.ca-central-1.amazonaws.com/default_avatar.jpg'}, category=CategoryVo{categoryId=1, name='Life ', articleCount=null}, BaseArticleVo{articleId=10005, status=1, title='dd', description='This is the doc of React markdown editor lite.
+Enjoy!!', content='null', firstPicture='', viewCount=69, createDate='Sun Nov 07 14:09:29 EST 2021', updateDate='Tue Dec 14 15:05:00 EST 2021'}}, ArticleVo{userInfo=UserInfoVo{userId=100001, nickName='ivan', userName='ivan', avatar='https://res-blog-public.s3.ca-central-1.amazonaws.com/default_avatar.jpg'}, category=CategoryVo{categoryId=2, name='liddffd', articleCount=null}, BaseArticleVo{articleId=10004, status=1, title='Spring boot', description='rerwerwer', content='null', firstPicture='', viewCount=139, createDate='Tue Oct 12 15:58:26 EDT 2021', updateDate='Tue Dec 14 15:05:00 EST 2021'}}], total=2}
+2021-12-23 15:49:39:981 [http-nio-8081-exec-7] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Process Time: 18ms
+2021-12-23 15:49:39:981 [http-nio-8081-exec-7] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log ends =====
+2021-12-23 15:50:13:730 [http-nio-8081-exec-2] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log starts =====
+2021-12-23 15:50:13:733 [http-nio-8081-exec-2] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request succeed
+2021-12-23 15:50:13:734 [http-nio-8081-exec-2] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request Method: GET
+2021-12-23 15:50:13:734 [http-nio-8081-exec-2] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request URI: /api/categories
+2021-12-23 15:50:13:734 [http-nio-8081-exec-2] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Method Name: com.ivan.sunnyblog.web.controller.CategoryContoller.getCategories
+2021-12-23 15:50:13:734 [http-nio-8081-exec-2] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Params: {}
+2021-12-23 15:50:13:734 [http-nio-8081-exec-2] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Result: ResultInfo{info='null', status=0, data=[CategoryVo{categoryId=2, name='liddffd', articleCount=1}, CategoryVo{categoryId=1, name='Life ', articleCount=1}], total=null}
+2021-12-23 15:50:13:734 [http-nio-8081-exec-2] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Process Time: 4ms
+2021-12-23 15:50:13:734 [http-nio-8081-exec-2] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log ends =====
+2021-12-23 15:50:13:734 [http-nio-8081-exec-4] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log starts =====
+2021-12-23 15:50:13:734 [http-nio-8081-exec-4] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request succeed
+2021-12-23 15:50:13:734 [http-nio-8081-exec-4] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request Method: GET
+2021-12-23 15:50:13:734 [http-nio-8081-exec-4] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request URI: /api/articles/hot
+2021-12-23 15:50:13:734 [http-nio-8081-exec-4] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Method Name: com.ivan.sunnyblog.web.controller.ArticleController.getHotArticles
+2021-12-23 15:50:13:734 [http-nio-8081-exec-4] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Params: {}
+2021-12-23 15:50:13:734 [http-nio-8081-exec-4] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Result: ResultInfo{info='null', status=0, data=[ArticleVo{userInfo=null, category=null, BaseArticleVo{articleId=10004, status=null, title='Spring boot', description='null', content='null', firstPicture='null', viewCount=139, createDate='Tue Oct 12 15:58:26 EDT 2021', updateDate='null'}}, ArticleVo{userInfo=null, category=null, BaseArticleVo{articleId=10005, status=null, title='dd', description='null', content='null', firstPicture='null', viewCount=69, createDate='Sun Nov 07 14:09:29 EST 2021', updateDate='null'}}], total=null}
+2021-12-23 15:50:13:735 [http-nio-8081-exec-4] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Process Time: 8ms
+2021-12-23 15:50:13:735 [http-nio-8081-exec-4] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log ends =====
+2021-12-23 15:50:13:744 [http-nio-8081-exec-10] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log starts =====
+2021-12-23 15:50:13:744 [http-nio-8081-exec-10] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request succeed
+2021-12-23 15:50:13:744 [http-nio-8081-exec-10] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request Method: GET
+2021-12-23 15:50:13:744 [http-nio-8081-exec-10] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request URI: /api/articles
+2021-12-23 15:50:13:744 [http-nio-8081-exec-10] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Method Name: com.ivan.sunnyblog.web.controller.ArticleController.getPublicArticles
+2021-12-23 15:50:13:744 [http-nio-8081-exec-10] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Params: SearchVo{page=1, limit=10, categoryId=null, total=null}
+2021-12-23 15:50:13:744 [http-nio-8081-exec-10] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Result: ResultInfo{info='null', status=0, data=[ArticleVo{userInfo=UserInfoVo{userId=100001, nickName='ivan', userName='ivan', avatar='https://res-blog-public.s3.ca-central-1.amazonaws.com/default_avatar.jpg'}, category=CategoryVo{categoryId=1, name='Life ', articleCount=null}, BaseArticleVo{articleId=10005, status=1, title='dd', description='This is the doc of React markdown editor lite.
+Enjoy!!', content='null', firstPicture='', viewCount=69, createDate='Sun Nov 07 14:09:29 EST 2021', updateDate='Tue Dec 14 15:05:00 EST 2021'}}, ArticleVo{userInfo=UserInfoVo{userId=100001, nickName='ivan', userName='ivan', avatar='https://res-blog-public.s3.ca-central-1.amazonaws.com/default_avatar.jpg'}, category=CategoryVo{categoryId=2, name='liddffd', articleCount=null}, BaseArticleVo{articleId=10004, status=1, title='Spring boot', description='rerwerwer', content='null', firstPicture='', viewCount=139, createDate='Tue Oct 12 15:58:26 EDT 2021', updateDate='Tue Dec 14 15:05:00 EST 2021'}}], total=2}
+2021-12-23 15:50:13:745 [http-nio-8081-exec-10] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Process Time: 19ms
+2021-12-23 15:50:13:745 [http-nio-8081-exec-10] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log ends =====
+2021-12-23 16:06:58:702 [http-nio-8081-exec-3] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log starts =====
+2021-12-23 16:06:58:702 [http-nio-8081-exec-3] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request succeed
+2021-12-23 16:06:58:702 [http-nio-8081-exec-3] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request Method: GET
+2021-12-23 16:06:58:702 [http-nio-8081-exec-3] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request URI: /api/categories
+2021-12-23 16:06:58:702 [http-nio-8081-exec-3] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Method Name: com.ivan.sunnyblog.web.controller.CategoryContoller.getCategories
+2021-12-23 16:06:58:702 [http-nio-8081-exec-3] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Params: {}
+2021-12-23 16:06:58:702 [http-nio-8081-exec-3] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Result: ResultInfo{info='null', status=0, data=[CategoryVo{categoryId=2, name='liddffd', articleCount=1}, CategoryVo{categoryId=1, name='Life ', articleCount=1}], total=null}
+2021-12-23 16:06:58:702 [http-nio-8081-exec-3] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Process Time: 5ms
+2021-12-23 16:06:58:702 [http-nio-8081-exec-3] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log ends =====
+2021-12-23 16:06:58:706 [http-nio-8081-exec-1] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log starts =====
+2021-12-23 16:06:58:706 [http-nio-8081-exec-1] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request succeed
+2021-12-23 16:06:58:706 [http-nio-8081-exec-1] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request Method: GET
+2021-12-23 16:06:58:706 [http-nio-8081-exec-1] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request URI: /api/articles/hot
+2021-12-23 16:06:58:706 [http-nio-8081-exec-1] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Method Name: com.ivan.sunnyblog.web.controller.ArticleController.getHotArticles
+2021-12-23 16:06:58:706 [http-nio-8081-exec-1] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Params: {}
+2021-12-23 16:06:58:706 [http-nio-8081-exec-1] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Result: ResultInfo{info='null', status=0, data=[ArticleVo{userInfo=null, category=null, BaseArticleVo{articleId=10004, status=null, title='Spring boot', description='null', content='null', firstPicture='null', viewCount=139, createDate='Tue Oct 12 15:58:26 EDT 2021', updateDate='null'}}, ArticleVo{userInfo=null, category=null, BaseArticleVo{articleId=10005, status=null, title='dd', description='null', content='null', firstPicture='null', viewCount=69, createDate='Sun Nov 07 14:09:29 EST 2021', updateDate='null'}}], total=null}
+2021-12-23 16:06:58:706 [http-nio-8081-exec-1] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Process Time: 9ms
+2021-12-23 16:06:58:706 [http-nio-8081-exec-1] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log ends =====
+2021-12-23 16:06:58:712 [http-nio-8081-exec-6] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log starts =====
+2021-12-23 16:06:58:712 [http-nio-8081-exec-6] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request succeed
+2021-12-23 16:06:58:712 [http-nio-8081-exec-6] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request Method: GET
+2021-12-23 16:06:58:712 [http-nio-8081-exec-6] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request URI: /api/articles
+2021-12-23 16:06:58:712 [http-nio-8081-exec-6] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Method Name: com.ivan.sunnyblog.web.controller.ArticleController.getPublicArticles
+2021-12-23 16:06:58:712 [http-nio-8081-exec-6] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Params: SearchVo{page=1, limit=10, categoryId=null, total=null}
+2021-12-23 16:06:58:712 [http-nio-8081-exec-6] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Result: ResultInfo{info='null', status=0, data=[ArticleVo{userInfo=UserInfoVo{userId=100001, nickName='ivan', userName='ivan', avatar='https://res-blog-public.s3.ca-central-1.amazonaws.com/default_avatar.jpg'}, category=CategoryVo{categoryId=1, name='Life ', articleCount=null}, BaseArticleVo{articleId=10005, status=1, title='dd', description='This is the doc of React markdown editor lite.
+Enjoy!!', content='null', firstPicture='', viewCount=69, createDate='Sun Nov 07 14:09:29 EST 2021', updateDate='Tue Dec 14 15:05:00 EST 2021'}}, ArticleVo{userInfo=UserInfoVo{userId=100001, nickName='ivan', userName='ivan', avatar='https://res-blog-public.s3.ca-central-1.amazonaws.com/default_avatar.jpg'}, category=CategoryVo{categoryId=2, name='liddffd', articleCount=null}, BaseArticleVo{articleId=10004, status=1, title='Spring boot', description='rerwerwer', content='null', firstPicture='', viewCount=139, createDate='Tue Oct 12 15:58:26 EDT 2021', updateDate='Tue Dec 14 15:05:00 EST 2021'}}], total=2}
+2021-12-23 16:06:58:713 [http-nio-8081-exec-6] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Process Time: 14ms
+2021-12-23 16:06:58:713 [http-nio-8081-exec-6] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log ends =====
+2021-12-23 16:07:11:461 [http-nio-8081-exec-2] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log starts =====
+2021-12-23 16:07:11:462 [http-nio-8081-exec-2] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request succeed
+2021-12-23 16:07:11:462 [http-nio-8081-exec-2] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request Method: GET
+2021-12-23 16:07:11:462 [http-nio-8081-exec-2] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request URI: /api/articles/hot
+2021-12-23 16:07:11:462 [http-nio-8081-exec-2] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Method Name: com.ivan.sunnyblog.web.controller.ArticleController.getHotArticles
+2021-12-23 16:07:11:462 [http-nio-8081-exec-2] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Params: {}
+2021-12-23 16:07:11:462 [http-nio-8081-exec-2] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Result: ResultInfo{info='null', status=0, data=[ArticleVo{userInfo=null, category=null, BaseArticleVo{articleId=10004, status=null, title='Spring boot', description='null', content='null', firstPicture='null', viewCount=139, createDate='Tue Oct 12 15:58:26 EDT 2021', updateDate='null'}}, ArticleVo{userInfo=null, category=null, BaseArticleVo{articleId=10005, status=null, title='dd', description='null', content='null', firstPicture='null', viewCount=69, createDate='Sun Nov 07 14:09:29 EST 2021', updateDate='null'}}], total=null}
+2021-12-23 16:07:11:462 [http-nio-8081-exec-2] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Process Time: 4ms
+2021-12-23 16:07:11:462 [http-nio-8081-exec-2] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log ends =====
+2021-12-23 16:07:11:468 [http-nio-8081-exec-4] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log starts =====
+2021-12-23 16:07:11:468 [http-nio-8081-exec-4] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request succeed
+2021-12-23 16:07:11:468 [http-nio-8081-exec-4] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request Method: GET
+2021-12-23 16:07:11:468 [http-nio-8081-exec-4] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request URI: /api/categories
+2021-12-23 16:07:11:468 [http-nio-8081-exec-4] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Method Name: com.ivan.sunnyblog.web.controller.CategoryContoller.getCategories
+2021-12-23 16:07:11:468 [http-nio-8081-exec-4] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Params: {}
+2021-12-23 16:07:11:468 [http-nio-8081-exec-4] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Result: ResultInfo{info='null', status=0, data=[CategoryVo{categoryId=2, name='liddffd', articleCount=1}, CategoryVo{categoryId=1, name='Life ', articleCount=1}], total=null}
+2021-12-23 16:07:11:468 [http-nio-8081-exec-4] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Process Time: 8ms
+2021-12-23 16:07:11:468 [http-nio-8081-exec-4] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log ends =====
+2021-12-23 16:07:11:490 [http-nio-8081-exec-7] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log starts =====
+2021-12-23 16:07:11:490 [http-nio-8081-exec-7] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request succeed
+2021-12-23 16:07:11:490 [http-nio-8081-exec-7] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request Method: GET
+2021-12-23 16:07:11:491 [http-nio-8081-exec-7] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request URI: /api/articles
+2021-12-23 16:07:11:491 [http-nio-8081-exec-7] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Method Name: com.ivan.sunnyblog.web.controller.ArticleController.getPublicArticles
+2021-12-23 16:07:11:491 [http-nio-8081-exec-7] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Params: SearchVo{page=1, limit=10, categoryId=null, total=null}
+2021-12-23 16:07:11:491 [http-nio-8081-exec-7] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Result: ResultInfo{info='null', status=0, data=[ArticleVo{userInfo=UserInfoVo{userId=100001, nickName='ivan', userName='ivan', avatar='https://res-blog-public.s3.ca-central-1.amazonaws.com/default_avatar.jpg'}, category=CategoryVo{categoryId=1, name='Life ', articleCount=null}, BaseArticleVo{articleId=10005, status=1, title='dd', description='This is the doc of React markdown editor lite.
+Enjoy!!', content='null', firstPicture='', viewCount=69, createDate='Sun Nov 07 14:09:29 EST 2021', updateDate='Tue Dec 14 15:05:00 EST 2021'}}, ArticleVo{userInfo=UserInfoVo{userId=100001, nickName='ivan', userName='ivan', avatar='https://res-blog-public.s3.ca-central-1.amazonaws.com/default_avatar.jpg'}, category=CategoryVo{categoryId=2, name='liddffd', articleCount=null}, BaseArticleVo{articleId=10004, status=1, title='Spring boot', description='rerwerwer', content='null', firstPicture='', viewCount=139, createDate='Tue Oct 12 15:58:26 EDT 2021', updateDate='Tue Dec 14 15:05:00 EST 2021'}}], total=2}
+2021-12-23 16:07:11:491 [http-nio-8081-exec-7] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Process Time: 32ms
+2021-12-23 16:07:11:491 [http-nio-8081-exec-7] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log ends =====
+2021-12-23 16:07:28:689 [http-nio-8081-exec-5] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log starts =====
+2021-12-23 16:07:28:689 [http-nio-8081-exec-5] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request succeed
+2021-12-23 16:07:28:689 [http-nio-8081-exec-5] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request Method: GET
+2021-12-23 16:07:28:689 [http-nio-8081-exec-5] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request URI: /api/categories
+2021-12-23 16:07:28:689 [http-nio-8081-exec-5] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Method Name: com.ivan.sunnyblog.web.controller.CategoryContoller.getCategories
+2021-12-23 16:07:28:689 [http-nio-8081-exec-5] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Params: {}
+2021-12-23 16:07:28:689 [http-nio-8081-exec-5] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Result: ResultInfo{info='null', status=0, data=[CategoryVo{categoryId=2, name='liddffd', articleCount=1}, CategoryVo{categoryId=1, name='Life ', articleCount=1}], total=null}
+2021-12-23 16:07:28:690 [http-nio-8081-exec-5] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Process Time: 18ms
+2021-12-23 16:07:28:690 [http-nio-8081-exec-5] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log ends =====
+2021-12-23 16:07:28:692 [http-nio-8081-exec-8] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log starts =====
+2021-12-23 16:07:28:693 [http-nio-8081-exec-8] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request succeed
+2021-12-23 16:07:28:693 [http-nio-8081-exec-8] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request Method: GET
+2021-12-23 16:07:28:693 [http-nio-8081-exec-8] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request URI: /api/articles/hot
+2021-12-23 16:07:28:693 [http-nio-8081-exec-8] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Method Name: com.ivan.sunnyblog.web.controller.ArticleController.getHotArticles
+2021-12-23 16:07:28:693 [http-nio-8081-exec-8] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Params: {}
+2021-12-23 16:07:28:693 [http-nio-8081-exec-8] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Result: ResultInfo{info='null', status=0, data=[ArticleVo{userInfo=null, category=null, BaseArticleVo{articleId=10004, status=null, title='Spring boot', description='null', content='null', firstPicture='null', viewCount=139, createDate='Tue Oct 12 15:58:26 EDT 2021', updateDate='null'}}, ArticleVo{userInfo=null, category=null, BaseArticleVo{articleId=10005, status=null, title='dd', description='null', content='null', firstPicture='null', viewCount=69, createDate='Sun Nov 07 14:09:29 EST 2021', updateDate='null'}}], total=null}
+2021-12-23 16:07:28:693 [http-nio-8081-exec-8] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Process Time: 21ms
+2021-12-23 16:07:28:693 [http-nio-8081-exec-8] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log ends =====
+2021-12-23 16:07:28:700 [http-nio-8081-exec-10] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log starts =====
+2021-12-23 16:07:28:700 [http-nio-8081-exec-10] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request succeed
+2021-12-23 16:07:28:700 [http-nio-8081-exec-10] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request Method: GET
+2021-12-23 16:07:28:700 [http-nio-8081-exec-10] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request URI: /api/articles
+2021-12-23 16:07:28:701 [http-nio-8081-exec-10] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Method Name: com.ivan.sunnyblog.web.controller.ArticleController.getPublicArticles
+2021-12-23 16:07:28:701 [http-nio-8081-exec-10] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Params: SearchVo{page=1, limit=10, categoryId=null, total=null}
+2021-12-23 16:07:28:701 [http-nio-8081-exec-10] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Result: ResultInfo{info='null', status=0, data=[ArticleVo{userInfo=UserInfoVo{userId=100001, nickName='ivan', userName='ivan', avatar='https://res-blog-public.s3.ca-central-1.amazonaws.com/default_avatar.jpg'}, category=CategoryVo{categoryId=1, name='Life ', articleCount=null}, BaseArticleVo{articleId=10005, status=1, title='dd', description='This is the doc of React markdown editor lite.
+Enjoy!!', content='null', firstPicture='', viewCount=69, createDate='Sun Nov 07 14:09:29 EST 2021', updateDate='Tue Dec 14 15:05:00 EST 2021'}}, ArticleVo{userInfo=UserInfoVo{userId=100001, nickName='ivan', userName='ivan', avatar='https://res-blog-public.s3.ca-central-1.amazonaws.com/default_avatar.jpg'}, category=CategoryVo{categoryId=2, name='liddffd', articleCount=null}, BaseArticleVo{articleId=10004, status=1, title='Spring boot', description='rerwerwer', content='null', firstPicture='', viewCount=139, createDate='Tue Oct 12 15:58:26 EDT 2021', updateDate='Tue Dec 14 15:05:00 EST 2021'}}], total=2}
+2021-12-23 16:07:28:701 [http-nio-8081-exec-10] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Process Time: 29ms
+2021-12-23 16:07:28:701 [http-nio-8081-exec-10] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log ends =====
+2021-12-23 16:07:37:523 [http-nio-8081-exec-3] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log starts =====
+2021-12-23 16:07:37:523 [http-nio-8081-exec-3] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request succeed
+2021-12-23 16:07:37:523 [http-nio-8081-exec-3] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request Method: GET
+2021-12-23 16:07:37:523 [http-nio-8081-exec-3] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request URI: /api/categories
+2021-12-23 16:07:37:523 [http-nio-8081-exec-3] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Method Name: com.ivan.sunnyblog.web.controller.CategoryContoller.getCategories
+2021-12-23 16:07:37:523 [http-nio-8081-exec-3] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Params: {}
+2021-12-23 16:07:37:523 [http-nio-8081-exec-3] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Result: ResultInfo{info='null', status=0, data=[CategoryVo{categoryId=2, name='liddffd', articleCount=1}, CategoryVo{categoryId=1, name='Life ', articleCount=1}], total=null}
+2021-12-23 16:07:37:523 [http-nio-8081-exec-3] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Process Time: 12ms
+2021-12-23 16:07:37:523 [http-nio-8081-exec-3] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log ends =====
+2021-12-23 16:07:37:565 [http-nio-8081-exec-9] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log starts =====
+2021-12-23 16:07:37:565 [http-nio-8081-exec-9] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request succeed
+2021-12-23 16:07:37:566 [http-nio-8081-exec-9] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request Method: GET
+2021-12-23 16:07:37:566 [http-nio-8081-exec-9] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request URI: /api/articles
+2021-12-23 16:07:37:566 [http-nio-8081-exec-9] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Method Name: com.ivan.sunnyblog.web.controller.ArticleController.getPublicArticles
+2021-12-23 16:07:37:566 [http-nio-8081-exec-9] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Params: SearchVo{page=1, limit=10, categoryId=null, total=null}
+2021-12-23 16:07:37:566 [http-nio-8081-exec-9] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Result: ResultInfo{info='null', status=0, data=[ArticleVo{userInfo=UserInfoVo{userId=100001, nickName='ivan', userName='ivan', avatar='https://res-blog-public.s3.ca-central-1.amazonaws.com/default_avatar.jpg'}, category=CategoryVo{categoryId=1, name='Life ', articleCount=null}, BaseArticleVo{articleId=10005, status=1, title='dd', description='This is the doc of React markdown editor lite.
+Enjoy!!', content='null', firstPicture='', viewCount=69, createDate='Sun Nov 07 14:09:29 EST 2021', updateDate='Tue Dec 14 15:05:00 EST 2021'}}, ArticleVo{userInfo=UserInfoVo{userId=100001, nickName='ivan', userName='ivan', avatar='https://res-blog-public.s3.ca-central-1.amazonaws.com/default_avatar.jpg'}, category=CategoryVo{categoryId=2, name='liddffd', articleCount=null}, BaseArticleVo{articleId=10004, status=1, title='Spring boot', description='rerwerwer', content='null', firstPicture='', viewCount=139, createDate='Tue Oct 12 15:58:26 EDT 2021', updateDate='Tue Dec 14 15:05:00 EST 2021'}}], total=2}
+2021-12-23 16:07:37:566 [http-nio-8081-exec-9] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Process Time: 53ms
+2021-12-23 16:07:37:566 [http-nio-8081-exec-9] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log ends =====
+2021-12-23 16:07:37:571 [http-nio-8081-exec-6] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log starts =====
+2021-12-23 16:07:37:571 [http-nio-8081-exec-6] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request succeed
+2021-12-23 16:07:37:571 [http-nio-8081-exec-6] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request Method: GET
+2021-12-23 16:07:37:571 [http-nio-8081-exec-6] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request URI: /api/articles
+2021-12-23 16:07:37:571 [http-nio-8081-exec-6] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Method Name: com.ivan.sunnyblog.web.controller.ArticleController.getPublicArticles
+2021-12-23 16:07:37:571 [http-nio-8081-exec-6] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Params: SearchVo{page=1, limit=10, categoryId=2, total=null}
+2021-12-23 16:07:37:571 [http-nio-8081-exec-6] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Result: ResultInfo{info='null', status=0, data=[ArticleVo{userInfo=UserInfoVo{userId=100001, nickName='ivan', userName='ivan', avatar='https://res-blog-public.s3.ca-central-1.amazonaws.com/default_avatar.jpg'}, category=CategoryVo{categoryId=2, name='liddffd', articleCount=null}, BaseArticleVo{articleId=10004, status=1, title='Spring boot', description='rerwerwer', content='null', firstPicture='', viewCount=139, createDate='Tue Oct 12 15:58:26 EDT 2021', updateDate='Tue Dec 14 15:05:00 EST 2021'}}], total=1}
+2021-12-23 16:07:37:571 [http-nio-8081-exec-6] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Process Time: 13ms
+2021-12-23 16:07:37:571 [http-nio-8081-exec-6] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log ends =====
+2021-12-23 16:07:41:338 [http-nio-8081-exec-4] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log starts =====
+2021-12-23 16:07:41:338 [http-nio-8081-exec-4] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request succeed
+2021-12-23 16:07:41:338 [http-nio-8081-exec-4] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request Method: GET
+2021-12-23 16:07:41:338 [http-nio-8081-exec-4] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request URI: /api/categories
+2021-12-23 16:07:41:338 [http-nio-8081-exec-4] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Method Name: com.ivan.sunnyblog.web.controller.CategoryContoller.getCategories
+2021-12-23 16:07:41:338 [http-nio-8081-exec-4] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Params: {}
+2021-12-23 16:07:41:338 [http-nio-8081-exec-4] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Result: ResultInfo{info='null', status=0, data=[CategoryVo{categoryId=2, name='liddffd', articleCount=1}, CategoryVo{categoryId=1, name='Life ', articleCount=1}], total=null}
+2021-12-23 16:07:41:338 [http-nio-8081-exec-4] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Process Time: 13ms
+2021-12-23 16:07:41:338 [http-nio-8081-exec-4] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log ends =====
+2021-12-23 16:07:41:342 [http-nio-8081-exec-7] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log starts =====
+2021-12-23 16:07:41:342 [http-nio-8081-exec-7] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request succeed
+2021-12-23 16:07:41:342 [http-nio-8081-exec-7] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request Method: GET
+2021-12-23 16:07:41:342 [http-nio-8081-exec-7] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request URI: /api/articles/hot
+2021-12-23 16:07:41:342 [http-nio-8081-exec-7] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Method Name: com.ivan.sunnyblog.web.controller.ArticleController.getHotArticles
+2021-12-23 16:07:41:342 [http-nio-8081-exec-7] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Params: {}
+2021-12-23 16:07:41:342 [http-nio-8081-exec-7] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Result: ResultInfo{info='null', status=0, data=[ArticleVo{userInfo=null, category=null, BaseArticleVo{articleId=10004, status=null, title='Spring boot', description='null', content='null', firstPicture='null', viewCount=139, createDate='Tue Oct 12 15:58:26 EDT 2021', updateDate='null'}}, ArticleVo{userInfo=null, category=null, BaseArticleVo{articleId=10005, status=null, title='dd', description='null', content='null', firstPicture='null', viewCount=69, createDate='Sun Nov 07 14:09:29 EST 2021', updateDate='null'}}], total=null}
+2021-12-23 16:07:41:342 [http-nio-8081-exec-7] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Process Time: 17ms
+2021-12-23 16:07:41:342 [http-nio-8081-exec-7] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log ends =====
+2021-12-23 16:07:41:362 [http-nio-8081-exec-2] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log starts =====
+2021-12-23 16:07:41:362 [http-nio-8081-exec-2] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request succeed
+2021-12-23 16:07:41:362 [http-nio-8081-exec-2] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request Method: GET
+2021-12-23 16:07:41:362 [http-nio-8081-exec-2] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request URI: /api/articles
+2021-12-23 16:07:41:362 [http-nio-8081-exec-2] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Method Name: com.ivan.sunnyblog.web.controller.ArticleController.getPublicArticles
+2021-12-23 16:07:41:362 [http-nio-8081-exec-2] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Params: SearchVo{page=1, limit=10, categoryId=null, total=null}
+2021-12-23 16:07:41:362 [http-nio-8081-exec-2] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Result: ResultInfo{info='null', status=0, data=[ArticleVo{userInfo=UserInfoVo{userId=100001, nickName='ivan', userName='ivan', avatar='https://res-blog-public.s3.ca-central-1.amazonaws.com/default_avatar.jpg'}, category=CategoryVo{categoryId=1, name='Life ', articleCount=null}, BaseArticleVo{articleId=10005, status=1, title='dd', description='This is the doc of React markdown editor lite.
+Enjoy!!', content='null', firstPicture='', viewCount=69, createDate='Sun Nov 07 14:09:29 EST 2021', updateDate='Tue Dec 14 15:05:00 EST 2021'}}, ArticleVo{userInfo=UserInfoVo{userId=100001, nickName='ivan', userName='ivan', avatar='https://res-blog-public.s3.ca-central-1.amazonaws.com/default_avatar.jpg'}, category=CategoryVo{categoryId=2, name='liddffd', articleCount=null}, BaseArticleVo{articleId=10004, status=1, title='Spring boot', description='rerwerwer', content='null', firstPicture='', viewCount=139, createDate='Tue Oct 12 15:58:26 EDT 2021', updateDate='Tue Dec 14 15:05:00 EST 2021'}}], total=2}
+2021-12-23 16:07:41:362 [http-nio-8081-exec-2] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Process Time: 37ms
+2021-12-23 16:07:41:363 [http-nio-8081-exec-2] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log ends =====
+2021-12-23 16:08:05:924 [http-nio-8081-exec-10] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log starts =====
+2021-12-23 16:08:05:924 [http-nio-8081-exec-10] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request succeed
+2021-12-23 16:08:05:924 [http-nio-8081-exec-10] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request Method: GET
+2021-12-23 16:08:05:924 [http-nio-8081-exec-10] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request URI: /api/articles/hot
+2021-12-23 16:08:05:924 [http-nio-8081-exec-10] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Method Name: com.ivan.sunnyblog.web.controller.ArticleController.getHotArticles
+2021-12-23 16:08:05:924 [http-nio-8081-exec-10] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Params: {}
+2021-12-23 16:08:05:924 [http-nio-8081-exec-10] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Result: ResultInfo{info='null', status=0, data=[ArticleVo{userInfo=null, category=null, BaseArticleVo{articleId=10004, status=null, title='Spring boot', description='null', content='null', firstPicture='null', viewCount=139, createDate='Tue Oct 12 15:58:26 EDT 2021', updateDate='null'}}, ArticleVo{userInfo=null, category=null, BaseArticleVo{articleId=10005, status=null, title='dd', description='null', content='null', firstPicture='null', viewCount=69, createDate='Sun Nov 07 14:09:29 EST 2021', updateDate='null'}}], total=null}
+2021-12-23 16:08:05:924 [http-nio-8081-exec-10] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Process Time: 10ms
+2021-12-23 16:08:05:924 [http-nio-8081-exec-10] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log ends =====
+2021-12-23 16:08:05:925 [http-nio-8081-exec-8] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log starts =====
+2021-12-23 16:08:05:925 [http-nio-8081-exec-8] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request succeed
+2021-12-23 16:08:05:925 [http-nio-8081-exec-8] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request Method: GET
+2021-12-23 16:08:05:925 [http-nio-8081-exec-8] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request URI: /api/categories
+2021-12-23 16:08:05:925 [http-nio-8081-exec-8] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Method Name: com.ivan.sunnyblog.web.controller.CategoryContoller.getCategories
+2021-12-23 16:08:05:925 [http-nio-8081-exec-8] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Params: {}
+2021-12-23 16:08:05:925 [http-nio-8081-exec-8] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Result: ResultInfo{info='null', status=0, data=[CategoryVo{categoryId=2, name='liddffd', articleCount=1}, CategoryVo{categoryId=1, name='Life ', articleCount=1}], total=null}
+2021-12-23 16:08:05:925 [http-nio-8081-exec-8] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Process Time: 11ms
+2021-12-23 16:08:05:925 [http-nio-8081-exec-8] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log ends =====
+2021-12-23 16:08:05:950 [http-nio-8081-exec-5] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log starts =====
+2021-12-23 16:08:05:950 [http-nio-8081-exec-5] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request succeed
+2021-12-23 16:08:05:950 [http-nio-8081-exec-5] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request Method: GET
+2021-12-23 16:08:05:950 [http-nio-8081-exec-5] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request URI: /api/articles
+2021-12-23 16:08:05:950 [http-nio-8081-exec-5] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Method Name: com.ivan.sunnyblog.web.controller.ArticleController.getPublicArticles
+2021-12-23 16:08:05:950 [http-nio-8081-exec-5] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Params: SearchVo{page=1, limit=10, categoryId=null, total=null}
+2021-12-23 16:08:05:950 [http-nio-8081-exec-5] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Result: ResultInfo{info='null', status=0, data=[ArticleVo{userInfo=UserInfoVo{userId=100001, nickName='ivan', userName='ivan', avatar='https://res-blog-public.s3.ca-central-1.amazonaws.com/default_avatar.jpg'}, category=CategoryVo{categoryId=1, name='Life ', articleCount=null}, BaseArticleVo{articleId=10005, status=1, title='dd', description='This is the doc of React markdown editor lite.
+Enjoy!!', content='null', firstPicture='', viewCount=69, createDate='Sun Nov 07 14:09:29 EST 2021', updateDate='Tue Dec 14 15:05:00 EST 2021'}}, ArticleVo{userInfo=UserInfoVo{userId=100001, nickName='ivan', userName='ivan', avatar='https://res-blog-public.s3.ca-central-1.amazonaws.com/default_avatar.jpg'}, category=CategoryVo{categoryId=2, name='liddffd', articleCount=null}, BaseArticleVo{articleId=10004, status=1, title='Spring boot', description='rerwerwer', content='null', firstPicture='', viewCount=139, createDate='Tue Oct 12 15:58:26 EDT 2021', updateDate='Tue Dec 14 15:05:00 EST 2021'}}], total=2}
+2021-12-23 16:08:05:950 [http-nio-8081-exec-5] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Process Time: 36ms
+2021-12-23 16:08:05:950 [http-nio-8081-exec-5] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log ends =====
+2021-12-23 16:08:19:195 [http-nio-8081-exec-1] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log starts =====
+2021-12-23 16:08:19:195 [http-nio-8081-exec-9] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log starts =====
+2021-12-23 16:08:19:195 [http-nio-8081-exec-9] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request succeed
+2021-12-23 16:08:19:195 [http-nio-8081-exec-9] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request Method: GET
+2021-12-23 16:08:19:195 [http-nio-8081-exec-9] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request URI: /api/articles/hot
+2021-12-23 16:08:19:195 [http-nio-8081-exec-9] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Method Name: com.ivan.sunnyblog.web.controller.ArticleController.getHotArticles
+2021-12-23 16:08:19:195 [http-nio-8081-exec-9] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Params: {}
+2021-12-23 16:08:19:195 [http-nio-8081-exec-1] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request succeed
+2021-12-23 16:08:19:195 [http-nio-8081-exec-9] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Result: ResultInfo{info='null', status=0, data=[ArticleVo{userInfo=null, category=null, BaseArticleVo{articleId=10004, status=null, title='Spring boot', description='null', content='null', firstPicture='null', viewCount=139, createDate='Tue Oct 12 15:58:26 EDT 2021', updateDate='null'}}, ArticleVo{userInfo=null, category=null, BaseArticleVo{articleId=10005, status=null, title='dd', description='null', content='null', firstPicture='null', viewCount=69, createDate='Sun Nov 07 14:09:29 EST 2021', updateDate='null'}}], total=null}
+2021-12-23 16:08:19:195 [http-nio-8081-exec-1] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request Method: GET
+2021-12-23 16:08:19:195 [http-nio-8081-exec-9] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Process Time: 9ms
+2021-12-23 16:08:19:195 [http-nio-8081-exec-1] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request URI: /api/categories
+2021-12-23 16:08:19:195 [http-nio-8081-exec-9] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log ends =====
+2021-12-23 16:08:19:195 [http-nio-8081-exec-1] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Method Name: com.ivan.sunnyblog.web.controller.CategoryContoller.getCategories
+2021-12-23 16:08:19:195 [http-nio-8081-exec-1] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Params: {}
+2021-12-23 16:08:19:195 [http-nio-8081-exec-1] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Result: ResultInfo{info='null', status=0, data=[CategoryVo{categoryId=2, name='liddffd', articleCount=1}, CategoryVo{categoryId=1, name='Life ', articleCount=1}], total=null}
+2021-12-23 16:08:19:195 [http-nio-8081-exec-1] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Process Time: 9ms
+2021-12-23 16:08:19:195 [http-nio-8081-exec-1] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log ends =====
+2021-12-23 16:08:19:205 [http-nio-8081-exec-3] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log starts =====
+2021-12-23 16:08:19:205 [http-nio-8081-exec-3] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request succeed
+2021-12-23 16:08:19:205 [http-nio-8081-exec-3] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request Method: GET
+2021-12-23 16:08:19:205 [http-nio-8081-exec-3] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request URI: /api/articles
+2021-12-23 16:08:19:205 [http-nio-8081-exec-3] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Method Name: com.ivan.sunnyblog.web.controller.ArticleController.getPublicArticles
+2021-12-23 16:08:19:205 [http-nio-8081-exec-3] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Params: SearchVo{page=1, limit=10, categoryId=null, total=null}
+2021-12-23 16:08:19:205 [http-nio-8081-exec-3] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Result: ResultInfo{info='null', status=0, data=[ArticleVo{userInfo=UserInfoVo{userId=100001, nickName='ivan', userName='ivan', avatar='https://res-blog-public.s3.ca-central-1.amazonaws.com/default_avatar.jpg'}, category=CategoryVo{categoryId=1, name='Life ', articleCount=null}, BaseArticleVo{articleId=10005, status=1, title='dd', description='This is the doc of React markdown editor lite.
+Enjoy!!', content='null', firstPicture='', viewCount=69, createDate='Sun Nov 07 14:09:29 EST 2021', updateDate='Tue Dec 14 15:05:00 EST 2021'}}, ArticleVo{userInfo=UserInfoVo{userId=100001, nickName='ivan', userName='ivan', avatar='https://res-blog-public.s3.ca-central-1.amazonaws.com/default_avatar.jpg'}, category=CategoryVo{categoryId=2, name='liddffd', articleCount=null}, BaseArticleVo{articleId=10004, status=1, title='Spring boot', description='rerwerwer', content='null', firstPicture='', viewCount=139, createDate='Tue Oct 12 15:58:26 EDT 2021', updateDate='Tue Dec 14 15:05:00 EST 2021'}}], total=2}
+2021-12-23 16:08:19:205 [http-nio-8081-exec-3] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Process Time: 18ms
+2021-12-23 16:08:19:205 [http-nio-8081-exec-3] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log ends =====
+2021-12-23 16:08:40:270 [http-nio-8081-exec-4] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log starts =====
+2021-12-23 16:08:40:270 [http-nio-8081-exec-4] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request succeed
+2021-12-23 16:08:40:270 [http-nio-8081-exec-4] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request Method: GET
+2021-12-23 16:08:40:270 [http-nio-8081-exec-4] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request URI: /api/categories
+2021-12-23 16:08:40:270 [http-nio-8081-exec-4] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Method Name: com.ivan.sunnyblog.web.controller.CategoryContoller.getCategories
+2021-12-23 16:08:40:270 [http-nio-8081-exec-4] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Params: {}
+2021-12-23 16:08:40:270 [http-nio-8081-exec-4] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Result: ResultInfo{info='null', status=0, data=[CategoryVo{categoryId=2, name='liddffd', articleCount=1}, CategoryVo{categoryId=1, name='Life ', articleCount=1}], total=null}
+2021-12-23 16:08:40:270 [http-nio-8081-exec-4] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Process Time: 3ms
+2021-12-23 16:08:40:271 [http-nio-8081-exec-4] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log ends =====
+2021-12-23 16:08:40:272 [http-nio-8081-exec-7] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log starts =====
+2021-12-23 16:08:40:273 [http-nio-8081-exec-7] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request succeed
+2021-12-23 16:08:40:273 [http-nio-8081-exec-7] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request Method: GET
+2021-12-23 16:08:40:273 [http-nio-8081-exec-7] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request URI: /api/articles/hot
+2021-12-23 16:08:40:273 [http-nio-8081-exec-7] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Method Name: com.ivan.sunnyblog.web.controller.ArticleController.getHotArticles
+2021-12-23 16:08:40:273 [http-nio-8081-exec-7] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Params: {}
+2021-12-23 16:08:40:273 [http-nio-8081-exec-7] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Result: ResultInfo{info='null', status=0, data=[ArticleVo{userInfo=null, category=null, BaseArticleVo{articleId=10004, status=null, title='Spring boot', description='null', content='null', firstPicture='null', viewCount=139, createDate='Tue Oct 12 15:58:26 EDT 2021', updateDate='null'}}, ArticleVo{userInfo=null, category=null, BaseArticleVo{articleId=10005, status=null, title='dd', description='null', content='null', firstPicture='null', viewCount=69, createDate='Sun Nov 07 14:09:29 EST 2021', updateDate='null'}}], total=null}
+2021-12-23 16:08:40:273 [http-nio-8081-exec-7] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Process Time: 4ms
+2021-12-23 16:08:40:273 [http-nio-8081-exec-7] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log ends =====
+2021-12-23 16:08:40:315 [http-nio-8081-exec-6] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log starts =====
+2021-12-23 16:08:40:315 [http-nio-8081-exec-6] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request succeed
+2021-12-23 16:08:40:315 [http-nio-8081-exec-6] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request Method: GET
+2021-12-23 16:08:40:315 [http-nio-8081-exec-6] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request URI: /api/articles
+2021-12-23 16:08:40:315 [http-nio-8081-exec-6] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Method Name: com.ivan.sunnyblog.web.controller.ArticleController.getPublicArticles
+2021-12-23 16:08:40:315 [http-nio-8081-exec-6] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Params: SearchVo{page=1, limit=10, categoryId=null, total=null}
+2021-12-23 16:08:40:315 [http-nio-8081-exec-6] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Result: ResultInfo{info='null', status=0, data=[ArticleVo{userInfo=UserInfoVo{userId=100001, nickName='ivan', userName='ivan', avatar='https://res-blog-public.s3.ca-central-1.amazonaws.com/default_avatar.jpg'}, category=CategoryVo{categoryId=1, name='Life ', articleCount=null}, BaseArticleVo{articleId=10005, status=1, title='dd', description='This is the doc of React markdown editor lite.
+Enjoy!!', content='null', firstPicture='', viewCount=69, createDate='Sun Nov 07 14:09:29 EST 2021', updateDate='Tue Dec 14 15:05:00 EST 2021'}}, ArticleVo{userInfo=UserInfoVo{userId=100001, nickName='ivan', userName='ivan', avatar='https://res-blog-public.s3.ca-central-1.amazonaws.com/default_avatar.jpg'}, category=CategoryVo{categoryId=2, name='liddffd', articleCount=null}, BaseArticleVo{articleId=10004, status=1, title='Spring boot', description='rerwerwer', content='null', firstPicture='', viewCount=139, createDate='Tue Oct 12 15:58:26 EDT 2021', updateDate='Tue Dec 14 15:05:00 EST 2021'}}], total=2}
+2021-12-23 16:08:40:315 [http-nio-8081-exec-6] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Process Time: 49ms
+2021-12-23 16:08:40:315 [http-nio-8081-exec-6] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log ends =====
+2021-12-23 17:07:42:525 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=50m10s333ms).
+2021-12-23 18:04:05:740 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=56m23s216ms).
+2021-12-23 19:07:08:265 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h3m2s525ms).
+2021-12-23 20:25:55:594 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h18m47s329ms).
+2021-12-23 21:15:12:508 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=49m16s914ms).
+2021-12-23 21:33:24:908 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=18m12s400ms).
+2021-12-23 23:14:56:270 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h41m31s362ms).
+2021-12-23 23:57:58:667 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=43m2s397ms).

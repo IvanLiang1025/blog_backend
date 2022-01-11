@@ -13,6 +13,7 @@ import com.ivan.sunnyblog.web.services.iservice.IArticleService;
 import com.ivan.sunnyblog.web.services.iservice.IBlogUserService;
 import com.ivan.sunnyblog.web.vo.*;
 import org.apache.commons.lang3.StringUtils;
+import org.apache.commons.logging.impl.AvalonLogger;
 import org.jooq.*;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -57,7 +58,6 @@ public class ArticleService  extends BaseService implements IArticleService {
     @Override
     public ResultInfo getArticleList(SearchVo searchVo) {
 
-        System.out.println(searchVo);
         Long userId = 100001l;
 
         int limit = searchVo.getLimit();
@@ -68,7 +68,6 @@ public class ArticleService  extends BaseService implements IArticleService {
                 .where(ARTICLE.USER_ID.eq(userId)).orderBy(ARTICLE.CREATE_DATE.desc())
                 .offset(offset).limit(limit).fetchInto(Article.class);
 
-        System.out.println(articles);
         List<ArticleVo> articleVoList = copyList(articles);
         return ResultInfo.getSucResult(articleVoList);
     }
@@ -81,17 +80,22 @@ public class ArticleService  extends BaseService implements IArticleService {
             emptyPara("id");
         }
 
-//        System.out.println("heheh");
         Article article = articleDao.fetchOneByArticleId(id);
         if(article == null) {
             logger.error("could not find the article");
             return null;
         }
 
-        ArticleDetailVo articleDetailVo = new ArticleDetailVo();
-        BeanUtils.copyProperties(article, articleDetailVo);
-        articleDetailVo.setCreateDate(article.getCreateDate().toString());
-        articleDetailVo.setUpdateDate(article.getUpdateDate().toString());
+//        ArticleDetailVo articleDetailVo = new ArticleDetailVo();
+//        BeanUtils.copyProperties(article, articleDetailVo);
+//        articleDetailVo.setCreateDate(article.getCreateDate().toString());
+//        articleDetailVo.setUpdateDate(article.getUpdateDate().toString());
+
+        ArticleVo articleVo = new ArticleVo();
+        articleVo = copy(article);
+        articleVo.setContent(article.getContent());
+//        articleVo.setCreateDate(article.get);
+
 
         String key = RedisKeyGenerator.generateBlogViewMapKey(id);
         if(redisCache.hgetAll(RedisKeyGenerator.CACHE_BLOG_VIEW_COUNT).containsKey(key)){
@@ -100,7 +104,7 @@ public class ArticleService  extends BaseService implements IArticleService {
             redisCache.hset(RedisKeyGenerator.CACHE_BLOG_VIEW_COUNT , key,1);
         }
 
-        return ResultInfo.getSucResult(articleDetailVo);
+        return ResultInfo.getSucResult(articleVo);
 
     }
 

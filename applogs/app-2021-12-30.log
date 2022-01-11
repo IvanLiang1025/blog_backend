@@ -1,0 +1,88 @@
+2021-12-30 00:01:24:382 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m17s507ms).
+2021-12-30 00:17:46:613 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m52s222ms).
+2021-12-30 00:30:11:058 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=12m24s445ms).
+2021-12-30 00:46:18:256 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m37s199ms).
+2021-12-30 01:03:41:608 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=17m23s352ms).
+2021-12-30 01:21:49:990 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=17m38s379ms).
+2021-12-30 01:33:16:481 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=10m26s479ms).
+2021-12-30 01:48:28:748 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m12s267ms).
+2021-12-30 02:04:53:470 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m54s735ms).
+2021-12-30 02:07:28:545 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m5s56ms).
+2021-12-30 02:24:10:376 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=16m41s831ms).
+2021-12-30 02:40:50:091 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=16m9s724ms).
+2021-12-30 02:58:49:476 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=17m59s385ms).
+2021-12-30 03:16:45:891 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=17m26s406ms).
+2021-12-30 03:32:40:280 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m54s389ms).
+2021-12-30 03:50:47:128 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=17m6s826ms).
+2021-12-30 04:07:27:495 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=16m40s367ms).
+2021-12-30 04:23:43:960 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m46s458ms).
+2021-12-30 04:41:17:209 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=17m3s243ms).
+2021-12-30 04:59:29:627 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=17m42s416ms).
+2021-12-30 05:15:40:005 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=16m10s378ms).
+2021-12-30 05:33:39:433 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=17m29s428ms).
+2021-12-30 05:50:33:230 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=16m23s792ms).
+2021-12-30 06:08:20:694 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=17m47s464ms).
+2021-12-30 06:26:28:060 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=17m37s366ms).
+2021-12-30 06:43:51:394 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=16m53s325ms).
+2021-12-30 07:00:48:790 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=16m57s396ms).
+2021-12-30 07:18:52:202 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=17m33s384ms).
+2021-12-30 07:35:06:365 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m44s165ms).
+2021-12-30 07:52:28:736 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=17m22s371ms).
+2021-12-30 08:09:19:120 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=16m20s389ms).
+2021-12-30 08:25:35:577 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=16m16s457ms).
+2021-12-30 08:42:33:950 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m58s344ms).
+2021-12-30 08:58:12:402 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m38s452ms).
+2021-12-30 09:15:21:745 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=16m39s364ms).
+2021-12-30 09:38:02:967 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=22m11s212ms).
+2021-12-30 09:53:53:383 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m50s416ms).
+2021-12-30 10:02:30:972 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=8m7s583ms).
+2021-12-30 10:18:20:242 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m49s270ms).
+2021-12-30 10:51:00:790 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=31m40s535ms).
+2021-12-30 10:55:45:494 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4m44s704ms).
+2021-12-30 11:09:22:359 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=13m36s865ms).
+2021-12-30 11:22:56:996 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=13m34s637ms).
+2021-12-30 11:59:07:433 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=36m10s437ms).
+2021-12-30 12:11:53:710 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=12m46s277ms).
+2021-12-30 13:31:42:204 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h19m48s494ms).
+2021-12-30 14:05:19:992 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=33m37s788ms).
+2021-12-30 15:18:14:579 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h12m54s587ms).
+2021-12-30 15:18:30:510 [http-nio-8081-exec-4] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log starts =====
+2021-12-30 15:18:30:510 [http-nio-8081-exec-4] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request succeed
+2021-12-30 15:18:30:510 [http-nio-8081-exec-5] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log starts =====
+2021-12-30 15:18:30:510 [http-nio-8081-exec-4] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request Method: GET
+2021-12-30 15:18:30:510 [http-nio-8081-exec-4] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request URI: /api/categories
+2021-12-30 15:18:30:510 [http-nio-8081-exec-4] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Method Name: com.ivan.sunnyblog.web.controller.CategoryContoller.getCategories
+2021-12-30 15:18:30:510 [http-nio-8081-exec-4] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Params: {}
+2021-12-30 15:18:30:510 [http-nio-8081-exec-5] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request succeed
+2021-12-30 15:18:30:510 [http-nio-8081-exec-5] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request Method: GET
+2021-12-30 15:18:30:510 [http-nio-8081-exec-5] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request URI: /api/articles/hot
+2021-12-30 15:18:30:510 [http-nio-8081-exec-5] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Method Name: com.ivan.sunnyblog.web.controller.ArticleController.getHotArticles
+2021-12-30 15:18:30:510 [http-nio-8081-exec-5] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Params: {}
+2021-12-30 15:18:30:510 [http-nio-8081-exec-4] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Result: ResultInfo{info='null', status=0, data=[CategoryVo{categoryId=2, name='liddffd', articleCount=1}, CategoryVo{categoryId=1, name='Life ', articleCount=1}], total=null}
+2021-12-30 15:18:30:510 [http-nio-8081-exec-4] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Process Time: 40ms
+2021-12-30 15:18:30:510 [http-nio-8081-exec-4] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log ends =====
+2021-12-30 15:18:30:510 [http-nio-8081-exec-5] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Result: ResultInfo{info='null', status=0, data=[ArticleVo{userInfo=null, category=null, BaseArticleVo{articleId=10004, status=null, title='Spring boot', description='null', content='null', firstPicture='null', viewCount=139, createDate='Tue Oct 12 15:58:26 EDT 2021', updateDate='null'}}, ArticleVo{userInfo=null, category=null, BaseArticleVo{articleId=10005, status=null, title='dd', description='null', content='null', firstPicture='null', viewCount=69, createDate='Sun Nov 07 14:09:29 EST 2021', updateDate='null'}}], total=null}
+2021-12-30 15:18:30:511 [http-nio-8081-exec-5] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Process Time: 40ms
+2021-12-30 15:18:30:511 [http-nio-8081-exec-5] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log ends =====
+2021-12-30 15:18:30:520 [http-nio-8081-exec-3] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log starts =====
+2021-12-30 15:18:30:520 [http-nio-8081-exec-3] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request succeed
+2021-12-30 15:18:30:520 [http-nio-8081-exec-3] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request Method: GET
+2021-12-30 15:18:30:520 [http-nio-8081-exec-3] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Request URI: /api/articles
+2021-12-30 15:18:30:520 [http-nio-8081-exec-3] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Method Name: com.ivan.sunnyblog.web.controller.ArticleController.getPublicArticles
+2021-12-30 15:18:30:520 [http-nio-8081-exec-3] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Params: SearchVo{page=1, limit=10, categoryId=null, total=null}
+2021-12-30 15:18:30:520 [http-nio-8081-exec-3] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Result: ResultInfo{info='null', status=0, data=[ArticleVo{userInfo=UserInfoVo{userId=100001, nickName='ivan', userName='ivan', avatar='https://res-blog-public.s3.ca-central-1.amazonaws.com/default_avatar.jpg'}, category=CategoryVo{categoryId=1, name='Life ', articleCount=null}, BaseArticleVo{articleId=10005, status=1, title='dd', description='This is the doc of React markdown editor lite.
+Enjoy!!', content='null', firstPicture='', viewCount=69, createDate='Sun Nov 07 14:09:29 EST 2021', updateDate='Tue Dec 14 15:05:00 EST 2021'}}, ArticleVo{userInfo=UserInfoVo{userId=100001, nickName='ivan', userName='ivan', avatar='https://res-blog-public.s3.ca-central-1.amazonaws.com/default_avatar.jpg'}, category=CategoryVo{categoryId=2, name='liddffd', articleCount=null}, BaseArticleVo{articleId=10004, status=1, title='Spring boot', description='rerwerwer', content='null', firstPicture='', viewCount=139, createDate='Tue Oct 12 15:58:26 EDT 2021', updateDate='Tue Dec 14 15:05:00 EST 2021'}}], total=2}
+2021-12-30 15:18:30:521 [http-nio-8081-exec-3] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect Process Time: 26ms
+2021-12-30 15:18:30:521 [http-nio-8081-exec-3] INFO  com.ivan.sunnyblog.web.aop.ControllerAspect ===== log ends =====
+2021-12-30 15:24:30:688 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=46s76ms).
+2021-12-30 15:49:21:635 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=9m20s866ms).
+2021-12-30 15:53:06:122 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m44s480ms).
+2021-12-30 16:15:46:711 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=19m40s576ms).
+2021-12-30 16:42:57:903 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=27m11s192ms).
+2021-12-30 17:10:46:207 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=27m48s304ms).
+2021-12-30 17:25:31:979 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=14m45s772ms).
+2021-12-30 18:31:23:745 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h5m51s766ms).
+2021-12-30 19:56:50:224 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h25m26s479ms).
+2021-12-30 21:11:55:036 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h15m4s812ms).
+2021-12-30 21:36:44:764 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=24m49s728ms).
+2021-12-30 22:22:34:810 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=45m50s46ms).

@@ -27,5 +27,8 @@ s3:
   bucket:
     name: res-blog-public
     path: /res-dev
+    avatarPath: /avatar
+
+
 
 
