@@ -134,4 +134,11 @@ public class ArticleDao extends DAOImpl<ArticleRecord, com.ivan.sunnyblog.base.m
     public List<com.ivan.sunnyblog.base.models.tables.pojos.Article> fetchByDescription(String... values) {
         return fetch(Article.ARTICLE.DESCRIPTION, values);
     }
+
+    /**
+     * Fetch records that have <code>type IN (values)</code>
+     */
+    public List<com.ivan.sunnyblog.base.models.tables.pojos.Article> fetchByType(Short... values) {
+        return fetch(Article.ARTICLE.TYPE, values);
+    }
 }

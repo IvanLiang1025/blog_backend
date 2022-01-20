@@ -23,7 +23,7 @@ import javax.annotation.Generated;
 @SuppressWarnings({ "all", "unchecked", "rawtypes" })
 public class Article implements Serializable {
 
-    private static final long serialVersionUID = -1415333881;
+    private static final long serialVersionUID = -1075354833;
 
     private Long    articleId;
     private Short   status;
@@ -36,6 +36,7 @@ public class Article implements Serializable {
     private Date    createDate;
     private Date    updateDate;
     private String  description;
+    private Short   type;
 
     public Article() {}
 
@@ -51,6 +52,7 @@ public class Article implements Serializable {
         this.createDate = value.createDate;
         this.updateDate = value.updateDate;
         this.description = value.description;
+        this.type = value.type;
     }
 
     public Article(
@@ -64,7 +66,8 @@ public class Article implements Serializable {
         Long    categoryId,
         Date    createDate,
         Date    updateDate,
-        String  description
+        String  description,
+        Short   type
     ) {
         this.articleId = articleId;
         this.status = status;
@@ -77,6 +80,7 @@ public class Article implements Serializable {
         this.createDate = createDate;
         this.updateDate = updateDate;
         this.description = description;
+        this.type = type;
     }
 
     public Long getArticleId() {
@@ -167,6 +171,14 @@ public class Article implements Serializable {
         this.description = description;
     }
 
+    public Short getType() {
+        return this.type;
+    }
+
+    public void setType(Short type) {
+        this.type = type;
+    }
+
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder("Article (");
@@ -182,6 +194,7 @@ public class Article implements Serializable {
         sb.append(", ").append(createDate);
         sb.append(", ").append(updateDate);
         sb.append(", ").append(description);
+        sb.append(", ").append(type);
 
         sb.append(")");
         return sb.toString();

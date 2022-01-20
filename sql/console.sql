@@ -75,3 +75,6 @@ create table comment (
 
     PRIMARY KEY (comment_id)
 );
+-- add a type for article, representing original,
+ALTER TABLE article ADD COLUMN type SMALLINT DEFAULT 1;
+

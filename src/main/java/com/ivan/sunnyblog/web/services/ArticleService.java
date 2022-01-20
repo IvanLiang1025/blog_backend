@@ -19,8 +19,7 @@ import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import static com.ivan.sunnyblog.base.models.Tables.ARTICLE;
-import static com.ivan.sunnyblog.web.contant.GlobalContant.ARTICLE_STATUS_PUBLISHED;
-import static com.ivan.sunnyblog.web.contant.GlobalContant.ARTICLE_STATUS_SAVED;
+import static com.ivan.sunnyblog.web.contant.GlobalContant.*;
 import static org.jooq.impl.DSL.count;
 
 import com.ivan.sunnyblog.base.models.tables.pojos.Article;
@@ -111,6 +110,8 @@ public class ArticleService  extends BaseService implements IArticleService {
     @Override
     public ResultInfo editArticle(ArticleDetailVo articleDetailVo) {
 
+        logger.info("=========== para ====== {}", articleDetailVo);
+
         if(StringUtils.isBlank(articleDetailVo.getTitle())){
             emptyPara("title");
         }
@@ -125,6 +126,10 @@ public class ArticleService  extends BaseService implements IArticleService {
 
         if(articleDetailVo.getCategoryId() == null) {
             emptyPara("categoryId");
+        }
+
+        if(articleDetailVo.getTitle() == null) {
+            emptyPara("type");
         }
 
 
@@ -147,6 +152,13 @@ public class ArticleService  extends BaseService implements IArticleService {
                 }else{
                     updateRecord.setStatus(ARTICLE_STATUS_SAVED);
                 }
+
+                if(articleDetailVo.getType() == ARTICLE_TYPE_REPRODUCE){
+                    updateRecord.setType(ARTICLE_TYPE_REPRODUCE);
+                }else{
+                    updateRecord.setType(ARTICLE_TYPE_ORIGINAL);
+                }
+
                 updateRecord.setUserId(100001l);
                 updateRecord.setUpdateDate(new Date());
 
@@ -168,6 +180,13 @@ public class ArticleService  extends BaseService implements IArticleService {
                 }else{
                     articleRecord.setStatus(ARTICLE_STATUS_SAVED);
                 }
+
+                if(articleDetailVo.getType() == ARTICLE_TYPE_REPRODUCE){
+                    articleRecord.setType(ARTICLE_TYPE_REPRODUCE);
+                }else{
+                    articleRecord.setType(ARTICLE_TYPE_ORIGINAL);
+                }
+
                 articleRecord.setUserId(100001l);
 
 

@@ -77,18 +77,35 @@ public class CommentDaoExt extends CommentDao {
 
         for(CommentListVo commentListVo : commentListVos){
 
-            List<CommentListVo> comments;
+            List<CommentListVo> comments = new ArrayList<>();
 //            if(commentListVo.getParentCommentId() == COMMENT_ORIGINAL_PARENT_ID){
 //                comments= getCommentListByArticleIdAndParentId(articleId, commentListVo.getCommentId(), searchVo);
 //            }else{
 //                comments= getCommentListByArticleIdAndParentId(articleId, commentListVo.getCommentId(), null);
 //            }
 
-            comments= getCommentListByArticleIdAndParentId(articleId, commentListVo.getCommentId(), null);
+//            comments= getCommentListByArticleIdAndParentId(articleId, commentListVo.getCommentId(), null);
+//            commentListVo.setReplyComments(comments);
+
+            getChildren(commentListVo, comments);
             commentListVo.setReplyComments(comments);
         }
 
         return commentListVos;
+
+    }
+
+
+    public void getChildren(CommentListVo root, List<CommentListVo>  children){
+        List<CommentListVo> commentListVos = dao.getDslContext().select().from(COMMENT)
+                .where(COMMENT.PARENT_COMMENT_ID.eq(root.getCommentId())).orderBy(COMMENT.CREATEDATE.asc()).fetchInto(CommentListVo.class);
+
+        if(commentListVos == null || commentListVos.size() == 0) return;
+
+        children.addAll(commentListVos);
+        for(CommentListVo commentListVo : commentListVos){
+            getChildren(commentListVo, children);
+        }
 
     }
 

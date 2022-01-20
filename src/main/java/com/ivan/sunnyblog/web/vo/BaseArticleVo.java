@@ -15,6 +15,7 @@ public class BaseArticleVo {
     private Integer viewCount;;
     private String createDate;
     private String updateDate;
+    private Short type;
 
 
     public Long getArticleId() {
@@ -89,11 +90,20 @@ public class BaseArticleVo {
         this.updateDate = updateDate;
     }
 
+    public Short getType() {
+        return type;
+    }
+
+    public void setType(Short type) {
+        this.type = type;
+    }
+
     @Override
     public String toString() {
         return "BaseArticleVo{" +
                 "articleId=" + articleId +
                 ", status=" + status +
+                ", type=" + type +
                 ", title='" + title + '\'' +
                 ", description='" + description + '\'' +
                 ", content='" + content + '\'' +
