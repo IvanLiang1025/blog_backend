@@ -73,8 +73,11 @@ create table comment (
     parent_comment_nickname varchar(100) NULL,
     createDate TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
 
+
     PRIMARY KEY (comment_id)
 );
 -- add a type for article, representing original,
 ALTER TABLE article ADD COLUMN type SMALLINT DEFAULT 1;
+
+ALTER TABLE comment ADD COLUMN poster_role SMALLINT DEFAULT 0;
 

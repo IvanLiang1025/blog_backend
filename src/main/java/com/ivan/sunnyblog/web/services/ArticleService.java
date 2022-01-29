@@ -13,13 +13,12 @@ import com.ivan.sunnyblog.web.services.iservice.IArticleService;
 import com.ivan.sunnyblog.web.services.iservice.IBlogUserService;
 import com.ivan.sunnyblog.web.vo.*;
 import org.apache.commons.lang3.StringUtils;
-import org.apache.commons.logging.impl.AvalonLogger;
 import org.jooq.*;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import static com.ivan.sunnyblog.base.models.Tables.ARTICLE;
-import static com.ivan.sunnyblog.web.contant.GlobalContant.*;
+import static com.ivan.sunnyblog.web.constant.GlobalConstant.*;
 import static org.jooq.impl.DSL.count;
 
 import com.ivan.sunnyblog.base.models.tables.pojos.Article;
@@ -30,7 +29,6 @@ import org.springframework.stereotype.Service;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
-import java.util.Map;
 
 /**
  * Author: jinghaoliang

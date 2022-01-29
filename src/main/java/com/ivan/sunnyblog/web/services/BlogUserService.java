@@ -48,10 +48,9 @@ public class BlogUserService extends BaseService implements IBlogUserService {
 
         blogUser.setPassword("");
 
-        String token = JwtUtil.createToken(blogUser.getUserId());
+        String token = JwtUtil.createToken(blogUser);
 
         redisCache.hsetWithExpire(RedisKeyGenerator.CACHE_TOKEN, token, blogUser.getUserId(), RedisKeyGenerator.EXPIRE_CACHE_TOKEN_SECONDS );
-
         LoginResultVo loginResultVo = new LoginResultVo();
         loginResultVo.setAccessToken(token);
         loginResultVo.setRole(blogUser.getRole());
@@ -90,4 +89,18 @@ public class BlogUserService extends BaseService implements IBlogUserService {
         BlogUser blogUser = dao.getDslContext().select().from(BLOG_USER).where(BLOG_USER.USER_ID.eq(id)).fetchOneInto(BlogUser.class);
         return blogUser;
     }
+
+//    @Override
+//    public BlogUser findUserById(Long id) {
+//        BlogUser blogUser = null;
+//        blogUser = (BlogUser) redisCache.hget(RedisKeyGenerator.CACHE_USER_INFO, id);
+//        logger.info("get user from redis: {}", blogUser);
+//
+//        if(blogUser == null) {
+//            blogUser = findUserById(id);
+//            redisCache.hsetWithExpire(RedisKeyGenerator.CACHE_USER_INFO, blogUser.getUserId(), blogUser, RedisKeyGenerator.EXPIRE_CACHE_USERINFO_SECONDS);
+//        }
+//
+//        return blogUser;
+//    }
 }

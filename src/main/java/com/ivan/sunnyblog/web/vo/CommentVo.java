@@ -13,6 +13,7 @@ public class CommentVo {
     private String parentCommentNickname;
     private String content;
     private Short status;
+    private String avatar;
 
 //    private List<Co>
 
@@ -72,6 +73,14 @@ public class CommentVo {
         this.status = status;
     }
 
+    public String getAvatar() {
+        return avatar;
+    }
+
+    public void setAvatar(String avatar) {
+        this.avatar = avatar;
+    }
+
     @Override
     public String toString() {
         return "CommentVo{" +
@@ -81,7 +90,8 @@ public class CommentVo {
                 ", nickname='" + nickname + '\'' +
                 ", parentCommentNickname='" + parentCommentNickname + '\'' +
                 ", content='" + content + '\'' +
-                ", status='" + status + '\'' +
+                ", status=" + status +
+                ", avatar='" + avatar + '\'' +
                 '}';
     }
 }

@@ -1,6 +1,5 @@
 package com.ivan.sunnyblog.web.services;
 
-import com.ivan.sunnyblog.base.models.tables.Article;
 import com.ivan.sunnyblog.base.models.tables.pojos.Category;
 import com.ivan.sunnyblog.base.models.tables.records.CategoryRecord;
 import com.ivan.sunnyblog.web.ResultInfo;
@@ -9,18 +8,15 @@ import com.ivan.sunnyblog.web.services.iservice.ICategoryService;
 import com.ivan.sunnyblog.web.vo.CategoryVo;
 import org.apache.commons.lang3.StringUtils;
 import org.jooq.Configuration;
-import org.jooq.Field;
-import org.jooq.TransactionalRunnable;
 import org.jooq.impl.DSL;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import com.ivan.sunnyblog.base.models.Tables.*;
 
 import java.util.List;
 
 import static com.ivan.sunnyblog.base.models.Tables.ARTICLE;
 import static com.ivan.sunnyblog.base.models.Tables.CATEGORY;
-import static com.ivan.sunnyblog.web.contant.GlobalContant.ARTICLE_STATUS_PUBLISHED;
+import static com.ivan.sunnyblog.web.constant.GlobalConstant.ARTICLE_STATUS_PUBLISHED;
 
 /**
  * Author: jinghaoliang

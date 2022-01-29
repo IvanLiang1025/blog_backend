@@ -1,10 +1,14 @@
 package com.ivan.sunnyblog.web.services;
 
+//import com.ivan.sunnyblog.base.models.tables.BlogUser;
+
+import com.ivan.sunnyblog.base.models.tables.pojos.BlogUser;
+import com.ivan.sunnyblog.base.models.tables.Comment;
 import com.ivan.sunnyblog.base.models.tables.records.CommentRecord;
 
 import static com.ivan.sunnyblog.base.models.Tables.COMMENT;
-import static com.ivan.sunnyblog.web.contant.GlobalContant.COMMENT_ORIGINAL_PARENT_ID;
-import static com.ivan.sunnyblog.web.contant.GlobalContant.COMMENT_STATUS_PUBLISED;
+import static com.ivan.sunnyblog.web.constant.GlobalConstant.COMMENT_ORIGINAL_PARENT_ID;
+import static com.ivan.sunnyblog.web.constant.GlobalConstant.COMMENT_STATUS_PUBLISED;
 
 import com.ivan.sunnyblog.web.ResultInfo;
 import com.ivan.sunnyblog.web.dao.BaseDao;
@@ -41,42 +45,40 @@ public class CommentService extends BaseService implements ICommentService {
     @Override
     public ResultInfo postComment(CommentVo commentVo) {
 
-        if(StringUtils.isBlank(commentVo.getNickname())) {
+        if (StringUtils.isBlank(commentVo.getNickname())) {
             emptyPara("nickname");
         }
-        if(StringUtils.isBlank(commentVo.getEmail())) emptyPara("email");
-        if(StringUtils.isBlank(commentVo.getContent())) emptyPara("comment");
+        if (StringUtils.isBlank(commentVo.getEmail())) emptyPara("email");
+        if (StringUtils.isBlank(commentVo.getContent())) emptyPara("comment");
 
-        CommentRecord commentRecord = dao.getDslContext().newRecord(COMMENT);
-        commentRecord.setArticleId(commentVo.getArticleId());
-        commentRecord.setContent(commentVo.getContent());
-        commentRecord.setEmail(commentVo.getEmail());
-        commentRecord.setNickname(commentVo.getNickname());
-        commentRecord.setCreatedate(new Date());
+        commentVo.setAvatar(s3ResourceManager.getAvatarUrl());
 
-        commentRecord.setAvatar(s3ResourceManager.getAvatarUrl());
-
-        if(commentVo.getStatus() != null) {
-            commentRecord.setStatus(commentVo.getStatus());
-        }else{
-            commentRecord.setStatus(COMMENT_STATUS_PUBLISED);
-        }
-
-        if(commentVo.getParentCommentId() != null){
-            commentRecord.setParentCommentId(commentVo.getParentCommentId());
-        }else{
-            commentRecord.setParentCommentId(COMMENT_ORIGINAL_PARENT_ID);
-        }
-
-        if(StringUtils.isNotBlank(commentVo.getParentCommentNickname())){
-            commentRecord.setParentCommentNickname(commentVo.getParentCommentNickname());
-        }
-
-        commentRecord.insert();
+        commentDao.addComment(commentVo);
 
         return ResultInfo.getSucResult(null);
     }
 
+
+
+    @Override
+    public ResultInfo postComment(CommentVo commentVo, BlogUser blogUser) {
+
+        if (StringUtils.isBlank(commentVo.getContent())) emptyPara("comment");
+        if(StringUtils.isBlank(commentVo.getEmail())){
+            commentVo.setEmail(blogUser.getEmail());
+        }
+
+        if(StringUtils.isBlank(commentVo.getNickname())){
+            commentVo.setNickname(blogUser.getNickname());
+        }
+        if(StringUtils.isBlank(commentVo.getAvatar())){
+            commentVo.setAvatar(blogUser.getAvatar());
+        }
+
+
+        commentDao.addComment(commentVo);
+        return ResultInfo.getSucResult(null);
+    }
 
 
 
@@ -85,17 +87,46 @@ public class CommentService extends BaseService implements ICommentService {
 
         List<CommentListVo> comments = commentDao.getComments(articleId, COMMENT_ORIGINAL_PARENT_ID, searchVo);
         Long total;
-        if(searchVo.getTotal() == null){
+        if (searchVo.getTotal() == null) {
             total = commentDao.getTotalOfOringalComments(articleId);
-        }else {
+        } else {
             total = searchVo.getTotal();
         }
 
         ResultInfo resultInfo = ResultInfo.getResult();
         resultInfo.setData(comments);
         resultInfo.setTotal(total);
-//        System.out.println();
+        return resultInfo;
+    }
+
+
+    @Override
+    public ResultInfo getComments(SearchVo searchVo) {
+
+//        List<CommentListVo> comments =  commentDao.getCommentList(searchVo);
+        List<CommentListVo> comments = commentDao.getComments(searchVo);
+        Long total;
+        if (searchVo.getTotal() == null) {
+            total = commentDao.getTotalComments();
+        } else {
+            total = searchVo.getTotal();
+        }
+
+        ResultInfo resultInfo = ResultInfo.getResult();
+        resultInfo.setData(comments);
+        resultInfo.setTotal(total);
 
         return resultInfo;
+    }
+
+    @Override
+    public ResultInfo deleteComment(Long commentId) {
+        if(commentId == null) {
+            emptyPara("commentId");
+        }
+
+        commentDao.deleteComment(commentId);
+
+        return ResultInfo.getSucResult(null);
     }
 }

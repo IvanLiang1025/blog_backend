@@ -13,6 +13,7 @@ public class CommentListVo extends CommentVo{
     private List<CommentListVo> replyComments;
     private Date createdate;
     private String avatar;
+    private String title;
 
     public Long getCommentId() {
         return commentId;
@@ -46,12 +47,21 @@ public class CommentListVo extends CommentVo{
         this.avatar = avatar;
     }
 
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title= title;
+    }
+
     @Override
     public String toString() {
         return "CommentListVo{" +
                 "commentId=" + commentId +
-
-                "createdate=" + createdate +
+                ", Title=" + title +
+                ", createdate=" + createdate +
                 ", avatar=" + avatar +
                 ", replyComments=" + replyComments +
                 ", CommentVo=" + super.toString() +

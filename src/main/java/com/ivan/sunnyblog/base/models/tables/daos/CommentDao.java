@@ -127,4 +127,11 @@ public class CommentDao extends DAOImpl<CommentRecord, com.ivan.sunnyblog.base.m
     public List<com.ivan.sunnyblog.base.models.tables.pojos.Comment> fetchByCreatedate(Date... values) {
         return fetch(Comment.COMMENT.CREATEDATE, values);
     }
+
+    /**
+     * Fetch records that have <code>poster_role IN (values)</code>
+     */
+    public List<com.ivan.sunnyblog.base.models.tables.pojos.Comment> fetchByPosterRole(Short... values) {
+        return fetch(Comment.COMMENT.POSTER_ROLE, values);
+    }
 }

@@ -23,7 +23,7 @@ import javax.annotation.Generated;
 @SuppressWarnings({ "all", "unchecked", "rawtypes" })
 public class Comment implements Serializable {
 
-    private static final long serialVersionUID = -536183361;
+    private static final long serialVersionUID = -856588826;
 
     private Long   commentId;
     private Long   articleId;
@@ -35,6 +35,7 @@ public class Comment implements Serializable {
     private Long   parentCommentId;
     private String parentCommentNickname;
     private Date   createdate;
+    private Short  posterRole;
 
     public Comment() {}
 
@@ -49,6 +50,7 @@ public class Comment implements Serializable {
         this.parentCommentId = value.parentCommentId;
         this.parentCommentNickname = value.parentCommentNickname;
         this.createdate = value.createdate;
+        this.posterRole = value.posterRole;
     }
 
     public Comment(
@@ -61,7 +63,8 @@ public class Comment implements Serializable {
         Short  status,
         Long   parentCommentId,
         String parentCommentNickname,
-        Date   createdate
+        Date   createdate,
+        Short  posterRole
     ) {
         this.commentId = commentId;
         this.articleId = articleId;
@@ -73,6 +76,7 @@ public class Comment implements Serializable {
         this.parentCommentId = parentCommentId;
         this.parentCommentNickname = parentCommentNickname;
         this.createdate = createdate;
+        this.posterRole = posterRole;
     }
 
     public Long getCommentId() {
@@ -155,6 +159,14 @@ public class Comment implements Serializable {
         this.createdate = createdate;
     }
 
+    public Short getPosterRole() {
+        return this.posterRole;
+    }
+
+    public void setPosterRole(Short posterRole) {
+        this.posterRole = posterRole;
+    }
+
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder("Comment (");
@@ -169,6 +181,7 @@ public class Comment implements Serializable {
         sb.append(", ").append(parentCommentId);
         sb.append(", ").append(parentCommentNickname);
         sb.append(", ").append(createdate);
+        sb.append(", ").append(posterRole);
 
         sb.append(")");
         return sb.toString();

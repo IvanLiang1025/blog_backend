@@ -7,8 +7,11 @@ package com.ivan.sunnyblog.web.cache;
 public class RedisKeyGenerator {
 
     public static final Long EXPIRE_CACHE_TOKEN_SECONDS = 60 * 60 * 4L;
+    public static final Long EXPIRE_CACHE_USERINFO_SECONDS = 60 * 60 * 6l;
 
     public static final String CACHE_TOKEN = "tokenCache";
+
+    public static final String CACHE_USER_INFO = "userInfoCache";
 
     public static final String CACHE_BLOG_VIEW_COUNT = "blogViewCountCache";
     public static final String CACHE_BLOG_VIEW_HK_PREFIX = "article_";

@@ -43,7 +43,7 @@ import org.jooq.impl.TableImpl;
 @SuppressWarnings({ "all", "unchecked", "rawtypes" })
 public class Comment extends TableImpl<CommentRecord> {
 
-    private static final long serialVersionUID = 481931541;
+    private static final long serialVersionUID = -173192033;
 
     /**
      * The reference instance of <code>public.comment</code>
@@ -107,6 +107,11 @@ public class Comment extends TableImpl<CommentRecord> {
      * The column <code>public.comment.createdate</code>.
      */
     public final TableField<CommentRecord, Date> CREATEDATE = createField("createdate", org.jooq.impl.SQLDataType.TIMESTAMP.defaultValue(org.jooq.impl.DSL.field("CURRENT_TIMESTAMP", org.jooq.impl.SQLDataType.TIMESTAMP)), this, "", new TimestampDateConverter());
+
+    /**
+     * The column <code>public.comment.poster_role</code>.
+     */
+    public final TableField<CommentRecord, Short> POSTER_ROLE = createField("poster_role", org.jooq.impl.SQLDataType.SMALLINT.defaultValue(org.jooq.impl.DSL.field("0", org.jooq.impl.SQLDataType.SMALLINT)), this, "");
 
     /**
      * Create a <code>public.comment</code> table reference

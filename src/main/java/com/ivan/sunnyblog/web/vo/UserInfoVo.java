@@ -10,6 +10,7 @@ public class UserInfoVo {
     private String nickName;
     private String userName;
     private String avatar;
+    private String email;
 
     public Long getUserId() {
         return userId;
@@ -43,10 +44,20 @@ public class UserInfoVo {
         this.avatar = avatar;
     }
 
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
     @Override
     public String toString() {
         return "UserInfoVo{" +
                 "userId=" + userId +
+                ", email='" + email + '\'' +
                 ", nickName='" + nickName + '\'' +
                 ", userName='" + userName + '\'' +
                 ", avatar='" + avatar + '\'' +
